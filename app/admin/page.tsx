@@ -100,6 +100,11 @@ export default async function AdminPage({
                 />
                 <div className="flex flex-wrap gap-2">
                   <input
+                    name="fromName"
+                    placeholder="보낸사람 이름(선택, 기본 KCT)"
+                    className="w-44 rounded border border-neutral-300 px-2 py-1 text-sm"
+                  />
+                  <input
                     type="email"
                     name="testEmail"
                     placeholder="테스트 이메일(비우면 전체 구독자)"

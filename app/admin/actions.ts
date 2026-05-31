@@ -46,6 +46,7 @@ export async function resendIssue(formData: FormData) {
   const slug = formData.get("slug")?.toString();
   const testEmail = formData.get("testEmail")?.toString().trim();
   const message = formData.get("message")?.toString().trim();
+  const fromName = formData.get("fromName")?.toString().trim();
   if (!slug) redirect("/admin?msg=noslug");
   const issue = readIssue(slug!);
   const sb = getAdminSupabase();
@@ -91,6 +92,7 @@ export async function resendIssue(formData: FormData) {
   await sendIssueEmail({
     recipients,
     subject: `[KCT] ${issue!.meta.title}`,
+    fromName: fromName || undefined,
     throttleMs: 300,
     pdf,
     buildHtml: (r) => {

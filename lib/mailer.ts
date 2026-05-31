@@ -20,6 +20,8 @@ export interface SendOpts {
   buildHtml: (r: Recipient) => string;
   pdf?: { filename: string; content: Buffer };
   throttleMs?: number;
+  /** 보낸사람 이름 오버라이드(이메일 주소는 인증된 발신자 유지). 비우면 MAIL_FROM 기본값. */
+  fromName?: string;
 }
 
 /** "KCT <a@b.com>" 또는 "a@b.com" → {name, email} */
@@ -38,6 +40,7 @@ async function sendViaBrevo(opts: SendOpts): Promise<SendResult> {
     return { sent: 0, failed: opts.recipients.length, errors: ["BREVO_API_KEY 미설정"] };
   }
   const sender = parseFrom();
+  if (opts.fromName) sender.name = opts.fromName; // 발신자 이름만 오버라이드(주소는 인증 발신자 유지)
   const attachment = opts.pdf
     ? [{ name: opts.pdf.filename, content: opts.pdf.content.toString("base64") }]
     : undefined;
