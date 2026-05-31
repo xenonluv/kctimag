@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- ⚠️ 설치 전 /Users/USERNAME 을 Mac Studio의 실제 홈 경로로 바꿀 것 -->
+  <key>Label</key>
+  <string>com.kctimag.weekly</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/USERNAME/kctimag/scripts/launchd/run-weekly.sh</string>
+  </array>
+
+  <!-- 매주 월요일 08:00 (Mac 로컬 시간 = KST) -->
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Weekday</key><integer>1</integer>
+    <key>Hour</key><integer>8</integer>
+    <key>Minute</key><integer>0</integer>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/Users/USERNAME/kctimag/logs/launchd.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/USERNAME/kctimag/logs/launchd.err.log</string>
+
+  <!-- 부팅 시 즉시 실행하지 않음(예약 시각에만) -->
+  <key>RunAtLoad</key>
+  <false/>
+</dict>
+</plist>

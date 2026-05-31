@@ -1,0 +1,46 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+
+# next.js
+/.next/
+/out/
+next-env.d.ts
+
+# production
+/build
+
+# secrets & environment (NEVER commit)
+.env
+.env*.local
+NaverAPI.md
+Pixelapi.md
+
+# pipeline working/temp artifacts (only final content/issues is committed)
+/.pipeline-tmp/
+/scripts/pipeline/.cache/
+
+# generated PDFs (stored in Supabase Storage, not git)
+/public/issues/**/*.pdf
+/.out-pdf/
+
+# bkit local state
+/.bkit/
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+
+# logs
+/logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# os
+.DS_Store
+Thumbs.db

@@ -1,0 +1,91 @@
+"use server";
+import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
+import {
+  ADMIN_COOKIE,
+  adminToken,
+  checkPassword,
+  isAdmin,
+} from "@/lib/admin-auth";
+import { getAdminSupabase } from "@/lib/supabase";
+import { readIssue } from "@/lib/content";
+import { sendIssueEmail, type Recipient } from "@/lib/resend";
+import { getSiteUrl } from "@/lib/env";
+
+export async function login(formData: FormData) {
+  const pw = (formData.get("password") ?? "").toString();
+  if (!checkPassword(pw)) redirect("/admin/login?error=1");
+  const c = await cookies();
+  c.set(ADMIN_COOKIE, adminToken(), {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === "production",
+    sameSite: "lax",
+    path: "/",
+    maxAge: 60 * 60 * 24 * 7,
+  });
+  redirect("/admin");
+}
+
+export async function logout() {
+  const c = await cookies();
+  c.delete(ADMIN_COOKIE);
+  redirect("/admin/login");
+}
+
+export async function deleteSubscriber(formData: FormData) {
+  if (!(await isAdmin())) redirect("/admin/login");
+  const id = formData.get("id")?.toString();
+  const sb = getAdminSupabase();
+  if (sb && id) await sb.from("subscribers").delete().eq("id", id);
+  redirect("/admin");
+}
+
+// 수동 재발송 (웹링크 + PDF 링크 메일 — 첨부 없이). 주간 자동 발송은 파이프라인이 PDF 첨부로 수행.
+export async function resendIssue(formData: FormData) {
+  if (!(await isAdmin())) redirect("/admin/login");
+  const slug = formData.get("slug")?.toString();
+  const testEmail = formData.get("testEmail")?.toString().trim();
+  if (!slug) redirect("/admin?msg=noslug");
+  const issue = readIssue(slug!);
+  const sb = getAdminSupabase();
+  if (!issue) redirect("/admin?msg=noissue");
+
+  const site = getSiteUrl();
+  let recipients: Recipient[] = [];
+  if (testEmail) {
+    recipients = [{ email: testEmail }];
+  } else if (sb) {
+    const { data } = await sb
+      .from("subscribers")
+      .select("email,unsubscribe_token")
+      .eq("status", "confirmed");
+    recipients = (data ?? []).map(
+      (d: { email: string; unsubscribe_token?: string }) => ({
+        email: d.email,
+        unsubscribeToken: d.unsubscribe_token,
+      }),
+    );
+  }
+  if (recipients.length === 0) redirect("/admin?msg=norecipients");
+
+  const link = `${site}/issues/${issue!.meta.slug}`;
+  const pdf = issue!.meta.pdfUrl;
+  await sendIssueEmail({
+    recipients,
+    subject: `[KCT] ${issue!.meta.title}`,
+    throttleMs: 300,
+    buildHtml: (r) => {
+      const unsub = r.unsubscribeToken
+        ? `${site}/api/unsubscribe?token=${r.unsubscribeToken}`
+        : site;
+      return `<div style="font-family:sans-serif;max-width:600px;margin:0 auto;padding:24px">
+        <h1 style="font-size:22px">${issue!.meta.title}</h1>
+        <p style="color:#555">${issue!.meta.dek}</p>
+        <p><a href="${link}">웹에서 보기 →</a>${pdf ? ` · <a href="${pdf}">PDF 다운로드</a>` : ""}</p>
+        <hr style="border:none;border-top:1px solid #eee;margin:20px 0"/>
+        <p style="font-size:12px;color:#999"><a href="${unsub}" style="color:#999">수신거부</a></p>
+      </div>`;
+    },
+  });
+  redirect("/admin?msg=sent");
+}

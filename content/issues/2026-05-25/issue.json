@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "slug": "2026-05-25",
+    "title": "한 주의 한국 문화: 무대 위 신세대와 전통의 재발견",
+    "dek": "이번 주 한국 문화계는 신인 아이돌의 글로벌 약진과 국립극장의 전통 재해석 무대가 동시에 화제를 모았다.",
+    "date": "2026-05-25",
+    "weekRange": { "from": "2026-05-18", "to": "2026-05-25" },
+    "coverImage": {
+      "url": "https://image.pollinations.ai/prompt/editorial%20magazine%20cover%20korean%20pop%20culture%20collage%20neon%20seoul%20stage%20lights?width=1200&height=675&nologo=true&seed=425",
+      "kind": "ai",
+      "caption": "이번 호 표지 — 한국 문화의 한 주",
+      "license": "AI-generated (Pollinations)",
+      "isAI": true,
+      "alt": "네온 빛 서울 무대를 형상화한 매거진 표지 일러스트"
+    }
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "heading": "신인 아이돌 그룹, 데뷔 첫 주 글로벌 차트 진입",
+      "rank": 1,
+      "intensities": { "news": 92, "psychological": 78, "realtime": 95 },
+      "category": "K-pop·음악",
+      "bodyMarkdown": "이번 주 가요계 최대 화제는 신인 그룹의 폭발적 데뷔였다. 데뷔 앨범은 발매 사흘 만에 주요 글로벌 스트리밍 차트 상위권에 진입하며 'K-pop 4세대 이후'의 가능성을 보여주었다.\n\n전문가들은 이번 흥행의 배경으로 **데뷔 전부터 축적된 온라인 팬덤**과 멤버 개개인의 콘텐츠 역량을 꼽는다. 특히 숏폼 영상에서의 자연스러운 매력이 초기 화제를 견인했다는 분석이다.\n\n다만 일각에서는 과열된 마케팅과 짧아진 신인의 '검증 기간'에 대한 우려도 제기된다. 빠른 성공이 곧바로 지속 가능성으로 이어지지는 않는다는 것이다.",
+      "pullQuote": "데뷔 사흘, 글로벌 차트가 응답했다 — 그러나 진짜 시험은 이제부터다.",
+      "images": [
+        {
+          "url": "https://image.pollinations.ai/prompt/kpop%20idol%20group%20concert%20stage%20silhouette%20crowd%20cheering%20abstract?width=1000&height=600&nologo=true&seed=11",
+          "kind": "ai",
+          "caption": "콘서트 무대를 형상화한 개념 이미지",
+          "license": "AI-generated (Pollinations)",
+          "isAI": true,
+          "alt": "무대 위 아이돌 그룹의 실루엣과 환호하는 관객을 표현한 추상 이미지"
+        }
+      ],
+      "sources": [
+        {
+          "title": "신인 그룹 데뷔 앨범, 글로벌 차트 진입",
+          "link": "https://news.naver.com/example/1",
+          "pubDate": "2026-05-23"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "heading": "국립극장, 판소리와 현대 무용의 경계를 허물다",
+      "rank": 2,
+      "intensities": { "news": 71, "psychological": 84, "realtime": 62 },
+      "category": "공연·연극",
+      "bodyMarkdown": "전통과 현대의 만남이 다시 한 번 무대 위에서 빛났다. 국립극장이 선보인 신작은 판소리의 서사와 현대 무용의 신체 언어를 결합해 평단의 호평을 받았다.\n\n연출가는 \"전통은 박제가 아니라 살아 움직이는 언어\"라며, 젊은 관객에게도 가닿는 동시대성을 강조했다. 실제로 공연 관객의 상당수가 20~30대였다는 점은 주목할 만하다.\n\n이러한 시도는 전통문화의 보존을 넘어 **재창조**의 단계로 나아가고 있음을 보여준다.",
+      "pullQuote": "전통은 박제가 아니라 살아 움직이는 언어다.",
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Pansori-Namwon.jpg/960px-Pansori-Namwon.jpg",
+          "kind": "wikimedia",
+          "caption": "판소리 공연 자료 이미지 (실존 전통 예술)",
+          "attribution": "사진: Wikimedia Commons",
+          "license": "CC BY-SA",
+          "isAI": false,
+          "alt": "판소리 명창이 부채를 들고 소리를 하는 모습"
+        }
+      ],
+      "sources": [
+        {
+          "title": "국립극장 신작, 전통과 현대의 융합",
+          "link": "https://news.naver.com/example/2",
+          "pubDate": "2026-05-21"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "heading": "웹툰 원작 드라마, 글로벌 OTT 주간 1위",
+      "rank": 3,
+      "intensities": { "news": 68, "psychological": 73, "realtime": 80 },
+      "category": "드라마·예능",
+      "bodyMarkdown": "인기 웹툰을 원작으로 한 드라마가 글로벌 OTT 주간 시청 순위 1위에 올랐다. 원작의 탄탄한 서사와 한국적 정서가 해외 시청자에게도 통했다는 평가다.\n\n원작 IP의 확장은 이제 한국 콘텐츠 산업의 핵심 전략으로 자리 잡았다. 웹툰 → 드라마 → 글로벌 유통으로 이어지는 가치 사슬이 점점 정교해지고 있다.",
+      "pullQuote": "웹툰에서 드라마로, 그리고 전 세계로.",
+      "images": [
+        {
+          "url": "",
+          "kind": "link",
+          "caption": "관련 보도 (저작권 보호 이미지 — 원문 링크 참조)",
+          "isAI": false,
+          "sourceLink": "https://news.naver.com/example/3",
+          "alt": "웹툰 원작 드라마 관련 보도 링크"
+        }
+      ],
+      "sources": [
+        {
+          "title": "웹툰 원작 드라마, 글로벌 OTT 1위",
+          "link": "https://news.naver.com/example/3",
+          "pubDate": "2026-05-24"
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "title": "편집장의 시선: 신세대와 전통이 같은 무대에 설 때",
+    "bodyMarkdown": "이번 주 한국 문화는 두 개의 축으로 움직였다. 하나는 빠르게 부상하는 신세대 콘텐츠의 힘이고, 다른 하나는 전통을 동시대 언어로 번역하려는 진지한 시도다.\n\n**향후 영향** — 신인 그룹의 글로벌 성공은 K-콘텐츠의 저변이 더 넓어지고 있음을 시사한다. 동시에 전통의 현대적 재해석은 문화의 깊이를 더한다.\n\n**문제점** — 과열된 마케팅과 짧아진 검증 기간은 산업의 지속 가능성에 그림자를 드리운다. 저작권과 창작자 보상 문제도 여전한 숙제다.\n\n**긍정 요소** — 무엇보다 젊은 세대가 전통 무대를 찾고, 전 세계가 한국의 이야기에 귀 기울이고 있다는 점은 분명한 희망이다.",
+    "author": "편집장"
+  },
+  "generatedAt": "2026-05-25T08:00:00.000Z"
+}

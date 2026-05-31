@@ -1,0 +1,44 @@
+{
+  "name": "kctimag",
+  "version": "0.1.0",
+  "private": true,
+  "description": "주간 한국 문화 매거진 자동 발행 시스템 (Korean Culture Times Magazine)",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "pipeline": "tsx scripts/pipeline/run.ts",
+    "pipeline:collect": "tsx scripts/pipeline/01-collect.ts",
+    "pipeline:analyze": "tsx scripts/pipeline/02-analyze.ts",
+    "pipeline:write": "tsx scripts/pipeline/03-write.ts",
+    "pipeline:illustrate": "tsx scripts/pipeline/04-illustrate.ts",
+    "pipeline:editorial": "tsx scripts/pipeline/05-editorial.ts",
+    "pipeline:pdf": "tsx scripts/pipeline/06-pdf.ts",
+    "pipeline:gate": "tsx scripts/pipeline/07-ceo-gate.ts",
+    "pipeline:send": "tsx scripts/pipeline/08-publish-send.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "date-fns": "^4.1.0",
+    "next": "^15.1.0",
+    "puppeteer": "^23.10.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-markdown": "^9.0.1",
+    "remark-gfm": "^4.0.0",
+    "resend": "^4.0.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.20",
+    "dotenv": "^16.4.5",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}

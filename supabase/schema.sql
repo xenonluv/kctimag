@@ -1,0 +1,30 @@
+-- KCT 매거진 — Supabase 스키마
+-- Supabase 대시보드 → SQL Editor 에서 실행.
+
+-- 구독자
+create table if not exists subscribers (
+  id uuid primary key default gen_random_uuid(),
+  email text unique not null,
+  status text not null default 'confirmed',   -- pending | confirmed | unsubscribed
+  unsubscribe_token text,
+  created_at timestamptz default now()
+);
+
+-- 발송 로그
+create table if not exists send_logs (
+  id uuid primary key default gen_random_uuid(),
+  issue_slug text not null,
+  sent int default 0,
+  failed int default 0,
+  created_at timestamptz default now()
+);
+
+-- RLS 활성화: 정책을 두지 않으면 anon(공개 키)은 접근 불가.
+-- 서버(service_role 키)는 RLS를 우회하므로 구독 API/관리자/파이프라인만 데이터에 접근.
+alter table subscribers enable row level security;
+alter table send_logs enable row level security;
+
+-- PDF 보관용 공개 Storage 버킷 (이미 있으면 무시)
+insert into storage.buckets (id, name, public)
+values ('issues', 'issues', true)
+on conflict (id) do nothing;
