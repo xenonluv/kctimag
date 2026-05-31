@@ -121,7 +121,7 @@ textarea::placeholder {
     rgba(59, 130, 246, 0.5),
     transparent 68%
   );
-  animation: kct-d1 28s ease-in-out infinite;
+  animation: kct-d1 16s ease-in-out infinite;
 }
 .kct-g2 {
   right: -8%;
@@ -134,7 +134,7 @@ textarea::placeholder {
     rgba(124, 107, 255, 0.42),
     transparent 68%
   );
-  animation: kct-d2 34s ease-in-out infinite;
+  animation: kct-d2 20s ease-in-out infinite;
 }
 .kct-g3 {
   top: 32%;
@@ -143,24 +143,24 @@ textarea::placeholder {
   height: 22vmax;
   border-radius: 9999px;
   background: radial-gradient(circle, rgba(34, 211, 238, 0.32), transparent 68%);
-  animation: kct-d3 24s ease-in-out infinite;
+  animation: kct-d3 15s ease-in-out infinite;
 }
 .kct-g4 {
   top: 14%;
   right: 9%;
   width: 18vmax;
   height: 18vmax;
-  border: 2px solid rgba(59, 130, 246, 0.16);
+  border: 5px solid rgba(59, 130, 246, 0.28);
   border-radius: 9999px;
-  animation: kct-spin 55s linear infinite;
+  animation: kct-sd1 20s ease-in-out infinite;
 }
 .kct-g5 {
   bottom: 16%;
   left: 12%;
   width: 12vmax;
   height: 12vmax;
-  border: 2px solid rgba(124, 107, 255, 0.14);
-  animation: kct-spin 70s linear infinite reverse;
+  border: 4px solid rgba(124, 107, 255, 0.26);
+  animation: kct-sd2 16s ease-in-out infinite;
 }
 @keyframes kct-d1 {
   0%,
@@ -168,7 +168,7 @@ textarea::placeholder {
     transform: translate3d(0, 0, 0) scale(1);
   }
   50% {
-    transform: translate3d(5vmax, 3vmax, 0) scale(1.06);
+    transform: translate3d(9vmax, 5vmax, 0) scale(1.08);
   }
 }
 @keyframes kct-d2 {
@@ -177,7 +177,7 @@ textarea::placeholder {
     transform: translate3d(0, 0, 0) scale(1);
   }
   50% {
-    transform: translate3d(-4vmax, -5vmax, 0) scale(1.08);
+    transform: translate3d(-8vmax, -6vmax, 0) scale(1.1);
   }
 }
 @keyframes kct-d3 {
@@ -186,12 +186,30 @@ textarea::placeholder {
     transform: translate3d(0, 0, 0);
   }
   50% {
-    transform: translate3d(-3vmax, 4vmax, 0);
+    transform: translate3d(-7vmax, 6vmax, 0);
   }
 }
-@keyframes kct-spin {
-  to {
-    transform: rotate(360deg);
+/* 스핀 + 드리프트 동시(한 transform에 rotate+translate를 함께) — 0→360° 회전하며 떠다님 */
+@keyframes kct-sd1 {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(8vmax, 5vmax, 0) rotate(180deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(360deg);
+  }
+}
+@keyframes kct-sd2 {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(-7vmax, 4vmax, 0) rotate(-180deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(-360deg);
   }
 }
 @media (prefers-reduced-motion: reduce) {
