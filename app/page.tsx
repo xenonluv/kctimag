@@ -20,11 +20,11 @@ export default function Home() {
             href={`/issues/${latest.meta.slug}`}
             className="group block overflow-hidden rounded-xl border border-neutral-200 bg-white"
           >
-            {latest.meta.coverImage?.url && (
+            {latest.meta.coverImageUrl && (
               // eslint-disable-next-line @next/next/no-img-element
               <img
-                src={latest.meta.coverImage.url}
-                alt={latest.meta.coverImage.alt}
+                src={latest.meta.coverImageUrl}
+                alt=""
                 className="aspect-[16/9] w-full object-cover"
               />
             )}

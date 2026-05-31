@@ -12,10 +12,8 @@ GitHub push → **Vercel 웹 발행** + **구독자 메일 발송(PDF 첨부)** 
 | 역할 | 파일 | 하는 일 | 엔진 |
 |------|------|---------|------|
 | 팀원1 수집 | `scripts/pipeline/01-collect.ts` | 네이버 검색 API로 문화 10개 카테고리 × 최근 7일 뉴스 | Naver API |
-| 팀원2 분석 | `02-analyze.ts` | 4대 강도(뉴스·심리·실시간)로 이슈 랭킹 | Claude CLI |
-| 팀원3 작문 | `03-write.ts` | 이슈별 섹션 매거진 본문(A4 4장+) | Claude CLI |
-| 팀원4 이미지 | `04-illustrate.ts` | 계층형 이미지(스톡/Wikimedia/AI/링크) | Claude + 무료 이미지 API |
-| 팀장 총평 | `05-editorial.ts` | 향후 영향·문제점·긍정 요소 칼럼 | Claude CLI |
+| 큐레이션 | `02-curate.ts` | 카테고리별 대표 뉴스 선별 + 편집장 픽(이번 주 최대 이슈 + 선정 이유) | Claude CLI |
+| 이미지 | `04-images.ts` | 각 기사 **og:image** 추출 + 출처(언론사) 표기, 실패 시 스톡 폴백 | og:image / Pexels |
 | (PDF) | `06-pdf.ts` | 인쇄 페이지 → PDF (Puppeteer) | Puppeteer |
 | CEO 검증 | `07-ceo-gate.ts` | 분량·이미지·빌드 등 QA 게이트 → 발행 허가 | 코드 검증 |
 | 발행·발송 | `08-publish-send.ts` | git push → Vercel, 구독자 메일(PDF 첨부) | git + Brevo |

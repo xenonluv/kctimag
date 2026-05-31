@@ -1,15 +1,12 @@
 // run.ts — 전체 파이프라인 오케스트레이터 (Mac Studio launchd가 주 1회 실행).
-// 기본은 드라이런(발행/발송 안 함). 실제 발행은 PUBLISH=1 환경변수로.
-//   사용: tsx scripts/pipeline/run.ts [slug]
+// 큐레이션 다이제스트 + 편집장 픽 생성 → 발행.
 //   드라이런: tsx scripts/pipeline/run.ts
 //   발행:    PUBLISH=1 tsx scripts/pipeline/run.ts
 import "@/lib/load-env";
 import { execFileSync } from "node:child_process";
 import { collect } from "./01-collect";
-import { analyze } from "./02-analyze";
-import { write } from "./03-write";
-import { illustrate } from "./04-illustrate";
-import { editorial } from "./05-editorial";
+import { curate } from "./02-curate";
+import { addImages } from "./04-images";
 import { generatePdf } from "./06-pdf";
 import { ceoGate, printGate } from "./07-ceo-gate";
 import { publishToGit, pollDeploy, sendToSubscribers } from "./08-publish-send";
@@ -26,10 +23,11 @@ const SKIP_BUILD = process.env.SKIP_BUILD === "1";
 
 async function main() {
   console.log(
-    `\n🗞️  KCT 파이프라인 — ${slug}호 ${PUBLISH ? "【발행 모드】" : "【드라이런】"}\n`,
+    `\n🗞️  KCT 파이프라인 — ${slug}호 ${PUBLISH ? "【발행】" : "【드라이런】"}\n`,
   );
 
-  console.log("① 팀원1 — 뉴스 수집 (누적 + 당일)");
+  // ① 수집 (누적 + 당일)
+  console.log("① 뉴스 수집 (누적 + 당일)");
   const fresh = await collect();
   let accumulated: NewsItem[] = [];
   try {
@@ -49,74 +47,66 @@ async function main() {
     items,
   };
   writeJson(`${tmpDir(slug)}/raw-news.json`, raw);
+  console.log(`   누적 ${accumulated.length} + 당일 ${fresh.items.length} → ${raw.totalCount}건\n`);
+
+  // ② 큐레이션
+  console.log("② 큐레이션 (카테고리별 선별 + 편집장 픽)");
+  const curated = await curate(raw);
   console.log(
-    `   누적 ${accumulated.length} + 당일 ${fresh.items.length} → 병합 ${raw.totalCount}건\n`,
+    `   ${curated.categories.length}개 카테고리 · 픽 "${curated.editorPick.headline}"\n`,
   );
 
-  console.log("② 팀원2 — 이슈 분석");
-  const analysis = await analyze(raw);
-  writeJson(`${tmpDir(slug)}/analysis.json`, analysis);
-  console.log(`   ${analysis.issues.length}개 이슈\n`);
-
-  console.log("③ 팀원3 — 매거진 작문");
-  const written = await write(analysis, raw);
-  writeJson(`${tmpDir(slug)}/written.json`, written);
-  const chars = written.sections.reduce((n, s) => n + s.bodyMarkdown.length, 0);
-  console.log(`   ${written.sections.length}섹션 · 약 ${chars}자\n`);
-
-  console.log("④ 팀원4 — 이미지");
-  const illustrated = await illustrate(written);
-  console.log(`   표지 + ${illustrated.sections.length}섹션 이미지\n`);
-
-  console.log("⑤ 팀장 — 총평");
-  const ed = await editorial(analysis);
-  console.log(`   "${ed.title}"\n`);
+  // ④ 이미지 (기사 og:image)
+  console.log("④ 이미지 (기사 og:image + 폴백)");
+  const withImages = await addImages(curated);
 
   // 조립
   const issue: Issue = {
     meta: {
       slug,
-      title: illustrated.title,
-      dek: illustrated.dek,
+      title: withImages.title,
+      dek: withImages.dek,
       date: slug,
       weekRange: {
         from: raw.weekRange.from.slice(0, 10),
         to: raw.weekRange.to.slice(0, 10),
       },
-      coverImage: illustrated.coverImage,
+      coverImageUrl: withImages.editorPick.image?.url,
       pdfUrl: predictedPdfUrl(slug) ?? undefined,
     },
-    sections: illustrated.sections,
-    editorial: ed,
+    editorPick: withImages.editorPick,
+    categories: withImages.categories,
     generatedAt: new Date().toISOString(),
   };
   writeJson(issueJsonPath(slug), issue);
   console.log(`   📄 content/issues/${slug}/issue.json\n`);
 
-  console.log("⑥ CEO — 검증 게이트");
+  // ⑦ CEO 게이트
+  console.log("⑦ CEO 검증");
   const gate = ceoGate(issue);
   printGate(gate);
   if (!gate.passed) {
-    console.error("\n발행 보류 — 위 항목을 충족하지 못했습니다.");
+    console.error("\n발행 보류.");
     process.exit(1);
   }
 
   if (!SKIP_BUILD) {
-    console.log("\n⑦ 빌드 검증 (next build)…");
+    console.log("\n빌드 검증 (next build)…");
     execFileSync("npx", ["next", "build"], { stdio: "inherit" });
   }
 
   if (!PUBLISH) {
-    console.log("\n✅ 드라이런 완료. 실제 발행: PUBLISH=1 tsx scripts/pipeline/run.ts " + slug);
+    console.log(`\n✅ 드라이런 완료. 발행: PUBLISH=1 tsx scripts/pipeline/run.ts ${slug}`);
     return;
   }
 
+  // ⑧ 발행
   console.log("\n⑧ 발행 — git push → Vercel");
   publishToGit(slug);
   const ok = await pollDeploy(slug);
   console.log(ok ? "   배포 확인됨" : "   ⚠️ 배포 확인 실패(계속)");
 
-  console.log("\n⑨ PDF 생성 (배포 사이트 렌더)");
+  console.log("\n⑨ PDF 생성");
   process.env.PDF_BASE_URL = getSiteUrl();
   const pdfPath = await generatePdf(slug);
   await uploadPdf(slug, pdfPath).catch((e) =>

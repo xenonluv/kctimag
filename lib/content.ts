@@ -31,7 +31,7 @@ export function listIssues(): IssueIndexEntry[] {
       title: issue.meta.title,
       dek: issue.meta.dek,
       date: issue.meta.date,
-      coverImageUrl: issue.meta.coverImage?.url ?? "",
+      coverImageUrl: issue.meta.coverImageUrl ?? "",
     });
   }
   entries.sort((a, b) => b.date.localeCompare(a.date));
