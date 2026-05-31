@@ -16,6 +16,7 @@ next-env.d.ts
 .env*.local
 NaverAPI.md
 Pixelapi.md
+Supabase.md
 
 # pipeline working/temp artifacts (only final content/issues is committed)
 /.pipeline-tmp/
