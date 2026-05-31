@@ -69,19 +69,42 @@ export async function resendIssue(formData: FormData) {
   if (recipients.length === 0) redirect("/admin?msg=norecipients");
 
   const link = `${site}/issues/${issue!.meta.slug}`;
-  const pdf = issue!.meta.pdfUrl;
+  const pdfUrl = issue!.meta.pdfUrl;
+
+  // 호스팅된 PDF를 받아 첨부 (Vercel 서버리스엔 로컬 파일이 없으므로 Supabase에서 fetch)
+  let pdf: { filename: string; content: Buffer } | undefined;
+  if (pdfUrl) {
+    try {
+      const res = await fetch(pdfUrl);
+      if (res.ok) {
+        pdf = {
+          filename: `KCT-${slug}.pdf`,
+          content: Buffer.from(await res.arrayBuffer()),
+        };
+      }
+    } catch {
+      /* 첨부 실패 시 링크만 */
+    }
+  }
+
   await sendIssueEmail({
     recipients,
     subject: `[KCT] ${issue!.meta.title}`,
     throttleMs: 300,
+    pdf,
     buildHtml: (r) => {
       const unsub = r.unsubscribeToken
         ? `${site}/api/unsubscribe?token=${r.unsubscribeToken}`
         : site;
+      const pdfLine = pdf
+        ? " · 📄 PDF가 첨부되어 있습니다"
+        : pdfUrl
+          ? ` · <a href="${pdfUrl}">PDF 다운로드</a>`
+          : "";
       return `<div style="font-family:sans-serif;max-width:600px;margin:0 auto;padding:24px">
         <h1 style="font-size:22px">${issue!.meta.title}</h1>
         <p style="color:#555">${issue!.meta.dek}</p>
-        <p><a href="${link}">웹에서 보기 →</a>${pdf ? ` · <a href="${pdf}">PDF 다운로드</a>` : ""}</p>
+        <p><a href="${link}">웹에서 보기 →</a>${pdfLine}</p>
         <hr style="border:none;border-top:1px solid #eee;margin:20px 0"/>
         <p style="font-size:12px;color:#999"><a href="${unsub}" style="color:#999">수신거부</a></p>
       </div>`;

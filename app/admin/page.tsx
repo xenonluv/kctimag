@@ -5,6 +5,7 @@ import { listIssues } from "@/lib/content";
 import { deleteSubscriber, resendIssue, logout } from "./actions";
 
 export const dynamic = "force-dynamic";
+export const maxDuration = 60; // PDF 첨부 fetch + 다건 발송 여유
 
 interface SubRow {
   id: string;
