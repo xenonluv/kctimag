@@ -17,6 +17,7 @@ next-env.d.ts
 NaverAPI.md
 Pixelapi.md
 Supabase.md
+Resend.md
 
 # pipeline working/temp artifacts (only final content/issues is committed)
 /.pipeline-tmp/
