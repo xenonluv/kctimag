@@ -21,7 +21,11 @@ export async function searchPexels(query: string): Promise<StockResult | null> {
       photos?: { src?: { large?: string; original?: string }; photographer?: string }[];
     };
     const p = data.photos?.[0];
-    const url = p?.src?.large ?? p?.src?.original;
+    const base = p?.src?.original;
+    // 카드용으로 900×600 압축본(원본은 수 MB라 로드 부하) — Pexels CDN 리사이즈 파라미터.
+    const url = base
+      ? `${base}?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600`
+      : p?.src?.large;
     if (!url) return null;
     return { url, attribution: `사진: ${p?.photographer ?? "Pexels"} / Pexels` };
   } catch {

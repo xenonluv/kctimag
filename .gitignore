@@ -20,11 +20,14 @@ Supabase.md
 Resend.md
 Brevo.md
 Google.md
+Grog.md
+Groq.md
 맥투두.md
 
 # pipeline working/temp artifacts (only final content/issues is committed)
 /.pipeline-tmp/
 /scripts/pipeline/.cache/
+/.design-samples/
 
 # generated PDFs (stored in Supabase Storage, not git)
 /public/issues/**/*.pdf

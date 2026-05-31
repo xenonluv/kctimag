@@ -7,6 +7,10 @@ export const CurateEntrySchema = z.object({
   index: z.number().int(),
   /** 1~2줄 설명 */
   blurb: z.string(),
+  /** AI 이미지 생성용 영어 프롬프트(개념·분위기 일러스트, 실존 인물 얼굴 금지) */
+  imagePrompt: z.string(),
+  /** 스톡/위키 사진 검색용 영어 키워드(구체 명사: 실주제·장소·작품, 예 "Gyeongbokgung palace") */
+  imageQuery: z.string().optional(),
 });
 
 export const CurateCategorySchema = z.object({
@@ -21,6 +25,8 @@ export const CurateSchema = z.object({
   editorPick: z.object({
     index: z.number().int(),
     why: z.string(),
+    imagePrompt: z.string(),
+    imageQuery: z.string().optional(),
     honorableIndexes: z.array(z.number().int()).optional(),
   }),
   /** 편집장 총평 — 이번 주 문화 흐름 전반 */

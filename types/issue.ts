@@ -20,8 +20,12 @@ export interface NewsEntry {
   pubDate?: string;
   /** 1~2줄 설명 */
   blurb?: string;
-  /** 기사 자체 이미지(og:image) */
+  /** 이미지 (레이어드: Wikimedia/Pexels/AI) */
   image?: EntryImage;
+  /** AI 이미지 생성용 프롬프트 (내부용, 렌더 안 함) */
+  imagePrompt?: string;
+  /** 스톡/위키 사진 검색용 키워드 (내부용, 렌더 안 함) */
+  imageQuery?: string;
 }
 
 /** 카테고리(부서)별 뉴스 목록 */
@@ -38,6 +42,8 @@ export interface EditorPick {
   /** 왜 이번 주 가장 큰 이슈로 채택했는지 */
   why: string;
   image?: EntryImage;
+  imagePrompt?: string;
+  imageQuery?: string;
   outlet?: string;
   /** 함께 주목할 기사(선택) */
   honorableMentions?: { headline: string; link: string }[];
@@ -56,8 +62,19 @@ export interface IssueMeta {
   weekRange: { from: string; to: string };
   /** 표지 이미지 URL(보통 편집장 픽 기사 이미지) */
   coverImageUrl?: string;
+  /** 매주 바뀌는 은은한 포스트모던 배경 이미지 URL */
+  backgroundImageUrl?: string;
   /** 발행 후 채워지는 Supabase Storage PDF URL */
   pdfUrl?: string;
+  /** 큐레이션 규모(자랑용): AI가 분석한 전체 풀 + 엄선 결과 */
+  curation?: {
+    /** 분석한 전체 기사 수 */
+    scanned: number;
+    /** 카드로 엄선된 항목 수 */
+    selected: number;
+    /** 수집 카테고리별 기사 수(많은 순) */
+    breakdown: { label: string; count: number }[];
+  };
 }
 
 /** 편집장 총평 — 이번 주 문화 흐름 전반을 짚는 글 */

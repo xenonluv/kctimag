@@ -12,9 +12,19 @@ export default {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
       },
       colors: {
-        ink: "#1a1a1a",
-        paper: "#fafaf7",
-        accent: "#c8102e", // 한국 전통 단청 적색 계열 포인트
+        ink: "#2a2530",
+        paper: "#fbf7f4",
+        accent: "#3b82f6", // stocknews-cyan 블루 포인트
+        "accent-soft": "#ffe9e1",
+        "accent-ink": "#d2491f",
+        violet: "#7c6bff",
+      },
+      borderRadius: {
+        "3xl": "1.5rem",
+      },
+      boxShadow: {
+        soft: "0 8px 24px rgba(42,37,48,.06)",
+        "soft-lg": "0 18px 40px rgba(42,37,48,.12)",
       },
       typography: {
         DEFAULT: {

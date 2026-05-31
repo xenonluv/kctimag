@@ -25,8 +25,27 @@ export async function uploadPdf(
     .from(BUCKET)
     .upload(`${slug}.pdf`, data, {
       contentType: "application/pdf",
+      cacheControl: "0",
       upsert: true,
     });
   if (error) throw new Error(`Supabase Storage 업로드 실패: ${error.message}`);
   return predictedPdfUrl(slug);
+}
+
+/** 보존 정책 — keepSlugs(유지할 호 slug)에 없는 PDF를 Storage에서 삭제. 삭제된 slug 배열 반환.
+ *  무료 한도 유지를 위해 주간 발행 시 호출(최근 N호만 보관). */
+export async function pruneOldPdfs(keepSlugs: string[]): Promise<string[]> {
+  const sb = getAdminSupabase();
+  if (!sb) return [];
+  const { data, error } = await sb.storage.from(BUCKET).list("", { limit: 1000 });
+  if (error) throw new Error(`Storage 목록 조회 실패: ${error.message}`);
+  if (!data) return [];
+  const keep = new Set(keepSlugs.map((s) => `${s}.pdf`));
+  const toDelete = data
+    .filter((f) => f.name.endsWith(".pdf") && !keep.has(f.name))
+    .map((f) => f.name);
+  if (!toDelete.length) return [];
+  const { error: delErr } = await sb.storage.from(BUCKET).remove(toDelete);
+  if (delErr) throw new Error(`Storage 정리 실패: ${delErr.message}`);
+  return toDelete.map((n) => n.replace(/\.pdf$/, ""));
 }

@@ -3,6 +3,7 @@
 import { notFound } from "next/navigation";
 import { allSlugs, readIssue } from "@/lib/content";
 import IssueView from "@/components/IssueView";
+import PrintTrigger from "@/components/PrintTrigger";
 
 export const dynamic = "force-static";
 
@@ -18,5 +19,10 @@ export default async function PrintPage({
   const { slug } = await params;
   const issue = readIssue(slug);
   if (!issue) notFound();
-  return <IssueView issue={issue} />;
+  return (
+    <>
+      <PrintTrigger />
+      <IssueView issue={issue} eager />
+    </>
+  );
 }

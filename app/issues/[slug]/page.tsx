@@ -43,16 +43,25 @@ export default async function IssuePage({
   return (
     <>
       <SiteHeader />
-      {issue.meta.pdfUrl && (
-        <div className="no-print mx-auto max-w-3xl px-5 pt-6">
+      <div className="no-print mx-auto flex max-w-3xl items-center gap-3 px-5 pt-6">
+        {issue.meta.pdfUrl ? (
           <a
-            href={issue.meta.pdfUrl}
-            className="inline-flex items-center gap-1 rounded-md border border-accent px-3 py-1.5 text-sm font-medium text-accent hover:bg-accent hover:text-white"
+            href={`${issue.meta.pdfUrl}?download=KCT-${slug}.pdf&v=${encodeURIComponent(issue.generatedAt)}`}
+            className="inline-flex items-center gap-1 rounded-full bg-accent px-4 py-1.5 text-sm font-medium text-white transition hover:opacity-90"
           >
             📄 PDF 다운로드
           </a>
-        </div>
-      )}
+        ) : (
+          <a
+            href={`/issues/${slug}/print?print=1`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 rounded-full border border-accent px-4 py-1.5 text-sm font-medium text-accent transition hover:bg-accent hover:text-white"
+          >
+            📄 PDF로 저장 · 인쇄
+          </a>
+        )}
+      </div>
       <IssueView issue={issue} />
       <div className="no-print mx-auto max-w-3xl px-5 pb-8">
         <Link href="/" className="text-sm text-accent underline">

@@ -6,20 +6,83 @@
   /* 네이버 나눔고딕으로 통일 (헤드라인은 굵게) */
   --font-serif: "Nanum Gothic", "Apple SD Gothic Neo", sans-serif;
   --font-sans: "Nanum Gothic", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-  --ink: #1a1a1a;
-  --paper: #f7f5f0;
-  --accent: #b8141e;
+  --ink: #2a2530;
+  --paper: #fbf7f4;
+  --accent: #3b82f6;
+  --violet: #7c6bff;
 }
 
 html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  background: var(--paper);
-  color: var(--ink);
+  background:
+    radial-gradient(1100px 640px at 50% -160px, #16203a 0%, transparent 60%),
+    linear-gradient(180deg, #0b0f18 0%, #0a0e16 100%);
+  background-attachment: fixed;
+  color: #e6e9f2;
   font-family: var(--font-sans);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+/* 다크 배경 위 텍스트(헤드라인·라벨) — 인쇄 시 검정 복원 */
+.on-navy {
+  color: #e6e9f2;
+}
+.on-navy-dim {
+  color: #9ca3af;
+}
+
+/* 다크 카드 (stocknews-cyan 색감) */
+.kct-card {
+  background-color: #141b2b;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e6e9f2;
+}
+.kct-card.kct-edge {
+  border-left: 4px solid var(--accent);
+}
+
+/* 총평 본문 — 나눔고딕, 다른 카드보다 굵게(작성된 글 느낌) */
+.kct-editorial {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: #e6e9f2;
+  font-size: 1.12rem;
+  line-height: 1.9;
+}
+.kct-editorial p {
+  margin: 0 0 1.1em;
+  font-weight: 700;
+}
+/* Markdown(.kct-prose)이 편집장 다크 카드 위에서도 밝게·굵게 보이도록 (인쇄는 .kct-card 규칙이 검정 복원) */
+.kct-editorial .kct-prose,
+.kct-editorial .kct-prose p,
+.kct-editorial .kct-prose li,
+.kct-editorial .kct-prose strong,
+.kct-editorial .kct-prose h2,
+.kct-editorial .kct-prose h3 {
+  color: #e6e9f2;
+  font-weight: 700;
+}
+.kct-editorial .kct-prose a {
+  color: var(--accent);
+}
+
+/* 카드 hover — 카드별 블루 후광 (stocknews-cyan 시그니처) */
+.kct-glow {
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.25s ease;
+}
+.kct-glow:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 0 0 1px rgba(59, 130, 246, 0.55),
+    0 0 28px 2px rgba(59, 130, 246, 0.38),
+    0 0 60px 4px rgba(59, 130, 246, 0.22);
 }
 
 /* 매거진 기사 본문(Markdown) — 세리프 */
@@ -108,8 +171,38 @@ body {
   body {
     background: #fff;
   }
+  /* 강제 페이지 분할 제거 → 카드가 자연스럽게 흐르며 빈 페이지 방지 */
   .page-break {
-    break-before: page;
+    break-before: auto;
+  }
+  /* 개별 카드·픽·총평은 페이지 경계에서 쪼개지지 않게 */
+  .kct-card,
+  .kct-glow {
+    break-inside: avoid;
+  }
+  /* 섹션 제목은 다음 카드와 함께 유지 */
+  article section > h2 {
+    break-after: avoid;
+  }
+  /* 인쇄 시 상하 패딩·섹션 간격·카드 간격 축소(밀도↑) */
+  article {
+    padding-top: 0 !important;
+    padding-bottom: 0.3rem !important;
+  }
+  article > header {
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+  }
+  article > section {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  article .grid {
+    gap: 0.7rem !important;
+  }
+  /* 인쇄 시 표지(픽) 이미지가 한 페이지를 잡아먹지 않도록 높이 제한 */
+  article > section:first-of-type img {
+    max-height: 7.5cm;
   }
   a {
     color: var(--ink);
@@ -120,5 +213,30 @@ body {
   }
   figure img {
     max-height: 9cm;
+  }
+}
+
+/* 다크 요소를 인쇄(PDF)에서 밝게 복원 */
+@media print {
+  .on-navy,
+  .on-navy-dim {
+    color: #1a1a1a !important;
+  }
+  .kct-card {
+    background: #fff !important;
+    border-color: #e5e5e5 !important;
+    color: #1f2937 !important;
+  }
+  .kct-card h2,
+  .kct-card h3,
+  .kct-card p {
+    color: #1f2937 !important;
+  }
+  .kct-editorial {
+    color: #232323 !important;
+  }
+  .kct-glow:hover {
+    transform: none;
+    box-shadow: none;
   }
 }

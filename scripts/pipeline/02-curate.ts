@@ -23,7 +23,8 @@ const CURATOR_SYS =
   "문화와 무관한 정치·사건사고는 단호히 버린다. 전국·글로벌 반향과 산업 영향이 큰 뉴스를 우선하며, " +
   "수집 쿼리가 아니라 기사 내용으로 카테고리를 판단한다.";
 
-const MAX_INPUT = 300;
+const PER_CAT = Number(process.env.CURATE_PER_CAT || 20); // 카테고리별 상위 N건 균형 샘플
+const MAX_INPUT = Number(process.env.CURATE_MAX_INPUT || 400); // 전체 입력 상한
 
 export interface CuratedDoc {
   title: string;
@@ -37,8 +38,12 @@ function labelOf(key: string): string {
   return CULTURE_CATEGORIES.find((c) => c.key === key)?.label ?? key;
 }
 
-function toEntry(raw: RawNews, index: number, blurb: string): NewsEntry | null {
-  const it = raw.items[index];
+function toEntry(
+  pool: RawNews["items"],
+  index: number,
+  blurb: string,
+): NewsEntry | null {
+  const it = pool[index];
   if (!it) return null;
   const link = it.originallink || it.link;
   return {
@@ -51,7 +56,17 @@ function toEntry(raw: RawNews, index: number, blurb: string): NewsEntry | null {
 }
 
 export async function curate(raw: RawNews): Promise<CuratedDoc> {
-  const items = raw.items.slice(0, MAX_INPUT);
+  // 카테고리별 균형 샘플 — raw.items 는 카테고리 순으로 쌓여 있어 slice(0,N)은 첫 카테고리에 편중된다.
+  const byCat = new Map<string, RawNews["items"]>();
+  for (const it of raw.items) {
+    const arr = byCat.get(it.categoryLabel) ?? [];
+    arr.push(it);
+    byCat.set(it.categoryLabel, arr);
+  }
+  let items: RawNews["items"] = [];
+  for (const arr of byCat.values()) items.push(...arr.slice(0, PER_CAT));
+  items = items.slice(0, MAX_INPUT);
+
   const list = items
     .map(
       (it, i) =>
@@ -64,10 +79,10 @@ export async function curate(raw: RawNews): Promise<CuratedDoc> {
     title: "이번 주 한국 문화",
     dek: "한 주간의 문화 뉴스 다이제스트",
     categories: [
-      { key: "kpop", entries: [{ index: 0, blurb: "(mock) 설명" }] },
-      { key: "screen", entries: [{ index: 1, blurb: "(mock) 설명" }] },
+      { key: "kpop", entries: [{ index: 0, blurb: "(mock) 설명", imagePrompt: "kpop concert stage", imageQuery: "kpop concert stage" }] },
+      { key: "screen", entries: [{ index: 1, blurb: "(mock) 설명", imagePrompt: "film production set", imageQuery: "film set" }] },
     ],
-    editorPick: { index: 0, why: "(mock) 이번 주 가장 큰 이슈로 선정." },
+    editorPick: { index: 0, why: "(mock) 이번 주 가장 큰 이슈로 선정.", imagePrompt: "korean culture concept", imageQuery: "korean culture" },
     editorial: { title: "이번 주 흐름", body: "(mock) 이번 주 문화 트렌드 총평." },
   };
 
@@ -84,11 +99,13 @@ export async function curate(raw: RawNews): Promise<CuratedDoc> {
       `할 일:\n` +
       `1. 카테고리별 대표 뉴스 2~5건 선별(같은 사건 중복은 가장 대표적 1건만).\n` +
       `2. 각 항목 blurb = **2~3문장**(무슨 일 + 맥락 + 왜 중요한지). 짧게 쓰지 말 것.\n` +
-      `3. editorPick = 전체에서 이번 주 "가장 큰 이슈" 1건 + why(3~5문장).\n` +
-      `4. title(호 제목) + dek(부제).\n` +
-      `5. editorial = 이번 주 문화 흐름 전반 총평(title + body 500~800자, 나열 말고 통찰).\n\n` +
+      `3. 각 항목 imagePrompt = 그 기사를 상징하는 **영어 이미지 생성 프롬프트**(개념·분위기 일러스트. ⚠️실존 인물 얼굴·로고·텍스트 금지. 예: "kpop idol group silhouette on a glowing stage, fans cheering").\n` +
+      `3-1. 각 항목 imageQuery = 스톡/위키 **사진 검색용 구체 영어 키워드**(실제 주제·장소·작품·사물의 명사 위주. 예: "Gyeongbokgung palace night", "esports arena crowd", "Korean street food market"). 추상 표현 말고 검색에 바로 쓸 구체 명사로.\n` +
+      `4. editorPick = 전체에서 이번 주 "가장 큰 이슈" 1건 + why(3~5문장) + imagePrompt + imageQuery.\n` +
+      `5. title(호 제목) + dek(부제).\n` +
+      `6. editorial = 이번 주 문화 흐름 전반 총평. title + body. ⚠️body는 반드시 **600자 이상 900자 이하**(한국어, 공백 포함), **3개 문단 이상**으로 충분히 길게. 단순 나열이 아니라 한 주를 관통하는 흐름·맥락·전망을 담은 통찰적인 에세이로. 너무 짧으면 다시 써라.\n\n` +
       `index는 0~${items.length - 1} 정수만 사용.\n` +
-      `형식: {"title","dek","categories":[{"key","entries":[{"index","blurb"}]}],"editorPick":{"index","why","honorableIndexes":[]},"editorial":{"title","body"}}`,
+      `형식: {"title","dek","categories":[{"key","entries":[{"index","blurb","imagePrompt","imageQuery"}]}],"editorPick":{"index","why","imagePrompt","imageQuery","honorableIndexes":[]},"editorial":{"title","body"}}`,
     CurateSchema,
     { system: CURATOR_SYS },
     mock,
@@ -100,8 +117,10 @@ export async function curate(raw: RawNews): Promise<CuratedDoc> {
     const entries: NewsEntry[] = [];
     const seen = new Set<string>();
     for (const e of cat.entries) {
-      const entry = toEntry(raw, e.index, e.blurb);
+      const entry = toEntry(items, e.index, e.blurb);
       if (!entry || seen.has(entry.link)) continue;
+      entry.imagePrompt = e.imagePrompt;
+      entry.imageQuery = e.imageQuery;
       seen.add(entry.link);
       entries.push(entry);
     }
@@ -115,6 +134,8 @@ export async function curate(raw: RawNews): Promise<CuratedDoc> {
     link: pickLink,
     outlet: outletFromUrl(pickLink),
     why: result.editorPick.why,
+    imagePrompt: result.editorPick.imagePrompt,
+    imageQuery: result.editorPick.imageQuery,
     honorableMentions: (result.editorPick.honorableIndexes ?? [])
       .map((i) => items[i])
       .filter(Boolean)

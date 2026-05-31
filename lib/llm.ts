@@ -11,11 +11,19 @@
 // LLM_MODE=mock 이면 각 호출에 주입된 fixture를 반환(파이프라인 배관 테스트/드라이런용).
 
 import { spawn } from "node:child_process";
+import os from "node:os";
+import path from "node:path";
+import { readFileSync, rmSync } from "node:fs";
 import type { z } from "zod";
 
 const CLAUDE_BIN = process.env.CLAUDE_BIN || "claude";
 const CLAUDE_MODEL = process.env.CLAUDE_MODEL || ""; // 비우면 사용자 기본 모델
 const LLM_MODE = process.env.LLM_MODE || "claude"; // "claude" | "mock"
+const LLM_PROVIDER = (process.env.LLM_PROVIDER || "claude").toLowerCase(); // "claude" | "codex" | "gemini" | "groq"
+const GEMINI_TEXT_MODEL = process.env.GEMINI_TEXT_MODEL || "gemini-2.0-flash"; // thinking 없음 → JSON 안정
+const GROQ_MODEL = process.env.GROQ_MODEL || "llama-3.3-70b-versatile";
+const CODEX_BIN = process.env.CODEX_BIN || "codex";
+const CODEX_MODEL = process.env.CODEX_MODEL || ""; // 비우면 사용자 기본 모델(구독)
 const EXTRA_ARGS = (process.env.CLAUDE_EXTRA_ARGS || "")
   .split(" ")
   .map((s) => s.trim())
@@ -28,6 +36,8 @@ export interface LlmOptions {
   model?: string;
   /** 타임아웃 ms (기본 240초) */
   timeoutMs?: number;
+  /** JSON 응답 모드 (Gemini responseMimeType=application/json) */
+  json?: boolean;
 }
 
 interface ClaudeEnvelope {
@@ -87,6 +97,144 @@ function invokeClaude(prompt: string, opts: LlmOptions = {}): Promise<string> {
   });
 }
 
+/** 저수준: Gemini generateContent → 텍스트 반환 (HTTP API, claude -p 막힌 환경/대안용) */
+async function invokeGemini(prompt: string, opts: LlmOptions = {}): Promise<string> {
+  const key = process.env.GOOGLE_GENAI_API_KEY;
+  if (!key) throw new Error("GOOGLE_GENAI_API_KEY 미설정 (Gemini 백엔드)");
+  const model = opts.model || GEMINI_TEXT_MODEL;
+  const genConfig: Record<string, unknown> = {
+    temperature: 0.6,
+    maxOutputTokens: 8192,
+  };
+  if (opts.json) genConfig.responseMimeType = "application/json";
+  const body: Record<string, unknown> = {
+    contents: [{ parts: [{ text: prompt }] }],
+    generationConfig: genConfig,
+  };
+  if (opts.system) body.systemInstruction = { parts: [{ text: opts.system }] };
+
+  const res = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
+    {
+      method: "POST",
+      headers: { "X-goog-api-key": key, "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    },
+  );
+  if (!res.ok) {
+    throw new Error(`Gemini ${res.status}: ${(await res.text()).slice(0, 200)}`);
+  }
+  const data = (await res.json()) as {
+    candidates?: { content?: { parts?: { text?: string }[] } }[];
+  };
+  const text =
+    data.candidates?.[0]?.content?.parts
+      ?.map((p) => p.text)
+      .filter(Boolean)
+      .join("") ?? "";
+  if (!text) throw new Error("Gemini 빈 응답");
+  return text;
+}
+
+/** 저수준: Groq(OpenAI 호환) → 텍스트 반환 (무료 백엔드) */
+async function invokeGroq(prompt: string, opts: LlmOptions = {}): Promise<string> {
+  const key = process.env.GROQ_API_KEY;
+  if (!key) throw new Error("GROQ_API_KEY 미설정 (Groq 백엔드)");
+  const model = opts.model || GROQ_MODEL;
+  const messages: { role: string; content: string }[] = [];
+  if (opts.system) messages.push({ role: "system", content: opts.system });
+  messages.push({ role: "user", content: prompt });
+  const body: Record<string, unknown> = {
+    model,
+    messages,
+    temperature: 0.6,
+    max_tokens: 8000,
+  };
+  if (opts.json) body.response_format = { type: "json_object" };
+
+  const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+    method: "POST",
+    headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+  if (!res.ok) {
+    throw new Error(`Groq ${res.status}: ${(await res.text()).slice(0, 200)}`);
+  }
+  const data = (await res.json()) as {
+    choices?: { message?: { content?: string } }[];
+  };
+  const text = data.choices?.[0]?.message?.content ?? "";
+  if (!text) throw new Error("Groq 빈 응답");
+  return text;
+}
+
+/** 저수준: codex exec 헤드리스 호출 → 최종 답 텍스트 반환 (OpenAI/ChatGPT 구독 인증, 추가비용 0)
+ *  claude -p 가 401로 막힌 환경에서도 codex 는 독립 인증(~/.codex/auth.json)이라 동작한다.
+ *  최종 답은 -o 파일로 받아 stdout 의 에이전트 진행 로그와 분리한다. */
+async function invokeCodex(prompt: string, opts: LlmOptions = {}): Promise<string> {
+  const outFile = path.join(os.tmpdir(), `codex-out-${process.pid}-${Date.now()}.txt`);
+  const args = [
+    "exec",
+    "--skip-git-repo-check",
+    "--ephemeral",
+    "-s",
+    "read-only",
+    "-o",
+    outFile,
+  ];
+  const model = opts.model || CODEX_MODEL;
+  if (model) args.push("-m", model);
+  args.push("-"); // 프롬프트는 stdin (긴 큐레이션 프롬프트의 인자 길이 제한 회피)
+
+  const fullPrompt = opts.system ? `${opts.system}\n\n${prompt}` : prompt;
+  const timeoutMs = opts.timeoutMs ?? 240_000;
+
+  return new Promise<string>((resolve, reject) => {
+    const child = spawn(CODEX_BIN, args, { stdio: ["pipe", "pipe", "pipe"] });
+    let stderr = "";
+    const timer = setTimeout(() => {
+      child.kill("SIGKILL");
+      reject(new Error(`codex 타임아웃 (${timeoutMs}ms)`));
+    }, timeoutMs);
+    child.stdout.on("data", () => {}); // 에이전트 진행 로그는 버림(최종 답은 -o 파일)
+    child.stderr.on("data", (d) => (stderr += d.toString()));
+    child.on("error", (err) => {
+      clearTimeout(timer);
+      reject(new Error(`codex 실행 실패: ${err.message} (CODEX_BIN=${CODEX_BIN})`));
+    });
+    child.on("close", (code) => {
+      clearTimeout(timer);
+      let text = "";
+      try {
+        text = readFileSync(outFile, "utf8").trim();
+      } catch {
+        /* 파일 없음 → 빈 출력으로 처리 */
+      }
+      try {
+        rmSync(outFile, { force: true });
+      } catch {
+        /* 정리 실패 무시 */
+      }
+      if (!text) {
+        return reject(
+          new Error(`codex 빈 출력 (code ${code}). stderr: ${stderr.slice(0, 300)}`),
+        );
+      }
+      resolve(text);
+    });
+
+    child.stdin.write(fullPrompt);
+    child.stdin.end();
+  });
+}
+
+function invokeLLM(prompt: string, opts: LlmOptions): Promise<string> {
+  if (LLM_PROVIDER === "codex") return invokeCodex(prompt, opts);
+  if (LLM_PROVIDER === "gemini") return invokeGemini(prompt, opts);
+  if (LLM_PROVIDER === "groq") return invokeGroq(prompt, opts);
+  return invokeClaude(prompt, opts);
+}
+
 /** LLM 텍스트 생성 */
 export async function llmText(
   prompt: string,
@@ -97,7 +245,7 @@ export async function llmText(
     if (mock !== undefined) return mock;
     throw new Error("LLM_MODE=mock 이지만 mock fixture가 없습니다.");
   }
-  return invokeClaude(prompt, opts);
+  return invokeLLM(prompt, opts);
 }
 
 /** LLM JSON 생성 + zod 검증 */
@@ -114,7 +262,7 @@ export async function llmJson<T>(
   const jsonPrompt =
     prompt +
     "\n\n[출력 형식] 반드시 유효한 JSON만 출력하라. 마크다운 코드펜스(```)나 설명 문구 없이 JSON 하나만 출력한다.";
-  const raw = await invokeClaude(jsonPrompt, opts);
+  const raw = await invokeLLM(jsonPrompt, { ...opts, json: true });
   const parsed = extractJson(raw);
   return schema.parse(parsed);
 }

@@ -8,7 +8,8 @@
       "from": "2026-05-24",
       "to": "2026-05-31"
     },
-    "coverImageUrl": "https://static.hankyung.com/img/logo/logo-news-sns.png?v=20201130"
+    "coverImageUrl": "https://static.hankyung.com/img/logo/logo-news-sns.png?v=20201130",
+    "pdfUrl": "https://ioennlixndicjddzprms.supabase.co/storage/v1/object/public/issues/2026-05-25.pdf"
   },
   "editorPick": {
     "headline": "네이버 '국방 AI' 사업 진출한다",

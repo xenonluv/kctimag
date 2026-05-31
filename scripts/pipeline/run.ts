@@ -10,8 +10,10 @@ import { addImages } from "./04-images";
 import { generatePdf } from "./06-pdf";
 import { ceoGate, printGate } from "./07-ceo-gate";
 import { publishToGit, pollDeploy, sendToSubscribers } from "./08-publish-send";
-import { writeJson, issueJsonPath, tmpDir } from "@/lib/paths";
-import { predictedPdfUrl, uploadPdf } from "@/lib/storage";
+import { readJson, writeJson, issueJsonPath, tmpDir } from "@/lib/paths";
+import { predictedPdfUrl, uploadPdf, pruneOldPdfs } from "@/lib/storage";
+import { allSlugs } from "@/lib/content";
+import { weeklyBackgroundUrl } from "@/lib/images/pollinations";
 import { getRecentNews } from "@/lib/news-store";
 import { getSiteUrl } from "@/lib/env";
 import type { Issue } from "@/types/issue";
@@ -56,9 +58,21 @@ async function main() {
     `   ${curated.categories.length}개 카테고리 · 픽 "${curated.editorPick.headline}"\n`,
   );
 
-  // ④ 이미지 (기사 og:image)
-  console.log("④ 이미지 (기사 og:image + 폴백)");
+  // ④ 이미지 (무료·합법 레이어드: Wikimedia → Pexels → AI)
+  console.log("④ 이미지 (Wikimedia → Pexels → AI 레이어드)");
   const withImages = await addImages(curated);
+
+  // 큐레이션 규모 통계(자랑용): 수집 풀 카테고리별 분포 + 엄선 수
+  const cdMap = new Map<string, number>();
+  for (const it of raw.items)
+    cdMap.set(it.categoryLabel, (cdMap.get(it.categoryLabel) ?? 0) + 1);
+  const breakdown = [...cdMap.entries()]
+    .map(([label, count]) => ({ label, count }))
+    .sort((a, b) => b.count - a.count);
+  const selected = withImages.categories.reduce(
+    (s, c) => s + c.entries.length,
+    0,
+  );
 
   // 조립
   const issue: Issue = {
@@ -72,7 +86,9 @@ async function main() {
         to: raw.weekRange.to.slice(0, 10),
       },
       coverImageUrl: withImages.editorPick.image?.url,
+      backgroundImageUrl: weeklyBackgroundUrl(slug),
       pdfUrl: predictedPdfUrl(slug) ?? undefined,
+      curation: { scanned: raw.totalCount, selected, breakdown },
     },
     editorPick: withImages.editorPick,
     editorial: withImages.editorial,
@@ -99,6 +115,32 @@ async function main() {
   if (!PUBLISH) {
     console.log(`\n✅ 드라이런 완료. 발행: PUBLISH=1 tsx scripts/pipeline/run.ts ${slug}`);
     return;
+  }
+
+  // 보존 정책 — 최근 N호 PDF만 Storage 유지(무료 한도). 오래된 PDF 삭제 + 해당 issue.json pdfUrl 비움.
+  const KEEP_PDF_WEEKS = Number(process.env.KEEP_PDF_WEEKS || 8);
+  try {
+    const keep = [...new Set([slug, ...allSlugs()])]
+      .sort((a, b) => b.localeCompare(a))
+      .slice(0, KEEP_PDF_WEEKS);
+    const pruned = await pruneOldPdfs(keep);
+    for (const s of pruned) {
+      try {
+        const it = readJson<Issue>(issueJsonPath(s));
+        if (it.meta.pdfUrl) {
+          delete it.meta.pdfUrl;
+          writeJson(issueJsonPath(s), it);
+        }
+      } catch {
+        /* 해당 호 파일 없음 무시 */
+      }
+    }
+    if (pruned.length)
+      console.log(
+        `   🧹 PDF 보존정리: ${pruned.length}개 삭제(최근 ${KEEP_PDF_WEEKS}호만 유지)`,
+      );
+  } catch (e) {
+    console.warn("   PDF 보존정리 건너뜀:", (e as Error).message);
   }
 
   // ⑧ 발행

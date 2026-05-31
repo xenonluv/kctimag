@@ -48,7 +48,7 @@ export async function generatePdf(slug: string): Promise<string> {
       path: outPath,
       format: "A4",
       printBackground: true,
-      margin: { top: "18mm", bottom: "18mm", left: "15mm", right: "15mm" },
+      margin: { top: "8mm", bottom: "8mm", left: "10mm", right: "10mm" },
     });
     return outPath;
   } finally {

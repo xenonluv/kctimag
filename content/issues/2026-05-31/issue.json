@@ -1,0 +1,546 @@
+{
+  "meta": {
+    "slug": "2026-05-31",
+    "title": "세계로 번지는 K-컬처의 다음 전장",
+    "dek": "BTS와 K-뷰티의 글로벌 확장, 한국 영화·푸드·웹툰의 산업적 재편이 한 주의 핵심 흐름이었다.",
+    "date": "2026-05-31",
+    "weekRange": {
+      "from": "2026-05-24",
+      "to": "2026-05-31"
+    },
+    "coverImageUrl": "https://images.pexels.com/photos/19150288/pexels-photo-19150288.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+    "backgroundImageUrl": "https://image.pollinations.ai/prompt/abstract%20postmodern%20background%20pattern%2C%20bauhaus%20geometric%20composition%2C%20circles%20squares%20triangles%2C%20deep%20navy%20blue%20and%20indigo%2C%20dark%20moody%20background%2C%20glowing%20cyan%20and%20violet%20accent%20lines%2C%20fine%20grain%20texture%2C%20luminous%20high-contrast%20pattern%20on%20very%20dark%20navy%2C%20no%20text%2C%20no%20faces%2C%20no%20logo?width=1280&height=832&nologo=true&seed=84987&model=flux",
+    "pdfUrl": "https://ioennlixndicjddzprms.supabase.co/storage/v1/object/public/issues/2026-05-31.pdf",
+    "curation": {
+      "scanned": 3092,
+      "selected": 30,
+      "breakdown": [
+        {
+          "label": "전통문화",
+          "count": 369
+        },
+        {
+          "label": "K-푸드·맛집",
+          "count": 335
+        },
+        {
+          "label": "K-pop·음악",
+          "count": 335
+        },
+        {
+          "label": "라이프·트렌드",
+          "count": 318
+        },
+        {
+          "label": "K-드라마·영화",
+          "count": 313
+        },
+        {
+          "label": "K-테크·로봇",
+          "count": 312
+        },
+        {
+          "label": "K-게임·e스포츠",
+          "count": 307
+        },
+        {
+          "label": "공연·전시·예술",
+          "count": 304
+        },
+        {
+          "label": "K-뷰티",
+          "count": 272
+        },
+        {
+          "label": "웹툰·웹소설",
+          "count": 227
+        }
+      ]
+    }
+  },
+  "editorPick": {
+    "headline": "BTS 북미투어 5개 도시 관객 84만 동원",
+    "link": "https://www.segye.com/newsView/20260531507335?OutUrl=naver",
+    "outlet": "segye.com",
+    "why": "이번 주 가장 큰 이슈는 BTS 북미 투어 84만 관객 동원이다. K팝 시장이 세대교체와 장르 다변화를 겪는 와중에도 BTS는 여전히 글로벌 공연 산업의 최상단에서 작동하는 브랜드임을 증명했다. 특히 데뷔 13주년, 국내 콘서트, 이후 유럽 일정으로 이어지는 흐름은 단발성 흥행이 아니라 팬덤과 도시 경제, 라이브 뷰잉까지 연결되는 거대한 문화 인프라다. 이번 성과는 K팝의 현재 규모와 다음 투어 경제의 기준을 동시에 보여준다.",
+    "imagePrompt": "massive global kpop stadium concert, seven anonymous performer silhouettes, ocean of glowing light sticks, emotional cinematic night, no logos, no text",
+    "imageQuery": "BTS stadium concert crowd light sticks",
+    "honorableMentions": [
+      {
+        "headline": "나홍진 ‘호프’ 200개 국가·권역에 선판매",
+        "link": "https://www.segye.com/newsView/20260531507342?OutUrl=naver"
+      },
+      {
+        "headline": "\"새벽부터 줄 섰다\"…美 올영 1호점 개장 첫날부터 북새통",
+        "link": "https://www.hankyung.com/article/2026053191361"
+      },
+      {
+        "headline": "“꽈배기 다른 곳에선 못 먹으니까”...K베이커리, 美매장 500개 달성",
+        "link": "https://www.mk.co.kr/article/12062405"
+      },
+      {
+        "headline": "피겨 선수 차준환, ‘나 혼자만 레벨업 on ICE’ 출연 확정",
+        "link": "http://www.withinnews.co.kr/news/view.html?section=134&category=136&item=&no=39420"
+      },
+      {
+        "headline": "K팝? 이제는 K-인디의 시간, 전 세계 사로잡은 록밴드 〈더 로즈〉",
+        "link": "https://imnews.imbc.com/replay/2026/nwdesk/article/6826563_37004.html"
+      }
+    ],
+    "image": {
+      "url": "https://images.pexels.com/photos/19150288/pexels-photo-19150288.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+      "source": "사진: Marvin Machler / Pexels"
+    }
+  },
+  "editorial": {
+    "title": "확장의 시대, 시험대에 오른 K-컬처",
+    "bodyMarkdown": "이번 주 K-컬처의 핵심 단어는 ‘확장’이었다. BTS의 북미 투어 성과는 K팝이 여전히 세계 공연 시장의 중심부에서 작동한다는 사실을 확인시켰고, 더 로즈로 대표되는 K-인디의 부상은 한국 음악 수출의 문법이 아이돌에만 갇혀 있지 않다는 신호를 보냈다. 팬덤은 더 세분화되고, 장르는 더 넓어지고 있다.\n\n산업 쪽에서는 K-뷰티와 K-푸드의 움직임이 두드러졌다. 올리브영의 미국 오프라인 진출, K-베이커리의 미국 매장 500개, K-푸드 수출 90억 달러 돌파는 한국식 생활양식이 이벤트성 유행을 넘어 현지 소비의 루틴으로 들어가고 있음을 보여준다. 다만 다음 과제도 선명하다. 북미와 동아시아 의존을 넘어 신흥시장에 맞는 제품, 가격, 유통 언어를 다시 설계해야 한다.\n\n콘텐츠 산업은 IP의 이동성이 관건이었다. 나홍진의 ‘호프’ 선판매는 한국영화가 여전히 감독 브랜드로 세계 시장을 설득할 수 있음을 보였고, ‘나 혼자만 레벨업 on ICE’는 웹툰 IP가 게임과 애니메이션을 넘어 공연형 체험으로 확장되는 장면이다. 이제 중요한 것은 단순히 많이 파는 일이 아니라, 각 장르가 다른 장르로 넘어갈 때 원래의 힘을 잃지 않게 만드는 기획력이다.\n\n전통문화 역시 같은 흐름 안에 있다. 안동은 정상외교의 무대를 지역 관광 브랜드로 전환하려 하고, 판소리와 조선왕조실록 관련 행사는 유산을 박제하지 않고 참여와 연구의 대상으로 되살린다. 이번 주의 좋은 뉴스들은 공통적으로 말한다. K-컬처의 다음 경쟁력은 ‘한국적인 것’을 얼마나 크게 외치느냐가 아니라, 그것을 세계의 일상과 산업 구조 안에 얼마나 정교하게 심느냐에 달려 있다."
+  },
+  "categories": [
+    {
+      "key": "kpop",
+      "label": "K-pop·음악",
+      "entries": [
+        {
+          "headline": "BTS 북미투어 5개 도시 관객 84만 동원",
+          "link": "https://www.segye.com/newsView/20260531507335?OutUrl=naver",
+          "outlet": "segye.com",
+          "pubDate": "2026-05-31T13:36:00.000Z",
+          "blurb": "BTS가 북미 투어 5개 도시에서 84만 관객을 동원했다는 소식은 여전히 K팝의 글로벌 동원력이 최상위권에 있음을 보여준다. 단순 공연 성과를 넘어, 데뷔 13주년과 국내 콘서트로 이어지는 흐름까지 맞물리며 팬덤 경제와 투어 산업의 기준점을 다시 확인시킨 뉴스다.",
+          "imagePrompt": "silhouettes of a global kpop group performing in a vast stadium, ocean of light sticks, cinematic concert atmosphere, no logos, no text",
+          "imageQuery": "K-pop stadium concert crowd light sticks",
+          "image": {
+            "url": "https://images.pexels.com/photos/2263410/pexels-photo-2263410.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: Teddy Yang / Pexels"
+          }
+        },
+        {
+          "headline": "K팝? 이제는 K-인디의 시간, 전 세계 사로잡은 록밴드 〈더 로즈〉",
+          "link": "https://imnews.imbc.com/replay/2026/nwdesk/article/6826563_37004.html",
+          "outlet": "imnews.imbc.com",
+          "pubDate": "2026-05-31T11:22:00.000Z",
+          "blurb": "록밴드 더 로즈를 중심으로 K-인디가 해외 청취자를 넓히고 있다는 분석은 K팝 이후의 장르 확장을 보여준다. 스포티파이 재생 수 증가와 영어권 팬덤 형성은 한국 음악 수출이 아이돌 중심 모델을 넘어 밴드와 인디 신까지 다층화되고 있음을 뜻한다.",
+          "imagePrompt": "Korean indie rock band silhouettes on an intimate global festival stage, warm lights, diverse audience, no faces, no logos, no text",
+          "imageQuery": "Korean indie rock band concert festival",
+          "image": {
+            "url": "https://images.pexels.com/photos/3229451/pexels-photo-3229451.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: Inga Seliverstova / Pexels"
+          }
+        },
+        {
+          "headline": "언젠가 또다시 함께 ‘픽 미’…아이오아이 10주년, 잠실 가득 채운 환...",
+          "link": "https://www.khan.co.kr/article/202605312038005",
+          "outlet": "khan.co.kr",
+          "pubDate": "2026-05-31T11:38:00.000Z",
+          "blurb": "아이오아이가 10주년 콘서트로 잠실을 채운 것은 3세대 걸그룹 팬덤의 기억이 여전히 강한 시장성을 가진다는 신호다. 프로젝트 그룹의 재결합은 향수 소비를 넘어 K팝 IP가 장기적으로 재가동될 수 있음을 보여주는 사례다.",
+          "imagePrompt": "reunion concert of a girl group represented by bright silhouettes on a large indoor arena stage, nostalgic pink and white lights, no logos, no text",
+          "imageQuery": "K-pop girl group reunion concert arena",
+          "image": {
+            "url": "https://images.pexels.com/photos/1494665/pexels-photo-1494665.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: Wendy Wei / Pexels"
+          }
+        }
+      ]
+    },
+    {
+      "key": "screen",
+      "label": "K-드라마·영화",
+      "entries": [
+        {
+          "headline": "나홍진 ‘호프’ 200개 국가·권역에 선판매",
+          "link": "https://www.segye.com/newsView/20260531507342?OutUrl=naver",
+          "outlet": "segye.com",
+          "pubDate": "2026-05-31T13:36:00.000Z",
+          "blurb": "나홍진 감독의 신작 ‘호프’가 칸 영화제 화제성을 바탕으로 200개 국가·권역에 선판매됐다. 한국영화가 극장 침체 속에서도 감독 브랜드와 장르 경쟁력으로 해외 투자 회수 구조를 만들 수 있음을 보여주는 산업적 사건이다.",
+          "imagePrompt": "mysterious Korean thriller film set atmosphere, foggy coastal village, cinematic suspense lighting, no people faces, no logos, no text",
+          "imageQuery": "Korean thriller film Cannes market",
+          "image": {
+            "url": "https://images.pexels.com/photos/36261994/pexels-photo-36261994.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: HOWARD  HERDI / Pexels"
+          }
+        },
+        {
+          "headline": "'대작' 대신 '실속'…한국 영화가 달라졌다",
+          "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008588100&plink=ORI&cooper=NAVER",
+          "outlet": "news.sbs.co.kr",
+          "pubDate": "2026-05-31T11:53:00.000Z",
+          "blurb": "한국 영화가 대작 중심 전략에서 실속형 작품의 흥행으로 방향을 틀고 있다는 진단이 나왔다. 제작비 부담과 극장 관객 회복 지연 속에서 중간 규모 영화의 생존법이 산업의 핵심 의제로 떠올랐다는 점에서 중요하다.",
+          "imagePrompt": "modern Korean cinema interior with empty and filled seats balanced, film reels and modest production set elements, thoughtful industry mood, no logos, no text",
+          "imageQuery": "Korean cinema audience movie theater",
+          "image": {
+            "url": "https://images.pexels.com/photos/8263369/pexels-photo-8263369.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: cottonbro studio / Pexels"
+          }
+        },
+        {
+          "headline": "[콘텐츠 큐레이션] 때 이른 무더위 날린다…등골 오싹 웹툰·OTT 4선",
+          "link": "https://www.bloter.net/news/articleView.html?idxno=663977",
+          "outlet": "bloter.net",
+          "pubDate": "2026-05-31T10:07:00.000Z",
+          "blurb": "웹툰과 OTT 기반의 공포 콘텐츠가 여름 시즌 큐레이션으로 주목받았다. 장르 IP가 극장, 스트리밍, 웹툰을 오가며 소비되는 방식은 한국 스크린 콘텐츠의 확장 경로를 보여준다.",
+          "imagePrompt": "dark Korean horror streaming scene, misty reservoir, smartphone and cinema screen glow, eerie atmosphere, no faces, no logos, no text",
+          "imageQuery": "Korean horror movie streaming webtoon adaptation",
+          "image": {
+            "url": "https://images.pexels.com/photos/5435431/pexels-photo-5435431.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: cottonbro studio / Pexels"
+          }
+        }
+      ]
+    },
+    {
+      "key": "webtoon",
+      "label": "웹툰·웹소설",
+      "entries": [
+        {
+          "headline": "피겨 선수 차준환, ‘나 혼자만 레벨업 on ICE’ 출연 확정",
+          "link": "http://www.withinnews.co.kr/news/view.html?section=134&category=136&item=&no=39420",
+          "outlet": "withinnews.co.kr",
+          "pubDate": "2026-05-31T10:24:00.000Z",
+          "blurb": "‘나 혼자만 레벨업 on ICE’에 피겨 선수 차준환이 출연한다는 소식은 웹툰·웹소설 IP의 무대 확장을 상징한다. 애니메이션과 게임을 넘어 스포츠 퍼포먼스까지 결합한 사례로, 글로벌 웹툰 IP가 오프라인 이벤트 산업으로 번지는 흐름을 보여준다.",
+          "imagePrompt": "fantasy webtoon inspired ice show, figure skater silhouette on glowing ice, shadow monsters as abstract light forms, no logos, no text",
+          "imageQuery": "Solo Leveling on ICE figure skating show",
+          "image": {
+            "url": "https://images.pexels.com/photos/6015845/pexels-photo-6015845.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: Tima Miroshnichenko / Pexels"
+          }
+        },
+        {
+          "headline": "불법사이트 막히자 우회로 '우르르'",
+          "link": "https://www.namdonews.com/news/articleView.html?idxno=912137",
+          "outlet": "namdonews.com",
+          "pubDate": "2026-05-31T08:58:00.000Z",
+          "blurb": "불법 스트리밍·웹툰 무단 유통 사이트 차단이 다시 쟁점화됐다. 웹툰과 영상 IP가 수출 산업으로 커진 만큼, 불법 유통 대응은 창작자 수익과 플랫폼 경쟁력에 직접 연결되는 핵심 과제다.",
+          "imagePrompt": "digital webtoon panels protected by a glowing cybersecurity shield, dark network background, no logos, no text",
+          "imageQuery": "webtoon piracy illegal streaming website",
+          "image": {
+            "url": "https://images.pexels.com/photos/13883892/pexels-photo-13883892.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: greenwish _ / Pexels"
+          }
+        },
+        {
+          "headline": "루나 작가 \"20년만에 정식 데뷔…혼자인 삶에 초점 맞추고 싶어\"",
+          "link": "https://www.yna.co.kr/view/AKR20260529164800005?input=1195m",
+          "outlet": "yna.co.kr",
+          "pubDate": "2026-05-31T01:00:00.000Z",
+          "blurb": "루나 작가가 20년 만에 카카오웹툰에서 정식 데뷔했다는 소식은 웹툰 생태계의 장기 창작자 층을 조명한다. 화제성보다 작가성과 지속성을 앞세운 사례로, 플랫폼 시대에도 개인 창작자의 목소리가 다시 발견될 수 있음을 보여준다.",
+          "imagePrompt": "quiet comic artist studio at night, tea cup, drawing tablet, soft lamp, contemplative webtoon creation mood, no text, no logos",
+          "imageQuery": "Korean webtoon artist studio drawing tablet",
+          "image": {
+            "url": "https://images.pexels.com/photos/4125508/pexels-photo-4125508.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: cottonbro studio / Pexels"
+          }
+        }
+      ]
+    },
+    {
+      "key": "beauty",
+      "label": "K-뷰티",
+      "entries": [
+        {
+          "headline": "\"새벽부터 줄 섰다\"…美 올영 1호점 개장 첫날부터 북새통",
+          "link": "https://www.hankyung.com/article/2026053191361",
+          "outlet": "hankyung.com",
+          "pubDate": "2026-05-31T11:08:00.000Z",
+          "blurb": "CJ올리브영 미국 1호점이 개장 첫날부터 긴 줄을 만들며 현지 반응을 얻었다. K-뷰티가 온라인 직구와 편집숍 입점을 넘어 오프라인 체험형 리테일로 북미 시장을 공략하기 시작했다는 점에서 의미가 크다.",
+          "imagePrompt": "modern Korean beauty retail store opening in an American city, skincare shelves, diverse shoppers, bright clean interior, no logos, no text",
+          "imageQuery": "Korean beauty store Pasadena opening",
+          "image": {
+            "url": "https://images.pexels.com/photos/29704378/pexels-photo-29704378.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: Bruna Santos / Pexels"
+          }
+        },
+        {
+          "headline": "구윤철 부총리, “K-뷰티 AI 접목해 세계 1등 되도록 지원”",
+          "link": "https://www.viva100.com/article/20260531500648",
+          "outlet": "viva100.com",
+          "pubDate": "2026-05-31T12:22:00.000Z",
+          "blurb": "정부가 K-뷰티에 AI를 접목해 세계 1등 산업으로 키우겠다는 지원 의지를 밝혔다. 피부 진단, 맞춤형 화장품, 제조 자동화가 결합되면 K-뷰티의 강점이 트렌드 소비에서 기술 기반 산업으로 확장될 수 있다.",
+          "imagePrompt": "AI skincare analysis concept, futuristic beauty lab with cosmetic jars and digital skin scan interface, no faces, no logos, no text",
+          "imageQuery": "AI skincare analysis Korean beauty",
+          "image": {
+            "url": "https://images.pexels.com/photos/8877104/pexels-photo-8877104.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: cottonbro studio / Pexels"
+          }
+        },
+        {
+          "headline": "[유통 브리핑] LG생활건강, 쿠팡, 풀무원",
+          "link": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5025933",
+          "outlet": "shinailbo.co.kr",
+          "pubDate": "2026-05-31T09:30:00.000Z",
+          "blurb": "LG생활건강 제품이 북미 세포라 주요 오프라인 매장에 선론칭됐다는 소식은 대형 K-뷰티 기업의 채널 확장을 보여준다. 글로벌 유통망 입점은 브랜드 인지도뿐 아니라 현지 소비자 테스트와 장기 매출 기반을 만드는 관문이다.",
+          "imagePrompt": "premium skincare products displayed in a North American beauty retailer aisle, elegant lighting, global cosmetics market mood, no logos, no text",
+          "imageQuery": "Korean skincare Sephora North America store",
+          "image": {
+            "url": "https://images.pexels.com/photos/33437125/pexels-photo-33437125.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: Mingyang LIU / Pexels"
+          }
+        }
+      ]
+    },
+    {
+      "key": "food",
+      "label": "K-푸드·맛집",
+      "entries": [
+        {
+          "headline": "“꽈배기 다른 곳에선 못 먹으니까”...K베이커리, 美매장 500개 달성",
+          "link": "https://www.mk.co.kr/article/12062405",
+          "outlet": "mk.co.kr",
+          "pubDate": "2026-05-31T14:06:00.000Z",
+          "blurb": "K-베이커리 브랜드들이 미국 매장 500개를 달성했다는 소식은 K-푸드의 일상식 침투를 보여준다. 한식당이나 간편식 중심을 넘어 빵과 디저트가 현지 생활권 프랜차이즈로 자리 잡고 있다는 점에서 확장성이 크다.",
+          "imagePrompt": "Korean bakery cafe in an American street, pastries and twisted doughnuts on display, warm morning light, no logos, no text",
+          "imageQuery": "Korean bakery cafe United States pastries",
+          "image": {
+            "url": "https://images.pexels.com/photos/37427369/pexels-photo-37427369.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: Rufina Rusakova / Pexels"
+          }
+        },
+        {
+          "headline": "K-푸드 90억 달러 돌파… '수출 다변화'가 성장의 관건",
+          "link": "https://www.newscj.com/news/articleView.html?idxno=3405316",
+          "outlet": "newscj.com",
+          "pubDate": "2026-05-31T08:00:00.000Z",
+          "blurb": "K-푸드 수출이 90억 달러를 돌파했지만 시장 다변화가 과제로 제기됐다. 미국·중국·일본 의존도를 낮추고 중남미·아프리카 등 신흥시장으로 넓히는 전략은 다음 성장 국면의 관건이다.",
+          "imagePrompt": "global map made of Korean food exports, kimchi jars, sauces, snacks and rice products moving across trade routes, no logos, no text",
+          "imageQuery": "Korean food exports kimchi sauce snacks global market",
+          "image": {
+            "url": "https://images.pexels.com/photos/8866595/pexels-photo-8866595.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: makafood / Pexels"
+          }
+        },
+        {
+          "headline": "배민, 애플페이 해외카드 결제 도입… 외국인 잡기 본격화",
+          "link": "https://www.econovill.com/news/articleView.html?idxno=741230",
+          "outlet": "econovill.com",
+          "pubDate": "2026-05-31T08:40:00.000Z",
+          "blurb": "배민이 애플페이 해외카드 결제를 도입하며 외국인 이용 장벽을 낮췄다. K-푸드 소비가 관광객의 식당 방문을 넘어 배달 플랫폼 경험으로 확장되고 있다는 점에서 도시 관광과 로컬 상권에도 영향을 줄 수 있다.",
+          "imagePrompt": "foreign tourists ordering Korean fried chicken and tteokbokki on a delivery app in Seoul apartment setting, no brand logos, no text",
+          "imageQuery": "Korean food delivery app foreign tourists Seoul",
+          "image": {
+            "url": "https://images.pexels.com/photos/35491992/pexels-photo-35491992.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: Luiz M / Pexels"
+          }
+        },
+        {
+          "headline": "제주감귤로 빚은 증류주 북미 공략 교두보 '활짝'",
+          "link": "https://www.jejumaeil.net/news/articleView.html?idxno=401456",
+          "outlet": "jejumaeil.net",
+          "pubDate": "2026-05-31T06:26:00.000Z",
+          "blurb": "제주 감귤 증류주가 북미 시장 공략의 교두보를 마련했다. 지역 농산물과 K-푸드 스토리텔링이 결합한 주류 수출은 로컬 브랜드가 해외 프리미엄 시장에 진입하는 가능성을 보여준다.",
+          "imagePrompt": "Jeju citrus distilled spirit bottle concept beside tangerines and volcanic stone, clean premium export mood, no logos, no text",
+          "imageQuery": "Jeju tangerine distilled liquor",
+          "image": {
+            "url": "https://images.pexels.com/photos/28792576/pexels-photo-28792576.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: Tiago Antonio / Pexels"
+          }
+        }
+      ]
+    },
+    {
+      "key": "game",
+      "label": "K-게임·e스포츠",
+      "entries": [
+        {
+          "headline": "한화생명-T1 등 로드 투 MSI 참가 팀 확정",
+          "link": "http://www.dailyesports.com/view.php?ud=202605312030027526b91e133c1f_27",
+          "outlet": "dailyesports.com",
+          "pubDate": "2026-05-31T12:30:00.000Z",
+          "blurb": "한화생명e스포츠와 T1 등 로드 투 MSI 참가 팀이 확정되며 국제 대회로 이어지는 LCK 상위권 구도가 정리됐다. MSI는 리그 오브 레전드 글로벌 판도를 가르는 주요 무대인 만큼, 한국 팀의 경쟁력과 팬덤 관심이 집중될 이슈다.",
+          "imagePrompt": "professional esports arena with two teams facing screens, blue and red stage lights, packed audience, no logos, no text",
+          "imageQuery": "League of Legends esports arena Korea",
+          "image": {
+            "url": "https://images.pexels.com/photos/9072293/pexels-photo-9072293.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: Yan Krukau / Pexels"
+          }
+        },
+        {
+          "headline": "'리니지2M' 해외 서비스 본격화.. 6월 24일 텐센트와 中 서비스 시작",
+          "link": "https://game.donga.com/122783/",
+          "outlet": "game.donga.com",
+          "pubDate": "2026-05-31T13:28:00.000Z",
+          "blurb": "엔씨소프트 ‘리니지2M’이 텐센트와 함께 중국 서비스를 시작한다. 중국 시장 재진입은 한국 게임사에 여전히 큰 기회이자 규제 리스크가 공존하는 사안으로, 성과에 따라 모바일 MMORPG 수출 전략에도 영향을 줄 수 있다.",
+          "imagePrompt": "fantasy mobile MMORPG launch in China concept, ancient fortress and smartphone game screen glow, no logos, no text",
+          "imageQuery": "Lineage2M China Tencent mobile MMORPG",
+          "image": {
+            "url": "https://images.pexels.com/photos/10428893/pexels-photo-10428893.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: JackerKun / Pexels"
+          }
+        },
+        {
+          "headline": "한국e스포츠산업학회, '2026 대한민국 e스포츠 정책포럼' 성료",
+          "link": "https://game.donga.com/122784/",
+          "outlet": "game.donga.com",
+          "pubDate": "2026-05-31T13:42:00.000Z",
+          "blurb": "2026 대한민국 e스포츠 정책포럼이 국회에서 열리며 산업 정책 논의가 이어졌다. e스포츠가 단순 경기 중계를 넘어 교육, 지역 경기장, 선수 보호, 산업 육성의 제도권 의제로 자리 잡고 있음을 보여준다.",
+          "imagePrompt": "esports policy forum in a formal conference hall, microphones, gaming monitors, audience silhouettes, no logos, no text",
+          "imageQuery": "Korea esports policy forum conference",
+          "image": {
+            "url": "https://images.pexels.com/photos/301987/pexels-photo-301987.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: John-Mark Smith / Pexels"
+          }
+        }
+      ]
+    },
+    {
+      "key": "tech",
+      "label": "K-테크·로봇",
+      "entries": [
+        {
+          "headline": "네이버, 국방 AI 전담조직 신설…‘한국판 팔란티어’ 도전한다",
+          "link": "https://www.seoul.co.kr/news/economy/2026/05/31/20260531500107?wlog_tag3=naver",
+          "outlet": "seoul.co.kr",
+          "pubDate": "2026-05-31T13:30:00.000Z",
+          "blurb": "네이버클라우드가 국방 AI 전담조직을 신설하며 ‘한국판 팔란티어’에 도전한다. 민간 플랫폼 기업이 공공·안보 영역의 AI 인프라로 확장하는 사례로, 한국 AI 산업의 적용 범위가 크게 넓어지고 있음을 보여준다.",
+          "imagePrompt": "secure AI command center concept, abstract data maps and cloud servers, Korean technology mood, no logos, no text",
+          "imageQuery": "Naver Cloud defense AI data center",
+          "image": {
+            "url": "https://images.pexels.com/photos/17489163/pexels-photo-17489163.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: panumas nikhomkhai / Pexels"
+          }
+        },
+        {
+          "headline": "현대차, 월드컵 기념 로봇 아틀라스 축구 실력 공개",
+          "link": "https://www.ulsanpress.net/news/articleView.html?idxno=576221",
+          "outlet": "ulsanpress.net",
+          "pubDate": "2026-05-31T12:43:00.000Z",
+          "blurb": "현대차가 보스턴다이나믹스 휴머노이드 로봇 아틀라스의 축구 동작 학습을 공개했다. 월드컵 공식 파트너십과 로봇 기술을 결합한 콘텐츠로, 피지컬 AI가 대중문화 이벤트와 만나는 상징적 장면이다.",
+          "imagePrompt": "humanoid robot practicing soccer on a stadium field at night, World Cup inspired atmosphere, dynamic motion, no logos, no text",
+          "imageQuery": "Boston Dynamics Atlas robot soccer Hyundai",
+          "image": {
+            "url": "https://images.pexels.com/photos/8294659/pexels-photo-8294659.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: Pavel Danilyuk / Pexels"
+          }
+        },
+        {
+          "headline": "\"AI·무인매장 현황 첫 반영\"… 1일부터 '경제총조사' 실시",
+          "link": "http://www.newsroad.co.kr/news/articleView.html?idxno=59924",
+          "outlet": "newsroad.co.kr",
+          "pubDate": "2026-05-31T13:40:00.000Z",
+          "blurb": "경제총조사에 AI, 로봇, 스마트공장, 무인매장 현황이 처음 반영된다. 기술 변화가 통계 체계 안으로 들어왔다는 점에서, 한국 산업의 자동화와 디지털 전환을 측정하는 기준이 새롭게 마련되는 사건이다.",
+          "imagePrompt": "smart factory and unmanned store data survey concept, robots, AI dashboard, workers as silhouettes, no logos, no text",
+          "imageQuery": "Korea smart factory robot unmanned store",
+          "image": {
+            "url": "https://images.pexels.com/photos/32778343/pexels-photo-32778343.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: Youn Seung Jin / Pexels"
+          }
+        }
+      ]
+    },
+    {
+      "key": "stage",
+      "label": "공연·전시·예술",
+      "entries": [
+        {
+          "headline": "'스트릿컬처 페스타' 개막… 국내외 댄서 1300명 광주 집결",
+          "link": "https://www.newscj.com/news/articleView.html?idxno=3405384",
+          "outlet": "newscj.com",
+          "pubDate": "2026-05-31T12:00:00.000Z",
+          "blurb": "광주 스트릿컬처 페스타에 국내외 댄서 1300명이 모이며 거리문화의 규모감을 보여줬다. K팝 댄스와 배틀 문화가 지역 축제의 중심 콘텐츠로 성장했다는 점에서 공연 생태계의 저변 확대가 읽힌다.",
+          "imagePrompt": "large street dance festival in a city square, dancers in motion, cheering crowd, night stage lights, no faces, no logos, no text",
+          "imageQuery": "street dance festival Korea Gwangju",
+          "image": {
+            "url": "https://images.pexels.com/photos/18974470/pexels-photo-18974470.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: Asia Culture Center / Pexels"
+          }
+        },
+        {
+          "headline": "뮤지컬 '죽음에 관하여', 배우 성태준 등 캐스팅 공개.. 7월 21일 개막",
+          "link": "http://www.withinnews.co.kr/news/view.html?section=9&category=126&item=&no=39425",
+          "outlet": "withinnews.co.kr",
+          "pubDate": "2026-05-31T10:24:00.000Z",
+          "blurb": "웹툰 ‘죽음에 관하여’가 뮤지컬로 무대화되며 7월 개막을 앞두고 캐스팅을 공개했다. 삶과 죽음이라는 원작의 정서를 공연 언어로 옮기는 시도는 웹툰 IP의 무대 확장 가능성을 보여준다.",
+          "imagePrompt": "philosophical musical stage about life and death, minimal spotlight, abstract doorway and two silhouettes, no logos, no text",
+          "imageQuery": "Death About webtoon musical Korea",
+          "image": {
+            "url": "https://images.pexels.com/photos/36853090/pexels-photo-36853090.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: Jeffry Surianto / Pexels"
+          }
+        },
+        {
+          "headline": "대구콘서트하우스 명연주시리즈, 라흐마니노프에게 바치는 '음악적 헌시...",
+          "link": "https://www.idaegu.co.kr/news/articleView.html?idxno=549753",
+          "outlet": "idaegu.co.kr",
+          "pubDate": "2026-05-31T12:44:00.000Z",
+          "blurb": "대구콘서트하우스 명연주시리즈가 미하일 플레트네프와 고티에 카퓌송의 라흐마니노프 프로그램을 선보인다. 지역 클래식 공연장이 세계적 연주자를 초청해 레퍼토리의 깊이를 확보하는 사례로, 수도권 밖 공연장의 기획력도 주목할 만하다.",
+          "imagePrompt": "classical concert hall with grand piano and cello under warm stage lights, elegant Rachmaninoff mood, no logos, no text",
+          "imageQuery": "Daegu Concert House classical concert cello piano",
+          "image": {
+            "url": "https://images.pexels.com/photos/36084994/pexels-photo-36084994.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: Ivan Chumak / Pexels"
+          }
+        },
+        {
+          "headline": "삼성화재 모빌리티뮤지엄 ‘새한레코드 로얄DSL’ 복원…4년 노력 결실",
+          "link": "https://www.inthenews.co.kr/news/article.html?no=87483",
+          "outlet": "inthenews.co.kr",
+          "pubDate": "2026-05-31T12:20:00.000Z",
+          "blurb": "삼성화재 모빌리티뮤지엄이 ‘새한레코드 로얄DSL’을 4년 만에 복원했다. 산업 유산과 자동차 문화의 보존이라는 측면에서, 박물관이 단순 전시를 넘어 기술사 복원 기관으로 기능하고 있음을 보여준다.",
+          "imagePrompt": "restored vintage Korean vehicle displayed in a mobility museum, workshop lights, archival atmosphere, no logos, no text",
+          "imageQuery": "Korean mobility museum vintage vehicle restoration",
+          "image": {
+            "url": "https://images.pexels.com/photos/12496784/pexels-photo-12496784.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: Thể Phạm / Pexels"
+          }
+        }
+      ]
+    },
+    {
+      "key": "heritage",
+      "label": "전통문화",
+      "entries": [
+        {
+          "headline": "'K-전통문화 중심' 안동, 여행객 부른다",
+          "link": "https://www.idaegu.co.kr/news/articleView.html?idxno=549697",
+          "outlet": "idaegu.co.kr",
+          "pubDate": "2026-05-31T12:24:00.000Z",
+          "blurb": "안동이 한일정상회담을 계기로 전통문화·세계유산·미식·웰니스 관광 도시로 브랜드 가치를 높이겠다고 밝혔다. 외교 이벤트가 지역 문화관광의 국제적 주목으로 이어질 수 있다는 점에서 안동의 후속 전략이 중요해졌다.",
+          "imagePrompt": "traditional Korean hanok village in Andong with world heritage atmosphere, refined banquet and river landscape, no people faces, no text",
+          "imageQuery": "Andong Hahoe Folk Village Korean traditional culture",
+          "image": {
+            "url": "https://images.pexels.com/photos/6483288/pexels-photo-6483288.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: 대정 김 / Pexels"
+          }
+        },
+        {
+          "headline": "고창문화원, 진채선 학술발표",
+          "link": "https://sjbnews.com/news/news.php?number=879545",
+          "outlet": "sjbnews.com",
+          "pubDate": "2026-05-31T11:32:00.000Z",
+          "blurb": "고창문화원이 최초의 여성 명창 진채선을 조명하는 학술발표를 열었다. 판소리사의 미발굴 자료를 정리하고 여성 예술가의 위치를 재평가하는 작업이라는 점에서 전통예술 연구의 의미가 크다.",
+          "imagePrompt": "traditional Korean pansori stage with a female singer silhouette and drummer, scholarly archive papers nearby, warm spotlight, no text",
+          "imageQuery": "Jin Chae-seon pansori female master singer",
+          "image": {
+            "url": "https://images.pexels.com/photos/7086729/pexels-photo-7086729.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: cottonbro studio / Pexels"
+          }
+        },
+        {
+          "headline": "정읍문화원, 조선왕조실록 이안 기념행사 참여자 모집",
+          "link": "http://www.jeonmin.co.kr/news/articleView.html?idxno=440761",
+          "outlet": "jeonmin.co.kr",
+          "pubDate": "2026-05-31T13:26:00.000Z",
+          "blurb": "정읍문화원이 조선왕조실록 이안 기념행사 참여자를 모집한다. 지역민이 역사 재현과 전통문화 체험에 직접 참여하는 방식은 문화유산을 보존 대상에서 생활 속 경험으로 바꾸는 흐름을 보여준다.",
+          "imagePrompt": "Joseon dynasty royal annals relocation ceremony reenactment, traditional procession with wooden archive chests, no faces, no text",
+          "imageQuery": "Joseon Dynasty Annals relocation ceremony Jeongeup",
+          "image": {
+            "url": "https://images.pexels.com/photos/37436233/pexels-photo-37436233.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: Henry Acevedo / Pexels"
+          }
+        },
+        {
+          "headline": "[김지윤의 우리음악 이야기] 영산회상, 불교음악의 풍류가 되다",
+          "link": "http://www.kookje.co.kr/news2011/asp/newsbody.asp?code=1700&key=20260601.22021008077",
+          "outlet": "kookje.co.kr",
+          "pubDate": "2026-05-31T11:04:00.000Z",
+          "blurb": "영산회상이 불교 의식 음악에서 풍류 음악으로 이어진 맥락을 짚은 글은 전통음악의 층위를 이해하게 한다. 국가무형유산과 유네스코 인류무형문화유산으로 이어지는 한국 의례음악의 가치가 다시 환기됐다.",
+          "imagePrompt": "Korean Buddhist ritual music transforming into court chamber music, traditional instruments, incense, serene temple atmosphere, no text",
+          "imageQuery": "Yeongsanjae Korean Buddhist ritual music",
+          "image": {
+            "url": "https://images.pexels.com/photos/32831693/pexels-photo-32831693.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600",
+            "source": "사진: ki-mock koo / Pexels"
+          }
+        }
+      ]
+    }
+  ],
+  "generatedAt": "2026-05-31T15:02:32.545Z"
+}
