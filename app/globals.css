@@ -70,16 +70,6 @@ body {
 .kct-editorial .kct-prose a {
   color: var(--accent);
 }
-/* 넓은 카드에서 글이 좌편향되지 않게 — 2단 컬럼으로 양쪽 폭을 자연스럽게 채움 */
-@media (min-width: 640px) {
-  .kct-editorial .kct-prose {
-    column-count: 2;
-    column-gap: 2.5rem;
-  }
-  .kct-editorial .kct-prose p {
-    margin-top: 0;
-  }
-}
 
 /* 카드 hover — 카드별 블루 후광 (stocknews-cyan 시그니처) */
 .kct-glow {
