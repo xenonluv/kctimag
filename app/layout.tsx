@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import GeoBackground from "@/components/GeoBackground";
 
 export const metadata: Metadata = {
   title: "KCT — 주간 한국 문화 매거진",
@@ -26,7 +27,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <GeoBackground />
+        {children}
+      </body>
     </html>
   );
 }

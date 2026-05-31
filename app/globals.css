@@ -97,6 +97,109 @@ textarea::placeholder {
   color: #9aa3b2;
 }
 
+/* 움직이는 기하학 배경 — 벡터/CSS, transform·opacity만(GPU 합성, 가벼움) */
+.kct-geo {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+.kct-geo > * {
+  position: absolute;
+  display: block;
+  will-change: transform;
+}
+.kct-g1 {
+  top: -10%;
+  left: -6%;
+  width: 40vmax;
+  height: 40vmax;
+  border-radius: 9999px;
+  background: radial-gradient(
+    circle at 35% 35%,
+    rgba(59, 130, 246, 0.5),
+    transparent 68%
+  );
+  animation: kct-d1 28s ease-in-out infinite;
+}
+.kct-g2 {
+  right: -8%;
+  bottom: -14%;
+  width: 46vmax;
+  height: 46vmax;
+  border-radius: 9999px;
+  background: radial-gradient(
+    circle at 60% 45%,
+    rgba(124, 107, 255, 0.42),
+    transparent 68%
+  );
+  animation: kct-d2 34s ease-in-out infinite;
+}
+.kct-g3 {
+  top: 32%;
+  left: 58%;
+  width: 22vmax;
+  height: 22vmax;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.32), transparent 68%);
+  animation: kct-d3 24s ease-in-out infinite;
+}
+.kct-g4 {
+  top: 14%;
+  right: 9%;
+  width: 18vmax;
+  height: 18vmax;
+  border: 2px solid rgba(59, 130, 246, 0.16);
+  border-radius: 9999px;
+  animation: kct-spin 55s linear infinite;
+}
+.kct-g5 {
+  bottom: 16%;
+  left: 12%;
+  width: 12vmax;
+  height: 12vmax;
+  border: 2px solid rgba(124, 107, 255, 0.14);
+  animation: kct-spin 70s linear infinite reverse;
+}
+@keyframes kct-d1 {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(5vmax, 3vmax, 0) scale(1.06);
+  }
+}
+@keyframes kct-d2 {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-4vmax, -5vmax, 0) scale(1.08);
+  }
+}
+@keyframes kct-d3 {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(-3vmax, 4vmax, 0);
+  }
+}
+@keyframes kct-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .kct-geo > * {
+    animation: none !important;
+  }
+}
+
 /* 매거진 기사 본문(Markdown) — 세리프 */
 .kct-prose {
   font-family: var(--font-serif);
