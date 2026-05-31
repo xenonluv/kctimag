@@ -9,7 +9,7 @@ import {
 } from "@/lib/admin-auth";
 import { getAdminSupabase } from "@/lib/supabase";
 import { readIssue } from "@/lib/content";
-import { sendIssueEmail, type Recipient } from "@/lib/resend";
+import { sendIssueEmail, type Recipient } from "@/lib/mailer";
 import { getSiteUrl } from "@/lib/env";
 
 export async function login(formData: FormData) {

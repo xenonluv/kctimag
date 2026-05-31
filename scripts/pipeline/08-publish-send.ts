@@ -4,7 +4,7 @@ import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import { fileURLToPath } from "node:url";
 import { getAdminSupabase } from "@/lib/supabase";
-import { sendIssueEmail, type Recipient } from "@/lib/resend";
+import { sendIssueEmail, type Recipient } from "@/lib/mailer";
 import { getSiteUrl } from "@/lib/env";
 import { issueJsonPath, readJson } from "@/lib/paths";
 import type { Issue } from "@/types/issue";

@@ -18,7 +18,7 @@ GitHub push → **Vercel 웹 발행** + **구독자 메일 발송(PDF 첨부)** 
 | 팀장 총평 | `05-editorial.ts` | 향후 영향·문제점·긍정 요소 칼럼 | Claude CLI |
 | (PDF) | `06-pdf.ts` | 인쇄 페이지 → PDF (Puppeteer) | Puppeteer |
 | CEO 검증 | `07-ceo-gate.ts` | 분량·이미지·빌드 등 QA 게이트 → 발행 허가 | 코드 검증 |
-| 발행·발송 | `08-publish-send.ts` | git push → Vercel, 구독자 메일(PDF 첨부) | git + Resend |
+| 발행·발송 | `08-publish-send.ts` | git push → Vercel, 구독자 메일(PDF 첨부) | git + Brevo |
 | 오케스트레이터 | `run.ts` | 위 전체를 순서대로 실행 | — |
 | 팀원5 웹·관리자 | `app/` | 공개 사이트 + 관리자 모드 | Next.js |
 
@@ -31,7 +31,7 @@ GitHub push → **Vercel 웹 발행** + **구독자 메일 발송(PDF 첨부)** 
 - **런타임 LLM**: Claude CLI (`claude -p`, 구독 사용 → 추가비용 0)
 - **이미지**: Pexels(스톡) · Wikimedia Commons(실존·CC) · Pollinations(AI) — 모두 무료·저작권 안전
 - **PDF**: Puppeteer (OSS)
-- **메일**: Resend (100/일·3,000/월)
+- **메일**: Brevo (HTTP API · 단일발신자 인증 · 무료 300/일) — SMTP 차단·무도메인 환경 OK. (도메인 보유 시 `MAIL_PROVIDER=resend` 전환 가능)
 - **DB·인증·PDF 보관**: Supabase (무료 티어)
 - **크론**: macOS launchd (Mac Studio 상시 가동)
 
@@ -50,7 +50,7 @@ npm install        # puppeteer가 Chromium을 내려받음
 - **네이버 개발자**(https://developers.naver.com) → 검색 API → Client ID/Secret
 - **Pexels**(https://www.pexels.com/api) → API Key
 - **Supabase**(https://supabase.com) → 새 프로젝트 → Project URL, anon key, service_role key
-- **Resend**(https://resend.com) → API Key, 발신 도메인(또는 onboarding@resend.dev)
+- **Brevo**(https://brevo.com) → API 키(`xkeysib-...`, SMTP&API → API Keys) + **발신자 이메일 인증**(Senders, 도메인 불필요)
 
 ### 3) `.env.local` 작성
 `.env.example` 복사 후 값 채우기:
