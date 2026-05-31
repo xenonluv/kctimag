@@ -103,7 +103,7 @@ export default function IssueView({
           <h2 className="on-navy mt-2 font-serif text-2xl font-extrabold leading-tight">
             {editorial.title}
           </h2>
-          <div className="kct-editorial mt-4 max-w-2xl">
+          <div className="kct-editorial mt-4">
             <Markdown>{editorial.bodyMarkdown}</Markdown>
           </div>
         </section>
