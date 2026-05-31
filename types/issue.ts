@@ -60,10 +60,20 @@ export interface IssueMeta {
   pdfUrl?: string;
 }
 
+/** 편집장 총평 — 이번 주 문화 흐름 전반을 짚는 글 */
+export interface EditorialNote {
+  title: string;
+  /** 본문 (Markdown) */
+  bodyMarkdown: string;
+}
+
 /** 매거진 1호 전체 (다이제스트) */
 export interface Issue {
   meta: IssueMeta;
+  /** 편집장 픽 — 이번 주 최대 이슈 1건 */
   editorPick: EditorPick;
+  /** 편집장 총평 — 이번 주 흐름 */
+  editorial?: EditorialNote;
   categories: CategorySection[];
   /** 생성 타임스탬프 ISO */
   generatedAt: string;

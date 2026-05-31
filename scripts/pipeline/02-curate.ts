@@ -10,7 +10,12 @@ import { CULTURE_CATEGORIES } from "@/lib/categories";
 import { outletFromUrl } from "@/lib/og-image";
 import { readJson, writeJson, tmpDir } from "@/lib/paths";
 import type { RawNews } from "@/types/pipeline";
-import type { CategorySection, EditorPick, NewsEntry } from "@/types/issue";
+import type {
+  CategorySection,
+  EditorPick,
+  EditorialNote,
+  NewsEntry,
+} from "@/types/issue";
 
 const CURATOR_SYS =
   "당신은 한국 문화 매거진의 큐레이션 에디터다. 한 주간 쏟아진 문화 뉴스에서 정말 주목할 만한 것을 " +
@@ -24,6 +29,7 @@ export interface CuratedDoc {
   dek: string;
   categories: CategorySection[];
   editorPick: EditorPick;
+  editorial: EditorialNote;
 }
 
 function labelOf(key: string): string {
@@ -61,18 +67,20 @@ export async function curate(raw: RawNews): Promise<CuratedDoc> {
       { key: "screen", entries: [{ index: 1, blurb: "(mock) 설명" }] },
     ],
     editorPick: { index: 0, why: "(mock) 이번 주 가장 큰 이슈로 선정." },
+    editorial: { title: "이번 주 흐름", body: "(mock) 이번 주 문화 트렌드 총평." },
   };
 
   const result = await llmJson(
     `다음은 최근 한 주간 수집된 한국 문화 뉴스 목록이다(인덱스 포함).\n\n${list}\n\n` +
       `할 일:\n` +
       `1. 카테고리별로 이번 주 가장 주목할 뉴스 3~5건을 선별(같은 사건 중복은 가장 대표적인 1건만).\n` +
-      `2. 각 항목에 무슨 일인지 핵심을 담은 1~2줄 blurb.\n` +
-      `3. 전체에서 이번 주 "가장 큰 이슈" 기사 1건을 editorPick으로 선정하고, why를 2~4문장으로(왜 이걸 최대 이슈로 채택했는지).\n` +
-      `4. 호 제목(title)과 부제(dek).\n\n` +
+      `2. 각 항목에 **2~3문장**의 충실한 blurb(무슨 일인지 + 맥락·배경 + 왜 주목할지). 너무 짧게 쓰지 말 것.\n` +
+      `3. 전체에서 이번 주 "가장 큰 이슈" 기사 1건을 editorPick으로 선정하고, why를 3~5문장으로(왜 이걸 최대 이슈로 채택했는지).\n` +
+      `4. 호 제목(title)과 부제(dek).\n` +
+      `5. **편집장 총평(editorial)**: 이번 주 한국 문화 흐름 전반을 짚는 글. title + body(500~800자). 개별 뉴스 나열이 아니라 흐름·맥락·의미를 통찰력 있게.\n\n` +
       `카테고리 key는 다음만 사용: ${keys}\n` +
       `index는 위 목록의 정수만 사용(0~${items.length - 1}).\n` +
-      `형식: {"title","dek","categories":[{"key","entries":[{"index","blurb"}]}],"editorPick":{"index","why","honorableIndexes":[]}}`,
+      `형식: {"title","dek","categories":[{"key","entries":[{"index","blurb"}]}],"editorPick":{"index","why","honorableIndexes":[]},"editorial":{"title","body"}}`,
     CurateSchema,
     { system: CURATOR_SYS },
     mock,
@@ -105,7 +113,16 @@ export async function curate(raw: RawNews): Promise<CuratedDoc> {
       .map((it) => ({ headline: it.title, link: it.originallink || it.link })),
   };
 
-  return { title: result.title, dek: result.dek, categories, editorPick };
+  return {
+    title: result.title,
+    dek: result.dek,
+    categories,
+    editorPick,
+    editorial: {
+      title: result.editorial.title,
+      bodyMarkdown: result.editorial.body,
+    },
+  };
 }
 
 const isMain = process.argv[1] === fileURLToPath(import.meta.url);

@@ -75,6 +75,7 @@ async function main() {
       pdfUrl: predictedPdfUrl(slug) ?? undefined,
     },
     editorPick: withImages.editorPick,
+    editorial: withImages.editorial,
     categories: withImages.categories,
     generatedAt: new Date().toISOString(),
   };

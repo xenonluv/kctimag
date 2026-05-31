@@ -23,6 +23,11 @@ export const CurateSchema = z.object({
     why: z.string(),
     honorableIndexes: z.array(z.number().int()).optional(),
   }),
+  /** 편집장 총평 — 이번 주 문화 흐름 전반 */
+  editorial: z.object({
+    title: z.string(),
+    body: z.string(),
+  }),
 });
 
 export type Curate = z.infer<typeof CurateSchema>;

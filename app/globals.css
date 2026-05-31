@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --font-serif: "Nanum Myeongjo", "Noto Serif KR", Georgia, serif;
-  --font-sans: "Noto Sans KR", "Pretendard", system-ui, -apple-system, sans-serif;
+  --font-serif: "Nanum Myeongjo", "Nanum Gothic", Georgia, serif;
+  --font-sans: "Nanum Gothic", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
   --ink: #1a1a1a;
   --paper: #f7f5f0;
   --accent: #b8141e;
