@@ -84,26 +84,32 @@ export default async function AdminPage({
           {issues.map((it) => (
             <li
               key={it.slug}
-              className="flex flex-wrap items-center justify-between gap-2 rounded-lg border border-neutral-200 p-3"
+              className="rounded-lg border border-neutral-200 p-3"
             >
-              <div>
+              <div className="mb-2">
                 <span className="font-medium">{it.title}</span>
                 <span className="ml-2 text-xs text-neutral-400">{it.slug}</span>
               </div>
-              <div className="flex gap-2">
-                <form action={resendIssue} className="flex gap-1">
-                  <input type="hidden" name="slug" value={it.slug} />
+              <form action={resendIssue} className="space-y-2">
+                <input type="hidden" name="slug" value={it.slug} />
+                <textarea
+                  name="message"
+                  rows={3}
+                  placeholder="메일에 넣을 내용을 직접 작성 (선택). 비우면 부제가 본문으로 들어갑니다."
+                  className="w-full rounded border border-neutral-300 px-2 py-1.5 text-sm"
+                />
+                <div className="flex flex-wrap gap-2">
                   <input
                     type="email"
                     name="testEmail"
-                    placeholder="테스트 이메일(선택)"
-                    className="w-44 rounded border border-neutral-300 px-2 py-1 text-sm"
+                    placeholder="테스트 이메일(비우면 전체 구독자)"
+                    className="w-60 rounded border border-neutral-300 px-2 py-1 text-sm"
                   />
                   <button className="rounded bg-neutral-800 px-3 py-1 text-sm text-white hover:bg-black">
                     발송
                   </button>
-                </form>
-              </div>
+                </div>
+              </form>
             </li>
           ))}
           {issues.length === 0 && (
@@ -111,8 +117,8 @@ export default async function AdminPage({
           )}
         </ul>
         <p className="mt-2 text-xs text-neutral-400">
-          테스트 이메일을 비우면 전체 확인 구독자에게 발송됩니다. (주간 자동 발송은
-          파이프라인이 PDF 첨부로 수행)
+          내용란에 직접 쓰면 그 내용으로, 비우면 부제가 본문으로 발송됩니다. 테스트
+          이메일을 비우면 전체 확인 구독자에게 발송(해당 호 PDF 자동 첨부).
         </p>
       </section>
 

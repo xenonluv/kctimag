@@ -45,6 +45,7 @@ export async function resendIssue(formData: FormData) {
   if (!(await isAdmin())) redirect("/admin/login");
   const slug = formData.get("slug")?.toString();
   const testEmail = formData.get("testEmail")?.toString().trim();
+  const message = formData.get("message")?.toString().trim();
   if (!slug) redirect("/admin?msg=noslug");
   const issue = readIssue(slug!);
   const sb = getAdminSupabase();
@@ -101,10 +102,18 @@ export async function resendIssue(formData: FormData) {
         : pdfUrl
           ? ` · <a href="${pdfUrl}">PDF 다운로드</a>`
           : "";
+      // 관리자가 직접 작성한 내용이 있으면 그것을 본문으로(HTML 이스케이프 + 줄바꿈), 없으면 부제.
+      const bodyHtml = message
+        ? message
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/\n/g, "<br>")
+        : issue!.meta.dek;
       return `<div style="font-family:sans-serif;max-width:600px;margin:0 auto;padding:24px">
         <h1 style="font-size:22px">${issue!.meta.title}</h1>
-        <p style="color:#555">${issue!.meta.dek}</p>
-        <p><a href="${link}">웹에서 보기 →</a>${pdfLine}</p>
+        <div style="color:#444;font-size:15px;line-height:1.7">${bodyHtml}</div>
+        <p style="margin-top:16px"><a href="${link}">웹에서 보기 →</a>${pdfLine}</p>
         <hr style="border:none;border-top:1px solid #eee;margin:20px 0"/>
         <p style="font-size:12px;color:#999"><a href="${unsub}" style="color:#999">수신거부</a></p>
       </div>`;
