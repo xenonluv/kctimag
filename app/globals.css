@@ -85,6 +85,18 @@ body {
     0 0 60px 4px rgba(59, 130, 246, 0.22);
 }
 
+/* 폼 입력칸 — 다크 테마에서 흰 배경+흰 글자(안 보임) 방지: 항상 흰 배경/검정 글자 */
+input,
+textarea,
+select {
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #9aa3b2;
+}
+
 /* 매거진 기사 본문(Markdown) — 세리프 */
 .kct-prose {
   font-family: var(--font-serif);
