@@ -6,6 +6,7 @@ import { fileURLToPath } from "node:url";
 import { subDays } from "date-fns";
 import { CULTURE_CATEGORIES } from "@/lib/categories";
 import { searchNews, cleanHtml, toISO, sleep } from "@/lib/naver";
+import { shouldExclude } from "@/lib/news-filter";
 import { writeJson, tmpDir } from "@/lib/paths";
 import type { NewsItem, RawNews } from "@/types/pipeline";
 
@@ -23,7 +24,7 @@ export async function collect(now: Date = new Date()): Promise<RawNews> {
     for (const q of cat.queries) {
       let raws;
       try {
-        raws = await searchNews(q, { display: 50, sort: "date" });
+        raws = await searchNews(q, { display: 100, sort: "date" });
       } catch (e) {
         console.error(`  [warn] "${q}" 검색 실패: ${(e as Error).message}`);
         continue;
@@ -35,9 +36,11 @@ export async function collect(now: Date = new Date()): Promise<RawNews> {
         const iso = toISO(r.pubDate);
         const ms = new Date(iso).getTime();
         if (!isNaN(ms) && ms < fromMs) continue; // 최근 7일 이전 제외
+        const title = cleanHtml(r.title);
+        if (shouldExclude(title)) continue; // 화보·일상사진·정치·경제 등 제외
         seen.add(link);
         items.push({
-          title: cleanHtml(r.title),
+          title,
           description: cleanHtml(r.description),
           link,
           originallink: r.originallink,

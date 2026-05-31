@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --font-serif: "Nanum Myeongjo", "Nanum Gothic", Georgia, serif;
+  /* 네이버 나눔고딕으로 통일 (헤드라인은 굵게) */
+  --font-serif: "Nanum Gothic", "Apple SD Gothic Neo", sans-serif;
   --font-sans: "Nanum Gothic", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
   --ink: #1a1a1a;
   --paper: #f7f5f0;

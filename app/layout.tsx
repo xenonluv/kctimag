@@ -20,9 +20,9 @@ export default function RootLayout({
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-        {/* 네이버 나눔글꼴 — 헤드라인=나눔명조, 본문/UI=나눔고딕 */}
+        {/* 네이버 나눔고딕 (헤드라인·본문 모두) */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
           rel="stylesheet"
         />
       </head>

@@ -2,28 +2,28 @@
   "meta": {
     "slug": "2026-05-25",
     "title": "이번 주 한국 문화 다이제스트",
-    "dek": "K-pop·드라마·웹툰·K-뷰티·K-푸드·게임·테크까지 — 한 주간 실제 일어난 문화 뉴스와 편집장이 고른 이번 주 최대 이슈.",
+    "dek": "한 주간 실제 일어난 문화 뉴스를 카테고리별로 정리하고, 편집장이 이번 주 최대 이슈를 골랐습니다. (데모 — 실제 발행 시 Claude가 중요도순 선별·재분류)",
     "date": "2026-05-25",
     "weekRange": {
       "from": "2026-05-24",
       "to": "2026-05-31"
     },
-    "coverImageUrl": "https://cdn.bizwnews.com/news/thumbnail/202605/137747_152780_487_v150.jpg"
+    "coverImageUrl": "https://static.hankyung.com/img/logo/logo-news-sns.png?v=20201130"
   },
   "editorPick": {
-    "headline": "[신상 열전] 오뚜기, 파리바게뜨 '파란라벨', 아모레퍼시픽 '바이탈뷰티...",
-    "link": "http://www.bizwnews.com/news/articleView.html?idxno=137747",
-    "outlet": "bizwnews.com",
-    "why": "이번 주 가장 큰 반향을 일으킨 사안으로 선정했다. 단발성 화제에 그치지 않고 한국 문화 산업의 방향을 가늠하게 하는 신호이기 때문이다. 제목을 클릭하면 원문 기사로 바로 연결된다. (실제 주간 발행 시에는 Claude가 그 주 목록 전체를 검토해 가장 중요한 기사를 선정하고 채택 이유를 상세히 적는다.)",
+    "headline": "네이버 '국방 AI' 사업 진출한다",
+    "link": "https://www.hankyung.com/article/2026053192601",
+    "outlet": "hankyung.com",
+    "why": "데모 화면에서는 가장 최근 기사를 임시로 픽으로 표시합니다. 실제 주간 발행에서는 Claude 큐레이션 데스크가 그 주 전체 뉴스를 중요도 기준(전국·글로벌 반향, 산업 영향, 기록 등)으로 검토해 '이번 주 최대 이슈'를 선정하고, 왜 그것을 채택했는지 근거를 적습니다. 제목을 클릭하면 원문 기사로 연결됩니다.",
     "honorableMentions": [],
     "image": {
-      "url": "https://cdn.bizwnews.com/news/thumbnail/202605/137747_152780_487_v150.jpg",
-      "source": "사진: bizwnews.com"
+      "url": "https://static.hankyung.com/img/logo/logo-news-sns.png?v=20201130",
+      "source": "사진: hankyung.com"
     }
   },
   "editorial": {
-    "title": "한 주의 흐름: 가장 새로운 것과 가장 오래된 것 사이에서",
-    "bodyMarkdown": "이번 주 한국 문화는 여러 영역에서 동시에 움직였다. 대중음악과 영상 콘텐츠가 세계를 향해 보폭을 넓히는 동안, 웹툰과 게임은 이야기의 산업적 가치를 다시 증명했고, K-뷰티와 K-푸드는 일상의 취향을 바꾸는 트렌드로 자리를 굳혔다.\n\n주목할 것은 이 흐름이 더 이상 한 장르의 성취로 환원되지 않는다는 점이다. 음악이 드라마로, 웹툰이 영화로, 음식이 라이프스타일로 번지며 경계가 흐려지고, 그 사이에서 새로운 팬덤과 시장이 만들어진다. **넓이와 깊이가 동시에 자라는** 흔치 않은 국면이다.\n\n물론 빠른 속도의 그늘도 또렷하다. 과열된 마케팅, 짧아진 검증의 시간, 창작자 보상이라는 오래된 숙제가 여전히 따라붙는다. 그럼에도 분명한 것은, 한국의 이야기가 그 어느 때보다 멀리, 그리고 다양한 모습으로 퍼지고 있다는 사실이다.\n\n(실제 주간 발행 시에는 Claude가 그 주의 실제 뉴스 흐름을 바탕으로 이 총평을 새로 작성한다.)"
+    "title": "한 주의 흐름",
+    "bodyMarkdown": "이번 주에도 한국 문화는 음악·영상·웹툰·뷰티·푸드·테크 등 여러 영역에서 동시에 움직였다. 장르의 경계가 흐려지며 하나의 이야기가 음악에서 드라마로, 웹툰에서 영화로 번지는 흐름이 더욱 뚜렷해졌다.\n\n(이 글은 데모 예시다. 실제 주간 발행 시에는 Claude 편집장이 그 주의 실제 뉴스 흐름을 바탕으로 통찰이 담긴 총평을 새로 작성한다.)"
   },
   "categories": [
     {
@@ -31,35 +31,35 @@
       "label": "K-pop·음악",
       "entries": [
         {
-          "headline": "이채영, 심플한 화이트 룩에 포인트백…감각적인 현장",
-          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16076266",
-          "outlet": "topstarnews.net",
-          "pubDate": "2026-05-31T10:38:00.000Z",
-          "blurb": "데뷔 전에는 오디션 프로그램 '아이돌학교'에서 보컬과 댄스 평가에서 상위권에 오르며 이름을 알렸고... 컨디션 회복에 집중하겠다고 밝힌 가운데 프로미스나인은 오는 7월 약 3년 만에 정규 앨범 컴백을 준비 중이다.",
+          "headline": "언젠가 또다시 함께 ‘픽 미’…아이오아이 10주년, 잠실 가득 채운 환...",
+          "link": "https://www.khan.co.kr/article/202605312038005",
+          "outlet": "khan.co.kr",
+          "pubDate": "2026-05-31T11:38:00.000Z",
+          "blurb": "지난 29일 서울 송파구 잠실실내체육관에서 열린 아이오아이(I.O.I)의 콘서트 <2026 아이오아이 콘서트 투어 : 루프(LOOP)>를 통해서다. 2016년 4월 Mnet 오디션 프로그램 <프로듀스 101>을 통해 결성된 아이오아이는 이듬해 1월...",
           "image": {
-            "url": "https://cdn.topstarnews.net/news/photo/202605/16076266_1933510_3721_crop.jpg",
-            "source": "사진: topstarnews.net"
+            "url": "https://img.khan.co.kr/news/2026/05/31/l_2026060101000009400087441.jpg",
+            "source": "사진: khan.co.kr"
           }
         },
         {
-          "headline": "김의영, 레이스 커튼 앞 화이트 드레스 자태…신곡 활동 앞둔 여유",
-          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16076262",
-          "outlet": "topstarnews.net",
-          "pubDate": "2026-05-31T10:38:00.000Z",
-          "blurb": "그는 '전국TOP10가요쇼'에서 '트로트퀸' 출연 비하인드를 전하는 등 무대 밖 이야기로도 관심을 모았다. 이... 한편, 김의영은 최근 인터뷰와 방송을 통해 신곡 활동과 향후 무대 계획을 차례로 예고했다. '현역가왕3' 출연...",
+          "headline": "‘뷰민라’ 점령한 명창토끼…데이식스 원필, 데뷔 11년만 페스티벌 헤...",
+          "link": "https://www.newsen.com/news_view.php?uid=202605312028280410",
+          "outlet": "newsen.com",
+          "pubDate": "2026-05-31T11:35:00.000Z",
+          "blurb": "백양콘서트홀, 올림픽홀, 티켓링크라이브아레나(구 SK올림픽핸드볼경기장), 잠실실내체육관, KSPO DOME(체조경기장), 고척스카이돔, 고양종합운동장에 차례로 입성하며 내공을 다졌다. 해외 투어, 페스티벌 무대...",
           "image": {
-            "url": "https://cdn.topstarnews.net/news/photo/202605/16076262_1933506_3613_crop.jpg",
-            "source": "사진: topstarnews.net"
+            "url": "https://photo.newsen.com/news_photo/2026/05/31/202605312028280410_51.jpeg",
+            "source": "사진: newsen.com"
           }
         },
         {
-          "headline": "유나, 'Ice Cream' 이후 물오른 솔로 행보",
-          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16076264",
+          "headline": "방탄소년단(BTS) 'ARIRANG' 부산 콘서트, 라이브 뷰잉 특전은 스페셜 엽...",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16076278",
           "outlet": "topstarnews.net",
-          "pubDate": "2026-05-31T10:38:00.000Z",
-          "blurb": "K-POP 콘서트 공동 MC를 통해 진행 실력을 보여줬다. 2024년에는 MBC '라디오 스타'에 게스트로 출연해... 월드투어 'ITZY 3RD WORLD TOUR TUNNEL VISION'을 통해 팀 활동과 솔로 활동을 병행하며 다채로운 무대를 이어가고 있다.",
+          "pubDate": "2026-05-31T11:30:00.000Z",
+          "blurb": "방탄소년단(BTS)이 부산에서 콘서트를 극장에서 라이브 뷰잉으로 공연을 즐길 수 있다. 극장별... 이후 BTS는 고양 종합운동장 주경기장에서 '아리랑' 스타디움 투어를 시작했다. 투어는 2027년까지 이어질...",
           "image": {
-            "url": "https://cdn.topstarnews.net/news/photo/202605/16076264_1933508_3647_crop.jpg",
+            "url": "https://cdn.topstarnews.net/news/photo/202605/16076278_1933524_2910_crop.jpeg",
             "source": "사진: topstarnews.net"
           }
         }
@@ -70,35 +70,35 @@
       "label": "K-드라마·영화",
       "entries": [
         {
-          "headline": "[6·3 픽] 전재수, 'AI·어르신 공약' 발표…\"시민 체감 생활 도시 만들...",
-          "link": "https://www.dailian.co.kr/news/view/1650843/?sc=Naver",
-          "outlet": "dailian.co.kr",
-          "pubDate": "2026-05-31T10:42:00.000Z",
-          "blurb": "또 AI 영화 영상센터를 건립해 한국적 영화 영상 데이터베이스를 구축하고 △AI 창작 도구 개발 △연구개발 전문 인력 양성 △산학연 네트워크 등을 만들겠다고 약속했다. 아울러 전 후보는 어르신들의 생활 불편을 덜기...",
+          "headline": "완주문화관광재단, 영유아 양육 부모 위한 프로그램‘베이비 드라마’...",
+          "link": "https://sjbnews.com/news/news.php?number=879583",
+          "outlet": "sjbnews.com",
+          "pubDate": "2026-05-31T11:33:00.000Z",
+          "blurb": "완주문화관광재단은 문화체육관광부와 한국문화예술교육진흥원이 주관?주최하는 2026 생활밀착형 문화예술 교육 프로그램 가가호호의 일환으로, 영유아 부모를 위한 ‘베이비 드라마’ 프로그램을 마쳤다고 밝혔다....",
           "image": {
-            "url": "https://cdnimage.dailian.co.kr/news/202605/news_1780223152_1650843_m_1.jpg",
-            "source": "사진: dailian.co.kr"
+            "url": "http://sjbnews.com/img_db/sns.jpg",
+            "source": "사진: sjbnews.com"
           }
         },
         {
-          "headline": "엄정화, 올화이트 수트로 완성한 시크한 갤러리 나들이",
-          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16076263",
-          "outlet": "topstarnews.net",
-          "pubDate": "2026-05-31T10:38:00.000Z",
-          "blurb": "일렉트로니카 사운드를 전면에 내세운 정규 9집 'Prestige'는 한국대중음악상 최우수 댄스&일렉트로닉... 드라마 분야에서도 '12월의 열대야', '마녀의 연애', '당신은 너무합니다' 등에 출연하며 존재감을 쌓았다. 특히...",
+          "headline": "한국타이어 티스테이션, '올마이티 서비스' 브랜드 필름 공개",
+          "link": "https://www.gpkorea.com/news/articleView.html?idxno=143302",
+          "outlet": "gpkorea.com",
+          "pubDate": "2026-05-31T11:32:00.000Z",
+          "blurb": "또한 드라마 '모범택시'로 인지도를 높인 배우 장혁진과 배유람이 출연해 소비자들의 공감대를 높였다는 평가다. 영상은 한국타이어 공식 유튜브와 인스타그램 등 SNS 채널을 비롯해 TV, 영화관, 디지털 매체 등...",
           "image": {
-            "url": "https://cdn.topstarnews.net/news/photo/202605/16076263_1933507_3630_crop.jpg",
-            "source": "사진: topstarnews.net"
+            "url": "https://cdn.gpkorea.com/news/photo/202605/143302_303966_2519.jpg",
+            "source": "사진: gpkorea.com"
           }
         },
         {
-          "headline": "유나, 하늘 아래 교복 자태…솔로 활동 후 근황",
-          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16076268",
+          "headline": "추영우, 돌계단 위 여유로운 시선…대세 행보 잇는 근황",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16076261",
           "outlet": "topstarnews.net",
-          "pubDate": "2026-05-31T10:38:00.000Z",
-          "blurb": "ITZY는 예지, 리아, 류진, 채령, 유나로 구성된 5인조 그룹으로, 한국 미니 1집 'IT'z ICY'부터 정규 1집... 2026년 tvN 드라마 '언더커버 미쓰홍'에서 홍장미 역으로 특별출연해 여주인공의 동생으로 등장했고, 같은...",
+          "pubDate": "2026-05-31T10:36:00.000Z",
+          "blurb": "다녔고, 한국예술종합학교 연극원 연기과에 성적 장학생으로 합격했다는 일화도 널리 알려져 있다. 한편, 추영우는 최근 ENA 드라마 '연애박사'에서 박민재 역으로 출연 중이다. 골육종으로 왼쪽 다리를 잃고...",
           "image": {
-            "url": "https://cdn.topstarnews.net/news/photo/202605/16076268_1933512_3753_crop.jpg",
+            "url": "https://cdn.topstarnews.net/news/photo/202605/16076261_1933505_3556_crop.jpg",
             "source": "사진: topstarnews.net"
           }
         }
@@ -148,6 +148,17 @@
       "label": "K-뷰티",
       "entries": [
         {
+          "headline": "\"새벽부터 줄 섰다\"…美 올영 1호점 개장 첫날부터 북새통",
+          "link": "https://www.hankyung.com/article/2026053191361",
+          "outlet": "hankyung.com",
+          "pubDate": "2026-05-31T11:08:00.000Z",
+          "blurb": "CJ올리브영 패서디나점의 ‘더 뷰티 랩’ 존에서는 피부 상태를 측정해 최적의 스킨케어 제품을... 오는 8월 LA에서 대규모 체험형 뷰티 행사 ‘올리브영 페스타’도 연다. 국내에서 열던 행사를 올해부터 해외로...",
+          "image": {
+            "url": "https://img.hankyung.com/photo/202605/AA.44483120.1.jpg",
+            "source": "사진: hankyung.com"
+          }
+        },
+        {
           "headline": "[신상 열전] 오뚜기, 파리바게뜨 '파란라벨', 아모레퍼시픽 '바이탈뷰티...",
           "link": "http://www.bizwnews.com/news/articleView.html?idxno=137747",
           "outlet": "bizwnews.com",
@@ -168,17 +179,6 @@
             "url": "https://www.newscj.com/image/logo/snslogo_20230314012157.png",
             "source": "사진: newscj.com"
           }
-        },
-        {
-          "headline": "다산에이티, 구미국가5산단에 신축공장 준공",
-          "link": "https://daily.hankooki.com/news/articleView.html?idxno=1372207",
-          "outlet": "daily.hankooki.com",
-          "pubDate": "2026-05-31T10:30:00.000Z",
-          "blurb": "최근 글로벌 미용·피부 시술 시장 확대와 K-뷰티 산업 성장, 해외시장 수요 증가에 선제적으로 대응하기 위한 투자다. 이 회사는 1998년 '다산정공'으로 출발한 구미 기반 기업이다. 반도체 등 산업용 부품 생산을 기반으로...",
-          "image": {
-            "url": "https://cdn.daily.hankooki.com/news/thumbnail/202605/1372207_1555102_5521_v150.jpg",
-            "source": "사진: daily.hankooki.com"
-          }
         }
       ]
     },
@@ -186,6 +186,17 @@
       "key": "food",
       "label": "K-푸드·맛집",
       "entries": [
+        {
+          "headline": "부안군, 중기부 협업프로젝트 선정",
+          "link": "https://sjbnews.com/news/news.php?number=879567",
+          "outlet": "sjbnews.com",
+          "pubDate": "2026-05-31T11:32:00.000Z",
+          "blurb": "결과”라며 “이번 예비 선정을 시작으로 최종 선정까지 차질 없이 준비해 부안의 전통 젓갈이 글로벌 K-푸드의 주역이 되고 나아가 지역 경제의 강력한 신성장 동력이 될 수 있도록 최선을 다하겠다”고 말했다. /부안=",
+          "image": {
+            "url": "http://sjbnews.com/data/data_file/thum_879567_202605_0.jpeg",
+            "source": "사진: sjbnews.com"
+          }
+        },
         {
           "headline": "국정과제 93% 추진… 위기 대응서 성장 전략으로 2막 연다",
           "link": "https://www.asiatoday.co.kr/kn/view.php?key=20260601010009203",
@@ -207,17 +218,6 @@
             "url": "https://cdn.ccdn.co.kr/news/thumbnail/202605/1080722_589942_0045_v150.jpg",
             "source": "사진: ccdn.co.kr"
           }
-        },
-        {
-          "headline": "K베이커리, 미국 매장 500개 달성",
-          "link": "https://www.mk.co.kr/article/12062291",
-          "outlet": "mk.co.kr",
-          "pubDate": "2026-05-31T08:44:00.000Z",
-          "blurb": "K컬처·푸드붐이 불고 있는 상황을 이용해 해외 영업에 더욱 박차를 가하고 있다. 31일 제과업계에 따르면 파리바게뜨의 미국 매장은 5월 299개를 달성한 데 이어 6월 초 300개를 돌파할 것으로 보인다. CJ푸드빌이...",
-          "image": {
-            "url": "https://pimg.mk.co.kr/news/cms/202606/01/20260601_01160116000001_L00.jpg",
-            "source": "사진: mk.co.kr"
-          }
         }
       ]
     },
@@ -226,36 +226,36 @@
       "label": "K-게임·e스포츠",
       "entries": [
         {
-          "headline": "'1~2R 1위' 한화생명 윤성영, \"열심히 한 선수들의 결괏값\"",
-          "link": "http://www.dailyesports.com/view.php?ud=202605311929299400b91e133c1f_27",
-          "outlet": "dailyesports.com",
-          "pubDate": "2026-05-31T10:31:00.000Z",
-          "blurb": "LCK 1~2라운드를 1위로 마무리한 한화생명e스포츠 '옴므' 윤성영 감독이 \"열심히 한 선수들의 결괏값이라고 생각한다\"고 밝혔다. 한화생명은 31일 오후 서울 종로구 그랑서울 롤파크 LCK 아레나에서 벌어진 LCK 9주 차...",
+          "headline": "[LCK] '쇼메이커-스매쉬' 맹활약! DK, 농심전 2:0으로 2R 마무리",
+          "link": "https://www.inven.co.kr/webzine/news/?news=316984",
+          "outlet": "inven.co.kr",
+          "pubDate": "2026-05-31T11:46:00.000Z",
+          "blurb": "31일 종로 치지직 롤파크에서 열린 '2026 LoL 챔피언스 코리아(이하 LCK)' 정규 시즌 2라운드 마지막 경기, 농심 레드포스와 디플러스 기아의 대결에서 디플러스 기아가 2:0으로 승리하며 유종의 미를 거뒀다. 딜러진...",
           "image": {
-            "url": "https://cgeimage.commutil.kr/phpwas/restmb_allidxmake.php?pp=002&idx=999&simg=20260531192954040220b91e133c1f11045166170.jpg&nmt=27",
-            "source": "사진: dailyesports.com"
+            "url": "https://static.inven.co.kr/column/2026/05/31/news/i1605159180.jpg",
+            "source": "사진: inven.co.kr"
           }
         },
         {
-          "headline": "[LCK] \"결국 1위는 한화생명 e스포츠였다\"... 한진 브리온 완파한 한화생...",
-          "link": "https://www.stnsports.co.kr/news/articleView.html?idxno=317182",
+          "headline": "[PMPS] 농심, 통산 세 번째 한국 챔피언 등극…\"45억원 '월드컵' 티켓 받...",
+          "link": "https://www.apnews.kr/news/articleView.html?idxno=3048762",
+          "outlet": "apnews.kr",
+          "pubDate": "2026-05-31T11:34:00.000Z",
+          "blurb": "농심 레드포스 배틀그라운드 모바일 e스포츠 한국 지역 대회인 '배틀그라운드 모바일 프로 시리즈(PMPS)... 농심 레드포스는 31일 대전 이스포츠경기장에서 유관중으로 열린 크래프톤 주최 '마운틴듀 PMPS 2026 시즌 1...",
+          "image": {
+            "url": "https://cdn.apnews.kr/news/thumbnail/202605/3048762_80103_3057_v150.jpg",
+            "source": "사진: apnews.kr"
+          }
+        },
+        {
+          "headline": "[LCK] \"빅토르가 다 태웠다\" 쇼메이커 폭주... 디플러스 기아, 농심 완파...",
+          "link": "https://www.stnsports.co.kr/news/articleView.html?idxno=317183",
           "outlet": "stnsports.co.kr",
-          "pubDate": "2026-05-31T10:24:00.000Z",
-          "blurb": "류승우 기자┃한화생명e스포츠가 정규시즌 마지막 경기에서 한진 브리온을 완파하며 LCK 1~2라운드 정상에... 정규시즌 마지막 날, 가장 높은 곳에 선 팀은 결국 한화생명e스포츠였다. 한화생명은 이날 열린 2026 LCK...",
+          "pubDate": "2026-05-31T11:31:00.000Z",
+          "blurb": "쇼메이커 빅토르, 초반부터 전장 장악 31일 서울 종로구 롤파크에서 열린 2026 리그 오브 레전드 챔피언스 코리아(LCK) 정규시즌 2라운드 2경기 1세트에서 디플러스 기아가 농심 레드포스를 제압하고 먼저 웃었다. 이날...",
           "image": {
-            "url": "https://cdn.stnsports.co.kr/news/photo/202605/317182_322522_2111.jpg",
+            "url": "https://cdn.stnsports.co.kr/news/photo/202605/317183_322526_2932.jpg",
             "source": "사진: stnsports.co.kr"
-          }
-        },
-        {
-          "headline": "[LCK] ‘파괴전차’ 한화생명, 브리온 꺾고 2R 1위 확정…RTM 3R 진출(종합...",
-          "link": "http://www.osen.co.kr/article/G1112812160",
-          "outlet": "osen.co.kr",
-          "pubDate": "2026-05-31T10:06:00.000Z",
-          "blurb": "한화생명은 31일 오후 서울 종로 롤파크 LCK아레나에서 열린 2026 LCK 정규 시즌 2라운드 한진 브리온과 경기에서 ‘제카’ 김건우를 중심으로 라인전 단계부터 한타까지 상대를 압도하며 2-0으로 승리했다. 이로써...",
-          "image": {
-            "url": "http://file.osen.co.kr/article_thumb/2026/05/31/202605311903777516_6a1c07dfba838_300x.jpg",
-            "source": "사진: osen.co.kr"
           }
         }
       ]
@@ -265,36 +265,36 @@
       "label": "K-테크·로봇",
       "entries": [
         {
-          "headline": "네이버클라우드, 국방 AX TF 신설…군 전담 AI 조직 첫 출범",
-          "link": "https://www.kyeonggi.com/article/20260531580361",
-          "outlet": "kyeonggi.com",
-          "pubDate": "2026-05-31T10:44:00.000Z",
-          "blurb": "네이버가 국방 AI 관련 사업을 전담하는 조직을 새롭게 개설한다. 31일 정보기술(IT) 업계에 따르면 네이버클라우드는 6월1일 자로 국방 AX(AI 전환) 김유원 대표가 직접 이끄는 전담 태스크포스(TF)를 출범할 예정이다....",
-          "image": {
-            "url": "https://ypzxxdrj8709.edge.naverncp.com/data2/content/image/2026/05/31/.cache/512/20260531580362.png?v=20260531194701",
-            "source": "사진: kyeonggi.com"
-          }
-        },
-        {
-          "headline": "네이버, 국방 AX TF 신설…군 전용 모델로 '소버린 AI' 확장",
-          "link": "https://www.news1.kr/it-science/general-it/6183125",
-          "outlet": "news1.kr",
-          "pubDate": "2026-05-31T10:43:00.000Z",
-          "blurb": "네이버(035420)가 국방 인공지능(AI) 사업 전담 조직을 신설해 국방 AI 시장 공략을 본격화한다. 최근 표적 탐지나 작전 처리 등 전쟁에서의 AI 활용 필요성이 대두되면서 국방 분야의 AI 전환(AX) 토대를 마련하려는...",
-          "image": {
-            "url": "https://i3n.news1.kr/system/photos/2025/12/30/7673908/high.jpg",
-            "source": "사진: news1.kr"
-          }
-        },
-        {
-          "headline": "[단독] 타이베이에서 만난 젠슨 황 딸 매디슨 \"다음주 한국행…흥미로울...",
-          "link": "https://www.hankyung.com/article/202605319258i",
+          "headline": "네이버 '국방 AI' 사업 진출한다",
+          "link": "https://www.hankyung.com/article/2026053192601",
           "outlet": "hankyung.com",
-          "pubDate": "2026-05-31T10:43:00.000Z",
-          "blurb": "이미 황 이사는 지난 4월 한국을 찾아 삼성전자, SK하이닉스, 현대차, LG전자, 두산로보틱스 등 한국의 피지컬AI 기업들을 만나 협력 방안을 논의했다. 약 두달만에 황 CEO가 한국을 찾으면서 황 이사가 지난 출장 때...",
+          "pubDate": "2026-05-31T11:47:00.000Z",
+          "blurb": "자체 초거대 AI와 클라우드 인프라를 앞세워 군사 데이터를 통합·분석하는 ‘한국형 국방 AI 플랫폼’을 만든다는 계획이다. 31일 정보기술(IT) 업계에 따르면 네이버클라우드는 1일 국방 AI 전담 조직인 ‘디펜스...",
           "image": {
-            "url": "https://img.hankyung.com/photo/202605/01.44483206.1.jpg",
+            "url": "https://static.hankyung.com/img/logo/logo-news-sns.png?v=20201130",
             "source": "사진: hankyung.com"
+          }
+        },
+        {
+          "headline": "‘발’ 필요 없다?…우주에 최적화 ‘손’ 4개 달린 휴머노이드",
+          "link": "https://www.khan.co.kr/article/202605312046005",
+          "outlet": "khan.co.kr",
+          "pubDate": "2026-05-31T11:46:00.000Z",
+          "blurb": "오비트 로보틱스는 기술 설명 자료를 통해 “케이블을 사용하면 로봇 전체 무게를 줄일 수 있다”고 했다. 비교적 무거운 장비인 모터 숫자가 적어지기 때문이다. 헬리오스의 정확한 무게는 공개되지 않았지만, 운송비가...",
+          "image": {
+            "url": "https://img.khan.co.kr/news/2026/05/31/l_2026060101000001700087521.jpg",
+            "source": "사진: khan.co.kr"
+          }
+        },
+        {
+          "headline": "무인 방산장비, 공중 이어 육상으로 확장…‘로봇 탱크’ 첫선",
+          "link": "https://www.khan.co.kr/article/202605312044015",
+          "outlet": "khan.co.kr",
+          "pubDate": "2026-05-31T11:44:00.000Z",
+          "blurb": "관련해 딜 디펜스는 “(치젤은) 발사 과정에서 나타나는 충격을 이겨냈다”고 했다. 치젤은 현재 원격조종을 통해 움직인다. 딜 디펜스는 “치젤을 완전 자율 주행하도록 만드는 기술도 적용 가능한 단계”라고 밝혔다.",
+          "image": {
+            "url": "https://img.khan.co.kr/news/2026/05/31/l_2026060101000001900087481.jpg",
+            "source": "사진: khan.co.kr"
           }
         }
       ]
@@ -304,36 +304,36 @@
       "label": "공연·전시·예술",
       "entries": [
         {
-          "headline": "‘50년 역사’ 극단76, 4일부터 대표작 ‘리어의 역’·‘관객모독’ 공...",
-          "link": "https://www.seoul.co.kr/news/life/performance/2026/05/31/20260531500098?wlog_tag3=naver",
-          "outlet": "seoul.co.kr",
-          "pubDate": "2026-05-31T10:37:00.000Z",
-          "blurb": "지평을 연 ‘관객모독’은 꾸준히 공연되며 극단의 대표작으로 자리매김했다. 이번 기념 공연에는 기주봉, 정재진 등이 출연할 예정이다. 기념 공연은 다양한 창작 뮤지컬과 연극을 제작해 온 주다컬쳐와 공동 제작했다.",
+          "headline": "검열의 시대에 꽃 핀 ‘폴란드 포스터’의 힘",
+          "link": "http://www.kwangju.co.kr/article.php?aid=1780227600799593007",
+          "outlet": "kwangju.co.kr",
+          "pubDate": "2026-05-31T11:42:00.000Z",
+          "blurb": "오현화 팀장은 “스탈린주의의 엄혹한 검열 세태 속에서도 ‘폴란드 포스터 학파’는 말하고자 하는 바를 은유적이면서도 예술적으로 표현했다”며 “전시에서는 영화나 전시회 등 다양한 콘텐츠를 상징적이며...",
           "image": {
-            "url": "https://img.seoul.co.kr//img/upload/2026/05/31/SSC_20260531193459_O2.png",
-            "source": "사진: seoul.co.kr"
+            "url": "http://www.kwangju.co.kr/upimages/gisaimg/202606/01_799593_799.jpg",
+            "source": "사진: kwangju.co.kr"
           }
         },
         {
-          "headline": "美 건국 250주년 공연에 가수들 잇단 불참 선언…트럼프 \"내가 대신하겠...",
-          "link": "https://news.tvchosun.com/site/data/html_dir/2026/05/31/2026053190182.html",
-          "outlet": "news.tvchosun.com",
-          "pubDate": "2026-05-31T10:36:00.000Z",
-          "blurb": "컨트리 가수 마르티나 맥브라이드 또한 \"비(非)당파적인 무대에서 공연할 기회를 제안받았지만, 이것이 잘못 알려진 것임이 드러났다\"며 출연 취소에 동참했다. 펑크 밴드 코모도스는 \"그 어떤 단일 정당과도 공식적으로...",
+          "headline": "한화오션, 캐나다 방산 전시회 'CANSEC 2026' 성료... 잠수함 수주 총력전",
+          "link": "http://www.newslock.co.kr/news/articleView.html?idxno=130799",
+          "outlet": "newslock.co.kr",
+          "pubDate": "2026-05-31T11:42:00.000Z",
+          "blurb": "방산 전시회에서 독보적인 잠수함 기술력과 파격적인 현지 산업 협력안을 제시하며 캐나다 해군의 차세대 잠수함 도입 사업 수주를 위한 막바지 총력전에 돌입했다. 한화오션은 캐나다 최대 방산 전시회인 'CANSEC 2026...",
           "image": {
-            "url": "https://news.tvchosun.com/images/common/header_logo.png",
-            "source": "사진: news.tvchosun.com"
+            "url": "https://cdn.newslock.co.kr/news/thumbnail/202605/130799_118863_312_v150.jpg",
+            "source": "사진: newslock.co.kr"
           }
         },
         {
-          "headline": "김동준, 무대 의상 사진 공개…뮤지컬 활동 잇는 근황",
-          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16076250",
-          "outlet": "topstarnews.net",
-          "pubDate": "2026-05-31T10:34:00.000Z",
-          "blurb": "그룹 활동과 함께 예능과 연기를 병행하며 존재감을 키웠고, 이후 드라마와 영화, 뮤지컬을 넘나들며... 한편, 김동준은 최근 영화와 뮤지컬, 드라마를 넘나들며 활동 반경을 넓히고 있다. 영화 분야에서는 2025년...",
+          "headline": "제14회 무주산골영화제 손님맞이 분주",
+          "link": "https://sjbnews.com/news/news.php?number=879551",
+          "outlet": "sjbnews.com",
+          "pubDate": "2026-05-31T11:32:00.000Z",
+          "blurb": "군에 따르면 등나무운동장, 지남공원, 예체문화관, 무주상상반디숲, 최북미술관·김환태문학관 등... 등 무주군 일원에서 27개국 90편의 영화가 상영된다. 실내외 공간에서는 음악, 전시, 문화 체험도 즐길 수 있다. /무주=",
           "image": {
-            "url": "https://cdn.topstarnews.net/news/photo/202605/16076250_1933493_3326_crop.jpg",
-            "source": "사진: topstarnews.net"
+            "url": "http://sjbnews.com/data/data_file/thum_879551_202605_0.jpg",
+            "source": "사진: sjbnews.com"
           }
         }
       ]
@@ -343,36 +343,36 @@
       "label": "전통문화",
       "entries": [
         {
-          "headline": "전기안전공사, 재난안전·재난관리 ‘우수기관’ 입증",
-          "link": "https://www.busan.com/view/busan/view.php?code=2026053119384299286",
-          "outlet": "busan.com",
-          "pubDate": "2026-05-31T10:43:00.000Z",
-          "blurb": "특히 문화재·전통시장 등 약 3000 개소를 대상으로 집중안전점검을 실시해 700여 건의 전기설비 위험요인을 발굴·조치했다. 배수펌프장·지하차도 등 국가 주요시설의 전기설비를 점검해 재난 발생 시 안정적인 운영을...",
+          "headline": "민형배, 이원택·위성곤과 호남·제주 공동성장 선언",
+          "link": "https://www.nocutnews.co.kr/news/6525496?utm_source=naver&utm_medium=article&utm_campaign=20260531083858",
+          "outlet": "nocutnews.co.kr",
+          "pubDate": "2026-05-31T11:39:00.000Z",
+          "blurb": "세 후보는 공동선언문에서 \"전북·제주·전남광주는 동학농민혁명과 제주4·3, 5·18민주화운동의 역사적 의미를 민주주의와 평화, 인권의 가치로 이어왔다\"며 \"농생명·농수산업과 섬과 바다, 전통문화와 관광...",
           "image": {
-            "url": "https://www.busan.com/nas/wcms/wcms_data/photos/2026/05/30/2026053016362115008_l.jpg",
-            "source": "사진: busan.com"
+            "url": "https://file2.nocutnews.co.kr/newsroom/image/2026/05/31/202605312025223201_0.jpg",
+            "source": "사진: nocutnews.co.kr"
           }
         },
         {
-          "headline": "'호남과 제주의 공동성장'...손 맞잡은 민형배·이원택·위성곤 [TF사진...",
-          "link": "https://news.tf.co.kr/read/photomovie/2328027.htm",
-          "outlet": "news.tf.co.kr",
-          "pubDate": "2026-05-31T10:37:00.000Z",
-          "blurb": "이날 공동선언문에는 전북·광주전남·제주는 동학농민혁명과 5·18민주화운동, 제주4·3의 역사적 의미를 민주주의와 평화, 인권의 가치로 이어왔으며, 농생명·농수산업과 섬·바다, 전통·문화·예술, 관광, 재생에너지라는...",
+          "headline": "지질유산은 인류 공동의 자산이며 미래 세대에 전승해야 할 보전 대상이...",
+          "link": "https://sjbnews.com/news/news.php?number=879601",
+          "outlet": "sjbnews.com",
+          "pubDate": "2026-05-31T11:33:00.000Z",
+          "blurb": "5회의 개인전을 가진 그는 이탈리아 한국문화원 개원식에 초대되기도 했던 작가로, 문화재청 창경궁·덕수궁 등 관리소장, 국립무형유산원 기획운영과장, 문화유산연구원 행정운영과장 등을 역임했다. 현재 전북대...",
           "image": {
-            "url": "https://img.tf.co.kr/article/home/2026/05/31/2026521780221751.jpg",
-            "source": "사진: news.tf.co.kr"
+            "url": "http://sjbnews.com/data/data_file/thum_879601_202605_0.jpg",
+            "source": "사진: sjbnews.com"
           }
         },
         {
-          "headline": "경기학회 봄학술대회 “지역 문화정책 지속 위해... 전환 아닌 공동 진...",
-          "link": "https://www.kyeonggi.com/article/20260531580355",
-          "outlet": "kyeonggi.com",
-          "pubDate": "2026-05-31T10:29:00.000Z",
-          "blurb": "첫 번째 순서로 진행된 특별세션에서 기조강연자로 나선 이흥재 한국전통문화대학교 초빙교수는 문화정책에서 등장하는 ‘전환’이라는 표현에 대해 “새로움만큼이나 문화예술 현장은 혼란과 피로감이 남는다”며 정권...",
+          "headline": "익산시, 용기리 도시생태축 복원사업 본격 추진",
+          "link": "https://sjbnews.com/news/news.php?number=879560",
+          "outlet": "sjbnews.com",
+          "pubDate": "2026-05-31T11:32:00.000Z",
+          "blurb": "또한 사업 대상지가 문화재 매장유산 지역에 포함된 만큼 현재 시굴조사를 진행하고 있으며 조사 결과를 반영해 기본 및 실시설계를 추진할 계획이다. 익산시 관계자는 \"이번 사업을 통해 단절되고 훼손된 생태축을...",
           "image": {
-            "url": "https://ypzxxdrj8709.edge.naverncp.com/data2/content/image/2026/05/31/.cache/512/20260531580357.jpg?v=20260531194701",
-            "source": "사진: kyeonggi.com"
+            "url": "http://sjbnews.com/data/data_file/thum_879560_202605_0.jpg",
+            "source": "사진: sjbnews.com"
           }
         }
       ]
@@ -393,29 +393,29 @@
           }
         },
         {
-          "headline": "민주-국힘-개혁 수원시장 후보 ‘마지막 주말’ 총력전",
-          "link": "https://www.kyeonggi.com/article/20260531580297",
-          "outlet": "kyeonggi.com",
-          "pubDate": "2026-05-31T08:40:00.000Z",
-          "blurb": "이 후보는 “구도심이었던 행궁동을 전국 최고 ‘핫플레이스’ 행리단길로 변화시킨 것은 수원 대 전환의 증거”라며 “수원화성을 세계 문화관광 콘텐츠로 키우고, 경기도와 함께 수원의 묵은 규제를 풀어내겠다”고...",
+          "headline": "요즘 유행이 뻔하게 느껴질 때, 20년전 패션 바이블을 꺼내 봐요",
+          "link": "https://www.wkorea.com/2026/05/31/%ec%9a%94%ec%a6%98-%ec%9c%a0%ed%96%89%ec%9d%b4-%eb%bb%94%ed%95%98%ea%b2%8c-%eb%8a%90%ea%bb%b4%ec%a7%88-%eb%95%8c-20%eb%85%84%ec%a0%84-%ed%8c%a8%ec%85%98-%eb%b0%94%ec%9d%b4%eb%b8%94%ec%9d%84-%ea%ba%bc/?utm_source=naver&utm_medium=partnership",
+          "outlet": "wkorea.com",
+          "pubDate": "2026-05-31T08:28:00.000Z",
+          "blurb": "Getty Images 20년 주기로 돌아오는 유행 덕분일까요, 유독 2000년대 방영되었던 ‘섹스 앤 더 시티’ 속 캐리의 의상에서 현재 트렌드가 돋보입니다. 화이트 코튼 슬리브리스 톱처럼 말이죠. 요즘 MZ식의 스타일링은...",
           "image": {
-            "url": "https://ypzxxdrj8709.edge.naverncp.com/data2/content/image/2026/05/31/.cache/512/20260531580298.jpg?v=20260531194701",
-            "source": "사진: kyeonggi.com"
+            "url": "https://www.wkorea.com/wp_data/w/2026/05/style_6a1be410ae0a5-scaled-1920x1080.jpg?x=1812&y=1358&ver=1.1.72",
+            "source": "사진: wkorea.com"
           }
         },
         {
-          "headline": "[6·3 핫플레이스] 인천 연수구 제5선거구 시의원 선거",
-          "link": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3024509",
-          "outlet": "kihoilbo.co.kr",
-          "pubDate": "2026-05-31T08:38:00.000Z",
-          "blurb": "기호일보, KIHOILBO 인천 연수구 제5선거구(송도2·5동) 시의원선거는 서로 다른 생활권의 표심을 놓고 현역 시의원 간 맞대결이 펼쳐지면서 관심이 집중되고 있다. 국민의힘 이강구 시의원이 재선에 도전하고 더불어민주당...",
+          "headline": "창원시, AI·SNS 결합한 관광마케팅 강화…젊은 관광객 유입 확대",
+          "link": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1260993",
+          "outlet": "jeonmae.co.kr",
+          "pubDate": "2026-05-31T08:24:00.000Z",
+          "blurb": "시는 최근 관광 소비 트렌드가 SNS와 숏폼 중심으로 변화함에 따라 공식 관광 인스타그램과 홈페이지 등... 등 MZ세대 선호 관광자원을 중심으로 홍보를 강화하고 있다. 김만기 창원시 문화관광체육국장은 \"관광객이 직접...",
           "image": {
-            "url": "https://cdn.kihoilbo.co.kr/news/photo/202605/3024509_568223_3322.jpg",
-            "source": "사진: kihoilbo.co.kr"
+            "url": "https://www.jeonmae.co.kr/news/thumbnail/202605/1260993_982040_1621_v150.jpg",
+            "source": "사진: jeonmae.co.kr"
           }
         }
       ]
     }
   ],
-  "generatedAt": "2026-05-31T10:47:01.675Z"
+  "generatedAt": "2026-05-31T11:49:10.716Z"
 }
