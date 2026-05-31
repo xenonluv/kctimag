@@ -28,3 +28,17 @@ alter table send_logs enable row level security;
 insert into storage.buckets (id, name, public)
 values ('issues', 'issues', true)
 on conflict (id) do nothing;
+
+-- 매일 누적 수집되는 원천 뉴스 (Vercel Cron이 daily insert, 주간 분석이 7일치 조회)
+create table if not exists news_raw (
+  id uuid primary key default gen_random_uuid(),
+  link text unique not null,
+  title text,
+  description text,
+  pub_date timestamptz,
+  category text,
+  category_label text,
+  collected_at timestamptz default now()
+);
+create index if not exists news_raw_pub_date_idx on news_raw (pub_date desc);
+alter table news_raw enable row level security;

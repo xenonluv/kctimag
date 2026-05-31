@@ -15,8 +15,10 @@ import { ceoGate, printGate } from "./07-ceo-gate";
 import { publishToGit, pollDeploy, sendToSubscribers } from "./08-publish-send";
 import { writeJson, issueJsonPath, tmpDir } from "@/lib/paths";
 import { predictedPdfUrl, uploadPdf } from "@/lib/storage";
+import { getRecentNews } from "@/lib/news-store";
 import { getSiteUrl } from "@/lib/env";
 import type { Issue } from "@/types/issue";
+import type { NewsItem, RawNews } from "@/types/pipeline";
 
 const slug = process.argv[2] || new Date().toISOString().slice(0, 10);
 const PUBLISH = process.env.PUBLISH === "1";
@@ -27,10 +29,29 @@ async function main() {
     `\n🗞️  KCT 파이프라인 — ${slug}호 ${PUBLISH ? "【발행 모드】" : "【드라이런】"}\n`,
   );
 
-  console.log("① 팀원1 — 뉴스 수집");
-  const raw = await collect();
+  console.log("① 팀원1 — 뉴스 수집 (누적 + 당일)");
+  const fresh = await collect();
+  let accumulated: NewsItem[] = [];
+  try {
+    accumulated = await getRecentNews(7);
+  } catch (e) {
+    console.warn("   누적(news_raw) 조회 건너뜀:", (e as Error).message);
+  }
+  const merged = new Map<string, NewsItem>();
+  for (const it of [...accumulated, ...fresh.items]) merged.set(it.link, it);
+  const items = [...merged.values()].sort(
+    (a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime(),
+  );
+  const raw: RawNews = {
+    collectedAt: new Date().toISOString(),
+    weekRange: fresh.weekRange,
+    totalCount: items.length,
+    items,
+  };
   writeJson(`${tmpDir(slug)}/raw-news.json`, raw);
-  console.log(`   ${raw.totalCount}건\n`);
+  console.log(
+    `   누적 ${accumulated.length} + 당일 ${fresh.items.length} → 병합 ${raw.totalCount}건\n`,
+  );
 
   console.log("② 팀원2 — 이슈 분석");
   const analysis = await analyze(raw);
