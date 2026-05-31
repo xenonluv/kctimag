@@ -1,9 +1,10 @@
 // run.ts — 전체 파이프라인 오케스트레이터 (Mac Studio launchd가 주 1회 실행).
 // 큐레이션 다이제스트 + 편집장 픽 생성 → 발행.
-//   드라이런: tsx scripts/pipeline/run.ts
-//   발행:    PUBLISH=1 tsx scripts/pipeline/run.ts
+//   제작·검수: ./scripts/make.sh [slug]      (생성만, push/메일 없음)
+//   발행:      ./scripts/publish.sh [slug]   (재생성 없이 push→Vercel, 메일 제외)
 import "@/lib/load-env";
 import { execFileSync } from "node:child_process";
+import { existsSync } from "node:fs";
 import { collect } from "./01-collect";
 import { curate } from "./02-curate";
 import { addImages } from "./04-images";
@@ -21,9 +22,24 @@ import type { NewsItem, RawNews } from "@/types/pipeline";
 
 const slug = process.argv[2] || new Date().toISOString().slice(0, 10);
 const PUBLISH = process.env.PUBLISH === "1";
+const PUBLISH_ONLY = process.env.PUBLISH_ONLY === "1"; // 재생성 없이 기존 issue.json만 발행
+const SKIP_EMAIL = process.env.SKIP_EMAIL === "1"; // 구독자 메일 자동발송 건너뜀
 const SKIP_BUILD = process.env.SKIP_BUILD === "1";
 
 async function main() {
+  // 발행 전용 모드 — 재생성 없이 검수한 기존 issue.json을 그대로 발행
+  if (PUBLISH_ONLY) {
+    if (!existsSync(issueJsonPath(slug))) {
+      console.error(
+        `\n❌ ${slug}호 issue.json이 없습니다 — 먼저 제작하세요(./scripts/make.sh ${slug}).`,
+      );
+      process.exit(1);
+    }
+    console.log(`\n🗞️  KCT — ${slug}호 발행 (기존 제작본, 재생성 없음)\n`);
+    await publishIssue(slug);
+    return;
+  }
+
   console.log(
     `\n🗞️  KCT 파이프라인 — ${slug}호 ${PUBLISH ? "【발행】" : "【드라이런】"}\n`,
   );
@@ -113,10 +129,15 @@ async function main() {
   }
 
   if (!PUBLISH) {
-    console.log(`\n✅ 드라이런 완료. 발행: PUBLISH=1 tsx scripts/pipeline/run.ts ${slug}`);
+    console.log(`\n✅ 드라이런 완료. 발행: ./scripts/publish.sh ${slug}`);
     return;
   }
 
+  await publishIssue(slug);
+}
+
+// 발행 단계(보존정리 → git push → 배포 폴링 → PDF → 메일). PUBLISH / PUBLISH_ONLY 공용.
+async function publishIssue(slug: string) {
   // 보존 정책 — 최근 N호 PDF만 Storage 유지(무료 한도). 오래된 PDF 삭제 + 해당 issue.json pdfUrl 비움.
   const KEEP_PDF_WEEKS = Number(process.env.KEEP_PDF_WEEKS || 8);
   try {
@@ -156,8 +177,14 @@ async function main() {
     console.warn("   PDF 업로드 건너뜀:", (e as Error).message),
   );
 
-  console.log("\n⑩ 구독자 메일 발송");
-  await sendToSubscribers(slug, pdfPath);
+  if (SKIP_EMAIL) {
+    console.log(
+      "\n⑩ 구독자 메일 — 건너뜀(SKIP_EMAIL=1). /admin에서 수동 발송하세요.",
+    );
+  } else {
+    console.log("\n⑩ 구독자 메일 발송");
+    await sendToSubscribers(slug, pdfPath);
+  }
 
   console.log("\n🎉 발행 완료!");
 }

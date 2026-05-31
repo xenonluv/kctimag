@@ -9,6 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "pipeline": "tsx scripts/pipeline/run.ts",
+    "make": "bash scripts/make.sh",
+    "publish": "bash scripts/publish.sh",
     "pipeline:collect": "tsx scripts/pipeline/01-collect.ts",
     "pipeline:curate": "tsx scripts/pipeline/02-curate.ts",
     "pipeline:images": "tsx scripts/pipeline/04-images.ts",
