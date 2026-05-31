@@ -3,66 +3,103 @@
 @tailwind utilities;
 
 :root {
-  --font-sans: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR",
-    system-ui, -apple-system, sans-serif;
-  --font-serif: "Nanum Myeongjo", "Apple SD Gothic Neo", "Batang", "Noto Serif KR",
-    Georgia, serif;
+  --font-serif: "Nanum Myeongjo", "Noto Serif KR", Georgia, serif;
+  --font-sans: "Noto Sans KR", "Pretendard", system-ui, -apple-system, sans-serif;
+  --ink: #1a1a1a;
+  --paper: #f7f5f0;
+  --accent: #b8141e;
 }
 
 html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  background: #fafaf7;
-  color: #1a1a1a;
+  background: var(--paper);
+  color: var(--ink);
   font-family: var(--font-sans);
   line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* 매거진 본문(Markdown) 스타일 */
+/* 매거진 기사 본문(Markdown) — 세리프 */
 .kct-prose {
-  font-size: 1.075rem;
-  line-height: 1.85;
+  font-family: var(--font-serif);
+  font-size: 1.18rem;
+  line-height: 1.95;
+  color: #232323;
+  letter-spacing: -0.003em;
 }
 .kct-prose p {
-  margin: 0 0 1.1em;
+  margin: 0 0 1.3em;
 }
 .kct-prose h2 {
   font-family: var(--font-serif);
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 1.6em 0 0.6em;
+  font-size: 1.65rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin: 2em 0 0.6em;
+  line-height: 1.35;
 }
 .kct-prose h3 {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
   font-weight: 700;
-  margin: 1.3em 0 0.5em;
+  margin: 1.5em 0 0.5em;
 }
 .kct-prose strong {
-  font-weight: 700;
+  font-weight: 800;
+}
+.kct-prose em {
+  font-style: italic;
 }
 .kct-prose a {
-  color: #c8102e;
+  color: var(--accent);
   text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.kct-prose ul,
+.kct-prose ol {
+  padding-left: 1.4em;
+  margin: 0 0 1.3em;
 }
 .kct-prose ul {
   list-style: disc;
-  padding-left: 1.4em;
-  margin: 0 0 1.1em;
 }
 .kct-prose ol {
   list-style: decimal;
-  padding-left: 1.4em;
-  margin: 0 0 1.1em;
-}
-.kct-prose blockquote {
-  border-left: 3px solid #c8102e;
-  padding-left: 1em;
-  color: #444;
-  font-style: italic;
-  margin: 1.2em 0;
 }
 
-/* PDF 인쇄용 (Puppeteer 렌더 경로) */
+/* 매거진 풀쿼트 — 큰 세리프 + 상하 액센트 룰 */
+.kct-prose blockquote {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: var(--ink);
+  text-align: center;
+  font-style: normal;
+  border: none;
+  border-top: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  padding: 0.7em 0.2em;
+  margin: 1.9em 0;
+}
+.kct-prose blockquote p {
+  margin: 0;
+}
+
+/* 드롭캡 — 커버스토리/리드 첫 문단 */
+.kct-dropcap > p:first-of-type::first-letter {
+  float: left;
+  font-family: var(--font-serif);
+  font-weight: 800;
+  font-size: 3.6em;
+  line-height: 0.78;
+  margin: 0.04em 0.1em 0 0;
+  color: var(--accent);
+}
+
+/* PDF 인쇄용 */
 @media print {
   .no-print {
     display: none !important;
@@ -74,8 +111,11 @@ body {
     break-before: page;
   }
   a {
-    color: #1a1a1a;
+    color: var(--ink);
     text-decoration: none;
+  }
+  .kct-prose blockquote {
+    font-size: 1.3rem;
   }
   figure img {
     max-height: 9cm;

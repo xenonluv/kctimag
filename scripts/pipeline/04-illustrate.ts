@@ -12,8 +12,9 @@ import type { ImageAsset, IssueSection } from "@/types/issue";
 import type { WrittenDoc } from "./03-write";
 
 const ILLUSTRATE_SYS =
-  "당신은 매거진 아트디렉터다. 각 섹션에 맞는 이미지의 '성격'을 판단하고, 무료·저작권 안전 소스로 " +
-  "연결될 검색어/생성 프롬프트를 만든다. 실존 인물을 가짜 사진처럼 AI 생성하지 않는다.";
+  "당신은 매거진 포토 에디터다. 매거진은 **실제 사진 중심**이다. 각 섹션에 어울리는 " +
+  "고품질 사진을 무료·저작권 안전 소스(stock/Wikimedia)에서 찾을 검색어를 만든다. " +
+  "AI 생성은 최후수단이며, 실존 인물을 가짜 사진처럼 만들지 않는다.";
 
 export interface IllustratedDoc {
   title: string;
@@ -26,16 +27,16 @@ function mockPlan(doc: WrittenDoc): ImagePlanList {
   return {
     cover: {
       sectionId: "cover",
-      intent: "ai",
-      query: "korean culture magazine cover collage, editorial, vibrant",
-      caption: "이번 호 표지",
-      alt: "한국 문화 매거진 표지 일러스트",
+      intent: "stock",
+      query: "seoul city culture night",
+      caption: "이번 호",
+      alt: "서울 도심 야경",
     },
     sections: doc.sections.map((s) => ({
       sectionId: s.id,
-      intent: "ai" as const,
-      query: `${s.category} concept illustration, editorial, abstract`,
-      caption: `${s.heading} 관련 이미지`,
+      intent: "stock" as const,
+      query: "korean culture performance stage",
+      caption: `${s.heading}`,
       alt: s.heading,
     })),
   };
@@ -48,11 +49,12 @@ export async function illustrate(doc: WrittenDoc): Promise<IllustratedDoc> {
 
   const plan = await llmJson(
     `매거진 호 "${doc.title}"의 표지(cover)와 각 섹션 이미지 1개씩을 계획하라.\n섹션:\n${brief}\n\n` +
-      `intent를 신중히 선택(저작권·사실성 고려):\n` +
-      `- "wikimedia": 실존 인물·장소·사건 등 사실 이미지가 필요할 때. query=실제 대상명(한국어/영어).\n` +
-      `- "stock": 분위기·배경. query=영어 키워드 권장.\n` +
-      `- "ai": 개념·추상. query=영어 생성 프롬프트. ⚠️ 실존 인물의 가짜 사진 생성 금지.\n` +
-      `- "link": 합법 이미지가 없고 원문 사진만 있을 때. sourceLink 필요.\n\n` +
+      `원칙: 매거진은 **실제 사진 중심**이다. 가능한 한 stock/wikimedia(실사진)를 선택하고 AI는 최소화.\n` +
+      `intent 선택:\n` +
+      `- "stock"(우선): 분위기·배경·상징을 담은 사진. query=구체적이고 고품질인 **영어** 사진 검색어(예: "kpop concert stage crowd lights", "korean traditional hanok village").\n` +
+      `- "wikimedia": 실존 인물·장소·사건·작품의 사실 사진. query=실제 대상명.\n` +
+      `- "ai"(최후수단): 사진으로 표현 불가능한 추상 개념에만. query=영어 개념 묘사. ⚠️ 실존 인물 가짜 사진 금지.\n` +
+      `- "link": 합법 이미지가 전혀 없을 때만. sourceLink 필요.\n\n` +
       `형식: {"cover":{"sectionId":"cover","intent":"...","query":"...","caption":"...","alt":"..."},` +
       `"sections":[{"sectionId":"<섹션 id>","intent":"...","query":"...","caption":"...","alt":"...","sourceLink":"(선택)"}]}\n` +
       `sections 배열은 위 섹션과 동일한 id로 동일 개수.`,

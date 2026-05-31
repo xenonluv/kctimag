@@ -1,69 +1,87 @@
-// 팀원3 — Writer (매거진 작문)
-// 이슈별 섹션을 분할 생성(출력 길이 한계 회피). 총 분량 A4 4장 이상을 목표.
+// 팀원3 — Writer (매거진 피처 작문)
+// 피처 라이터 내러티브 + 2-pass(작성→이어쓰기→병합)로 매거진급 분량·깊이.
+// 1위 이슈 = 커버스토리(더 길게). 본문은 lib/longform 으로 생성.
 import "@/lib/load-env";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { z } from "zod";
 import { llmJson } from "@/lib/llm";
-import { SourceRefSchema } from "@/lib/schemas";
+import { writeLongform } from "@/lib/longform";
 import { readJson, writeJson, tmpDir } from "@/lib/paths";
 import type { Analysis, RawNews } from "@/types/pipeline";
-import type { IssueSection } from "@/types/issue";
+import type { IssueSection, SourceRef } from "@/types/issue";
 
 const WRITER_SYS =
-  "당신은 한국 문화 매거진의 전문 기자다. 깊이 있고 균형 잡힌 기사를 한국어로 쓴다. " +
-  "사실에 근거하며 과장·허위·추측성 단정은 피한다.";
+  "당신은 한국 문화 매거진의 베테랑 피처 라이터다. 장면·인물·디테일이 살아있는 깊이 있는 한국어 산문을 쓴다. " +
+  "사실에 근거하되 단순 요약·나열·불릿을 피하고, 흐름 있는 내러티브로 문화적 의미를 전한다. 과장·허위·추측성 단정은 하지 않는다.";
 
-const MetaSchema = z.object({ title: z.string(), dek: z.string() });
-const SectionContentSchema = z.object({
-  bodyMarkdown: z.string(),
-  pullQuote: z.string().optional(),
-  sources: z.array(SourceRefSchema),
+const MetaSchema = z.object({
+  title: z.string(),
+  dek: z.string(),
+  theme: z.string(),
 });
 
 export interface WrittenDoc {
   title: string;
   dek: string;
+  theme?: string;
   sections: IssueSection[];
 }
 
+function buildSources(srcs: RawNews["items"]): SourceRef[] {
+  return srcs.map((s) => ({ title: s.title, link: s.link, pubDate: s.pubDate }));
+}
+
 export async function write(analysis: Analysis, raw: RawNews): Promise<WrittenDoc> {
-  // 1) 호 제목/부제
+  // 1) 호 제목/부제/테마
   const headings = analysis.issues
     .map((i) => `#${i.rank} ${i.heading} — ${i.summary}`)
     .join("\n");
   const meta = await llmJson(
-    `이번 주 한국 문화 매거진의 "호 제목"과 "부제"를 지어라.\n다룰 이슈:\n${headings}\n\n` +
-      `형식: {"title":"매력적인 호 제목","dek":"1~2문장 요약"}`,
+    `이번 주 한국 문화 매거진의 "호 제목", "부제(dek)", "이번 호를 관통하는 테마 한 줄"을 지어라.\n` +
+      `다룰 이슈:\n${headings}\n\n` +
+      `형식: {"title":"매력적인 호 제목","dek":"1~2문장 부제","theme":"이번 호 흐름을 꿰는 한 줄"}`,
     MetaSchema,
     { system: WRITER_SYS },
-    { title: "한 주의 한국 문화", dek: analysis.issues[0]?.summary ?? "" },
+    {
+      title: "한 주의 한국 문화",
+      dek: analysis.issues[0]?.summary ?? "",
+      theme: "이번 주 한국 문화의 흐름",
+    },
   );
 
-  // 2) 섹션별 작문
+  // 2) 섹션별 피처 작문 (1위 = 커버스토리, 더 길게)
   const sections: IssueSection[] = [];
   for (const issue of analysis.issues) {
+    const isCover = issue.rank === 1;
     const srcs = issue.sourceIndexes.map((idx) => raw.items[idx]).filter(Boolean);
-    const srcList = srcs
-      .map((s) => `- ${s.title} (${s.link})\n  ${s.description}`)
-      .join("\n");
+    const srcList =
+      srcs.map((s) => `- ${s.title}\n  ${s.description}`).join("\n") ||
+      "(참고 기사 없음 — 일반적 맥락으로 신중히 작성)";
+    const targetChars = isCover ? 900 : 700;
 
-    const content = await llmJson(
-      `다음 이슈로 매거진 기사 섹션 본문을 작성하라.\n` +
-        `이슈: ${issue.heading}\n요약: ${issue.summary}\n카테고리: ${issue.category}\n\n` +
-        `참고 기사:\n${srcList || "(참고 기사 없음 — 일반적 맥락으로 작성)"}\n\n` +
-        `요구사항:\n` +
-        `- bodyMarkdown: 한국어 매거진 본문(Markdown, ## 소제목 사용 가능). 800자 이상, 도입-전개-맥락/전망 구조. 사실 기반.\n` +
-        `- pullQuote: 본문에서 뽑은 인상적 한 줄(선택).\n` +
-        `- sources: 참고 기사 {title, link} 배열.\n\n` +
-        `형식: {"bodyMarkdown":"...","pullQuote":"...","sources":[{"title":"...","link":"..."}]}`,
-      SectionContentSchema,
-      { system: WRITER_SYS },
-      {
-        bodyMarkdown: `${issue.summary}\n\n(샘플 본문 — mock 모드)`,
-        sources: srcs.map((s) => ({ title: s.title, link: s.link, pubDate: s.pubDate })),
-      },
-    );
+    const basePrompt =
+      `${isCover ? "[커버스토리]" : "[피처]"} 한국 문화 매거진 기사 본문을 작성하라.\n` +
+      `주제: ${issue.heading}\n배경 요약: ${issue.summary}\n부서(카테고리): ${issue.category}\n` +
+      `이번 호 테마: ${meta.theme}\n\n참고 기사(사실 근거):\n${srcList}\n\n` +
+      `작성 지침:\n` +
+      `- 매거진 피처 문체: 인상적인 장면/일화로 시작(리드) → 핵심 의미 → 맥락·배경·인물·디테일 전개.\n` +
+      `- 단순 사실 나열/요약/불릿 금지. 흐름 있는 산문.\n` +
+      `- 참고 기사 범위 내 사실에 근거. 모르는 사실을 지어내지 말 것.\n` +
+      `- 핵심 문장 하나는 Markdown 인용(> ...) 한 줄로 강조해도 좋다. 소제목은 ## 사용.\n` +
+      `- ${targetChars}자 이상.\n- 제목(h1) 없이 Markdown 본문만 출력.`;
+
+    const continueHint = isCover
+      ? "이 커버스토리를 더 깊이 전개하라 — 추가 맥락, 다른 관점·이해관계자의 목소리, 산업/사회적 함의, 향후 전망."
+      : "이 기사를 더 전개하라 — 배경 맥락, 다른 시각, 문화적 의미와 전망.";
+
+    const bodyMarkdown = await writeLongform({
+      system: WRITER_SYS,
+      basePrompt,
+      continueHint,
+      passes: isCover ? 3 : 2,
+      mock: `## ${issue.heading}\n\n${issue.summary}\n\n> (mock 인용)\n\n(mock 본문 단락)`,
+    });
 
     sections.push({
       id: `s${issue.rank}`,
@@ -71,16 +89,14 @@ export async function write(analysis: Analysis, raw: RawNews): Promise<WrittenDo
       rank: issue.rank,
       intensities: issue.intensities,
       category: issue.category,
-      bodyMarkdown: content.bodyMarkdown,
-      pullQuote: content.pullQuote,
+      bodyMarkdown,
+      // 인용구는 본문 내 > 블록으로 처리 → 별도 필드 생략
       images: [],
-      sources: content.sources.length
-        ? content.sources
-        : srcs.map((s) => ({ title: s.title, link: s.link, pubDate: s.pubDate })),
+      sources: buildSources(srcs),
     });
   }
 
-  return { title: meta.title, dek: meta.dek, sections };
+  return { title: meta.title, dek: meta.dek, theme: meta.theme, sections };
 }
 
 const isMain = process.argv[1] === fileURLToPath(import.meta.url);
@@ -93,7 +109,9 @@ if (isMain) {
       const out = path.join(tmpDir(slug), "written.json");
       writeJson(out, doc);
       const chars = doc.sections.reduce((n, s) => n + s.bodyMarkdown.length, 0);
-      console.log(`✅ 작문 완료: ${doc.sections.length}개 섹션, 약 ${chars}자 → ${out}`);
+      console.log(
+        `✅ 작문 완료: ${doc.sections.length}개 섹션, 약 ${chars}자 → ${out}`,
+      );
     })
     .catch((e) => {
       console.error("❌ 작문 실패:", e);
