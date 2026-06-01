@@ -212,7 +212,112 @@ textarea::placeholder {
     transform: translate3d(0, 0, 0) rotate(-360deg);
   }
 }
+/* 3D 와이어프레임 도형 (CSS preserve-3d, transform만 → GPU·가벼움) */
+.kct-cube-wrap,
+.kct-tetra-wrap {
+  position: absolute;
+  perspective: 900px;
+  opacity: 0.7;
+}
+.kct-cube-wrap {
+  top: 24%;
+  left: 16%;
+  width: 13vmax;
+  height: 13vmax;
+  animation: kct-cube-drift 30s ease-in-out infinite;
+}
+.kct-tetra-wrap {
+  bottom: 18%;
+  right: 13%;
+  width: 12vmax;
+  height: 12vmax;
+  animation: kct-tetra-drift 34s ease-in-out infinite;
+}
+.kct-cube,
+.kct-tetra {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+.kct-cube {
+  animation: kct-spin3d 26s linear infinite;
+}
+.kct-tetra {
+  animation: kct-spin3d 30s linear infinite reverse;
+}
+/* 큐브 6면 (와이어프레임) */
+.kct-cf {
+  position: absolute;
+  width: 13vmax;
+  height: 13vmax;
+  border: 1.5px solid rgba(34, 211, 238, 0.28);
+  background: rgba(34, 211, 238, 0.015);
+}
+.kct-cf-front {
+  transform: translateZ(6.5vmax);
+}
+.kct-cf-back {
+  transform: rotateY(180deg) translateZ(6.5vmax);
+}
+.kct-cf-right {
+  transform: rotateY(90deg) translateZ(6.5vmax);
+}
+.kct-cf-left {
+  transform: rotateY(-90deg) translateZ(6.5vmax);
+}
+.kct-cf-top {
+  transform: rotateX(90deg) translateZ(6.5vmax);
+}
+.kct-cf-bottom {
+  transform: rotateX(-90deg) translateZ(6.5vmax);
+}
+/* 삼각뿔 3면 (SVG 폴리곤 와이어프레임) — 꼭지점(상단) 공유, 120°씩 벌어져 기울어짐 */
+.kct-tf {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 12vmax;
+  height: 10.4vmax;
+  transform-origin: 50% 0%;
+  overflow: visible;
+}
+.kct-tf-0 {
+  transform: rotateY(0deg) rotateX(30deg);
+}
+.kct-tf-1 {
+  transform: rotateY(120deg) rotateX(30deg);
+}
+.kct-tf-2 {
+  transform: rotateY(240deg) rotateX(30deg);
+}
+@keyframes kct-spin3d {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+@keyframes kct-cube-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(7vmax, -5vmax, 0);
+  }
+}
+@keyframes kct-tetra-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(-6vmax, 5vmax, 0);
+  }
+}
 @media (prefers-reduced-motion: reduce) {
+  .kct-geo *,
   .kct-geo > * {
     animation: none !important;
   }
