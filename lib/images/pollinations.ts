@@ -6,8 +6,8 @@ const EDITORIAL_STYLE =
 export function pollinationsUrl(
   prompt: string,
   seed = 1,
-  w = 1024,
-  h = 576,
+  w = 640,
+  h = 360,
 ): string {
   const base = prompt.replace(/\s+/g, " ").trim().slice(0, 280);
   const full = `${base}, ${EDITORIAL_STYLE}`;

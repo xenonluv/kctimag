@@ -6,7 +6,10 @@ export interface StockResult {
   attribution: string;
 }
 
-export async function searchPexels(query: string): Promise<StockResult | null> {
+export async function searchPexels(
+  query: string,
+  size?: { w: number; h: number },
+): Promise<StockResult | null> {
   const key = getEnv("PEXELS_API_KEY");
   if (!key) return null;
   try {
@@ -22,9 +25,11 @@ export async function searchPexels(query: string): Promise<StockResult | null> {
     };
     const p = data.photos?.[0];
     const base = p?.src?.original;
-    // 카드용으로 900×600 압축본(원본은 수 MB라 로드 부하) — Pexels CDN 리사이즈 파라미터.
+    // 표시 크기에 맞춘 압축본(원본은 수 MB) — PDF 용량↓. 카드 기본 600×400, 호출부에서 크기 지정 가능.
+    const w = size?.w ?? 600;
+    const h = size?.h ?? 400;
     const url = base
-      ? `${base}?auto=compress&cs=tinysrgb&fit=crop&w=900&h=600`
+      ? `${base}?auto=compress&cs=tinysrgb&fit=crop&w=${w}&h=${h}`
       : p?.src?.large;
     if (!url) return null;
     return { url, attribution: `사진: ${p?.photographer ?? "Pexels"} / Pexels` };

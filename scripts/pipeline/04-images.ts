@@ -27,7 +27,7 @@ async function resolveImage(
   const q = (query || "").trim();
   if (USE_PHOTOS && q) {
     try {
-      const p = await searchPexels(q);
+      const p = await searchPexels(q, size);
       if (p && !usedUrls.has(p.url)) {
         usedUrls.add(p.url);
         return { url: p.url, source: p.attribution };
@@ -38,7 +38,7 @@ async function resolveImage(
   }
   // AI 폴백 (개념·분위기, 항목마다 고유 시드 → 중복 없음)
   const ai = prompt && prompt.trim() ? prompt.trim() : fallback;
-  const url = pollinationsUrl(ai, seedCounter++, size?.w ?? 1024, size?.h ?? 576);
+  const url = pollinationsUrl(ai, seedCounter++, size?.w ?? 640, size?.h ?? 360);
   usedUrls.add(url);
   return { url, source: "AI 생성 이미지" };
 }
@@ -50,7 +50,7 @@ export async function addImages(doc: CuratedDoc): Promise<CuratedDoc> {
     doc.editorPick.imageQuery,
     doc.editorPick.imagePrompt,
     doc.editorPick.headline,
-    { w: 1200, h: 675 },
+    { w: 800, h: 450 },
   );
   for (const cat of doc.categories) {
     for (const e of cat.entries) {
