@@ -9,6 +9,7 @@ import {
   renderIssueEmail,
   pickThemeIndexBySlug,
   escapeHtml,
+  defaultEmailSubject,
 } from "@/lib/email-template";
 import { getSiteUrl } from "@/lib/env";
 import { issueJsonPath, readJson } from "@/lib/paths";
@@ -90,7 +91,7 @@ export async function sendToSubscribers(
 
   const result = await sendIssueEmail({
     recipients,
-    subject: `[KCTI] ${issue.meta.title}`,
+    subject: defaultEmailSubject(issue.meta.date),
     buildHtml: (r) => buildHtml(issue, site, r),
     pdf,
     throttleMs: 300,

@@ -2,7 +2,7 @@ import { redirect } from "next/navigation";
 import { isAdmin } from "@/lib/admin-auth";
 import { getAdminSupabase, isSupabaseConfigured } from "@/lib/supabase";
 import { listIssues } from "@/lib/content";
-import { EMAIL_THEMES } from "@/lib/email-template";
+import { EMAIL_THEMES, defaultEmailSubject } from "@/lib/email-template";
 import { deleteSubscriber, resendIssue, logout } from "./actions";
 
 export const dynamic = "force-dynamic";
@@ -93,6 +93,12 @@ export default async function AdminPage({
               </div>
               <form action={resendIssue} className="space-y-2">
                 <input type="hidden" name="slug" value={it.slug} />
+                <input
+                  name="subject"
+                  defaultValue={defaultEmailSubject(it.date)}
+                  placeholder="메일 제목"
+                  className="w-full rounded border border-neutral-300 px-2 py-1.5 text-sm font-medium"
+                />
                 <textarea
                   name="message"
                   rows={3}

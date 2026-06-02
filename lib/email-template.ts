@@ -35,6 +35,11 @@ const wrap = (i: number) => {
   return ((i % n) + n) % n;
 };
 
+/** 메일 제목 기본값 — "KCTI - AI 큐레이터 발행 주간 문화 뉴스 모음 (발행날짜)" */
+export function defaultEmailSubject(date: string): string {
+  return `KCTI - AI 큐레이터 발행 주간 문화 뉴스 모음 (${date})`;
+}
+
 /** 일반 텍스트 → HTML 안전 문자열(+줄바꿈 <br>) */
 export function escapeHtml(s: string): string {
   return s

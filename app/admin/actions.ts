@@ -14,6 +14,7 @@ import {
   renderIssueEmail,
   resolveThemeIndex,
   escapeHtml,
+  defaultEmailSubject,
 } from "@/lib/email-template";
 import { getSiteUrl } from "@/lib/env";
 
@@ -53,6 +54,7 @@ export async function resendIssue(formData: FormData) {
   const message = formData.get("message")?.toString().trim();
   const fromName = formData.get("fromName")?.toString().trim();
   const themeRaw = formData.get("themeIndex")?.toString();
+  const subjectRaw = formData.get("subject")?.toString().trim();
   if (!slug) redirect("/admin?msg=noslug");
   const issue = readIssue(slug!);
   const sb = getAdminSupabase();
@@ -108,7 +110,7 @@ export async function resendIssue(formData: FormData) {
 
   await sendIssueEmail({
     recipients,
-    subject: `[KCTI] ${issue!.meta.title}`,
+    subject: subjectRaw || defaultEmailSubject(issue!.meta.date),
     fromName: fromName || undefined,
     throttleMs: 300,
     pdf,
