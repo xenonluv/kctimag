@@ -123,6 +123,16 @@ export default function IssueView({
               <NewsCard key={i} entry={e} eager={eager} />
             ))}
           </div>
+          {cat.note && (
+            <div className="mt-4 rounded-xl border-l-2 border-accent bg-white/[0.03] px-4 py-3">
+              <p className="text-[11px] font-bold uppercase tracking-wider text-accent">
+                🤖 이번 주 이 섹션을 고른 이유
+              </p>
+              <p className="mt-1 text-sm leading-relaxed text-neutral-400">
+                {cat.note}
+              </p>
+            </div>
+          )}
         </section>
       ))}
     </article>

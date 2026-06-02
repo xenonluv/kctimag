@@ -16,6 +16,8 @@ export const CurateEntrySchema = z.object({
 export const CurateCategorySchema = z.object({
   key: z.string(),
   entries: z.array(CurateEntrySchema),
+  /** 이번 주 이 카테고리에서 이 뉴스들을 고른 이유(큐레이터 의견, 1~2문장) */
+  note: z.string().optional(),
 });
 
 export const CurateSchema = z.object({

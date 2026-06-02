@@ -33,6 +33,8 @@ export interface CategorySection {
   key: string;
   label: string;
   entries: NewsEntry[];
+  /** 이번 주 이 카테고리에서 이 뉴스들을 고른 이유(큐레이터 코멘트) */
+  note?: string;
 }
 
 /** 편집장 픽 — 이번 주 최대 이슈 1건 + 선정 이유 */
