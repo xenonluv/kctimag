@@ -95,7 +95,7 @@ export default function Home() {
         >
           <h2 className="font-serif text-2xl font-bold">매주 무료로 받아보세요</h2>
           <p className="mt-1 text-neutral-400">
-            한 주의 한국 문화를 정리한 매거진과 PDF를 매주 이메일로 보내드립니다.
+            한 주의 한국 문화를 정리한 뉴스모음과 PDF를 매주 이메일로 보내드립니다.
           </p>
           <div className="mt-4">
             <SubscribeForm />

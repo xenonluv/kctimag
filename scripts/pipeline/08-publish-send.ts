@@ -51,7 +51,7 @@ function buildHtml(issue: Issue, site: string, r: Recipient): string {
   const unsub = unsubscribeUrl(site, r);
   return `<!doctype html><html lang="ko"><body style="margin:0;background:#fafaf7;font-family:Apple SD Gothic Neo,Malgun Gothic,sans-serif;color:#1a1a1a">
   <div style="max-width:600px;margin:0 auto;padding:28px 20px">
-    <p style="color:#c8102e;font-size:12px;letter-spacing:2px;text-transform:uppercase;margin:0 0 6px">KCT · 주간 한국문화 AI 매거진</p>
+    <p style="color:#c8102e;font-size:12px;letter-spacing:2px;text-transform:uppercase;margin:0 0 6px">KCTI · 주간 한국문화 AI 큐레이션 뉴스모음</p>
     <h1 style="font-size:24px;line-height:1.3;margin:0 0 10px">${issue.meta.title}</h1>
     <p style="color:#555;font-size:15px;line-height:1.7;margin:0 0 20px">${issue.meta.dek}</p>
     <a href="${link}" style="display:inline-block;background:#c8102e;color:#fff;text-decoration:none;padding:11px 20px;border-radius:6px;font-weight:600">웹에서 전체 보기 →</a>
@@ -92,7 +92,7 @@ export async function sendToSubscribers(
 
   const result = await sendIssueEmail({
     recipients,
-    subject: `[KCT] ${issue.meta.title}`,
+    subject: `[KCTI] ${issue.meta.title}`,
     buildHtml: (r) => buildHtml(issue, site, r),
     pdf,
     throttleMs: 300,

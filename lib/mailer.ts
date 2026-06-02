@@ -97,7 +97,7 @@ export function unsubscribeBlockHtml(unsubUrl: string): string {
   return `<hr style="border:none;border-top:1px solid #e5e5e5;margin:26px 0"/>
   <div style="text-align:center;padding:4px 0 8px">
     <p style="font-size:13px;color:#888;line-height:1.7;margin:0 0 14px">
-      주간 한국문화 AI 매거진 소식을 더 이상 받지 않으시려면<br/>아래 버튼을 눌러주세요.
+      주간 한국문화 AI 큐레이션 뉴스모음 소식을 더 이상 받지 않으시려면<br/>아래 버튼을 눌러주세요.
     </p>
     <a href="${unsubUrl}" style="display:inline-block;background:#f0f0f0;color:#555;text-decoration:none;padding:11px 24px;border-radius:6px;font-size:13px;font-weight:600;border:1px solid #ddd">구독 취소</a>
   </div>`;

@@ -11,7 +11,7 @@ export default async function AdminLogin({
   return (
     <main className="mx-auto flex min-h-screen max-w-sm flex-col justify-center px-5">
       <h1 className="font-serif text-2xl font-bold">관리자 로그인</h1>
-      <p className="mt-1 text-sm text-neutral-500">KCT 매거진 관리자 모드</p>
+      <p className="mt-1 text-sm text-neutral-500">KCTI 주간 한국문화 AI 큐레이션 뉴스모음 · 관리자 모드</p>
       <form action={login} className="mt-6 flex flex-col gap-3">
         <input
           type="password"

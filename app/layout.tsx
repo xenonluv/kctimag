@@ -3,8 +3,9 @@ import "./globals.css";
 import GeoBackground from "@/components/GeoBackground";
 
 export const metadata: Metadata = {
-  title: "KCT — 주간 한국 문화 매거진",
-  description: "주 1회 발행되는 한국 문화 전반 큐레이션 매거진 (Korean Culture Times)",
+  title: "KCTI - 주간 한국문화 AI 큐레이션 뉴스모음",
+  description:
+    "AI가 매주 한국 문화 뉴스를 엄선해 발행하는 주간 큐레이션 뉴스모음 (Korean Culture Times)",
 };
 
 export default function RootLayout({

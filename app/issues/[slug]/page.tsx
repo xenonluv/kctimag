@@ -21,7 +21,7 @@ export async function generateMetadata({
   const issue = readIssue(slug);
   if (!issue) return {};
   return {
-    title: `${issue.meta.title} — KCT`,
+    title: `${issue.meta.title} — KCTI`,
     description: issue.meta.dek,
     openGraph: {
       title: issue.meta.title,

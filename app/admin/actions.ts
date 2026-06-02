@@ -96,7 +96,7 @@ export async function resendIssue(formData: FormData) {
 
   await sendIssueEmail({
     recipients,
-    subject: `[KCT] ${issue!.meta.title}`,
+    subject: `[KCTI] ${issue!.meta.title}`,
     fromName: fromName || undefined,
     throttleMs: 300,
     pdf,
