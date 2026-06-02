@@ -76,6 +76,8 @@ export interface IssueMeta {
     selected: number;
     /** 수집 카테고리별 기사 수(많은 순) */
     breakdown: { label: string; count: number }[];
+    /** 이번 주 선정 이유(홈 배너, 3문장 내외) */
+    rationale?: string;
   };
 }
 

@@ -23,6 +23,8 @@ export const CurateCategorySchema = z.object({
 export const CurateSchema = z.object({
   title: z.string(),
   dek: z.string(),
+  /** 홈 상단 자랑 영역 — 이번 주 전반 선정 이유(3문장 내외) */
+  selectionRationale: z.string().optional(),
   categories: z.array(CurateCategorySchema),
   editorPick: z.object({
     index: z.number().int(),

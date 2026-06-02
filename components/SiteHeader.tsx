@@ -12,7 +12,7 @@ export default function SiteHeader() {
             한국문화기술연구소 발행
           </span>
           <span className="block text-lg">
-            한국문화 주간 매거진<span className="text-accent">.</span>
+            주간 한국문화 AI 매거진<span className="text-accent">.</span>
           </span>
         </Link>
         <nav className="flex gap-4 text-sm text-neutral-300">

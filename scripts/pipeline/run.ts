@@ -104,7 +104,12 @@ async function main() {
       coverImageUrl: withImages.editorPick.image?.url,
       backgroundImageUrl: weeklyBackgroundUrl(slug),
       pdfUrl: predictedPdfUrl(slug) ?? undefined,
-      curation: { scanned: raw.totalCount, selected, breakdown },
+      curation: {
+        scanned: raw.totalCount,
+        selected,
+        breakdown,
+        rationale: withImages.selectionRationale,
+      },
     },
     editorPick: withImages.editorPick,
     editorial: withImages.editorial,

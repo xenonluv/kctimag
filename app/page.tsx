@@ -30,11 +30,22 @@ export default function Home() {
               <span className="text-accent">{latest.meta.curation.selected}건</span>
               만 골랐어요.
             </h2>
-            <p className="mt-3 text-sm leading-relaxed text-neutral-400">
-              네이버 검색 전 카테고리에서 모은 한 주치 기사를 전국·글로벌 반향,
-              산업 영향, 화제성 기준으로 큐레이션했습니다. 아래는 AI가 분석한
-              기사 풀입니다.
-            </p>
+            {latest.meta.curation.rationale ? (
+              <div className="mt-4 rounded-xl border-l-2 border-accent bg-white/[0.03] px-4 py-3">
+                <p className="text-[11px] font-bold uppercase tracking-wider text-accent">
+                  🤖 AI 에디터의 선정 이유
+                </p>
+                <p className="mt-1.5 text-sm leading-relaxed text-neutral-300">
+                  {latest.meta.curation.rationale}
+                </p>
+              </div>
+            ) : (
+              <p className="mt-3 text-sm leading-relaxed text-neutral-400">
+                네이버 검색 전 카테고리에서 모은 한 주치 기사를 전국·글로벌 반향,
+                산업 영향, 화제성 기준으로 큐레이션했습니다. 아래는 AI가 분석한
+                기사 풀입니다.
+              </p>
+            )}
             <ul className="mt-5 flex flex-wrap gap-2">
               {latest.meta.curation.breakdown.map((b) => (
                 <li

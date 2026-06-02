@@ -29,6 +29,8 @@ const MAX_INPUT = Number(process.env.CURATE_MAX_INPUT || 400); // 전체 입력 
 export interface CuratedDoc {
   title: string;
   dek: string;
+  /** 홈 상단 — 이번 주 전반 선정 이유(3문장 내외) */
+  selectionRationale?: string;
   categories: CategorySection[];
   editorPick: EditorPick;
   editorial: EditorialNote;
@@ -78,6 +80,8 @@ export async function curate(raw: RawNews): Promise<CuratedDoc> {
   const mock: Curate = {
     title: "이번 주 한국 문화",
     dek: "한 주간의 문화 뉴스 다이제스트",
+    selectionRationale:
+      "(mock) 이번 주는 글로벌 반향과 산업 영향이 큰 소식을 우선해, 화제성만 높은 가십은 걷어내고 흐름을 바꾸는 뉴스만 추렸습니다.",
     categories: [
       { key: "kpop", entries: [{ index: 0, blurb: "(mock) 설명", imagePrompt: "kpop concert stage", imageQuery: "kpop concert stage" }], note: "(mock) 이번 주 K-pop 선정 이유" },
       { key: "screen", entries: [{ index: 1, blurb: "(mock) 설명", imagePrompt: "film production set", imageQuery: "film set" }], note: "(mock) 이번 주 영화 선정 이유" },
@@ -104,9 +108,10 @@ export async function curate(raw: RawNews): Promise<CuratedDoc> {
       `4. editorPick = 전체에서 이번 주 "가장 큰 이슈" 1건 + why(3~5문장) + imagePrompt + imageQuery.\n` +
       `5. title(호 제목) + dek(부제).\n` +
       `6. editorial = 이번 주 문화 흐름 전반 총평. title + body. ⚠️body는 반드시 **600자 이상 900자 이하**(한국어, 공백 포함), **3개 문단 이상**으로 충분히 길게. 단순 나열이 아니라 한 주를 관통하는 흐름·맥락·전망을 담은 통찰적인 에세이로. 너무 짧으면 다시 써라.\n` +
-      `7. 각 카테고리마다 note = **이번 주 이 카테고리에서 왜 이 뉴스들을 골랐는지** 1~2문장 큐레이션 코멘트(개별 기사 요약 반복 금지. 이 섹션의 이번 주 흐름·선정 관점·의미를 독자에게 말하듯 간결히).\n\n` +
+      `7. 각 카테고리마다 note = **이번 주 이 카테고리에서 왜 이 뉴스들을 골랐는지** 1~2문장 큐레이션 코멘트(개별 기사 요약 반복 금지. 이 섹션의 이번 주 흐름·선정 관점·의미를 독자에게 말하듯 간결히).\n` +
+      `8. selectionRationale = 홈 상단에 들어갈 **이번 주 전반 선정 이유 3문장 내외**(이번 주 큐레이션의 기준·관점·두드러진 흐름을 독자에게 어필하듯 간결하고 자신감 있게. 개별 기사 나열 금지).\n\n` +
       `index는 0~${items.length - 1} 정수만 사용.\n` +
-      `형식: {"title","dek","categories":[{"key","entries":[{"index","blurb","imagePrompt","imageQuery"}],"note"}],"editorPick":{"index","why","imagePrompt","imageQuery","honorableIndexes":[]},"editorial":{"title","body"}}`,
+      `형식: {"title","dek","selectionRationale","categories":[{"key","entries":[{"index","blurb","imagePrompt","imageQuery"}],"note"}],"editorPick":{"index","why","imagePrompt","imageQuery","honorableIndexes":[]},"editorial":{"title","body"}}`,
     CurateSchema,
     { system: CURATOR_SYS },
     mock,
@@ -147,6 +152,7 @@ export async function curate(raw: RawNews): Promise<CuratedDoc> {
   return {
     title: result.title,
     dek: result.dek,
+    selectionRationale: result.selectionRationale,
     categories,
     editorPick,
     editorial: {
