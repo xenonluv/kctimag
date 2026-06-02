@@ -9,12 +9,12 @@ import {
 } from "@/lib/admin-auth";
 import { getAdminSupabase } from "@/lib/supabase";
 import { readIssue } from "@/lib/content";
+import { sendIssueEmail, unsubscribeUrl, type Recipient } from "@/lib/mailer";
 import {
-  sendIssueEmail,
-  unsubscribeUrl,
-  unsubscribeBlockHtml,
-  type Recipient,
-} from "@/lib/mailer";
+  renderIssueEmail,
+  resolveThemeIndex,
+  escapeHtml,
+} from "@/lib/email-template";
 import { getSiteUrl } from "@/lib/env";
 
 export async function login(formData: FormData) {
@@ -52,6 +52,7 @@ export async function resendIssue(formData: FormData) {
   const testEmail = formData.get("testEmail")?.toString().trim();
   const message = formData.get("message")?.toString().trim();
   const fromName = formData.get("fromName")?.toString().trim();
+  const themeRaw = formData.get("themeIndex")?.toString();
   if (!slug) redirect("/admin?msg=noslug");
   const issue = readIssue(slug!);
   const sb = getAdminSupabase();
@@ -77,6 +78,7 @@ export async function resendIssue(formData: FormData) {
 
   const link = `${site}/issues/${issue!.meta.slug}`;
   const pdfUrl = issue!.meta.pdfUrl;
+  const themeIndex = resolveThemeIndex(slug!, themeRaw); // 수동선택 우선, 없으면 주차별 자동
 
   // 호스팅된 PDF를 받아 첨부 (Vercel 서버리스엔 로컬 파일이 없으므로 Supabase에서 fetch)
   let pdf: { filename: string; content: Buffer } | undefined;
@@ -101,26 +103,21 @@ export async function resendIssue(formData: FormData) {
     throttleMs: 300,
     pdf,
     buildHtml: (r) => {
-      const unsub = unsubscribeUrl(site, r);
-      const pdfLine = pdf
-        ? " · 📄 PDF가 첨부되어 있습니다"
+      const pdfNoteHtml = pdf
+        ? "이번 호 전문은 첨부된 <strong>PDF</strong>로도 확인하실 수 있습니다."
         : pdfUrl
-          ? ` · <a href="${pdfUrl}">PDF 다운로드</a>`
+          ? `전문 PDF는 <a href="${pdfUrl}">여기서 다운로드</a>하실 수 있습니다.`
           : "";
-      // 관리자가 직접 작성한 내용이 있으면 그것을 본문으로(HTML 이스케이프 + 줄바꿈), 없으면 부제.
-      const bodyHtml = message
-        ? message
-            .replace(/&/g, "&amp;")
-            .replace(/</g, "&lt;")
-            .replace(/>/g, "&gt;")
-            .replace(/\n/g, "<br>")
-        : issue!.meta.dek;
-      return `<div style="font-family:sans-serif;max-width:600px;margin:0 auto;padding:24px">
-        <h1 style="font-size:22px">${issue!.meta.title}</h1>
-        <div style="color:#444;font-size:15px;line-height:1.7">${bodyHtml}</div>
-        <p style="margin-top:16px"><a href="${link}">웹에서 보기 →</a>${pdfLine}</p>
-        ${unsubscribeBlockHtml(unsub)}
-      </div>`;
+      // 관리자가 직접 작성한 내용이 있으면 그것을 본문으로(이스케이프+줄바꿈), 없으면 부제.
+      const bodyHtml = escapeHtml(message || issue!.meta.dek);
+      return renderIssueEmail({
+        title: issue!.meta.title,
+        bodyHtml,
+        ctaUrl: link,
+        pdfNoteHtml,
+        unsubUrl: unsubscribeUrl(site, r),
+        themeIndex,
+      });
     },
   });
   redirect("/admin?msg=sent");

@@ -4,12 +4,12 @@ import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import { fileURLToPath } from "node:url";
 import { getAdminSupabase } from "@/lib/supabase";
+import { sendIssueEmail, unsubscribeUrl, type Recipient } from "@/lib/mailer";
 import {
-  sendIssueEmail,
-  unsubscribeUrl,
-  unsubscribeBlockHtml,
-  type Recipient,
-} from "@/lib/mailer";
+  renderIssueEmail,
+  pickThemeIndexBySlug,
+  escapeHtml,
+} from "@/lib/email-template";
 import { getSiteUrl } from "@/lib/env";
 import { issueJsonPath, readJson } from "@/lib/paths";
 import type { Issue } from "@/types/issue";
@@ -47,17 +47,14 @@ export async function pollDeploy(slug: string, timeoutMs = 180_000): Promise<boo
 }
 
 function buildHtml(issue: Issue, site: string, r: Recipient): string {
-  const link = `${site}/issues/${issue.meta.slug}`;
-  const unsub = unsubscribeUrl(site, r);
-  return `<!doctype html><html lang="ko"><body style="margin:0;background:#fafaf7;font-family:Apple SD Gothic Neo,Malgun Gothic,sans-serif;color:#1a1a1a">
-  <div style="max-width:600px;margin:0 auto;padding:28px 20px">
-    <p style="color:#c8102e;font-size:12px;letter-spacing:2px;text-transform:uppercase;margin:0 0 6px">KCTI · 주간 한국문화 AI 큐레이션 뉴스모음</p>
-    <h1 style="font-size:24px;line-height:1.3;margin:0 0 10px">${issue.meta.title}</h1>
-    <p style="color:#555;font-size:15px;line-height:1.7;margin:0 0 20px">${issue.meta.dek}</p>
-    <a href="${link}" style="display:inline-block;background:#c8102e;color:#fff;text-decoration:none;padding:11px 20px;border-radius:6px;font-weight:600">웹에서 전체 보기 →</a>
-    <p style="color:#555;font-size:14px;margin:22px 0 0">이번 호 전문은 첨부된 <strong>PDF</strong>로도 확인하실 수 있습니다.</p>
-    ${unsubscribeBlockHtml(unsub)}
-  </div></body></html>`;
+  return renderIssueEmail({
+    title: issue.meta.title,
+    bodyHtml: escapeHtml(issue.meta.dek),
+    ctaUrl: `${site}/issues/${issue.meta.slug}`,
+    pdfNoteHtml: "이번 호 전문은 첨부된 <strong>PDF</strong>로도 확인하실 수 있습니다.",
+    unsubUrl: unsubscribeUrl(site, r),
+    themeIndex: pickThemeIndexBySlug(issue.meta.slug), // 주차별 자동 순환
+  });
 }
 
 export async function getConfirmedSubscribers(): Promise<Recipient[]> {

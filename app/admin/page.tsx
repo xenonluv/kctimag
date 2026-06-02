@@ -2,6 +2,7 @@ import { redirect } from "next/navigation";
 import { isAdmin } from "@/lib/admin-auth";
 import { getAdminSupabase, isSupabaseConfigured } from "@/lib/supabase";
 import { listIssues } from "@/lib/content";
+import { EMAIL_THEMES } from "@/lib/email-template";
 import { deleteSubscriber, resendIssue, logout } from "./actions";
 
 export const dynamic = "force-dynamic";
@@ -99,9 +100,22 @@ export default async function AdminPage({
                   className="w-full rounded border border-neutral-300 px-2 py-1.5 text-sm"
                 />
                 <div className="flex flex-wrap gap-2">
+                  <select
+                    name="themeIndex"
+                    defaultValue=""
+                    className="w-40 rounded border border-neutral-300 px-2 py-1 text-sm"
+                    title="메일 색 테마(비우면 발행 주차별 자동 순환)"
+                  >
+                    <option value="">색: 자동(주차별)</option>
+                    {EMAIL_THEMES.map((t, i) => (
+                      <option key={t.key} value={i}>
+                        색: {t.name}
+                      </option>
+                    ))}
+                  </select>
                   <input
                     name="fromName"
-                    placeholder="보낸사람 이름(선택, 기본 KCT)"
+                    placeholder="보낸사람 이름(선택)"
                     className="w-44 rounded border border-neutral-300 px-2 py-1 text-sm"
                   />
                   <input
@@ -123,7 +137,8 @@ export default async function AdminPage({
         </ul>
         <p className="mt-2 text-xs text-neutral-400">
           내용란에 직접 쓰면 그 내용으로, 비우면 부제가 본문으로 발송됩니다. 테스트
-          이메일을 비우면 전체 확인 구독자에게 발송(해당 호 PDF 자동 첨부).
+          이메일을 비우면 전체 확인 구독자에게 발송(해당 호 PDF 자동 첨부). 색은
+          비우면 발행 주차에 따라 7색이 자동 순환되며, 직접 고르면 그 색으로 발송됩니다.
         </p>
       </section>
 
