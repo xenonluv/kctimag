@@ -83,3 +83,22 @@ export async function sendIssueEmail(opts: SendOpts): Promise<SendResult> {
   if (provider === "resend") return sendViaResend(opts);
   return sendViaBrevo(opts);
 }
+
+/** 수신거부 URL — 토큰 있으면 /api/unsubscribe, 없으면 사이트 홈 */
+export function unsubscribeUrl(site: string, r: Recipient): string {
+  return r.unsubscribeToken
+    ? `${site}/api/unsubscribe?token=${r.unsubscribeToken}`
+    : site;
+}
+
+/** 모든 발송 메일 하단에 항상 들어가는 구독취소 안내문 + 버튼(HR 포함).
+ *  관리자 발송·구독자 자동발송 양쪽에서 공용 사용. */
+export function unsubscribeBlockHtml(unsubUrl: string): string {
+  return `<hr style="border:none;border-top:1px solid #e5e5e5;margin:26px 0"/>
+  <div style="text-align:center;padding:4px 0 8px">
+    <p style="font-size:13px;color:#888;line-height:1.7;margin:0 0 14px">
+      주간 한국문화 AI 매거진 소식을 더 이상 받지 않으시려면<br/>아래 버튼을 눌러주세요.
+    </p>
+    <a href="${unsubUrl}" style="display:inline-block;background:#f0f0f0;color:#555;text-decoration:none;padding:11px 24px;border-radius:6px;font-size:13px;font-weight:600;border:1px solid #ddd">구독 취소</a>
+  </div>`;
+}

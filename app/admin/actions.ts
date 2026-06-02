@@ -9,7 +9,12 @@ import {
 } from "@/lib/admin-auth";
 import { getAdminSupabase } from "@/lib/supabase";
 import { readIssue } from "@/lib/content";
-import { sendIssueEmail, type Recipient } from "@/lib/mailer";
+import {
+  sendIssueEmail,
+  unsubscribeUrl,
+  unsubscribeBlockHtml,
+  type Recipient,
+} from "@/lib/mailer";
 import { getSiteUrl } from "@/lib/env";
 
 export async function login(formData: FormData) {
@@ -96,9 +101,7 @@ export async function resendIssue(formData: FormData) {
     throttleMs: 300,
     pdf,
     buildHtml: (r) => {
-      const unsub = r.unsubscribeToken
-        ? `${site}/api/unsubscribe?token=${r.unsubscribeToken}`
-        : site;
+      const unsub = unsubscribeUrl(site, r);
       const pdfLine = pdf
         ? " · 📄 PDF가 첨부되어 있습니다"
         : pdfUrl
@@ -116,8 +119,7 @@ export async function resendIssue(formData: FormData) {
         <h1 style="font-size:22px">${issue!.meta.title}</h1>
         <div style="color:#444;font-size:15px;line-height:1.7">${bodyHtml}</div>
         <p style="margin-top:16px"><a href="${link}">웹에서 보기 →</a>${pdfLine}</p>
-        <hr style="border:none;border-top:1px solid #eee;margin:20px 0"/>
-        <p style="font-size:12px;color:#999"><a href="${unsub}" style="color:#999">수신거부</a></p>
+        ${unsubscribeBlockHtml(unsub)}
       </div>`;
     },
   });
