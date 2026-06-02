@@ -76,7 +76,7 @@ export async function resendIssue(formData: FormData) {
   }
   if (recipients.length === 0) redirect("/admin?msg=norecipients");
 
-  const link = `${site}/issues/${issue!.meta.slug}`;
+  const homeUrl = `${site}/`; // 메일 "웹에서 전체 보기"는 홈(AI 엄선 자랑 카드)으로
   const pdfUrl = issue!.meta.pdfUrl;
   const themeIndex = resolveThemeIndex(slug!, themeRaw); // 수동선택 우선, 없으면 주차별 자동
 
@@ -113,7 +113,7 @@ export async function resendIssue(formData: FormData) {
       return renderIssueEmail({
         title: issue!.meta.title,
         bodyHtml,
-        ctaUrl: link,
+        ctaUrl: homeUrl,
         pdfNoteHtml,
         unsubUrl: unsubscribeUrl(site, r),
         themeIndex,

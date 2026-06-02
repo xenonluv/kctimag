@@ -50,7 +50,8 @@ function buildHtml(issue: Issue, site: string, r: Recipient): string {
   return renderIssueEmail({
     title: issue.meta.title,
     bodyHtml: escapeHtml(issue.meta.dek),
-    ctaUrl: `${site}/issues/${issue.meta.slug}`,
+    ctaUrl: `${site}/`, // 홈(AI 엄선 자랑 카드)으로 — 거기서 최신호 히어로로 본문 진입
+    ctaLabel: "웹에서 전체 보기 →",
     pdfNoteHtml: "이번 호 전문은 첨부된 <strong>PDF</strong>로도 확인하실 수 있습니다.",
     unsubUrl: unsubscribeUrl(site, r),
     themeIndex: pickThemeIndexBySlug(issue.meta.slug), // 주차별 자동 순환
