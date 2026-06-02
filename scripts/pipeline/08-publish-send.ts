@@ -9,10 +9,15 @@ import { getSiteUrl } from "@/lib/env";
 import { issueJsonPath, readJson } from "@/lib/paths";
 import type { Issue } from "@/types/issue";
 
-/** content/ 변경을 커밋·push (→ Vercel 자동 배포) */
+/** 발행 대상 호만 커밋·push (→ Vercel 자동 배포).
+ *  ⚠️ content/ 전체가 아니라 해당 슬러그 디렉토리만 add — 작업트리에 남은
+ *  미발행 테스트 호가 함께 휩쓸려 발행되는 사고를 방지한다. */
 export function publishToGit(slug: string): void {
   const cwd = process.cwd();
-  execFileSync("git", ["add", "content/"], { cwd, stdio: "inherit" });
+  execFileSync("git", ["add", `content/issues/${slug}`], {
+    cwd,
+    stdio: "inherit",
+  });
   execFileSync("git", ["commit", "-m", `발행: ${slug}호 한국 문화 매거진`], {
     cwd,
     stdio: "inherit",
