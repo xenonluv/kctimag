@@ -168,7 +168,11 @@ export default async function AdminPage({
                             : "text-amber-600"
                       }
                     >
-                      {s.status}
+                      {s.status === "confirmed"
+                        ? "구독중"
+                        : s.status === "unsubscribed"
+                          ? "수신거부"
+                          : "대기"}
                     </span>
                   </td>
                   <td className="px-3 py-2 text-right">

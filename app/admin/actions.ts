@@ -61,7 +61,17 @@ export async function resendIssue(formData: FormData) {
   const site = getSiteUrl();
   let recipients: Recipient[] = [];
   if (testEmail) {
-    recipients = [{ email: testEmail }];
+    // 테스트 주소가 실제 구독자면 그 토큰을 붙여 → 구독취소 버튼이 테스트에서도 동작
+    let token: string | undefined;
+    if (sb) {
+      const { data } = await sb
+        .from("subscribers")
+        .select("unsubscribe_token")
+        .eq("email", testEmail.toLowerCase())
+        .maybeSingle();
+      token = (data as { unsubscribe_token?: string } | null)?.unsubscribe_token;
+    }
+    recipients = [{ email: testEmail, unsubscribeToken: token }];
   } else if (sb) {
     const { data } = await sb
       .from("subscribers")

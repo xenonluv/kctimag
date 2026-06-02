@@ -32,15 +32,22 @@ export async function GET(req: NextRequest) {
       "지금은 처리할 수 없습니다. 잠시 후 다시 시도해 주세요.",
     );
 
-  const { error } = await sb
+  const { data, error } = await sb
     .from("subscribers")
     .update({ status: "unsubscribed" })
-    .eq("unsubscribe_token", token);
+    .eq("unsubscribe_token", token)
+    .select("id");
 
   if (error)
     return page(
       "오류가 발생했습니다",
       "처리 중 문제가 발생했습니다. 잠시 후 다시 시도해 주세요.",
+    );
+
+  if (!data || data.length === 0)
+    return page(
+      "링크가 유효하지 않습니다",
+      "이미 수신거부되었거나 만료된 링크입니다. 계속 메일이 도착한다면 회신해 주세요.",
     );
 
   return page(

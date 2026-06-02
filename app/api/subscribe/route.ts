@@ -22,10 +22,13 @@ export async function POST(req: NextRequest) {
   }
 
   const token = crypto.randomBytes(24).toString("hex");
-  const { error } = await sb.from("subscribers").upsert(
-    { email, status: "confirmed", unsubscribe_token: token },
-    { onConflict: "email", ignoreDuplicates: true },
-  );
+  // upsert: 신규는 추가, 기존(수신거부 포함)은 상태를 구독중으로 복구 + 토큰 갱신 → 재구독 가능.
+  const { error } = await sb
+    .from("subscribers")
+    .upsert(
+      { email, status: "confirmed", unsubscribe_token: token },
+      { onConflict: "email" },
+    );
 
   if (error) {
     return NextResponse.json({ error: error.message }, { status: 500 });
