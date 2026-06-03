@@ -1,6 +1,6 @@
 {
   "slug": "2026-06-03",
-  "generatedAt": "2026-06-03T09:52:44.274Z",
+  "generatedAt": "2026-06-03T10:04:53.598Z",
   "range": {
     "from": "2026-06-03",
     "to": "2026-06-10"
@@ -8,11 +8,11 @@
   "meta": {
     "title": "이번 주 문화 이벤트",
     "dek": "뉴스 관심도와 공식 행사 정보를 함께 본 향후 7일 큐레이션",
-    "totalCandidates": 719,
+    "totalCandidates": 718,
     "selected": 14,
     "sourceBreakdown": {
       "tourApi": 394,
-      "news": 325
+      "news": 324
     },
     "note": "일정은 주최 측 사정에 따라 변경될 수 있으니 방문 전 공식 링크를 확인하세요."
   },
