@@ -15,9 +15,15 @@ export default function SiteHeader() {
             주간 한국문화 AI 큐레이션 뉴스모음<span className="text-accent">.</span>
           </span>
         </Link>
-        <nav className="flex gap-4 text-sm text-neutral-300">
+        <nav className="flex flex-wrap items-center justify-end gap-x-3 gap-y-2 text-sm text-neutral-300">
           <Link href="/" className="hover:text-accent">
             홈
+          </Link>
+          <Link
+            href="/events"
+            className="rounded-full border border-amber-300/50 bg-amber-400 px-3.5 py-1.5 font-bold text-[#191006] shadow-[0_0_18px_rgba(251,191,36,0.24)] hover:bg-orange-300"
+          >
+            다음 주 이벤트
           </Link>
           <Link href="/#subscribe" className="hover:text-accent">
             구독

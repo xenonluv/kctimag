@@ -1,5 +1,15 @@
 // 매거진 1호(issue) = "큐레이션 뉴스 다이제스트 + 편집장 픽".
 // 파이프라인이 생성 → content/issues/{slug}/issue.json 으로 커밋 → 웹/PDF가 렌더.
+import type { IssueScores } from "@/types/pipeline";
+
+export interface NewsPriorityAnalysis {
+  rank: number;
+  score: number;
+  scores: IssueScores;
+  rationale: string;
+  sourceCount: number;
+  outletCount: number;
+}
 
 /** 기사에 실린 이미지(og:image). 출처(언론사)만 표기. */
 export interface EntryImage {
@@ -26,6 +36,8 @@ export interface NewsEntry {
   imagePrompt?: string;
   /** 스톡/위키 사진 검색용 키워드 (내부용, 렌더 안 함) */
   imageQuery?: string;
+  /** 수집 뉴스 기반 우선순위 추정치 */
+  analysis?: NewsPriorityAnalysis;
 }
 
 /** 카테고리(부서)별 뉴스 목록 */
@@ -47,6 +59,8 @@ export interface EditorPick {
   imagePrompt?: string;
   imageQuery?: string;
   outlet?: string;
+  /** 수집 뉴스 기반 우선순위 추정치 */
+  analysis?: NewsPriorityAnalysis;
   /** 함께 주목할 기사(선택) */
   honorableMentions?: { headline: string; link: string }[];
 }
@@ -78,6 +92,12 @@ export interface IssueMeta {
     breakdown: { label: string; count: number }[];
     /** 이번 주 선정 이유(홈 배너, 3문장 내외) */
     rationale?: string;
+  };
+  /** 수집 뉴스 기반 우선순위 분석 메타 */
+  analysis?: {
+    method: "local-heuristic-v1";
+    note: string;
+    issueCount: number;
   };
 }
 

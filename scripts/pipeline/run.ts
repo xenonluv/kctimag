@@ -6,6 +6,7 @@ import "@/lib/load-env";
 import { execFileSync } from "node:child_process";
 import { existsSync } from "node:fs";
 import { collect } from "./01-collect";
+import { analyze } from "./02-analyze";
 import { curate } from "./02-curate";
 import { addImages } from "./04-images";
 import { generatePdf } from "./06-pdf";
@@ -67,9 +68,15 @@ async function main() {
   writeJson(`${tmpDir(slug)}/raw-news.json`, raw);
   console.log(`   누적 ${accumulated.length} + 당일 ${fresh.items.length} → ${raw.totalCount}건\n`);
 
-  // ② 큐레이션
-  console.log("② 큐레이션 (카테고리별 선별 + 편집장 픽)");
-  const curated = await curate(raw);
+  // ② 우선순위 분석
+  console.log("② 우선순위 분석 (수집 뉴스 기반 로컬 휴리스틱)");
+  const analysis = analyze(raw);
+  writeJson(`${tmpDir(slug)}/analysis.json`, analysis);
+  console.log(`   ${analysis.issues.length}개 이슈 분석\n`);
+
+  // ③ 큐레이션
+  console.log("③ 큐레이션 (카테고리별 선별 + 편집장 픽)");
+  const curated = await curate(raw, analysis);
   console.log(
     `   ${curated.categories.length}개 카테고리 · 픽 "${curated.editorPick.headline}"\n`,
   );
@@ -109,6 +116,11 @@ async function main() {
         selected,
         breakdown,
         rationale: withImages.selectionRationale,
+      },
+      analysis: {
+        method: analysis.method,
+        note: analysis.note,
+        issueCount: analysis.issues.length,
       },
     },
     editorPick: withImages.editorPick,

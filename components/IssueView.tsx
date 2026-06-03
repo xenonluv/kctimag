@@ -30,6 +30,7 @@ export default function IssueView({
           <p className="mt-5 inline-flex items-center gap-1.5 rounded-full bg-accent/15 px-3.5 py-1.5 text-xs font-bold text-accent">
             🤖 AI가 {meta.curation.scanned.toLocaleString()}건 중{" "}
             {meta.curation.selected}건 선별
+            {meta.analysis ? " · 수집 뉴스 기반 추정치" : ""}
           </p>
         )}
       </header>
@@ -60,6 +61,13 @@ export default function IssueView({
             </a>
           </h2>
           <p className="mt-3 leading-relaxed text-neutral-300">{editorPick.why}</p>
+          {editorPick.analysis && (
+            <p className="mt-3 text-xs font-medium text-accent">
+              선정 근거: {editorPick.analysis.sourceCount}개 기사 ·{" "}
+              {editorPick.analysis.outletCount}개 매체 · 점수{" "}
+              {editorPick.analysis.score} · 수집 뉴스 기반 추정치
+            </p>
+          )}
           <p className="mt-3 text-xs text-neutral-500">
             {editorPick.outlet && <>출처: </>}
             <a
@@ -169,6 +177,12 @@ function NewsCard({
         {entry.blurb && (
           <p className="mt-2 flex-1 text-sm leading-relaxed text-neutral-400">
             {entry.blurb}
+          </p>
+        )}
+        {entry.analysis && (
+          <p className="mt-3 text-xs font-medium text-accent">
+            선정 근거: {entry.analysis.sourceCount}개 기사 ·{" "}
+            {entry.analysis.outletCount}개 매체 · 수집 뉴스 기반 추정치
           </p>
         )}
         <p className="mt-3 text-xs text-neutral-500">

@@ -26,23 +26,39 @@ export interface RawNews {
   items: NewsItem[];
 }
 
+/** 수집 뉴스 기반 우선순위 추정 점수(0-100) */
+export interface IssueScores {
+  importance: number;
+  impact: number;
+  interest: number;
+  psychological: number;
+  realtime: number;
+}
+
 /** 팀원2 분석: 이슈 1건 */
 export interface AnalyzedIssue {
   rank: number;
   heading: string;
   category: string;
   summary: string;
-  intensities: { news: number; psychological: number; realtime: number };
-  /** 종합 점수 0-100 */
+  scores: IssueScores;
+  /** 종합 점수 0-100. 실제 검색량/SNS가 아닌 수집 뉴스 기반 추정치 */
   score: number;
   rationale: string;
-  /** raw news items 배열에서 근거 기사 인덱스 */
+  /** raw.items 원본 배열에서 근거 기사 인덱스 */
   sourceIndexes: number[];
+  sourceCount: number;
+  outletCount: number;
+  outlets: string[];
+  /** raw.items 원본 배열의 대표 기사 인덱스 */
+  primaryIndex: number;
 }
 
 /** 팀원2 분석 결과 (analysis.json) */
 export interface Analysis {
   analyzedAt: string;
+  method: "local-heuristic-v1";
+  note: string;
   issues: AnalyzedIssue[];
 }
 

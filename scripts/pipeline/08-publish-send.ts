@@ -24,6 +24,12 @@ export function publishToGit(slug: string): void {
     cwd,
     stdio: "inherit",
   });
+  if (fs.existsSync(`content/events/${slug}`)) {
+    execFileSync("git", ["add", `content/events/${slug}`], {
+      cwd,
+      stdio: "inherit",
+    });
+  }
   execFileSync("git", ["commit", "-m", `발행: ${slug}호 한국 문화 매거진`], {
     cwd,
     stdio: "inherit",

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { listIssues, latestIssue } from "@/lib/content";
+import { latestEvents } from "@/lib/events";
 import SubscribeForm from "@/components/SubscribeForm";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
@@ -9,6 +10,7 @@ export const dynamic = "force-static";
 export default function Home() {
   const issues = listIssues();
   const latest = latestIssue();
+  const events = latestEvents();
   const rest = issues.slice(1);
 
   return (
@@ -34,6 +36,7 @@ export default function Home() {
               <div className="mt-4 rounded-xl border-l-2 border-accent bg-white/[0.03] px-4 py-3">
                 <p className="text-[11px] font-bold uppercase tracking-wider text-accent">
                   🤖 AI 에디터의 선정 이유
+                  {latest.meta.analysis ? " · 수집 뉴스 기반 추정치" : ""}
                 </p>
                 <p className="mt-1.5 text-sm leading-relaxed text-neutral-300">
                   {latest.meta.curation.rationale}
@@ -59,6 +62,27 @@ export default function Home() {
             </ul>
           </section>
         )}
+
+        <section className="mb-8 rounded-3xl border border-amber-300/35 bg-gradient-to-r from-amber-500/18 via-orange-500/12 to-white/[0.03] px-5 py-5 sm:flex sm:items-center sm:justify-between sm:gap-5">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest text-amber-300">
+              Next Week
+            </p>
+            <h2 className="on-navy mt-1 font-serif text-2xl font-bold">
+              다음 주 문화 이벤트도 확인하세요
+            </h2>
+            <p className="mt-1 text-sm leading-relaxed text-neutral-400">
+              공연, 전시, 축제, 팝업 등 앞으로 7일 안의 행사를 중요도순으로
+              모았습니다.
+            </p>
+          </div>
+          <Link
+            href="/events"
+            className="mt-4 inline-flex rounded-full bg-amber-400 px-4 py-2 text-sm font-extrabold text-[#191006] shadow-[0_0_24px_rgba(251,191,36,0.28)] hover:bg-orange-300 sm:mt-0"
+          >
+            이벤트 보기
+          </Link>
+        </section>
 
         {latest ? (
           <Link
@@ -87,6 +111,48 @@ export default function Home() {
           <p className="on-navy-dim rounded-3xl border border-dashed border-white/20 p-10 text-center">
             아직 발행된 호가 없습니다. 첫 호가 곧 발행됩니다.
           </p>
+        )}
+
+        {events && events.events.length > 0 && (
+          <section className="mt-12">
+            <div className="mb-4 flex items-end justify-between gap-4">
+              <div>
+                <p className="text-xs uppercase tracking-widest text-accent">
+                  Next Week Events
+                </p>
+                <h2 className="on-navy mt-1 font-serif text-xl font-bold">
+                  다음 주 문화 이벤트
+                </h2>
+              </div>
+              <Link
+                href="/events"
+                className="rounded-full bg-amber-400 px-3.5 py-2 text-sm font-extrabold text-[#191006] hover:bg-orange-300"
+              >
+                전체 이벤트 보기
+              </Link>
+            </div>
+            <ul className="grid gap-4 sm:grid-cols-3">
+              {events.events.slice(0, 3).map((event) => (
+                <li key={event.id}>
+                  <Link
+                    href="/events"
+                    className="group kct-card kct-glow block h-full rounded-2xl p-4"
+                  >
+                    <p className="text-xs text-neutral-500">
+                      {event.startDate}
+                      {event.region ? ` · ${event.region}` : ""}
+                    </p>
+                    <h3 className="mt-2 font-bold leading-snug group-hover:text-accent">
+                      {event.title}
+                    </h3>
+                    <p className="mt-3 text-xs font-bold text-accent">
+                      {event.score}점
+                    </p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
         )}
 
         <section

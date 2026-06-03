@@ -5,6 +5,8 @@ import { z } from "zod";
 export const CurateEntrySchema = z.object({
   /** 입력 뉴스 목록에서의 인덱스 */
   index: z.number().int(),
+  /** 분석 이슈 rank(선택). 없으면 index->rawIndex 역조회로 연결 */
+  issueRank: z.number().int().optional(),
   /** 1~2줄 설명 */
   blurb: z.string(),
   /** AI 이미지 생성용 영어 프롬프트(개념·분위기 일러스트, 실존 인물 얼굴 금지) */
