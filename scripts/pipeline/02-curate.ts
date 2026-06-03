@@ -223,7 +223,7 @@ export async function curate(
       `- 문화와 무관한 기사(정치·선거·공약, 사건사고, 일반 경제/증시 등) → 키워드가 걸렸어도 버려라.\n` +
       `【카테고리】 수집 쿼리는 무시하고 **기사 내용으로 올바른 카테고리**를 배정. 맞는 카테고리가 없으면 제외. key는 다음만: ${keys}\n\n` +
       `할 일:\n` +
-      `1. 카테고리별 대표 뉴스 2~5건 선별(같은 사건 중복은 가장 대표적 1건만).\n` +
+      `1. 카테고리별 대표 뉴스는 **반드시 정확히 3건** 선별(2건 이하 금지, 4건 이상 금지. 같은 사건 중복은 가장 대표적 1건만).\n` +
       `2. 각 항목 blurb = **2~3문장**(무슨 일 + 맥락 + 왜 중요한지). 짧게 쓰지 말 것.\n` +
       `3. 각 항목 imagePrompt = 그 기사를 상징하는 **영어 이미지 생성 프롬프트**(개념·분위기 일러스트. ⚠️실존 인물 얼굴·로고·텍스트 금지. 예: "kpop idol group silhouette on a glowing stage, fans cheering").\n` +
       `3-1. 각 항목 imageQuery = 스톡/위키 **사진 검색용 구체 영어 키워드**(실제 주제·장소·작품·사물의 명사 위주. 예: "Gyeongbokgung palace night", "esports arena crowd", "Korean street food market"). 추상 표현 말고 검색에 바로 쓸 구체 명사로.\n` +
@@ -233,7 +233,7 @@ export async function curate(
       `7. 각 카테고리마다 note = **이번 주 이 카테고리에서 왜 이 뉴스들을 골랐는지** 1~2문장 큐레이션 코멘트(개별 기사 요약 반복 금지. 이 섹션의 이번 주 흐름·선정 관점·의미를 독자에게 말하듯 간결히).\n` +
       `8. selectionRationale = 홈 상단에 들어갈 **이번 주 전반 선정 이유 3문장 내외**(이번 주 큐레이션의 기준·관점·두드러진 흐름을 독자에게 어필하듯 간결하고 자신감 있게. 개별 기사 나열 금지).\n\n` +
       `index는 0~${candidateItems.length - 1} 정수만 사용. issueRank가 보이면 해당 값을 entries에 optional로 함께 넣어도 된다.\n` +
-      `형식: {"title","dek","selectionRationale","categories":[{"key","entries":[{"index","issueRank","blurb","imagePrompt","imageQuery"}],"note"}],"editorPick":{"index","why","imagePrompt","imageQuery","honorableIndexes":[]},"editorial":{"title","body"}}`,
+      `형식: {"title","dek","selectionRationale","categories":[{"key","entries":[정확히 3개 {"index","issueRank","blurb","imagePrompt","imageQuery"}],"note"}],"editorPick":{"index","why","imagePrompt","imageQuery","honorableIndexes":[]},"editorial":{"title","body"}}`,
     CurateSchema,
     { system: CURATOR_SYS },
     mock,
