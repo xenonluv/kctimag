@@ -1,0 +1,473 @@
+{
+  "slug": "2026-06-03",
+  "generatedAt": "2026-06-03T09:52:44.274Z",
+  "range": {
+    "from": "2026-06-03",
+    "to": "2026-06-10"
+  },
+  "meta": {
+    "title": "이번 주 문화 이벤트",
+    "dek": "뉴스 관심도와 공식 행사 정보를 함께 본 향후 7일 큐레이션",
+    "totalCandidates": 719,
+    "selected": 14,
+    "sourceBreakdown": {
+      "tourApi": 394,
+      "news": 325
+    },
+    "note": "일정은 주최 측 사정에 따라 변경될 수 있으니 방문 전 공식 링크를 확인하세요."
+  },
+  "events": [
+    {
+      "id": "고티에-카퓌송-첼리스트에게-아주-특별한-도전-베토벤의-2026-06-04",
+      "title": "[비바100] 고티에 카퓌송 “첼리스트에게 아주 특별한 도전, 베토벤의 ‘...",
+      "category": "concert",
+      "startDate": "2026-06-04",
+      "endDate": "2026-06-04",
+      "description": "6월 4일 개막하는 클래시컬 브릿지 국제 음악 페스티벌(6월 12일까지 예술의전당, 롯데콘서트홀... Jaunes’에서 블랙핑크와의 작업에 대해 “정말 놀라운 경험”이라고 밝힌 고티에 카퓌숑은 “제게는 완전히...",
+      "sources": [
+        {
+          "type": "news",
+          "title": "[비바100] 고티에 카퓌송 “첼리스트에게 아주 특별한 도전, 베토벤의 ‘...",
+          "url": "https://www.viva100.com/article/20260527500178",
+          "outlet": "viva100.com",
+          "pubDate": "2026-05-28T09:18:00.000Z"
+        }
+      ],
+      "dateConfidence": "medium",
+      "scores": {
+        "importance": 95,
+        "interest": 77,
+        "urgency": 95,
+        "scale": 90,
+        "reliability": 43
+      },
+      "score": 82,
+      "rationale": "뉴스 기반 후보 · 뉴스 1건 · 대형 관심 키워드",
+      "displayGroup": "featured"
+    },
+    {
+      "id": "세븐틴-도겸x승관-중화권-공연-추가-개최-글로벌-인기-입증-2026-06-07",
+      "title": "세븐틴 도겸X승관, 중화권 공연 추가 개최…글로벌 인기 입증",
+      "category": "concert",
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-07",
+      "description": "6월 7일 마카오 이어 7월 24·26일 가오슝서 공연 그룹 세븐틴 유닛 도겸X승관이 뜨거운 인기에 힘입어... 오는 30~31일 대구 엑스코에서 열리는 콘서트 역시 일찌감치 매진을 기록했으며 6월 6일 단 하루 예정됐던...",
+      "sources": [
+        {
+          "type": "news",
+          "title": "세븐틴 도겸X승관, 중화권 공연 추가 개최…글로벌 인기 입증",
+          "url": "https://news.tf.co.kr/read/entertain/2323068.htm",
+          "outlet": "news.tf.co.kr",
+          "pubDate": "2026-05-15T04:36:00.000Z"
+        }
+      ],
+      "dateConfidence": "medium",
+      "scores": {
+        "importance": 80,
+        "interest": 77,
+        "urgency": 60,
+        "scale": 70,
+        "reliability": 43
+      },
+      "score": 69,
+      "rationale": "뉴스 기반 후보 · 뉴스 1건 · 대형 관심 키워드",
+      "displayGroup": "featured"
+    },
+    {
+      "id": "제30회-제주국제관광마라톤축제-2026-06-07-제주특별자치도",
+      "title": "제30회 제주국제관광마라톤축제",
+      "category": "festival",
+      "region": "제주특별자치도",
+      "address": "제주특별자치도 제주시 김녕로 209",
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-07",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/41/4041141_image2_1.jpg",
+      "description": "064-741-8739",
+      "coordinates": {
+        "lat": 33.5559658509894,
+        "lng": 126.760117733532
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "제30회 제주국제관광마라톤축제",
+          "contentId": "2371631"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 95,
+        "interest": 65,
+        "urgency": 60,
+        "scale": 90,
+        "reliability": 75
+      },
+      "score": 79,
+      "rationale": "공식 행사 데이터 · 대형 관심 키워드",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "고창갯벌축제-2026-06-05-전북특별자치도",
+      "title": "고창갯벌축제",
+      "category": "festival",
+      "region": "전북특별자치도",
+      "address": "전북특별자치도 고창군 애향갯벌로 320 갯벌체험학습장",
+      "startDate": "2026-06-05",
+      "endDate": "2026-06-07",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/62/4066762_image2_1.jpg",
+      "description": "063-560-2632",
+      "coordinates": {
+        "lat": 35.5302512004163,
+        "lng": 126.515365233818
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "고창갯벌축제",
+          "contentId": "1835137"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 80,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 51,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "전주국가유산야행-2026-06-05-전북특별자치도",
+      "title": "전주국가유산야행",
+      "category": "heritage",
+      "region": "전북특별자치도",
+      "address": "전북특별자치도 전주시 완산구 태조로 44 (풍남동3가)",
+      "startDate": "2026-06-05",
+      "endDate": "2026-06-06",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/67/4065267_image2_1.jpg",
+      "description": "063-232-9937",
+      "coordinates": {
+        "lat": 35.814171786262136,
+        "lng": 127.15002124718735
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "전주국가유산야행",
+          "contentId": "2393544"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 80,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 51,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "제3회-쉬엄쉬엄-한강-3종-축제-2026-06-05-서울특별시",
+      "title": "제3회 쉬엄쉬엄 한강 3종 축제",
+      "category": "festival",
+      "region": "서울특별시",
+      "address": "서울특별시 광진구 능동로 10 (자양동)",
+      "startDate": "2026-06-05",
+      "endDate": "2026-06-07",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/27/4059027_image2_1.png",
+      "description": "1544-5340",
+      "coordinates": {
+        "lat": 37.5317034538759,
+        "lng": 127.066765925738
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "제3회 쉬엄쉬엄 한강 3종 축제",
+          "contentId": "3114311"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 80,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 51,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "반가운축제-2026-06-07-경기도",
+      "title": "반가운축제 (반려견과 가치있게 운동하는 축제)",
+      "category": "festival",
+      "region": "경기도",
+      "address": "경기도 안산시 상록구 해안로 615 (사동) 안산 호수공원",
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-07",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/59/4064359_image2_1.jpg",
+      "description": "1533-0799",
+      "coordinates": {
+        "lat": 37.2974370444597,
+        "lng": 126.825891838858
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "반가운축제 (반려견과 가치있게 운동하는 축제)",
+          "contentId": "4063951"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 60,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 48,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "성북세계음식축제-누리마실-2026-06-07-서울특별시",
+      "title": "성북세계음식축제 누리마실",
+      "category": "festival",
+      "region": "서울특별시",
+      "address": "서울특별시 성북구 성북동 142-1 성북로 일대(성북동 주민센터 건너편~홍익중고 앞 버스정류장)",
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-07",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/63/4056263_image2_1.jpg",
+      "description": "02-6906-9298",
+      "coordinates": {
+        "lat": 37.59279,
+        "lng": 127.002239
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "성북세계음식축제 누리마실",
+          "contentId": "2001015"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 60,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 48,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "유기농데이-2026-06-09-서울특별시",
+      "title": "유기농데이",
+      "category": "other",
+      "region": "서울특별시",
+      "address": "서울특별시 중구 태평로1가 1",
+      "startDate": "2026-06-09",
+      "endDate": "2026-06-09",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/59/4063059_image2_1.jpg",
+      "description": "031-774-3312",
+      "coordinates": {
+        "lat": 37.569192,
+        "lng": 126.978019
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "유기농데이",
+          "contentId": "2818857"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 60,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 48,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "음성품바축제-2026-06-10-충청북도",
+      "title": "음성품바축제",
+      "category": "festival",
+      "region": "충청북도",
+      "address": "충청북도 음성군 음성읍 설성공원길 28",
+      "startDate": "2026-06-10",
+      "endDate": "2026-06-14",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/55/4039855_image2_1.JPG",
+      "description": "043-871-3415",
+      "coordinates": {
+        "lat": 36.9327146229667,
+        "lng": 127.690981592342
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "음성품바축제",
+          "contentId": "141731"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 60,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 48,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "2026-국제선명상대회-2026-04-03-서울특별시",
+      "title": "2026 국제선명상대회",
+      "category": "other",
+      "region": "서울특별시",
+      "address": "서울특별시 강남구 봉은사로 531 (삼성동)",
+      "startDate": "2026-04-03",
+      "endDate": "2026-11-12",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/90/4054090_image2_1.jpg",
+      "description": "010-8441-2371",
+      "coordinates": {
+        "lat": 37.5158257049833,
+        "lng": 127.057734484281
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 국제선명상대회",
+          "contentId": "3377038"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 95,
+        "interest": 65,
+        "urgency": 55,
+        "scale": 90,
+        "reliability": 75
+      },
+      "score": 78,
+      "rationale": "공식 행사 데이터 · 대형 관심 키워드",
+      "displayGroup": "ongoing"
+    },
+    {
+      "id": "2026-국립극장-쏙쏙들이페스티벌-2026-03-14-경기도",
+      "title": "2026 국립극장 쏙쏙들이페스티벌",
+      "category": "festival",
+      "region": "경기도",
+      "address": "경기도 파주시 탄현면 헤이리로 16",
+      "startDate": "2026-03-14",
+      "endDate": "2026-12-26",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/46/4068446_image2_1.jpg",
+      "description": "031-870-9110",
+      "coordinates": {
+        "lat": 37.783283932648466,
+        "lng": 126.69468599293761
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 국립극장 쏙쏙들이페스티벌",
+          "contentId": "3488421"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 95,
+        "interest": 65,
+        "urgency": 55,
+        "scale": 70,
+        "reliability": 75
+      },
+      "score": 75,
+      "rationale": "공식 행사 데이터 · 대형 관심 키워드",
+      "displayGroup": "ongoing"
+    },
+    {
+      "id": "포트빌리지-부산-2026-2026-06-04-부산광역시",
+      "title": "포트빌리지 부산 2026",
+      "category": "other",
+      "region": "부산광역시",
+      "address": "부산광역시 중구 중앙동4가 15-33 부산항 제1부두",
+      "startDate": "2026-06-04",
+      "endDate": "2026-06-21",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/81/4065381_image2_1.jpg",
+      "description": "070-4680-1718",
+      "coordinates": {
+        "lat": 35.104388,
+        "lng": 129.041338
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "포트빌리지 부산 2026",
+          "contentId": "3485135"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 55,
+        "reliability": 75
+      },
+      "score": 56,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "ongoing"
+    },
+    {
+      "id": "문화가-흐르는-서울광장-2026-05-06-서울특별시",
+      "title": "문화가 흐르는 서울광장",
+      "category": "other",
+      "region": "서울특별시",
+      "address": "서울특별시 중구 을지로 지하12 (을지로1가)",
+      "startDate": "2026-05-06",
+      "endDate": "2026-12-31",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/68/4059668_image2_1.jpg",
+      "description": "02-2133-2543",
+      "coordinates": {
+        "lat": 37.56544835496842,
+        "lng": 126.97878183534239
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "문화가 흐르는 서울광장",
+          "contentId": "2598331"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 55,
+        "scale": 55,
+        "reliability": 75
+      },
+      "score": 50,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "ongoing"
+    }
+  ]
+}
