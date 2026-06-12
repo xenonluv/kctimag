@@ -1,0 +1,666 @@
+{
+  "slug": "2026-06-12",
+  "generatedAt": "2026-06-12T00:37:42.312Z",
+  "range": {
+    "from": "2026-06-12",
+    "to": "2026-06-19"
+  },
+  "meta": {
+    "title": "이번 주 문화 이벤트",
+    "dek": "뉴스 관심도와 공식 행사 정보를 함께 본 향후 7일 큐레이션",
+    "totalCandidates": 754,
+    "selected": 20,
+    "sourceBreakdown": {
+      "tourApi": 413,
+      "news": 341
+    },
+    "note": "일정은 주최 측 사정에 따라 변경될 수 있으니 방문 전 공식 링크를 확인하세요."
+  },
+  "events": [
+    {
+      "id": "국제해양영화제-2026-06-18-부산광역시",
+      "title": "국제해양영화제 (KIOFF)",
+      "category": "film",
+      "region": "부산광역시",
+      "address": "부산광역시 해운대구 수영강변대로 120 (우동)",
+      "startDate": "2026-06-18",
+      "endDate": "2026-06-21",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/84/4057984_image2_1.png",
+      "description": "051-790-9413",
+      "coordinates": {
+        "lat": 35.1710365257136,
+        "lng": 129.127084511585
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "국제해양영화제 (KIOFF)",
+          "contentId": "2661307"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 95,
+        "interest": 65,
+        "urgency": 60,
+        "scale": 90,
+        "reliability": 75
+      },
+      "score": 79,
+      "rationale": "공식 행사 데이터 · 대형 관심 키워드",
+      "displayGroup": "featured"
+    },
+    {
+      "id": "bts-콘서트-기간-부산-숙박요금-최대-7-5배-높아-2026-06-13",
+      "title": "\"BTS 콘서트 기간 부산 숙박요금 최대 7.5배 높아\"",
+      "category": "concert",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-13",
+      "description": "K-팝 그룹 방탄소년단(BTS)의 콘서트가 열리는 오는 6월 부산 지역의 숙박요금이 평균 2.4배, 최대 7.5배... 콘서트가 예정된 6월 13일 평균 숙박요금은 그 전주나 다음주와 비교할 때 평균 143.9%, 2.4배에 이르는 것으로...",
+      "sources": [
+        {
+          "type": "news",
+          "title": "\"BTS 콘서트 기간 부산 숙박요금 최대 7.5배 높아\"",
+          "url": "http://www.yonhapnewstv.co.kr/AKR202602130926157vc",
+          "outlet": "yonhapnewstv.co.kr",
+          "pubDate": "2026-02-13T03:00:00.000Z"
+        }
+      ],
+      "dateConfidence": "medium",
+      "scores": {
+        "importance": 80,
+        "interest": 77,
+        "urgency": 95,
+        "scale": 90,
+        "reliability": 43
+      },
+      "score": 77,
+      "rationale": "뉴스 기반 후보 · 뉴스 1건 · 대형 관심 키워드",
+      "displayGroup": "featured"
+    },
+    {
+      "id": "2026-글로벌-크리에이터-아트페어-2026-06-13-서울특별시",
+      "title": "2026 글로벌 크리에이터 아트페어",
+      "category": "exhibition",
+      "region": "서울특별시",
+      "address": "서울특별시 마포구 동교동",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-13",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/48/4070348_image2_1.jpg",
+      "description": "010-7621-3714",
+      "coordinates": {
+        "lat": 37.556896,
+        "lng": 126.924142
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 글로벌 크리에이터 아트페어",
+          "contentId": "4070216"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 80,
+        "interest": 65,
+        "urgency": 95,
+        "scale": 70,
+        "reliability": 75
+      },
+      "score": 76,
+      "rationale": "공식 행사 데이터 · 대형 관심 키워드",
+      "displayGroup": "featured"
+    },
+    {
+      "id": "bts-12일-컴-오버-음원-발표-슈가-프로듀싱-참여-2026-06-13",
+      "title": "BTS, 12일 '컴 오버' 음원 발표…슈가 프로듀싱 참여",
+      "category": "concert",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-13",
+      "description": "그룹 방탄소년단(BTS)이 '2026 BTS 페스타' 기간을 맞아 '컴 오버'(Come Over)를 음원 발매한다. 하이브(352820)... 주경기장에서 공연을 연다. 특히 데뷔 기념일(6월 13일)을 국내 팬들과 함께할 예정이라 의미가 깊다.",
+      "sources": [
+        {
+          "type": "news",
+          "title": "BTS, 12일 '컴 오버' 음원 발표…슈가 프로듀싱 참여",
+          "url": "https://www.news1.kr/entertain/music/6195268",
+          "outlet": "news1.kr",
+          "pubDate": "2026-06-12T00:04:00.000Z"
+        }
+      ],
+      "dateConfidence": "medium",
+      "scores": {
+        "importance": 80,
+        "interest": 77,
+        "urgency": 95,
+        "scale": 70,
+        "reliability": 43
+      },
+      "score": 74,
+      "rationale": "뉴스 기반 후보 · 뉴스 1건 · 대형 관심 키워드",
+      "displayGroup": "featured"
+    },
+    {
+      "id": "마마무-싱가포르-스타디움-입성-2026-06-19",
+      "title": "마마무, 싱가포르 스타디움 입성",
+      "category": "concert",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-19",
+      "description": "방송되는 KBS2 ‘더 시즌즈-성시경의 고막남친’에도 출연해 라이브 무대를 선보일 예정이다. 마마무의 월드투어 ‘4WARD’는 오는 6월 19일 서울 공연을 시작으로 본격적인 일정에 돌입한다. 사진제공=알비더블유(RBW)",
+      "sources": [
+        {
+          "type": "news",
+          "title": "마마무, 싱가포르 스타디움 입성",
+          "url": "https://www.bntnews.co.kr/article/view/bnt202606120057",
+          "outlet": "bntnews.co.kr",
+          "pubDate": "2026-06-11T23:20:00.000Z"
+        }
+      ],
+      "dateConfidence": "medium",
+      "scores": {
+        "importance": 80,
+        "interest": 77,
+        "urgency": 60,
+        "scale": 90,
+        "reliability": 43
+      },
+      "score": 72,
+      "rationale": "뉴스 기반 후보 · 뉴스 1건 · 대형 관심 키워드",
+      "displayGroup": "featured"
+    },
+    {
+      "id": "서초-클래식-테마파크-2026-06-12-서울특별시",
+      "title": "서초 클래식 테마파크",
+      "category": "performance",
+      "region": "서울특별시",
+      "address": "서울특별시 서초구 방배중앙로19길 4 (방배동)",
+      "startDate": "2026-06-12",
+      "endDate": "2026-06-14",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/62/4069862_image2_1.jpg",
+      "description": "070-4266-5367010-5149-5313",
+      "coordinates": {
+        "lat": 37.4898764289,
+        "lng": 126.9868918551
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "서초 클래식 테마파크",
+          "contentId": "4069856"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "featured"
+    },
+    {
+      "id": "창립-65주년-기념-한국경제인협회와-함께하는-2026-서울시향-강변음악회-2026-06-13-서울특별시",
+      "title": "창립 65주년 기념 한국경제인협회와 함께하는 2026 서울시향 강변음악회",
+      "category": "other",
+      "region": "서울특별시",
+      "address": "서울특별시 영등포구 한강남자전거길 1451 (여의도동)",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-13",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/83/4069183_image2_1.jpg",
+      "description": "1588-1210",
+      "coordinates": {
+        "lat": 37.5308485071395,
+        "lng": 126.927745696174
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "창립 65주년 기념 한국경제인협회와 함께하는 2026 서울시향 강변음악회",
+          "contentId": "1817328"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 55,
+        "reliability": 75
+      },
+      "score": 56,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "거제-옥포대첩-축제-2026-06-12-경상남도",
+      "title": "거제 옥포대첩 축제",
+      "category": "festival",
+      "region": "경상남도",
+      "address": "경상남도 거제시 옥포동 1978-1",
+      "startDate": "2026-06-12",
+      "endDate": "2026-06-14",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/48/4066648_image2_1.jpg",
+      "description": "055-639-3393",
+      "coordinates": {
+        "lat": 34.8904967714,
+        "lng": 128.6965939087
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "거제 옥포대첩 축제",
+          "contentId": "1327778"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "경기미-김밥페스타-2026-06-13-경기도",
+      "title": "경기미 김밥페스타",
+      "category": "other",
+      "region": "경기도",
+      "address": "경기도 수원시 영통구 광교중앙로 140 (하동)",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-14",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/42/4058642_image2_1.jpg",
+      "description": "031-774-3312",
+      "coordinates": {
+        "lat": 37.28582866409523,
+        "lng": 127.05944694152052
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "경기미 김밥페스타",
+          "contentId": "3486730"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "고양행주문화제-2026-06-13-경기도",
+      "title": "고양행주문화제",
+      "category": "festival",
+      "region": "경기도",
+      "address": "경기도 고양시 덕양구 행주로15번길 89 (행주외동)",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-14",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/34/4057034_image2_1.jpg",
+      "description": "1577-7766",
+      "coordinates": {
+        "lat": 37.6004267743,
+        "lng": 126.8245886711
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "고양행주문화제",
+          "contentId": "530450"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "광안리어방축제-2026-06-12-부산광역시",
+      "title": "광안리어방축제",
+      "category": "festival",
+      "region": "부산광역시",
+      "address": "부산광역시 수영구 광안해변로 219 (광안동)",
+      "startDate": "2026-06-12",
+      "endDate": "2026-06-14",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/10/4066810_image2_1.JPG",
+      "description": "051-610-4212",
+      "coordinates": {
+        "lat": 35.153772788647494,
+        "lng": 129.1185199367098
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "광안리어방축제",
+          "contentId": "506545"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "군산-수제맥주-블루스-페스티벌-2026-06-12-전북특별자치도",
+      "title": "군산 수제맥주&블루스 페스티벌",
+      "category": "festival",
+      "region": "전북특별자치도",
+      "address": "전북특별자치도 군산시 해망로 224 (장미동)",
+      "startDate": "2026-06-12",
+      "endDate": "2026-06-14",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/51/4062851_image2_1.jpg",
+      "description": "063-454-5252",
+      "coordinates": {
+        "lat": 35.9897716587,
+        "lng": 126.7131486773
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "군산 수제맥주&블루스 페스티벌",
+          "contentId": "2853719"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "김제-모악산-뮤직페스티벌-2026-06-13-전북특별자치도",
+      "title": "김제 모악산 뮤직페스티벌",
+      "category": "festival",
+      "region": "전북특별자치도",
+      "address": "전북특별자치도 김제시 금산면 금산리 99-2 일원",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-14",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/09/4066709_image2_1.jpg",
+      "description": "063-540-3190",
+      "coordinates": {
+        "lat": 35.720474,
+        "lng": 127.047671
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "김제 모악산 뮤직페스티벌",
+          "contentId": "1248817"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "동구-무등산인문축제-2026-06-13-광주광역시",
+      "title": "동구 무등산인문축제",
+      "category": "festival",
+      "region": "광주광역시",
+      "address": "광주광역시 동구 증심사길 71 (운림동)",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-14",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/35/4059435_image2_1.jpg",
+      "description": "062-608-2173",
+      "coordinates": {
+        "lat": 35.1331926835079,
+        "lng": 126.960280009131
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "동구 무등산인문축제",
+          "contentId": "2988364"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "르무통-산책회-in-순천-2026-06-13-전라남도",
+      "title": "르무통 산책회 in 순천",
+      "category": "other",
+      "region": "전라남도",
+      "address": "전라남도 순천시 국가정원1호길 47 (오천동)",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-14",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/55/4070355_image2_1.jpg",
+      "description": "1599-9108",
+      "coordinates": {
+        "lat": 34.9288716802,
+        "lng": 127.5008014959
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "르무통 산책회 in 순천",
+          "contentId": "4070242"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "무릉별유천지-라벤더축제-2026-06-13-강원특별자치도",
+      "title": "무릉별유천지 라벤더축제",
+      "category": "festival",
+      "region": "강원특별자치도",
+      "address": "강원특별자치도 동해시 이기로 97 (삼화동) 무릉별유천지",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-21",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/40/4067740_image2_1.JPG",
+      "description": "033-532-1945",
+      "coordinates": {
+        "lat": 37.47595553449147,
+        "lng": 129.0330428105135
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "무릉별유천지 라벤더축제",
+          "contentId": "3304231"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "2026-국제선명상대회-2026-04-03-서울특별시",
+      "title": "2026 국제선명상대회",
+      "category": "other",
+      "region": "서울특별시",
+      "address": "서울특별시 강남구 봉은사로 531 (삼성동)",
+      "startDate": "2026-04-03",
+      "endDate": "2026-11-12",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/90/4054090_image2_1.jpg",
+      "description": "010-8441-2371",
+      "coordinates": {
+        "lat": 37.5158257049833,
+        "lng": 127.057734484281
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 국제선명상대회",
+          "contentId": "3377038"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 95,
+        "interest": 65,
+        "urgency": 55,
+        "scale": 90,
+        "reliability": 75
+      },
+      "score": 78,
+      "rationale": "공식 행사 데이터 · 대형 관심 키워드",
+      "displayGroup": "ongoing"
+    },
+    {
+      "id": "2026-국립극장-쏙쏙들이페스티벌-2026-03-14-경기도",
+      "title": "2026 국립극장 쏙쏙들이페스티벌",
+      "category": "festival",
+      "region": "경기도",
+      "address": "경기도 파주시 탄현면 헤이리로 16",
+      "startDate": "2026-03-14",
+      "endDate": "2026-12-26",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/46/4068446_image2_1.jpg",
+      "description": "031-870-9110",
+      "coordinates": {
+        "lat": 37.783283932648466,
+        "lng": 126.69468599293761
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 국립극장 쏙쏙들이페스티벌",
+          "contentId": "3488421"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 95,
+        "interest": 65,
+        "urgency": 55,
+        "scale": 70,
+        "reliability": 75
+      },
+      "score": 75,
+      "rationale": "공식 행사 데이터 · 대형 관심 키워드",
+      "displayGroup": "ongoing"
+    },
+    {
+      "id": "2026-n서울타워-글로벌-나이트워크-2026-06-13-서울특별",
+      "title": "2026 N서울타워 글로벌 나이트워크",
+      "category": "other",
+      "region": "서울특별",
+      "address": "서울특별 중구 회현동1가 100-115 백범광장",
+      "startDate": "2026-06-13",
+      "endDate": "2026-07-11",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/53/4065953_image2_1.png",
+      "description": "02-554-9795",
+      "coordinates": {
+        "lat": 37.555064,
+        "lng": 126.979198
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 N서울타워 글로벌 나이트워크",
+          "contentId": "4065756"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 55,
+        "reliability": 75
+      },
+      "score": 56,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "ongoing"
+    },
+    {
+      "id": "2026-부산바다도서관-2026-06-13-부산광역시",
+      "title": "2026 부산바다도서관",
+      "category": "other",
+      "region": "부산광역시",
+      "address": "부산광역시 수영구 민락동 110-19",
+      "startDate": "2026-06-13",
+      "endDate": "2026-07-05",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/73/4070173_image2_1.jpg",
+      "description": "051-745-7288",
+      "coordinates": {
+        "lat": 35.154689,
+        "lng": 129.132986
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 부산바다도서관",
+          "contentId": "3497353"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 55,
+        "reliability": 75
+      },
+      "score": 56,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "ongoing"
+    }
+  ]
+}
