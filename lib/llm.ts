@@ -24,6 +24,7 @@ const GEMINI_TEXT_MODEL = process.env.GEMINI_TEXT_MODEL || "gemini-2.0-flash"; /
 const GROQ_MODEL = process.env.GROQ_MODEL || "llama-3.3-70b-versatile";
 const CODEX_BIN = process.env.CODEX_BIN || "codex";
 const CODEX_MODEL = process.env.CODEX_MODEL || ""; // 비우면 사용자 기본 모델(구독)
+const DEFAULT_TIMEOUT_MS = Number(process.env.LLM_TIMEOUT_MS || 240_000);
 const EXTRA_ARGS = (process.env.CLAUDE_EXTRA_ARGS || "")
   .split(" ")
   .map((s) => s.trim())
@@ -55,7 +56,7 @@ function invokeClaude(prompt: string, opts: LlmOptions = {}): Promise<string> {
   if (opts.system) args.push("--system-prompt", opts.system);
   args.push(...EXTRA_ARGS);
 
-  const timeoutMs = opts.timeoutMs ?? 240_000;
+  const timeoutMs = opts.timeoutMs ?? DEFAULT_TIMEOUT_MS;
 
   return new Promise<string>((resolve, reject) => {
     const child = spawn(CLAUDE_BIN, args, {
@@ -187,7 +188,7 @@ async function invokeCodex(prompt: string, opts: LlmOptions = {}): Promise<strin
   args.push("-"); // 프롬프트는 stdin (긴 큐레이션 프롬프트의 인자 길이 제한 회피)
 
   const fullPrompt = opts.system ? `${opts.system}\n\n${prompt}` : prompt;
-  const timeoutMs = opts.timeoutMs ?? 240_000;
+  const timeoutMs = opts.timeoutMs ?? DEFAULT_TIMEOUT_MS;
 
   return new Promise<string>((resolve, reject) => {
     const child = spawn(CODEX_BIN, args, { stdio: ["pipe", "pipe", "pipe"] });

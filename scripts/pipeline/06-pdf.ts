@@ -7,8 +7,6 @@ import { fileURLToPath } from "node:url";
 import { ensureDir } from "@/lib/paths";
 import { uploadPdf } from "@/lib/storage";
 
-const BASE = process.env.PDF_BASE_URL || "http://localhost:3000";
-
 export async function generatePdf(slug: string): Promise<string> {
   // 동적 import: puppeteer 미설치 환경(웹 빌드 등)에서 로드 실패 방지
   const puppeteer = (await import("puppeteer")).default;
@@ -23,7 +21,8 @@ export async function generatePdf(slug: string): Promise<string> {
   const browser = await puppeteer.launch(launchOpts);
   try {
     const page = await browser.newPage();
-    const url = `${BASE}/issues/${slug}/print`;
+    const base = process.env.PDF_BASE_URL || "http://localhost:3000";
+    const url = `${base}/issues/${slug}/print`;
     await page.goto(url, { waitUntil: "networkidle0", timeout: 90_000 });
     // 이미지 로딩 대기 (Pollinations 등 외부 이미지)
     await page
