@@ -37,6 +37,9 @@ koreaAPI.md
 # bkit local state
 /.bkit/
 
+# local Claude settings
+/.claude/
+
 # vercel
 .vercel
 
