@@ -1,0 +1,516 @@
+{
+  "slug": "2026-06-18",
+  "generatedAt": "2026-06-18T05:56:56.405Z",
+  "range": {
+    "from": "2026-06-18",
+    "to": "2026-06-25"
+  },
+  "meta": {
+    "title": "이번 주 문화 이벤트",
+    "dek": "뉴스 관심도와 공식 행사 정보를 함께 본 향후 7일 큐레이션",
+    "totalCandidates": 743,
+    "selected": 15,
+    "sourceBreakdown": {
+      "tourApi": 419,
+      "news": 324
+    },
+    "note": "일정은 주최 측 사정에 따라 변경될 수 있으니 방문 전 공식 링크를 확인하세요."
+  },
+  "events": [
+    {
+      "id": "국제해양영화제-2026-06-18-부산광역시",
+      "title": "국제해양영화제 (KIOFF)",
+      "category": "film",
+      "region": "부산광역시",
+      "address": "부산광역시 해운대구 수영강변대로 120 (우동)",
+      "startDate": "2026-06-18",
+      "endDate": "2026-06-21",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/84/4057984_image2_1.png",
+      "description": "051-790-9413",
+      "coordinates": {
+        "lat": 35.1710365257136,
+        "lng": 129.127084511585
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "국제해양영화제 (KIOFF)",
+          "contentId": "2661307"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 95,
+        "interest": 65,
+        "urgency": 95,
+        "scale": 90,
+        "reliability": 75
+      },
+      "score": 84,
+      "rationale": "공식 행사 데이터 · 대형 관심 키워드",
+      "displayGroup": "featured"
+    },
+    {
+      "id": "부산항축제-2026-06-19-부산광역시",
+      "title": "부산항축제",
+      "category": "festival",
+      "region": "부산광역시",
+      "address": "부산광역시 동구 이순신대로 164 (초량동)",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-20",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/70/4058670_image2_1.jpg",
+      "description": "051-713-5000",
+      "coordinates": {
+        "lat": 35.1144041132,
+        "lng": 129.0464193172
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "부산항축제",
+          "contentId": "1007868"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 55,
+        "reliability": 75
+      },
+      "score": 56,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "서울국악축제-2026-06-19-서울특별시",
+      "title": "서울국악축제",
+      "category": "festival",
+      "region": "서울특별시",
+      "address": "서울특별시 서초구 신반포로11길 40 (반포동) 반포 한강공원 달빛광장",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-19",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/47/4061947_image2_1.jpg",
+      "description": "1800-4746",
+      "coordinates": {
+        "lat": 37.5076939718,
+        "lng": 126.9927309841
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "서울국악축제",
+          "contentId": "2616325"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 55,
+        "reliability": 75
+      },
+      "score": 56,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "2026-공예주간-2026-06-19-충청남도",
+      "title": "2026 공예주간",
+      "category": "other",
+      "region": "충청남도",
+      "address": "충청남도 부여군 규암면 수북로41번길 11-21",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-28",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/10/4071410_image2_1.jpg",
+      "description": "- 부여 041-830-6865-  세종·공주 044-850-0531- 전주·고창 063-281-1613- 칠곡·구미 0507-1409-6809- 울산·부산 052-289-1881- 제주·서귀포 0507-1333-2123",
+      "coordinates": {
+        "lat": 36.2721854896,
+        "lng": 126.8880743426
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 공예주간",
+          "contentId": "3113022"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 55,
+        "reliability": 75
+      },
+      "score": 56,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "강원한우데이-2026-06-19-강원특별자치도",
+      "title": "강원한우데이",
+      "category": "other",
+      "region": "강원특별자치도",
+      "address": "강원특별자치도 춘천시 시청길 11 (옥천동) 춘천시청광장",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-21",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/78/4073378_image2_1.JPG",
+      "description": "033-242-1825",
+      "coordinates": {
+        "lat": 37.8809963062,
+        "lng": 127.7293744803
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "강원한우데이",
+          "contentId": "3114721"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "춘천-미니-술페스타-2026-06-19-강원특별자치도",
+      "title": "춘천 미니 술페스타",
+      "category": "other",
+      "region": "강원특별자치도",
+      "address": "강원특별자치도 춘천시 영서로 2571 (근화동)",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-20",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/13/4069913_image2_1.jpg",
+      "description": "070-8672-0156",
+      "coordinates": {
+        "lat": 37.8864623318,
+        "lng": 127.7153683848
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "춘천 미니 술페스타",
+          "contentId": "4069908"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "태화강마두희축제-2026-06-19-울산광역시",
+      "title": "태화강마두희축제",
+      "category": "festival",
+      "region": "울산광역시",
+      "address": "울산광역시 중구 태화강북자전거길 518 (성남동)",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-21",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/87/4067387_image2_1.jpg",
+      "description": "052-244-2007~8",
+      "coordinates": {
+        "lat": 35.5526693627,
+        "lng": 129.310416494
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "태화강마두희축제",
+          "contentId": "3104107"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "횡성썸머나잇페스타-2026-06-19-강원특별자치도",
+      "title": "횡성썸머나잇페스타",
+      "category": "other",
+      "region": "강원특별자치도",
+      "address": "강원특별자치도 횡성군 횡성읍 북천리 221",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-20",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/61/4063761_image2_1.jpg",
+      "description": "033-808-8007/8009",
+      "coordinates": {
+        "lat": 37.500517,
+        "lng": 127.992518
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "횡성썸머나잇페스타",
+          "contentId": "3334712"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "2026-진주-정원박람회-2026-06-18-경상남도",
+      "title": "2026 진주 정원박람회",
+      "category": "other",
+      "region": "경상남도",
+      "address": "경상남도 진주시 진성면 달음산로 313 1583-40",
+      "startDate": "2026-06-18",
+      "endDate": "2026-06-21",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/33/4071433_image2_1.jpg",
+      "description": "055-749-5355",
+      "coordinates": {
+        "lat": 35.1998941088,
+        "lng": 128.1941147222
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 진주 정원박람회",
+          "contentId": "3494070"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "초안산-수국축제-2026-06-20-서울특별시",
+      "title": "초안산 수국축제",
+      "category": "festival",
+      "region": "서울특별시",
+      "address": "서울특별시 노원구 월계동 산46-3 초안산 수국동산 및 염광고등학교 야외음악당",
+      "startDate": "2026-06-20",
+      "endDate": "2026-06-21",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/00/4074600_image2_1.jpg",
+      "description": "02-2116-7142",
+      "coordinates": {
+        "lat": 37.6294432,
+        "lng": 127.047566
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "초안산 수국축제",
+          "contentId": "4074598"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 80,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 51,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "2026-용골-댄스-페스타-2026-06-20-부산광역시",
+      "title": "2026 용골 댄스 페스타",
+      "category": "other",
+      "region": "부산광역시",
+      "address": "부산광역시 중구 용두산길 37-55 (광복동2가)",
+      "startDate": "2026-06-20",
+      "endDate": "2026-06-20",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/73/4067473_image2_1.jpg",
+      "description": "051-714-4674",
+      "coordinates": {
+        "lat": 35.100929432638,
+        "lng": 129.032442805252
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 용골 댄스 페스타",
+          "contentId": "2952109"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 80,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 51,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "제20회-대구국제뮤지컬페스티벌-2026-06-19-대구광역시",
+      "title": "제20회 대구국제뮤지컬페스티벌",
+      "category": "performance",
+      "region": "대구광역시",
+      "address": "대구광역시 달서구 공원순환로 201 (성당동)",
+      "startDate": "2026-06-19",
+      "endDate": "2026-07-06",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/51/4075151_image2_1.jpg",
+      "description": "053-422-1945",
+      "coordinates": {
+        "lat": 35.8447383632,
+        "lng": 128.5580763673
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "제20회 대구국제뮤지컬페스티벌",
+          "contentId": "141963"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 95,
+        "interest": 65,
+        "urgency": 95,
+        "scale": 90,
+        "reliability": 75
+      },
+      "score": 84,
+      "rationale": "공식 행사 데이터 · 대형 관심 키워드",
+      "displayGroup": "ongoing"
+    },
+    {
+      "id": "2026-국제선명상대회-2026-04-03-서울특별시",
+      "title": "2026 국제선명상대회",
+      "category": "other",
+      "region": "서울특별시",
+      "address": "서울특별시 강남구 봉은사로 531 (삼성동)",
+      "startDate": "2026-04-03",
+      "endDate": "2026-11-12",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/90/4054090_image2_1.jpg",
+      "description": "010-8441-2371",
+      "coordinates": {
+        "lat": 37.5158257049833,
+        "lng": 127.057734484281
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 국제선명상대회",
+          "contentId": "3377038"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 95,
+        "interest": 65,
+        "urgency": 55,
+        "scale": 90,
+        "reliability": 75
+      },
+      "score": 78,
+      "rationale": "공식 행사 데이터 · 대형 관심 키워드",
+      "displayGroup": "ongoing"
+    },
+    {
+      "id": "2026-국립극장-쏙쏙들이페스티벌-2026-03-14-경기도",
+      "title": "2026 국립극장 쏙쏙들이페스티벌",
+      "category": "festival",
+      "region": "경기도",
+      "address": "경기도 파주시 탄현면 헤이리로 16",
+      "startDate": "2026-03-14",
+      "endDate": "2026-12-26",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/13/4076413_image2_1.jpeg",
+      "description": "031-870-9110",
+      "coordinates": {
+        "lat": 37.7832839326,
+        "lng": 126.6946859929
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 국립극장 쏙쏙들이페스티벌",
+          "contentId": "3488421"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 95,
+        "interest": 65,
+        "urgency": 55,
+        "scale": 70,
+        "reliability": 75
+      },
+      "score": 75,
+      "rationale": "공식 행사 데이터 · 대형 관심 키워드",
+      "displayGroup": "ongoing"
+    },
+    {
+      "id": "문화가-흐르는-서울광장-2026-05-06-서울특별시",
+      "title": "문화가 흐르는 서울광장",
+      "category": "other",
+      "region": "서울특별시",
+      "address": "서울특별시 중구 을지로 지하12 (을지로1가)",
+      "startDate": "2026-05-06",
+      "endDate": "2026-12-31",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/68/4059668_image2_1.jpg",
+      "description": "02-2133-2543",
+      "coordinates": {
+        "lat": 37.56544835496842,
+        "lng": 126.97878183534239
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "문화가 흐르는 서울광장",
+          "contentId": "2598331"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 55,
+        "scale": 55,
+        "reliability": 75
+      },
+      "score": 50,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "ongoing"
+    }
+  ]
+}
