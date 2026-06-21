@@ -14,14 +14,17 @@ import { spawn } from "node:child_process";
 import os from "node:os";
 import path from "node:path";
 import { readFileSync, rmSync } from "node:fs";
+import { jsonrepair } from "jsonrepair";
 import type { z } from "zod";
 
 const CLAUDE_BIN = process.env.CLAUDE_BIN || "claude";
 const CLAUDE_MODEL = process.env.CLAUDE_MODEL || ""; // 비우면 사용자 기본 모델
 const LLM_MODE = process.env.LLM_MODE || "claude"; // "claude" | "mock"
-const LLM_PROVIDER = (process.env.LLM_PROVIDER || "claude").toLowerCase(); // "claude" | "codex" | "gemini" | "groq"
+const LLM_PROVIDER = (process.env.LLM_PROVIDER || "claude").toLowerCase(); // "claude" | "codex" | "gemini" | "groq" | "kimi"
 const GEMINI_TEXT_MODEL = process.env.GEMINI_TEXT_MODEL || "gemini-2.0-flash"; // thinking 없음 → JSON 안정
 const GROQ_MODEL = process.env.GROQ_MODEL || "llama-3.3-70b-versatile";
+const KIMI_BASE_URL = process.env.KIMI_BASE_URL || "https://api.moonshot.ai/v1"; // Moonshot(Kimi), OpenAI 호환
+const KIMI_MODEL = process.env.KIMI_MODEL || "kimi-k2.7-code-highspeed"; // 빠름+큰 컨텍스트+JSON 안정(검증된 폴백)
 const CODEX_BIN = process.env.CODEX_BIN || "codex";
 const CODEX_MODEL = process.env.CODEX_MODEL || ""; // 비우면 사용자 기본 모델(구독)
 const DEFAULT_TIMEOUT_MS = Number(process.env.LLM_TIMEOUT_MS || 240_000);
@@ -169,6 +172,41 @@ async function invokeGroq(prompt: string, opts: LlmOptions = {}): Promise<string
   return text;
 }
 
+/** 저수준: Kimi(Moonshot, OpenAI 호환) → 텍스트 반환.
+ *  claude -p 가 대용량 생성에서 멈추는 환경의 대안. 128k 컨텍스트라 큰 큐레이션 프롬프트도 수용. */
+async function invokeKimi(prompt: string, opts: LlmOptions = {}): Promise<string> {
+  const key = process.env.KIMI_API_KEY;
+  if (!key) throw new Error("KIMI_API_KEY 미설정 (Kimi 백엔드)");
+  const model = opts.model || KIMI_MODEL;
+  const messages: { role: string; content: string }[] = [];
+  if (opts.system) messages.push({ role: "system", content: opts.system });
+  messages.push({ role: "user", content: prompt });
+  const body: Record<string, unknown> = {
+    model,
+    messages,
+    // kimi-k2.x 계열은 temperature=1 만 허용(0.6 등은 400). moonshot-v1 도 1 허용 → 양쪽 호환.
+    temperature: Number(process.env.KIMI_TEMPERATURE ?? 1),
+    // k2.x 는 추론(reasoning_content)에 토큰을 써서 8000이면 본문이 잘려 빈 응답이 됨 → 넉넉히.
+    max_tokens: Number(process.env.KIMI_MAX_TOKENS || 16000),
+  };
+  if (opts.json) body.response_format = { type: "json_object" };
+
+  const res = await fetch(`${KIMI_BASE_URL}/chat/completions`, {
+    method: "POST",
+    headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+  if (!res.ok) {
+    throw new Error(`Kimi ${res.status}: ${(await res.text()).slice(0, 200)}`);
+  }
+  const data = (await res.json()) as {
+    choices?: { message?: { content?: string } }[];
+  };
+  const text = data.choices?.[0]?.message?.content ?? "";
+  if (!text) throw new Error("Kimi 빈 응답");
+  return text;
+}
+
 /** 저수준: codex exec 헤드리스 호출 → 최종 답 텍스트 반환 (OpenAI/ChatGPT 구독 인증, 추가비용 0)
  *  claude -p 가 401로 막힌 환경에서도 codex 는 독립 인증(~/.codex/auth.json)이라 동작한다.
  *  최종 답은 -o 파일로 받아 stdout 의 에이전트 진행 로그와 분리한다. */
@@ -233,6 +271,7 @@ function invokeLLM(prompt: string, opts: LlmOptions): Promise<string> {
   if (LLM_PROVIDER === "codex") return invokeCodex(prompt, opts);
   if (LLM_PROVIDER === "gemini") return invokeGemini(prompt, opts);
   if (LLM_PROVIDER === "groq") return invokeGroq(prompt, opts);
+  if (LLM_PROVIDER === "kimi") return invokeKimi(prompt, opts);
   return invokeClaude(prompt, opts);
 }
 
@@ -263,9 +302,23 @@ export async function llmJson<T>(
   const jsonPrompt =
     prompt +
     "\n\n[출력 형식] 반드시 유효한 JSON만 출력하라. 마크다운 코드펜스(```)나 설명 문구 없이 JSON 하나만 출력한다.";
-  const raw = await invokeLLM(jsonPrompt, { ...opts, json: true });
-  const parsed = extractJson(raw);
-  return schema.parse(parsed);
+  // LLM이 가끔 깨진 JSON/스키마 불일치를 내므로(특히 추론모델·temp=1) 몇 번 재시도한다.
+  const attempts = Math.max(1, Number(process.env.LLM_JSON_RETRIES || 3));
+  let lastErr: unknown;
+  for (let i = 0; i < attempts; i++) {
+    try {
+      const raw = await invokeLLM(jsonPrompt, { ...opts, json: true });
+      const parsed = extractJson(raw);
+      return schema.parse(parsed);
+    } catch (e) {
+      lastErr = e;
+      if (i < attempts - 1)
+        console.warn(
+          `   ⚠️ LLM JSON 파싱/검증 실패 — 재시도 ${i + 1}/${attempts - 1}: ${(e as Error).message?.slice(0, 120)}`,
+        );
+    }
+  }
+  throw lastErr;
 }
 
 /** LLM 출력 텍스트에서 JSON 부분만 안전하게 추출 */
@@ -282,7 +335,13 @@ export function extractJson(text: string): unknown {
   if (start === -1) throw new Error(`LLM 출력에 JSON 없음: ${t.slice(0, 200)}`);
   const end = Math.max(t.lastIndexOf("}"), t.lastIndexOf("]"));
   if (end === -1 || end < start) throw new Error("JSON 종료 토큰 없음");
-  return JSON.parse(t.slice(start, end + 1));
+  const slice = t.slice(start, end + 1);
+  try {
+    return JSON.parse(slice);
+  } catch {
+    // LLM이 큰 출력에서 콤마 누락 등 '거의 유효한' JSON을 내는 경우가 많아 복구 후 재시도.
+    return JSON.parse(jsonrepair(slice));
+  }
 }
 
 export const isMockMode = LLM_MODE === "mock";
