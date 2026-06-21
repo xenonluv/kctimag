@@ -15,7 +15,7 @@ cd "$(cd "$(dirname "$0")/.." && pwd)"
 
 echo "📰 ${SLUG}호 제작 (생성 + CEO 검증 + 빌드)…"
 npx tsx scripts/pipeline/events/run-events.ts "$SLUG" || echo "⚠️ 이벤트 생성 실패 — 뉴스 제작은 계속(빈 events.json 폴백)"
-LLM_PROVIDER="${LLM_PROVIDER:-codex}" npx tsx scripts/pipeline/run.ts "$SLUG"
+LLM_PROVIDER="${LLM_PROVIDER:-claude}" npx tsx scripts/pipeline/run.ts "$SLUG"
 
 echo ""
 echo "🔍 검수: http://localhost:3000/issues/${SLUG}   (확인 후 Ctrl+C)"
