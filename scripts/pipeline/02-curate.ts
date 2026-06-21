@@ -200,10 +200,51 @@ export async function curate(
     dek: "한 주간의 문화 뉴스 다이제스트",
     selectionRationale:
       "(mock) 이번 주는 글로벌 반향과 산업 영향이 큰 소식을 우선해, 화제성만 높은 가십은 걷어내고 흐름을 바꾸는 뉴스만 추렸습니다.",
-    categories: [
-      { key: "kpop", entries: [{ index: 0, blurb: "(mock) 설명", imagePrompt: "kpop concert stage", imageQuery: "kpop concert stage" }], note: "(mock) 이번 주 K-pop 선정 이유" },
-      { key: "screen", entries: [{ index: Math.min(1, Math.max(0, candidateItems.length - 1)), blurb: "(mock) 설명", imagePrompt: "film production set", imageQuery: "film set" }], note: "(mock) 이번 주 영화 선정 이유" },
-    ],
+    categories: (() => {
+      // 스키마는 카테고리당 정확히 3건(.length(3))을 요구 — mock도 3건씩 채운다.
+      // 풀이 작아도 카테고리 안에서 서로 다른 인덱스가 되도록 clamp 대신 wrap(modulo) 사용.
+      // (clamp는 풀<12일 때 같은 인덱스로 뭉쳐 link 중복 제거에 항목이 사라질 수 있음)
+      const n = Math.max(candidateItems.length, 1);
+      const ci = (i: number) => i % n;
+      return [
+        {
+          key: "kpop",
+          entries: [
+            { index: ci(0), blurb: "(mock) 설명", imagePrompt: "kpop concert stage", imageQuery: "kpop concert stage" },
+            { index: ci(1), blurb: "(mock) 설명", imagePrompt: "kpop idol group silhouette on a glowing stage", imageQuery: "kpop performance crowd" },
+            { index: ci(2), blurb: "(mock) 설명", imagePrompt: "music chart trophy graphic", imageQuery: "music award ceremony" },
+          ],
+          note: "(mock) 이번 주 K-pop 선정 이유",
+        },
+        {
+          key: "screen",
+          entries: [
+            { index: ci(3), blurb: "(mock) 설명", imagePrompt: "film production set", imageQuery: "film set" },
+            { index: ci(4), blurb: "(mock) 설명", imagePrompt: "cinema premiere red carpet", imageQuery: "movie premiere" },
+            { index: ci(5), blurb: "(mock) 설명", imagePrompt: "drama studio lighting rig", imageQuery: "tv drama filming" },
+          ],
+          note: "(mock) 이번 주 영화 선정 이유",
+        },
+        {
+          key: "webtoon",
+          entries: [
+            { index: ci(6), blurb: "(mock) 설명", imagePrompt: "webtoon panels on a tablet screen", imageQuery: "digital comic tablet" },
+            { index: ci(7), blurb: "(mock) 설명", imagePrompt: "illustrator drawing on graphics tablet", imageQuery: "comic artist desk" },
+            { index: ci(8), blurb: "(mock) 설명", imagePrompt: "stack of comic books", imageQuery: "comic books shelf" },
+          ],
+          note: "(mock) 이번 주 웹툰 선정 이유",
+        },
+        {
+          key: "food",
+          entries: [
+            { index: ci(9), blurb: "(mock) 설명", imagePrompt: "korean street food market at night", imageQuery: "Korean street food market" },
+            { index: ci(10), blurb: "(mock) 설명", imagePrompt: "bibimbap bowl overhead", imageQuery: "bibimbap dish" },
+            { index: ci(11), blurb: "(mock) 설명", imagePrompt: "traditional korean tea table", imageQuery: "Korean tea ceremony" },
+          ],
+          note: "(mock) 이번 주 K-푸드 선정 이유",
+        },
+      ];
+    })(),
     editorPick: { index: 0, why: "(mock) 이번 주 가장 큰 이슈로 선정.", imagePrompt: "korean culture concept", imageQuery: "korean culture" },
     editorial: { title: "이번 주 흐름", body: "(mock) 이번 주 문화 트렌드 총평." },
   };
