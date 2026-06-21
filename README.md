@@ -1,7 +1,7 @@
 # KCT — 주간 한국 문화 매거진 자동 발행 시스템
 
 주 1회, 한국 문화 전반의 뉴스를 수집·분석·작문해 **매거진을 자동 생성**하고
-GitHub push → **Vercel 웹 발행** + **구독자 메일 발송(PDF 첨부)** 까지 수행하는 시스템.
+GitHub push → **Vercel 웹 발행** + **구독자 메일 발송** 까지 수행하는 시스템.
 
 런타임 비용 **100% 무료** (구독 중인 Claude CLI + 각 서비스 무료 티어).
 
@@ -14,9 +14,8 @@ GitHub push → **Vercel 웹 발행** + **구독자 메일 발송(PDF 첨부)** 
 | 팀원1 수집 | `scripts/pipeline/01-collect.ts` | 네이버 검색 API로 문화 10개 카테고리 × 최근 7일 뉴스 | Naver API |
 | 큐레이션 | `02-curate.ts` | 카테고리별 대표 뉴스 선별 + 편집장 픽(이번 주 최대 이슈 + 선정 이유) | Claude CLI |
 | 이미지 | `04-images.ts` | 각 기사 **og:image** 추출 + 출처(언론사) 표기, 실패 시 스톡 폴백 | og:image / Pexels |
-| (PDF) | `06-pdf.ts` | 인쇄 페이지 → PDF (Puppeteer) | Puppeteer |
 | CEO 검증 | `07-ceo-gate.ts` | 분량·이미지·빌드 등 QA 게이트 → 발행 허가 | 코드 검증 |
-| 발행·발송 | `08-publish-send.ts` | git push → Vercel, 구독자 메일(PDF 첨부) | git + Brevo |
+| 발행·발송 | `08-publish-send.ts` | git push → Vercel, 구독자 메일 | git + Brevo |
 | 오케스트레이터 | `run.ts` | 위 전체를 순서대로 실행 | — |
 | 팀원5 웹·관리자 | `app/` | 공개 사이트 + 관리자 모드 | Next.js |
 
@@ -28,9 +27,8 @@ GitHub push → **Vercel 웹 발행** + **구독자 메일 발송(PDF 첨부)** 
 - **뉴스**: 네이버 검색 API (25,000/일)
 - **런타임 LLM**: Claude CLI (`claude -p`, 구독 사용 → 추가비용 0)
 - **이미지**: Pexels(스톡) · Wikimedia Commons(실존·CC) · Pollinations(AI) — 모두 무료·저작권 안전
-- **PDF**: Puppeteer (OSS)
 - **메일**: Brevo (HTTP API · 단일발신자 인증 · 무료 300/일) — SMTP 차단·무도메인 환경 OK. (도메인 보유 시 `MAIL_PROVIDER=resend` 전환 가능)
-- **DB·인증·PDF 보관**: Supabase (무료 티어)
+- **DB·인증**: Supabase (무료 티어)
 - **크론**: macOS launchd (Mac Studio 상시 가동)
 
 ---
@@ -41,7 +39,7 @@ GitHub push → **Vercel 웹 발행** + **구독자 메일 발송(PDF 첨부)** 
 ```bash
 git clone https://github.com/xenonluv/kctimag.git
 cd kctimag
-npm install        # puppeteer가 Chromium을 내려받음
+npm install
 ```
 
 ### 2) 무료 계정 + 키 발급
@@ -85,7 +83,7 @@ npx tsx scripts/pipeline/run.ts
 # mock 모드 (LLM 없이 배관 점검)
 LLM_MODE=mock SKIP_BUILD=1 npx tsx scripts/pipeline/run.ts 2099-01-01
 
-# 실제 발행 (git push → Vercel → PDF → 메일)
+# 실제 발행 (git push → Vercel → 메일)
 PUBLISH=1 npx tsx scripts/pipeline/run.ts
 
 # 단계별 실행
@@ -130,8 +128,8 @@ launchctl start com.kctimag.weekly
 ```
 app/                  Next.js (공개 + /admin + /api)
 components/           매거진 렌더 컴포넌트
-lib/                  naver·llm·images·supabase·resend·storage·content
-scripts/pipeline/     01~08 + run.ts (역할별 파이프라인)
+lib/                  naver·llm·images·supabase·resend·content
+scripts/pipeline/     수집·큐레이션·이미지·CEO검증·발행 + run.ts (역할별 파이프라인)
 scripts/launchd/      주간 크론 (plist + 래퍼)
 content/issues/<날짜>/ 발행된 호 (issue.json) — git=발행
 supabase/schema.sql   DB 스키마

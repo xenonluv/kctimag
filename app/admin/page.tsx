@@ -6,7 +6,7 @@ import { EMAIL_THEMES, defaultEmailSubject } from "@/lib/email-template";
 import { deleteSubscriber, resendIssue, logout } from "./actions";
 
 export const dynamic = "force-dynamic";
-export const maxDuration = 60; // PDF 첨부 fetch + 다건 발송 여유
+export const maxDuration = 60; // 다건 발송 여유
 
 interface SubRow {
   id: string;
@@ -143,7 +143,7 @@ export default async function AdminPage({
         </ul>
         <p className="mt-2 text-xs text-neutral-400">
           내용란에 직접 쓰면 그 내용으로, 비우면 부제가 본문으로 발송됩니다. 테스트
-          이메일을 비우면 전체 확인 구독자에게 발송(해당 호 PDF 자동 첨부). 색은
+          이메일을 비우면 전체 확인 구독자에게 발송됩니다. 색은
           비우면 발행 주차에 따라 7색이 자동 순환되며, 직접 고르면 그 색으로 발송됩니다.
         </p>
       </section>

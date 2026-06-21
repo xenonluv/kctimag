@@ -92,34 +92,16 @@ export async function resendIssue(formData: FormData) {
   const pdfUrl = issue!.meta.pdfUrl;
   const themeIndex = resolveThemeIndex(slug!, themeRaw); // 수동선택 우선, 없으면 주차별 자동
 
-  // 호스팅된 PDF를 받아 첨부 (Vercel 서버리스엔 로컬 파일이 없으므로 Supabase에서 fetch)
-  let pdf: { filename: string; content: Buffer } | undefined;
-  if (pdfUrl) {
-    try {
-      const res = await fetch(pdfUrl);
-      if (res.ok) {
-        pdf = {
-          filename: `KCT-${slug}.pdf`,
-          content: Buffer.from(await res.arrayBuffer()),
-        };
-      }
-    } catch {
-      /* 첨부 실패 시 링크만 */
-    }
-  }
-
   await sendIssueEmail({
     recipients,
     subject: subjectRaw || defaultEmailSubject(issue!.meta.date),
     fromName: fromName || undefined,
     throttleMs: 300,
-    pdf,
     buildHtml: (r) => {
-      const pdfNoteHtml = pdf
-        ? "이번 호 전문은 첨부된 <strong>PDF</strong>로도 확인하실 수 있습니다."
-        : pdfUrl
-          ? `전문 PDF는 <a href="${pdfUrl}">여기서 다운로드</a>하실 수 있습니다.`
-          : "";
+      // PDF는 더 이상 첨부하지 않는다 — 기존 호처럼 호스팅된 pdfUrl이 있으면 다운로드 링크만 안내.
+      const pdfNoteHtml = pdfUrl
+        ? `전문 PDF는 <a href="${pdfUrl}">여기서 다운로드</a>하실 수 있습니다.`
+        : "";
       // 관리자가 직접 작성한 내용이 있으면 그것을 본문으로(이스케이프+줄바꿈), 없으면 부제.
       const bodyHtml = escapeHtml(message || issue!.meta.dek);
       return renderIssueEmail({

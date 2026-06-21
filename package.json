@@ -11,6 +11,7 @@
     "pipeline": "tsx scripts/pipeline/run.ts",
     "make": "bash scripts/make.sh",
     "publish": "bash scripts/publish.sh",
+    "unpublish": "bash scripts/unpublish.sh",
     "events": "tsx scripts/pipeline/events/run-events.ts",
     "events:collect": "tsx scripts/pipeline/events/01-collect-events.ts",
     "events:analyze": "tsx scripts/pipeline/events/02-analyze-events.ts",
@@ -18,7 +19,6 @@
     "pipeline:analyze": "tsx scripts/pipeline/02-analyze.ts",
     "pipeline:curate": "tsx scripts/pipeline/02-curate.ts",
     "pipeline:images": "tsx scripts/pipeline/04-images.ts",
-    "pipeline:pdf": "tsx scripts/pipeline/06-pdf.ts",
     "pipeline:gate": "tsx scripts/pipeline/07-ceo-gate.ts",
     "pipeline:send": "tsx scripts/pipeline/08-publish-send.ts"
   },
@@ -26,7 +26,6 @@
     "@supabase/supabase-js": "^2.45.4",
     "date-fns": "^4.1.0",
     "next": "^15.1.0",
-    "puppeteer": "^23.10.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-markdown": "^9.0.1",

@@ -59,7 +59,6 @@ function buildHtml(issue: Issue, site: string, r: Recipient): string {
     bodyHtml: escapeHtml(issue.meta.dek),
     ctaUrl: `${site}/`, // 홈(AI 엄선 자랑 카드)으로 — 거기서 최신호 히어로로 본문 진입
     ctaLabel: "웹에서 전체 보기 →",
-    pdfNoteHtml: "이번 호 전문은 첨부된 <strong>PDF</strong>로도 확인하실 수 있습니다.",
     unsubUrl: unsubscribeUrl(site, r),
     themeIndex: pickThemeIndexBySlug(issue.meta.slug), // 주차별 자동 순환
   });
@@ -79,10 +78,7 @@ export async function getConfirmedSubscribers(): Promise<Recipient[]> {
   }));
 }
 
-export async function sendToSubscribers(
-  slug: string,
-  pdfPath?: string,
-): Promise<void> {
+export async function sendToSubscribers(slug: string): Promise<void> {
   const issue = readJson<Issue>(issueJsonPath(slug));
   const site = getSiteUrl();
   const recipients = await getConfirmedSubscribers();
@@ -90,16 +86,11 @@ export async function sendToSubscribers(
     console.log("구독자 없음 — 발송 생략");
     return;
   }
-  const pdf =
-    pdfPath && fs.existsSync(pdfPath)
-      ? { filename: `KCT-${slug}.pdf`, content: fs.readFileSync(pdfPath) }
-      : undefined;
 
   const result = await sendIssueEmail({
     recipients,
     subject: defaultEmailSubject(issue.meta.date),
     buildHtml: (r) => buildHtml(issue, site, r),
-    pdf,
     throttleMs: 300,
   });
   console.log(`📧 발송 완료: 성공 ${result.sent} · 실패 ${result.failed}`);
@@ -116,8 +107,7 @@ export async function sendToSubscribers(
 const isMain = process.argv[1] === fileURLToPath(import.meta.url);
 if (isMain) {
   const slug = process.argv[2] || new Date().toISOString().slice(0, 10);
-  const pdfPath = process.argv[3];
-  sendToSubscribers(slug, pdfPath).catch((e) => {
+  sendToSubscribers(slug).catch((e) => {
     console.error("❌ 발송 실패:", e);
     process.exit(1);
   });

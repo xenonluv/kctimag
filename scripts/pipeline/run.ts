@@ -9,15 +9,11 @@ import { collect } from "./01-collect";
 import { analyze } from "./02-analyze";
 import { curate } from "./02-curate";
 import { addImages } from "./04-images";
-import { generatePdf } from "./06-pdf";
 import { ceoGate, printGate } from "./07-ceo-gate";
 import { publishToGit, pollDeploy, sendToSubscribers } from "./08-publish-send";
-import { readJson, writeJson, issueJsonPath, tmpDir } from "@/lib/paths";
-import { predictedPdfUrl, uploadPdf, pruneOldPdfs } from "@/lib/storage";
-import { allSlugs } from "@/lib/content";
+import { writeJson, issueJsonPath, tmpDir } from "@/lib/paths";
 import { weeklyBackgroundUrl } from "@/lib/images/pollinations";
 import { getRecentNews } from "@/lib/news-store";
-import { getSiteUrl } from "@/lib/env";
 import type { Issue } from "@/types/issue";
 import type { NewsItem, RawNews } from "@/types/pipeline";
 
@@ -110,7 +106,6 @@ async function main() {
       },
       coverImageUrl: withImages.editorPick.image?.url,
       backgroundImageUrl: weeklyBackgroundUrl(slug),
-      pdfUrl: predictedPdfUrl(slug) ?? undefined,
       curation: {
         scanned: raw.totalCount,
         selected,
@@ -153,54 +148,21 @@ async function main() {
   await publishIssue(slug);
 }
 
-// 발행 단계(보존정리 → git push → 배포 폴링 → PDF → 메일). PUBLISH / PUBLISH_ONLY 공용.
+// 발행 단계(git push → 배포 폴링 → 메일). PUBLISH / PUBLISH_ONLY 공용.
 async function publishIssue(slug: string) {
-  // 보존 정책 — 최근 N호 PDF만 Storage 유지(무료 한도). 오래된 PDF 삭제 + 해당 issue.json pdfUrl 비움.
-  const KEEP_PDF_WEEKS = Number(process.env.KEEP_PDF_WEEKS || 8);
-  try {
-    const keep = [...new Set([slug, ...allSlugs()])]
-      .sort((a, b) => b.localeCompare(a))
-      .slice(0, KEEP_PDF_WEEKS);
-    const pruned = await pruneOldPdfs(keep);
-    for (const s of pruned) {
-      try {
-        const it = readJson<Issue>(issueJsonPath(s));
-        if (it.meta.pdfUrl) {
-          delete it.meta.pdfUrl;
-          writeJson(issueJsonPath(s), it);
-        }
-      } catch {
-        /* 해당 호 파일 없음 무시 */
-      }
-    }
-    if (pruned.length)
-      console.log(
-        `   🧹 PDF 보존정리: ${pruned.length}개 삭제(최근 ${KEEP_PDF_WEEKS}호만 유지)`,
-      );
-  } catch (e) {
-    console.warn("   PDF 보존정리 건너뜀:", (e as Error).message);
-  }
-
   // ⑧ 발행
   console.log("\n⑧ 발행 — git push → Vercel");
   publishToGit(slug);
   const ok = await pollDeploy(slug);
   console.log(ok ? "   배포 확인됨" : "   ⚠️ 배포 확인 실패(계속)");
 
-  console.log("\n⑨ PDF 생성");
-  process.env.PDF_BASE_URL = getSiteUrl();
-  const pdfPath = await generatePdf(slug);
-  await uploadPdf(slug, pdfPath).catch((e) =>
-    console.warn("   PDF 업로드 건너뜀:", (e as Error).message),
-  );
-
   if (SKIP_EMAIL) {
     console.log(
-      "\n⑩ 구독자 메일 — 건너뜀(SKIP_EMAIL=1). /admin에서 수동 발송하세요.",
+      "\n⑨ 구독자 메일 — 건너뜀(SKIP_EMAIL=1). /admin에서 수동 발송하세요.",
     );
   } else {
-    console.log("\n⑩ 구독자 메일 발송");
-    await sendToSubscribers(slug, pdfPath);
+    console.log("\n⑨ 구독자 메일 발송");
+    await sendToSubscribers(slug);
   }
 
   console.log("\n🎉 발행 완료!");
