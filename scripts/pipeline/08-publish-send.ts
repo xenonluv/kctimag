@@ -10,6 +10,7 @@ import {
   pickThemeIndexBySlug,
   escapeHtml,
   defaultEmailSubject,
+  issueSummaryItems,
 } from "@/lib/email-template";
 import { getSiteUrl } from "@/lib/env";
 import { issueJsonPath, readJson } from "@/lib/paths";
@@ -59,6 +60,7 @@ function buildHtml(issue: Issue, site: string, r: Recipient): string {
     bodyHtml: escapeHtml(issue.meta.dek),
     ctaUrl: `${site}/`, // 홈(AI 엄선 자랑 카드)으로 — 거기서 최신호 히어로로 본문 진입
     ctaLabel: "웹에서 전체 보기 →",
+    summaryItems: issueSummaryItems(issue),
     unsubUrl: unsubscribeUrl(site, r),
     themeIndex: pickThemeIndexBySlug(issue.meta.slug), // 주차별 자동 순환
   });

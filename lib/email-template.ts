@@ -2,6 +2,8 @@
 // 관리자 발송(app/admin/actions.ts)과 자동 발송(scripts/pipeline/08-publish-send.ts)이 공용으로 사용.
 // 이미지 없이 색·라운드 카드만 사용 → 모든 메일앱 호환.
 
+import type { Issue } from "@/types/issue";
+
 const BRAND = "주간 한국문화 AI 큐레이션 뉴스모음";
 const KICKER = `✨ KCTI · ${BRAND}`;
 
@@ -78,6 +80,8 @@ export interface RenderEmailOpts {
   ctaLabel?: string;
   /** CTA 아래 PDF 안내(HTML). 없으면 생략 */
   pdfNoteHtml?: string;
+  /** 본문 아래 "이번 호 주요 소식" 목록(카테고리별 대표 헤드라인). 없으면 생략 */
+  summaryItems?: { label: string; headline: string }[];
   unsubUrl: string;
   /** 0~6 (범위를 벗어나면 자동 순환 처리) */
   themeIndex: number;
@@ -90,6 +94,18 @@ export function renderIssueEmail(opts: RenderEmailOpts): string {
   const pdf = opts.pdfNoteHtml
     ? `<p style="margin:22px 0 0;font-size:14px;color:#6f687c">${opts.pdfNoteHtml}</p>`
     : "";
+  const items = opts.summaryItems ?? [];
+  const summary = items.length
+    ? `<div style="margin:0 0 22px">
+          <div style="font-size:14px;font-weight:700;color:${th.accent};margin:0 0 10px">📌 이번 호 주요 소식</div>
+          ${items
+            .map(
+              (it) =>
+                `<div style="font-size:14px;line-height:1.6;color:#5d5668;margin:7px 0;padding-left:15px;text-indent:-15px"><span style="color:${th.accent};font-weight:700">·</span> <strong style="color:#2a2530">${escapeHtml(it.label)}</strong> ${escapeHtml(it.headline)}</div>`,
+            )
+            .join("")}
+        </div>`
+    : "";
   return `<!doctype html><html lang="ko"><body style="margin:0;background:${th.pageBg};font-family:Apple SD Gothic Neo,Malgun Gothic,sans-serif;color:#1a1a1a">
   <div style="background:${th.pageBg};padding:30px 18px">
     <div style="max-width:600px;margin:0 auto;background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 8px 26px ${th.shadow}">
@@ -97,6 +113,7 @@ export function renderIssueEmail(opts: RenderEmailOpts): string {
         <p style="margin:0 0 8px;font-size:12px;letter-spacing:1px;color:${th.accent};font-weight:700">${KICKER}</p>
         <h1 style="margin:0 0 12px;font-size:24px;line-height:1.3;color:#2a2530">${opts.title}</h1>
         <div style="margin:0 0 22px;font-size:15px;line-height:1.75;color:#5d5668">${opts.bodyHtml}</div>
+        ${summary}
         <a href="${opts.ctaUrl}" style="display:inline-block;background:${th.accent};color:#fff;text-decoration:none;padding:12px 26px;border-radius:30px;font-weight:700;font-size:15px">${cta}</a>
         ${pdf}
         <hr style="border:none;border-top:1px solid ${th.divider};margin:26px 0"/>
@@ -107,4 +124,13 @@ export function renderIssueEmail(opts: RenderEmailOpts): string {
       </div>
     </div>
   </div></body></html>`;
+}
+
+/** 이메일 본문용 "이번 호 주요 소식" 항목 — 각 카테고리의 대표(첫) 헤드라인 1건씩 */
+export function issueSummaryItems(
+  issue: Issue,
+): { label: string; headline: string }[] {
+  return issue.categories
+    .filter((c) => c.entries && c.entries.length > 0)
+    .map((c) => ({ label: c.label, headline: c.entries[0].headline }));
 }

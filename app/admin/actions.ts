@@ -15,6 +15,7 @@ import {
   resolveThemeIndex,
   escapeHtml,
   defaultEmailSubject,
+  issueSummaryItems,
 } from "@/lib/email-template";
 import { getSiteUrl } from "@/lib/env";
 
@@ -109,6 +110,7 @@ export async function resendIssue(formData: FormData) {
         bodyHtml,
         ctaUrl: homeUrl,
         pdfNoteHtml,
+        summaryItems: issueSummaryItems(issue!),
         unsubUrl: unsubscribeUrl(site, r),
         themeIndex,
       });
