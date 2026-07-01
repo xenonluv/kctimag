@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.kctimag.keepalive</string>
+
+  <!-- 발행/메일과 무관: Supabase 무료 플랜 자동 일시정지 방지용 가벼운 핑 -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/local/bin/node</string>
+    <string>/Users/jinjin/kctimag/scripts/keepalive.mjs</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/jinjin/kctimag</string>
+
+  <!-- 주 2회: 월요일(1)·목요일(4) 오전 10:00 -->
+  <key>StartCalendarInterval</key>
+  <array>
+    <dict>
+      <key>Weekday</key><integer>1</integer>
+      <key>Hour</key><integer>10</integer>
+      <key>Minute</key><integer>0</integer>
+    </dict>
+    <dict>
+      <key>Weekday</key><integer>4</integer>
+      <key>Hour</key><integer>10</integer>
+      <key>Minute</key><integer>0</integer>
+    </dict>
+  </array>
+
+  <key>StandardOutPath</key>
+  <string>/Users/jinjin/kctimag/.pipeline-tmp/keepalive.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/jinjin/kctimag/.pipeline-tmp/keepalive.log</string>
+</dict>
+</plist>
