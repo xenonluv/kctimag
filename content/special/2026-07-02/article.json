@@ -1,10 +1,10 @@
 {
   "meta": {
-    "slug": "2026-07-01",
+    "slug": "2026-07-02",
     "kicker": "특별기획",
     "title": "800조가 호남에 온다 —\n반도체·AI 클러스터를\n'문화기술의 무대'로 되쓰는 법",
     "dek": "팹과 데이터센터가 만드는 것은 일자리만이 아니다. 지금 설계해야 할 것은 그 연산력 위에서 '무엇을 창조해 세계에 보여줄 것인가'이다.",
-    "date": "2026-07-01",
+    "date": "2026-07-02",
     "coverImageUrl": "https://images.pexels.com/photos/3520692/pexels-photo-3520692.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=675"
   },
   "bodyMarkdown": "",
@@ -17,5 +17,5 @@
     { "headline": "광주광역시 'AI·반도체 전문인력 등 81만 명 육성'", "outlet": "시민일보", "link": "https://www.siminilbo.co.kr/news/newsview.php?ncode=1160276692360468", "note": "AI·반도체·문화콘텐츠 통합 인재 양성" }
   ],
   "author": "KCTI 편집장 (AI 큐레이션)",
-  "generatedAt": "2026-07-01T09:00:00.000Z"
+  "generatedAt": "2026-07-02T09:00:00.000Z"
 }
