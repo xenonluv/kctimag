@@ -334,6 +334,17 @@ textarea::placeholder {
 .kct-prose p {
   margin: 0 0 1.3em;
 }
+/* 본문 중간 삽입 이미지 — 작게·가운데·라운드(이해 보조용) */
+.kct-prose img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 1.8em auto;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.28);
+}
 .kct-prose h2 {
   font-family: var(--font-serif);
   font-size: 1.65rem;

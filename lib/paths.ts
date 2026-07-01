@@ -10,6 +10,9 @@ export const CONTENT_DIR = path.join(ROOT, "content", "issues");
 /** 발행된 이벤트 콘텐츠 디렉터리 (git에 커밋됨) */
 export const EVENTS_DIR = path.join(ROOT, "content", "events");
 
+/** 발행된 특별기획 콘텐츠 디렉터리 (git에 커밋됨) */
+export const SPECIAL_DIR = path.join(ROOT, "content", "special");
+
 /** 파이프라인 중간 산출물 (gitignore됨) */
 export const TMP_ROOT = path.join(ROOT, ".pipeline-tmp");
 
@@ -27,6 +30,14 @@ export function eventDir(slug: string): string {
 
 export function eventJsonPath(slug: string): string {
   return path.join(eventDir(slug), "events.json");
+}
+
+export function specialDir(slug: string): string {
+  return path.join(SPECIAL_DIR, slug);
+}
+
+export function specialJsonPath(slug: string): string {
+  return path.join(specialDir(slug), "article.json");
 }
 
 export function tmpDir(slug: string): string {

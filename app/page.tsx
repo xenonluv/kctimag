@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { listIssues, latestIssue } from "@/lib/content";
 import { latestEvents } from "@/lib/events";
+import { latestSpecial, listSpecials } from "@/lib/special";
 import SubscribeForm from "@/components/SubscribeForm";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
@@ -11,6 +12,8 @@ export default function Home() {
   const issues = listIssues();
   const latest = latestIssue();
   const events = latestEvents();
+  const special = latestSpecial();
+  const specialArchive = listSpecials().slice(1); // 최신 1건은 상단 배너로 강조, 목록엔 나머지
   const rest = issues.slice(1);
 
   return (
@@ -83,6 +86,26 @@ export default function Home() {
             이벤트 보기
           </Link>
         </section>
+
+        {special && (
+          <Link
+            href={`/special/${special.meta.slug}`}
+            className="group mb-8 block overflow-hidden rounded-3xl border border-accent/40 bg-gradient-to-r from-accent/20 via-accent/10 to-white/[0.03] p-6 sm:p-7"
+          >
+            <p className="inline-flex items-center gap-1.5 rounded-full bg-accent/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-accent">
+              ✦ {special.meta.kicker ?? "특별기획"}
+            </p>
+            <h2 className="on-navy mt-3 font-serif text-2xl font-extrabold leading-snug group-hover:text-accent sm:text-[1.7rem]">
+              {special.meta.title}
+            </h2>
+            {special.meta.dek && (
+              <p className="mt-2 text-sm leading-relaxed text-neutral-300">
+                {special.meta.dek}
+              </p>
+            )}
+            <p className="mt-3 text-xs font-bold text-accent">읽어보기 →</p>
+          </Link>
+        )}
 
         {latest ? (
           <Link
@@ -167,6 +190,36 @@ export default function Home() {
             <SubscribeForm />
           </div>
         </section>
+
+        {specialArchive.length > 0 && (
+          <section className="mt-12">
+            <h2 className="on-navy mb-4 font-serif text-xl font-bold">
+              특별기획 <span className="text-accent">✦</span>
+            </h2>
+            <ul className="grid gap-4 sm:grid-cols-2">
+              {specialArchive.map((it) => (
+                <li key={it.slug}>
+                  <Link
+                    href={`/special/${it.slug}`}
+                    className="group kct-card kct-glow block h-full rounded-2xl p-4"
+                  >
+                    <p className="text-xs uppercase tracking-widest text-accent">
+                      {it.kicker} · {it.date}
+                    </p>
+                    <h3 className="mt-2 font-bold leading-snug group-hover:text-accent">
+                      {it.title}
+                    </h3>
+                    {it.dek && (
+                      <p className="mt-2 text-sm leading-relaxed text-neutral-400">
+                        {it.dek}
+                      </p>
+                    )}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         {rest.length > 0 && (
           <section className="mt-12">

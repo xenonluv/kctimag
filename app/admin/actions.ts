@@ -9,6 +9,7 @@ import {
 } from "@/lib/admin-auth";
 import { getAdminSupabase } from "@/lib/supabase";
 import { readIssue } from "@/lib/content";
+import { readSpecial } from "@/lib/special";
 import { sendIssueEmail, unsubscribeUrl, type Recipient } from "@/lib/mailer";
 import {
   renderIssueEmail,
@@ -111,6 +112,70 @@ export async function resendIssue(formData: FormData) {
         ctaUrl: homeUrl,
         pdfNoteHtml,
         summaryItems: issueSummaryItems(issue!),
+        unsubUrl: unsubscribeUrl(site, r),
+        themeIndex,
+      });
+    },
+  });
+  redirect("/admin?msg=sent");
+}
+
+// 특별기획 발송 — 해당 특별기획 페이지(/special/{slug})로 유도하는 메일. PDF 없음.
+export async function sendSpecialEmail(formData: FormData) {
+  if (!(await isAdmin())) redirect("/admin/login");
+  const slug = formData.get("slug")?.toString();
+  const testEmail = formData.get("testEmail")?.toString().trim();
+  const message = formData.get("message")?.toString().trim();
+  const fromName = formData.get("fromName")?.toString().trim();
+  const themeRaw = formData.get("themeIndex")?.toString();
+  const subjectRaw = formData.get("subject")?.toString().trim();
+  if (!slug) redirect("/admin?msg=noslug");
+  const article = readSpecial(slug!);
+  const sb = getAdminSupabase();
+  if (!article) redirect("/admin?msg=noissue");
+
+  const site = getSiteUrl();
+  let recipients: Recipient[] = [];
+  if (testEmail) {
+    let token: string | undefined;
+    if (sb) {
+      const { data } = await sb
+        .from("subscribers")
+        .select("unsubscribe_token")
+        .eq("email", testEmail.toLowerCase())
+        .maybeSingle();
+      token = (data as { unsubscribe_token?: string } | null)?.unsubscribe_token;
+    }
+    recipients = [{ email: testEmail, unsubscribeToken: token }];
+  } else if (sb) {
+    const { data } = await sb
+      .from("subscribers")
+      .select("email,unsubscribe_token")
+      .eq("status", "confirmed");
+    recipients = (data ?? []).map(
+      (d: { email: string; unsubscribe_token?: string }) => ({
+        email: d.email,
+        unsubscribeToken: d.unsubscribe_token,
+      }),
+    );
+  }
+  if (recipients.length === 0) redirect("/admin?msg=norecipients");
+
+  const articleUrl = `${site}/special/${slug}`; // 특별기획은 해당 기사 페이지로 유도
+  const themeIndex = resolveThemeIndex(slug!, themeRaw);
+
+  await sendIssueEmail({
+    recipients,
+    subject: subjectRaw || `[특별기획] ${article!.meta.title}`,
+    fromName: fromName || undefined,
+    throttleMs: 300,
+    buildHtml: (r) => {
+      const bodyHtml = escapeHtml(message || article!.meta.dek);
+      return renderIssueEmail({
+        title: article!.meta.title,
+        bodyHtml,
+        ctaUrl: articleUrl,
+        ctaLabel: "특별기획 전문 읽기 →",
         unsubUrl: unsubscribeUrl(site, r),
         themeIndex,
       });

@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { latestSpecial } from "@/lib/special";
 
 export default function SiteHeader() {
+  const special = latestSpecial();
   return (
     <header className="no-print sticky top-0 z-20 border-b border-white/10 bg-[#0b0f18]/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-4xl items-center justify-between px-5 py-4">
@@ -19,6 +21,14 @@ export default function SiteHeader() {
           <Link href="/" className="hover:text-accent">
             홈
           </Link>
+          {special && (
+            <Link
+              href={`/special/${special.meta.slug}`}
+              className="hover:text-accent"
+            >
+              특별기획
+            </Link>
+          )}
           <Link
             href="/events"
             className="rounded-full border border-amber-300/50 bg-amber-400 px-3.5 py-1.5 font-bold text-[#191006] shadow-[0_0_18px_rgba(251,191,36,0.24)] hover:bg-orange-300"

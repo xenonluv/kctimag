@@ -2,8 +2,14 @@ import { redirect } from "next/navigation";
 import { isAdmin } from "@/lib/admin-auth";
 import { getAdminSupabase, isSupabaseConfigured } from "@/lib/supabase";
 import { listIssues } from "@/lib/content";
+import { listSpecials } from "@/lib/special";
 import { EMAIL_THEMES, defaultEmailSubject } from "@/lib/email-template";
-import { deleteSubscriber, resendIssue, logout } from "./actions";
+import {
+  deleteSubscriber,
+  resendIssue,
+  sendSpecialEmail,
+  logout,
+} from "./actions";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 60; // 다건 발송 여유
@@ -40,6 +46,7 @@ export default async function AdminPage({
       ((await sb.from("send_logs").select("*").order("created_at", { ascending: false }).limit(10)).data as LogRow[]) ?? [];
   }
   const issues = listIssues();
+  const specials = listSpecials();
   const confirmed = subscribers.filter((s) => s.status === "confirmed").length;
 
   return (
@@ -145,6 +152,77 @@ export default async function AdminPage({
           내용란에 직접 쓰면 그 내용으로, 비우면 부제가 본문으로 발송됩니다. 테스트
           이메일을 비우면 전체 확인 구독자에게 발송됩니다. 색은
           비우면 발행 주차에 따라 7색이 자동 순환되며, 직접 고르면 그 색으로 발송됩니다.
+        </p>
+      </section>
+
+      {/* 특별기획 발송 */}
+      <section className="mt-10">
+        <h2 className="mb-3 font-serif text-lg font-bold">특별기획 발송</h2>
+        <ul className="space-y-2">
+          {specials.map((it) => (
+            <li
+              key={it.slug}
+              className="rounded-lg border border-neutral-200 p-3"
+            >
+              <div className="mb-2">
+                <span className="font-medium">{it.title}</span>
+                <span className="ml-2 text-xs text-neutral-400">{it.slug}</span>
+              </div>
+              <form action={sendSpecialEmail} className="space-y-2">
+                <input type="hidden" name="slug" value={it.slug} />
+                <input
+                  name="subject"
+                  defaultValue={`[특별기획] ${it.title}`}
+                  placeholder="메일 제목"
+                  className="w-full rounded border border-neutral-300 px-2 py-1.5 text-sm font-medium"
+                />
+                <textarea
+                  name="message"
+                  rows={3}
+                  placeholder="메일에 넣을 내용을 직접 작성 (선택). 비우면 부제가 본문으로 들어갑니다."
+                  className="w-full rounded border border-neutral-300 px-2 py-1.5 text-sm"
+                />
+                <div className="flex flex-wrap gap-2">
+                  <select
+                    name="themeIndex"
+                    defaultValue=""
+                    className="w-40 rounded border border-neutral-300 px-2 py-1 text-sm"
+                    title="메일 색 테마(비우면 발행 주차별 자동 순환)"
+                  >
+                    <option value="">색: 자동(주차별)</option>
+                    {EMAIL_THEMES.map((t, i) => (
+                      <option key={t.key} value={i}>
+                        색: {t.name}
+                      </option>
+                    ))}
+                  </select>
+                  <input
+                    name="fromName"
+                    placeholder="보낸사람 이름(선택)"
+                    className="w-44 rounded border border-neutral-300 px-2 py-1 text-sm"
+                  />
+                  <input
+                    type="email"
+                    name="testEmail"
+                    placeholder="테스트 이메일(비우면 전체 구독자)"
+                    className="w-60 rounded border border-neutral-300 px-2 py-1 text-sm"
+                  />
+                  <button className="rounded bg-accent px-3 py-1 text-sm text-white hover:opacity-90">
+                    발송
+                  </button>
+                </div>
+              </form>
+            </li>
+          ))}
+          {specials.length === 0 && (
+            <li className="text-sm text-neutral-500">
+              발행된 특별기획이 없습니다.
+            </li>
+          )}
+        </ul>
+        <p className="mt-2 text-xs text-neutral-400">
+          메일의 &ldquo;전문 읽기&rdquo; 버튼은 해당 특별기획 페이지(/special/…)로
+          연결됩니다.
         </p>
       </section>
 
