@@ -1,0 +1,506 @@
+{
+  "slug": "2026-07-09",
+  "generatedAt": "2026-07-09T14:34:46.541Z",
+  "range": {
+    "from": "2026-07-09",
+    "to": "2026-07-16"
+  },
+  "meta": {
+    "title": "이번 주 문화 이벤트",
+    "dek": "뉴스 관심도와 공식 행사 정보를 함께 본 향후 7일 큐레이션",
+    "totalCandidates": 739,
+    "selected": 15,
+    "sourceBreakdown": {
+      "tourApi": 420,
+      "news": 319
+    },
+    "note": "일정은 주최 측 사정에 따라 변경될 수 있으니 방문 전 공식 링크를 확인하세요."
+  },
+  "events": [
+    {
+      "id": "부산역-k-pop-성지로-변신-팝업스토어-로-글로벌-팬心-잡는다-2026-07-09",
+      "title": "부산역, K-POP 성지로 변신… '팝업스토어'로 글로벌 팬心 잡는다",
+      "category": "concert",
+      "startDate": "2026-07-09",
+      "endDate": "2026-07-09",
+      "description": "이번 팝업스토어는 오는 7월 9일까지 운영되며, 방탄소년단(BTS)을 비롯해 세븐틴, 에이티즈 등 글로벌... K-POP 콘서트와 다채로운 체험형 콘텐츠를 제공할 예정이다. 팝업스토어는 이 축제를 찾는 국내외 팬들에게 공연...",
+      "sources": [
+        {
+          "type": "news",
+          "title": "부산역, K-POP 성지로 변신… '팝업스토어'로 글로벌 팬心 잡는다",
+          "url": "http://www.globalepic.co.kr/view.php?ud=20260623122350429748439a4874_29",
+          "outlet": "globalepic.co.kr",
+          "pubDate": "2026-06-23T03:30:00.000Z"
+        }
+      ],
+      "dateConfidence": "medium",
+      "scores": {
+        "importance": 80,
+        "interest": 77,
+        "urgency": 95,
+        "scale": 90,
+        "reliability": 43
+      },
+      "score": 77,
+      "rationale": "뉴스 기반 후보 · 뉴스 1건 · 대형 관심 키워드",
+      "displayGroup": "featured"
+    },
+    {
+      "id": "부산역에-k팝-팝업스토어-아이돌-그룹-포토카드-등-1000종-상품-2026-07-09",
+      "title": "부산역에 K팝 팝업스토어…아이돌 그룹 포토카드 등 1000종 상품",
+      "category": "concert",
+      "startDate": "2026-07-09",
+      "endDate": "2026-07-09",
+      "description": "현재 문을 연 K-팝 팝업스토어는 7월 9일까지 운영하며, 매장에는 방탄소년단(BTS)을 비롯해 세븐틴... K-팝 콘서트를 비롯해 체험형 콘텐츠 등이 함께 운영될 예정이다. 지난 10일 사전 오픈한 팝업스토어는 6월 12일과...",
+      "sources": [
+        {
+          "type": "news",
+          "title": "부산역에 K팝 팝업스토어…아이돌 그룹 포토카드 등 1000종 상품",
+          "url": "https://www.busan.com/view/busan/view.php?code=2026062309310811299",
+          "outlet": "busan.com",
+          "pubDate": "2026-06-23T01:57:00.000Z"
+        }
+      ],
+      "dateConfidence": "medium",
+      "scores": {
+        "importance": 80,
+        "interest": 77,
+        "urgency": 95,
+        "scale": 90,
+        "reliability": 43
+      },
+      "score": 77,
+      "rationale": "뉴스 기반 후보 · 뉴스 1건 · 대형 관심 키워드",
+      "displayGroup": "featured"
+    },
+    {
+      "id": "제18회-통영연극예술축제-2026-07-10-경상남도",
+      "title": "제18회 통영연극예술축제",
+      "category": "performance",
+      "region": "경상남도",
+      "address": "경상남도 통영시 남망공원길 29 (동호동)",
+      "startDate": "2026-07-10",
+      "endDate": "2026-07-19",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/82/4070082_image2_1.jpg",
+      "description": "055-645-6379",
+      "coordinates": {
+        "lat": 34.842038257844116,
+        "lng": 128.4274781812797
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "제18회 통영연극예술축제",
+          "contentId": "1824778"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "featured"
+    },
+    {
+      "id": "2026-부산브랜드페스타-2026-07-10-부산광역시",
+      "title": "2026 부산브랜드페스타",
+      "category": "other",
+      "region": "부산광역시",
+      "address": "부산광역시 해운대구 APEC로 55 (우동)",
+      "startDate": "2026-07-10",
+      "endDate": "2026-07-12",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/87/4080287_image2_1.jpg",
+      "description": "051-740-7408",
+      "coordinates": {
+        "lat": 35.1690637155,
+        "lng": 129.1360182683
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 부산브랜드페스타",
+          "contentId": "4080156"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 55,
+        "reliability": 75
+      },
+      "score": 56,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "금산삼계탕축제-2026-07-10-충청남도",
+      "title": "금산삼계탕축제",
+      "category": "festival",
+      "region": "충청남도",
+      "address": "충청남도 금산군 금산읍 인삼광장로 30 금산세계인삼엑스포 광장",
+      "startDate": "2026-07-10",
+      "endDate": "2026-07-12",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/42/4064242_image2_1.jpg",
+      "description": "041-750-2312",
+      "coordinates": {
+        "lat": 36.1001640877,
+        "lng": 127.5011979651
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "금산삼계탕축제",
+          "contentId": "2719507"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "대한민국-펫캉스-2026-07-10-경상북도",
+      "title": "대한민국 펫캉스",
+      "category": "other",
+      "region": "경상북도",
+      "address": "경상북도 구미시 산동읍 첨단기업1로 49",
+      "startDate": "2026-07-10",
+      "endDate": "2026-07-12",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/48/4065648_image2_1.jpg",
+      "description": "053-567-4497",
+      "coordinates": {
+        "lat": 36.1415966922556,
+        "lng": 128.442232571322
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "대한민국 펫캉스",
+          "contentId": "3302702"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "울산119안전문화축제-2026-07-10-울산광역시",
+      "title": "울산119안전문화축제",
+      "category": "festival",
+      "region": "울산광역시",
+      "address": "울산광역시 울주군 삼남읍 울산역로 255",
+      "startDate": "2026-07-10",
+      "endDate": "2026-07-11",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/90/4082690_image2_1.jpg",
+      "description": "052-241-2990",
+      "coordinates": {
+        "lat": 35.5556181512,
+        "lng": 129.1316552505
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "울산119안전문화축제",
+          "contentId": "1951053"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "그루브-인-관악-2026-07-11-서울특별시",
+      "title": "그루브 인 관악",
+      "category": "other",
+      "region": "서울특별시",
+      "address": "서울특별시 관악구 신림로3길 35 (신림동) 신림역 별빛내린천, S1472 관천로문화플랫폼",
+      "startDate": "2026-07-11",
+      "endDate": "2026-07-12",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/42/4071342_image2_1.jpg",
+      "description": "02-828-5764",
+      "coordinates": {
+        "lat": 37.4675533646,
+        "lng": 126.9449623941
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "그루브 인 관악",
+          "contentId": "2826964"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 80,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 51,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "칠곡-꿀맥-페스티벌-2026-07-11-경상북도",
+      "title": "칠곡 꿀맥 페스티벌",
+      "category": "festival",
+      "region": "경상북도",
+      "address": "경상북도 칠곡군 왜관읍 왜관리 1350-29 칠곡평화분수",
+      "startDate": "2026-07-11",
+      "endDate": "2026-07-12",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/06/4061206_image2_1.jpg",
+      "description": "054-979-3212",
+      "coordinates": {
+        "lat": 35.998765,
+        "lng": 128.395932
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "칠곡 꿀맥 페스티벌",
+          "contentId": "3487396"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 80,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 51,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "2026-경기인형극제-in-수원-2026-07-16-경기도",
+      "title": "2026 경기인형극제 in 수원",
+      "category": "other",
+      "region": "경기도",
+      "address": "경기도 수원시 권선구 서둔로 166 (서둔동)",
+      "startDate": "2026-07-16",
+      "endDate": "2026-07-22",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/47/4076547_image2_1.jpg",
+      "description": "070-4681-0675",
+      "coordinates": {
+        "lat": 37.2665289945,
+        "lng": 126.9811749103
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 경기인형극제 in 수원",
+          "contentId": "1825520"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 60,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 48,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "2026-보드게임콘-2026-07-16-서울특별시",
+      "title": "2026 보드게임콘",
+      "category": "other",
+      "region": "서울특별시",
+      "address": "서울특별시 강남구 영동대로 513 (삼성동)",
+      "startDate": "2026-07-16",
+      "endDate": "2026-07-19",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/35/4080135_image2_1.jpg",
+      "description": "070-8611-9803",
+      "coordinates": {
+        "lat": 37.5118651508,
+        "lng": 127.0592035846
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 보드게임콘",
+          "contentId": "2387785"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 60,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 48,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "2026-국제선명상대회-2026-04-03-서울특별시",
+      "title": "2026 국제선명상대회",
+      "category": "other",
+      "region": "서울특별시",
+      "address": "서울특별시 강남구 봉은사로 531 (삼성동)",
+      "startDate": "2026-04-03",
+      "endDate": "2026-11-12",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/90/4054090_image2_1.jpg",
+      "description": "010-8441-2371",
+      "coordinates": {
+        "lat": 37.5158257049833,
+        "lng": 127.057734484281
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 국제선명상대회",
+          "contentId": "3377038"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 95,
+        "interest": 65,
+        "urgency": 55,
+        "scale": 90,
+        "reliability": 75
+      },
+      "score": 78,
+      "rationale": "공식 행사 데이터 · 대형 관심 키워드",
+      "displayGroup": "ongoing"
+    },
+    {
+      "id": "2026-국립극장-쏙쏙들이페스티벌-2026-03-14-경기도",
+      "title": "2026 국립극장 쏙쏙들이페스티벌",
+      "category": "festival",
+      "region": "경기도",
+      "address": "경기도 파주시 탄현면 헤이리로 16",
+      "startDate": "2026-03-14",
+      "endDate": "2026-12-26",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/91/4081691_image2_1.jpg",
+      "description": "031-870-9110",
+      "coordinates": {
+        "lat": 37.7832839326,
+        "lng": 126.6946859929
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 국립극장 쏙쏙들이페스티벌",
+          "contentId": "3488421"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 95,
+        "interest": 65,
+        "urgency": 55,
+        "scale": 70,
+        "reliability": 75
+      },
+      "score": 75,
+      "rationale": "공식 행사 데이터 · 대형 관심 키워드",
+      "displayGroup": "ongoing"
+    },
+    {
+      "id": "문화가-흐르는-서울광장-2026-05-06-서울특별시",
+      "title": "문화가 흐르는 서울광장",
+      "category": "other",
+      "region": "서울특별시",
+      "address": "서울특별시 중구 을지로 지하12 (을지로1가)",
+      "startDate": "2026-05-06",
+      "endDate": "2026-12-31",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/68/4059668_image2_1.jpg",
+      "description": "02-2133-2543",
+      "coordinates": {
+        "lat": 37.56544835496842,
+        "lng": 126.97878183534239
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "문화가 흐르는 서울광장",
+          "contentId": "2598331"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 55,
+        "scale": 55,
+        "reliability": 75
+      },
+      "score": 50,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "ongoing"
+    },
+    {
+      "id": "서울-왕궁수문장-교대의식-2026-01-01-서울특별시",
+      "title": "서울 왕궁수문장 교대의식",
+      "category": "other",
+      "region": "서울특별시",
+      "address": "서울특별시 중구 세종대로 99 (정동)",
+      "startDate": "2026-01-01",
+      "endDate": "2026-12-31",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/79/4039379_image2_1.jpg",
+      "description": "02-6242-7402",
+      "coordinates": {
+        "lat": 37.565054919430565,
+        "lng": 126.97657463444833
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "서울 왕궁수문장 교대의식",
+          "contentId": "292961"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 55,
+        "scale": 55,
+        "reliability": 75
+      },
+      "score": 50,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "ongoing"
+    }
+  ]
+}
