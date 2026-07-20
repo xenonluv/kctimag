@@ -14,7 +14,7 @@ function envInt(key: string, fallback: number): number {
   const n = Number(process.env[key]);
   return Number.isFinite(n) && n > 0 ? n : fallback;
 }
-const DAILY_LIMIT = envInt("CHAT_DAILY_LIMIT", 30); // 이메일당/일
+const DAILY_LIMIT = envInt("CHAT_DAILY_LIMIT", 20); // 이메일당/일
 const GLOBAL_DAILY_LIMIT = envInt("CHAT_GLOBAL_DAILY_LIMIT", 200); // 전체/일
 const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
 

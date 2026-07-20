@@ -18,7 +18,10 @@ export default function SiteHeader() {
           </span>
         </Link>
         <nav className="flex flex-wrap items-center justify-end gap-x-3 gap-y-2 text-sm text-neutral-300">
-          <Link href="/assistant" className="hover:text-accent">
+          <Link
+            href="/assistant"
+            className="rounded-full border border-orange-400/50 bg-orange-600 px-3.5 py-1.5 font-bold text-white shadow-[0_0_18px_rgba(234,88,12,0.35)] hover:bg-orange-500"
+          >
             {/* 좁은 화면에서는 짧은 라벨로 */}
             <span className="hidden md:inline">문화기술 정책보고서 어시스턴트</span>
             <span className="md:hidden">정책보고서</span>
