@@ -15,16 +15,10 @@
   <key>WorkingDirectory</key>
   <string>/Users/jinjin/kctimag</string>
 
-  <!-- 주 2회: 월요일(1)·목요일(4) 오전 10:00 -->
+  <!-- 매일 오전 10:00 — Supabase 현행 기준(지난 1주간 하루 몇 건 수준의 DB 활동)에 맞춤 -->
   <key>StartCalendarInterval</key>
   <array>
     <dict>
-      <key>Weekday</key><integer>1</integer>
-      <key>Hour</key><integer>10</integer>
-      <key>Minute</key><integer>0</integer>
-    </dict>
-    <dict>
-      <key>Weekday</key><integer>4</integer>
       <key>Hour</key><integer>10</integer>
       <key>Minute</key><integer>0</integer>
     </dict>
