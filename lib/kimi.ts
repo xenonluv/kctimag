@@ -29,6 +29,10 @@ interface K3Options {
   /** OpenAI 호환 tools 배열 (커스텀 함수 도구 — 실행은 호출자가 담당)
    *  참고: Moonshot 내장 $web_search는 kimi-k3에서 현재 서버 오류(tokenization failed)로 미사용. */
   tools?: unknown[];
+  /** "none"이면 도구 사용 금지(최종 답변 강제).
+   *  ⚠️ K3 특성: 이력에 tool_calls가 있는데 tools를 아예 빼면 빈 응답이 옴(검증됨) —
+   *  도구를 끝내려면 tools는 유지하고 tool_choice="none"을 쓸 것. */
+  toolChoice?: "auto" | "none";
 }
 
 function requireKey(): string {
@@ -50,7 +54,10 @@ function buildBody(
     stream,
   };
   if (opts.json) body.response_format = { type: "json_object" };
-  if (opts.tools && opts.tools.length > 0) body.tools = opts.tools;
+  if (opts.tools && opts.tools.length > 0) {
+    body.tools = opts.tools;
+    if (opts.toolChoice) body.tool_choice = opts.toolChoice;
+  }
   return body;
 }
 

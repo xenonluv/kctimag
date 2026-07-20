@@ -590,39 +590,65 @@ ${newsDigest(news, false) || NO_NEWS_NOTE}`;
       ...history,
     ];
     let searches = 0;
+    let totalText = 0; // 지금까지 사용자에게 보낸 본문 길이 (빈 응답 안전망용)
     const MAX_SEARCHES = 3; // 토큰 비용 상한: 메시지당 검색 3회
 
-    for (let round = 0; round <= MAX_SEARCHES; round++) {
+    for (let round = 0; round < MAX_SEARCHES + 2; round++) {
       const calls: KimiToolCall[] = [];
       let roundText = "";
+      // ⚠️ K3 특성: 이력에 tool_calls가 있는데 tools를 빼면 "빈 응답"이 옴(검증됨).
+      //    그래서 tools는 항상 선언하고, 한도 도달 시 tool_choice="none"으로 답변을 강제한다.
+      const finalAnswer = searches >= MAX_SEARCHES;
       for await (const ev of kimiK3StreamEvents(convo, {
         maxTokens: 4000,
         signal,
-        tools: searches < MAX_SEARCHES ? [NEWS_SEARCH_TOOL] : undefined,
+        tools: [NEWS_SEARCH_TOOL],
+        toolChoice: finalAnswer ? "none" : "auto",
       })) {
         if (ev.type === "text") {
           roundText += ev.text;
+          totalText += ev.text.length;
           emit({ type: "delta", text: ev.text });
         } else {
           calls.push(...ev.calls);
         }
       }
-      if (calls.length === 0) return; // 답변 완료
+      if (calls.length === 0) {
+        // 안전망: 아무 본문도 없이 끝났으면 침묵 대신 안내
+        if (totalText === 0) {
+          emit({
+            type: "error",
+            message:
+              "답변을 생성하지 못했어요. 질문을 조금 바꿔서 다시 시도해 주세요.",
+          });
+        }
+        return; // 답변 완료
+      }
 
       convo.push({ role: "assistant", content: roundText, tool_calls: calls });
       for (const c of calls) {
-        if (c.function.name === "search_news") {
+        if (c.function.name === "search_news" && searches < MAX_SEARCHES) {
           searches++;
           const query = parseSearchQuery(c.function.arguments);
           emit({
             type: "stage",
             label: `관련 뉴스를 검색하고 있어요... "${query.slice(0, 30)}" (${searches}/${MAX_SEARCHES})`,
+            eta: "여러 번 검색하면 1~2분 정도 걸릴 수 있어요",
           });
           convo.push({
             role: "tool",
             tool_call_id: c.id,
             name: "search_news",
             content: await runNewsSearch(query),
+          });
+        } else if (c.function.name === "search_news") {
+          // 한도 초과분 — 결과 대신 마무리 지시
+          convo.push({
+            role: "tool",
+            tool_call_id: c.id,
+            name: "search_news",
+            content:
+              "검색 한도에 도달했습니다. 지금까지의 검색 결과만으로 답변을 작성하세요.",
           });
         } else {
           convo.push({
@@ -638,9 +664,17 @@ ${newsDigest(news, false) || NO_NEWS_NOTE}`;
         label: "검색 결과를 바탕으로 답변을 작성하고 있어요...",
       });
     }
-    emit({
-      type: "delta",
-      text: "\n\n_(검색 횟수 제한에 도달해 지금까지의 정보로 답변을 마무리합니다)_",
-    });
+    // 라운드 소진(비정상적으로 도구 호출이 반복된 경우)
+    if (totalText === 0) {
+      emit({
+        type: "error",
+        message: "답변을 생성하지 못했어요. 다시 시도해 주세요.",
+      });
+    } else {
+      emit({
+        type: "delta",
+        text: "\n\n_(검색 횟수 제한에 도달해 지금까지의 정보로 답변을 마무리합니다)_",
+      });
+    }
   });
 }
