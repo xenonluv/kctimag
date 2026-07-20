@@ -15,14 +15,13 @@
   <key>WorkingDirectory</key>
   <string>/Users/jinjin/kctimag</string>
 
-  <!-- 매일 오전 10:00 — Supabase 현행 기준(지난 1주간 하루 몇 건 수준의 DB 활동)에 맞춤 -->
-  <key>StartCalendarInterval</key>
-  <array>
-    <dict>
-      <key>Hour</key><integer>10</integer>
-      <key>Minute</key><integer>0</integer>
-    </dict>
-  </array>
+  <!-- 매 2시간(하루 12회) — "하루 몇 건" 기준을 여유 있게 상회. 쿼리 1건짜리 핑이라 부하 무시 가능 -->
+  <key>StartInterval</key>
+  <integer>7200</integer>
+
+  <!-- 로그인/재부팅 직후에도 1회 즉시 실행 -->
+  <key>RunAtLoad</key>
+  <true/>
 
   <key>StandardOutPath</key>
   <string>/Users/jinjin/kctimag/.pipeline-tmp/keepalive.log</string>
