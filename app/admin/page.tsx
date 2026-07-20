@@ -8,6 +8,7 @@ import {
   deleteSubscriber,
   resendIssue,
   sendSpecialEmail,
+  toggleChatAllowed,
   logout,
 } from "./actions";
 
@@ -18,6 +19,7 @@ interface SubRow {
   id: string;
   email: string;
   status: string;
+  chat_allowed?: boolean;
   created_at?: string;
 }
 interface LogRow {
@@ -66,6 +68,12 @@ export default async function AdminPage({
       {msg === "sent" && (
         <p className="mt-4 rounded-md bg-green-50 p-3 text-sm text-green-700">
           ✅ 발송이 완료되었습니다.
+        </p>
+      )}
+      {msg === "chaterr" && (
+        <p className="mt-4 rounded-md bg-red-50 p-3 text-sm text-red-700">
+          ⚠️ 어시스턴트 사용 설정 변경에 실패했습니다 — Supabase에 chat_allowed
+          컬럼이 있는지 확인해 주세요 (supabase/schema.sql 실행).
         </p>
       )}
 
@@ -235,6 +243,7 @@ export default async function AdminPage({
               <tr>
                 <th className="px-3 py-2">이메일</th>
                 <th className="px-3 py-2">상태</th>
+                <th className="px-3 py-2">보고서 어시스턴트</th>
                 <th className="px-3 py-2"></th>
               </tr>
             </thead>
@@ -259,6 +268,30 @@ export default async function AdminPage({
                           : "대기"}
                     </span>
                   </td>
+                  <td className="px-3 py-2">
+                    {s.status === "confirmed" ? (
+                      <form action={toggleChatAllowed} className="inline">
+                        <input type="hidden" name="id" value={s.id} />
+                        <input
+                          type="hidden"
+                          name="allow"
+                          value={s.chat_allowed ? "0" : "1"}
+                        />
+                        <button
+                          className={
+                            s.chat_allowed
+                              ? "rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-700 hover:bg-green-200"
+                              : "rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs text-neutral-500 hover:bg-neutral-200"
+                          }
+                          title="누르면 사용 허용을 켜고 끕니다 (끄면 즉시 차단)"
+                        >
+                          {s.chat_allowed ? "사용 가능 ✓" : "사용 불가"}
+                        </button>
+                      </form>
+                    ) : (
+                      <span className="text-xs text-neutral-400">—</span>
+                    )}
+                  </td>
                   <td className="px-3 py-2 text-right">
                     <form action={deleteSubscriber}>
                       <input type="hidden" name="id" value={s.id} />
@@ -269,7 +302,7 @@ export default async function AdminPage({
               ))}
               {subscribers.length === 0 && (
                 <tr>
-                  <td colSpan={3} className="px-3 py-4 text-center text-neutral-500">
+                  <td colSpan={4} className="px-3 py-4 text-center text-neutral-500">
                     구독자가 없습니다.
                   </td>
                 </tr>

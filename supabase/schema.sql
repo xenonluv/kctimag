@@ -42,3 +42,17 @@ create table if not exists news_raw (
 );
 create index if not exists news_raw_pub_date_idx on news_raw (pub_date desc);
 alter table news_raw enable row level security;
+
+-- 문화기술 정책보고서 어시스턴트: 관리자가 admin 페이지에서 지정한 구독자만 사용
+alter table subscribers add column if not exists chat_allowed boolean not null default false;
+
+-- 어시스턴트 사용 기록 (일일 사용량 제한 + 사용 통계)
+create table if not exists chat_logs (
+  id uuid primary key default gen_random_uuid(),
+  email text not null,
+  kind text not null default 'chat',   -- chat | report
+  created_at timestamptz default now()
+);
+create index if not exists chat_logs_email_created_idx on chat_logs (email, created_at desc);
+create index if not exists chat_logs_created_idx on chat_logs (created_at desc); -- 전체 합산 카운트용
+alter table chat_logs enable row level security;

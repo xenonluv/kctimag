@@ -48,6 +48,23 @@ export async function deleteSubscriber(formData: FormData) {
   redirect("/admin");
 }
 
+// 문화기술 정책보고서 어시스턴트 사용 허용 On/Off — 끄면 다음 요청부터 즉시 차단
+export async function toggleChatAllowed(formData: FormData) {
+  if (!(await isAdmin())) redirect("/admin/login");
+  const id = formData.get("id")?.toString();
+  const allow = formData.get("allow")?.toString() === "1";
+  const sb = getAdminSupabase();
+  if (sb && id) {
+    const { error } = await sb
+      .from("subscribers")
+      .update({ chat_allowed: allow })
+      .eq("id", id);
+    // chat_allowed 컬럼 미생성(마이그레이션 전) 등 — 조용히 무시하지 않고 알림
+    if (error) redirect("/admin?msg=chaterr");
+  }
+  redirect("/admin");
+}
+
 // 수동 재발송 (웹링크 + PDF 링크 메일 — 첨부 없이). 주간 자동 발송은 파이프라인이 PDF 첨부로 수행.
 export async function resendIssue(formData: FormData) {
   if (!(await isAdmin())) redirect("/admin/login");

@@ -412,6 +412,54 @@ textarea::placeholder {
   color: var(--accent);
 }
 
+/* 어시스턴트 채팅 — 다크 배경 위 Markdown을 밝게 + 채팅에 맞는 크기로 */
+.kct-chat .kct-prose {
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+.kct-chat .kct-prose,
+.kct-chat .kct-prose p,
+.kct-chat .kct-prose li,
+.kct-chat .kct-prose strong,
+.kct-chat .kct-prose h1,
+.kct-chat .kct-prose h2,
+.kct-chat .kct-prose h3,
+.kct-chat .kct-prose blockquote {
+  color: #e2e6ef;
+}
+.kct-chat .kct-prose h1 {
+  font-size: 1.4rem;
+  margin: 0.2em 0 0.6em;
+  font-weight: 800;
+}
+.kct-chat .kct-prose h2 {
+  font-size: 1.2rem;
+  margin: 1.4em 0 0.5em;
+}
+.kct-chat .kct-prose h3 {
+  font-size: 1.05rem;
+}
+/* 보고서 표 (채팅·인쇄 공통) */
+.kct-chat .kct-prose table,
+.kct-print .kct-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 1.3em;
+  font-size: 0.9em;
+}
+.kct-chat .kct-prose th,
+.kct-chat .kct-prose td {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 0.45em 0.7em;
+  text-align: left;
+}
+.kct-print .kct-prose th,
+.kct-print .kct-prose td {
+  border: 1px solid #d4d4d4;
+  padding: 0.45em 0.7em;
+  text-align: left;
+}
+
 /* PDF 인쇄용 */
 @media print {
   .no-print {
