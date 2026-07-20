@@ -1,0 +1,516 @@
+{
+  "slug": "2026-07-20",
+  "generatedAt": "2026-07-20T13:17:39.492Z",
+  "range": {
+    "from": "2026-07-20",
+    "to": "2026-07-27"
+  },
+  "meta": {
+    "title": "이번 주 문화 이벤트",
+    "dek": "뉴스 관심도와 공식 행사 정보를 함께 본 향후 7일 큐레이션",
+    "totalCandidates": 731,
+    "selected": 15,
+    "sourceBreakdown": {
+      "tourApi": 404,
+      "news": 327
+    },
+    "note": "일정은 주최 측 사정에 따라 변경될 수 있으니 방문 전 공식 링크를 확인하세요."
+  },
+  "events": [
+    {
+      "id": "2026-홍천-e스포츠-페스티벌-2026-07-25-강원특별자치도",
+      "title": "2026 홍천 e스포츠 페스티벌",
+      "category": "esports",
+      "region": "강원특별자치도",
+      "address": "강원특별자치도 홍천군 홍천읍 태학여내길 22",
+      "startDate": "2026-07-25",
+      "endDate": "2026-07-26",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/70/4081270_image2_1.jpg",
+      "description": "033-439-5812",
+      "coordinates": {
+        "lat": 37.7087429269,
+        "lng": 127.9082310793
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 홍천 e스포츠 페스티벌",
+          "contentId": "4081268"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 60,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 48,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "featured"
+    },
+    {
+      "id": "제8회-농촌융복합산업-제주국제박람회-2026-07-23-제주특별자치도",
+      "title": "제8회 농촌융복합산업 제주국제박람회",
+      "category": "other",
+      "region": "제주특별자치도",
+      "address": "제주특별자치도 서귀포시 중문관광로 191 (중문동)",
+      "startDate": "2026-07-23",
+      "endDate": "2026-07-26",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/10/4066710_image2_1.jpg",
+      "description": "064-722-7915",
+      "coordinates": {
+        "lat": 33.2440353493,
+        "lng": 126.4207718907
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "제8회 농촌융복합산업 제주국제박람회",
+          "contentId": "3318880"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 95,
+        "interest": 65,
+        "urgency": 80,
+        "scale": 90,
+        "reliability": 75
+      },
+      "score": 82,
+      "rationale": "공식 행사 데이터 · 대형 관심 키워드",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "세계유산위원회-대한민국관-2026-07-20-부산광역시",
+      "title": "세계유산위원회 대한민국관(K-Heritage House)",
+      "category": "other",
+      "region": "부산광역시",
+      "address": "부산광역시 해운대구 APEC로 55 (우동)",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-29",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/26/4055726_image2_1.jpeg",
+      "description": "02-3456-2880",
+      "coordinates": {
+        "lat": 35.1690637155,
+        "lng": 129.1360182683
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "세계유산위원회 대한민국관(K-Heritage House)",
+          "contentId": "4055637"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "2026년-제26회-밀양공연예술축제-2026-07-21-경상남도",
+      "title": "2026년 제26회 밀양공연예술축제",
+      "category": "festival",
+      "region": "경상남도",
+      "address": "경상남도 밀양시 밀양대공원로 112 (교동)",
+      "startDate": "2026-07-21",
+      "endDate": "2026-08-01",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/68/4088768_image2_1.png",
+      "description": "055-359-5634",
+      "coordinates": {
+        "lat": 35.5044256455,
+        "lng": 128.7585154747
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026년 제26회 밀양공연예술축제",
+          "contentId": "580049"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "명주인형극제-2026-07-22-강원특별자치도",
+      "title": "명주인형극제",
+      "category": "other",
+      "region": "강원특별자치도",
+      "address": "강원특별자치도 강릉시 경강로2021번길 9-1 (명주동)",
+      "startDate": "2026-07-22",
+      "endDate": "2026-07-26",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/43/4078843_image2_1.jpg",
+      "description": "033-823-3203",
+      "coordinates": {
+        "lat": 37.7503981777,
+        "lng": 128.8902724158
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "명주인형극제",
+          "contentId": "2543724"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 80,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 51,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "제48차-유네스코-세계유산위원회-특별공연-산화비-hexagram-22-2026-07-23-부산광역시",
+      "title": "제48차 유네스코 세계유산위원회 특별공연 산화비 : HEXAGRAM 22",
+      "category": "other",
+      "region": "부산광역시",
+      "address": "부산광역시 해운대구 APEC로 55 (우동)",
+      "startDate": "2026-07-23",
+      "endDate": "2026-07-24",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/57/4077757_image2_1.jpg",
+      "description": "02-2039-0342",
+      "coordinates": {
+        "lat": 35.1690637155,
+        "lng": 129.1360182683
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "제48차 유네스코 세계유산위원회 특별공연 산화비 : HEXAGRAM 22",
+          "contentId": "4077756"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 80,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 51,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "피란수도-부산-국가유산-야행-2026-07-24-부산광역시",
+      "title": "피란수도 부산 국가유산 야행",
+      "category": "heritage",
+      "region": "부산광역시",
+      "address": "부산광역시 중구 용미길9번길 6-45 (남포동1가) 영도다리(유라리광장)",
+      "startDate": "2026-07-24",
+      "endDate": "2026-07-25",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/18/4080818_image2_1.jpg",
+      "description": "010-6443-0799 (피란수도 부산 국가유산 야행 사무국)",
+      "coordinates": {
+        "lat": 35.0964520414,
+        "lng": 129.0358787709
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "피란수도 부산 국가유산 야행",
+          "contentId": "2486085"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 60,
+        "scale": 55,
+        "reliability": 75
+      },
+      "score": 51,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "2026-평창대관령음악제-2026-07-23-강원특별자치도",
+      "title": "2026 평창대관령음악제",
+      "category": "other",
+      "region": "강원특별자치도",
+      "address": "강원특별자치도 평창군 대관령면 솔봉로 325",
+      "startDate": "2026-07-23",
+      "endDate": "2026-08-02",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/08/4080008_image2_1.jpg",
+      "description": "033-240-1364",
+      "coordinates": {
+        "lat": 37.6579058594,
+        "lng": 128.6760022882
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 평창대관령음악제",
+          "contentId": "590921"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 80,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 51,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "k-일러스트레이션페어-부산-2026-2026-07-24-부산광역시",
+      "title": "K-일러스트레이션페어 부산 2026",
+      "category": "other",
+      "region": "부산광역시",
+      "address": "부산광역시 해운대구 APEC로 30 (우동) (우동)",
+      "startDate": "2026-07-24",
+      "endDate": "2026-07-26",
+      "imageUrl": "",
+      "description": "02-761-2512",
+      "coordinates": {
+        "lat": 35.1657825586672,
+        "lng": 129.135026643506
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "K-일러스트레이션페어 부산 2026",
+          "contentId": "2704473"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 60,
+        "scale": 55,
+        "reliability": 75
+      },
+      "score": 51,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "k-핸드메이드페어-부산-2026-2026-07-24-부산광역시",
+      "title": "K-핸드메이드페어 부산 2026",
+      "category": "other",
+      "region": "부산광역시",
+      "address": "부산광역시 해운대구 APEC로 30 (우동)",
+      "startDate": "2026-07-24",
+      "endDate": "2026-07-26",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/66/4059066_image2_1.jpg",
+      "description": "02-761-2512",
+      "coordinates": {
+        "lat": 35.16576593920963,
+        "lng": 129.13494793474206
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "K-핸드메이드페어 부산 2026",
+          "contentId": "2523149"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 60,
+        "scale": 55,
+        "reliability": 75
+      },
+      "score": 51,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "거제여름해양축제-2026-07-25-경상남도",
+      "title": "거제여름해양축제",
+      "category": "festival",
+      "region": "경상남도",
+      "address": "경상남도 거제시 일운면 지세포해안로 15-44 거제해양레포츠센터 일원",
+      "startDate": "2026-07-25",
+      "endDate": "2026-07-26",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/62/4082962_image2_1.jpg",
+      "description": "055-639-8194",
+      "coordinates": {
+        "lat": 34.8391873206,
+        "lng": 128.7012355342
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "거제여름해양축제",
+          "contentId": "589170"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 60,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 48,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "제24회-동강국제사진제-2026-07-17-강원특별자치도",
+      "title": "제24회 동강국제사진제",
+      "category": "other",
+      "region": "강원특별자치도",
+      "address": "강원특별자치도 영월군 영월읍 영월로 1909-10",
+      "startDate": "2026-07-17",
+      "endDate": "2026-10-11",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/56/4075256_image2_1.jpg",
+      "description": "033-375-6372",
+      "coordinates": {
+        "lat": 37.1819133415,
+        "lng": 128.4614563757
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "제24회 동강국제사진제",
+          "contentId": "606549"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 95,
+        "interest": 65,
+        "urgency": 55,
+        "scale": 90,
+        "reliability": 75
+      },
+      "score": 78,
+      "rationale": "공식 행사 데이터 · 대형 관심 키워드",
+      "displayGroup": "ongoing"
+    },
+    {
+      "id": "2026-국제선명상대회-2026-04-03-서울특별시",
+      "title": "2026 국제선명상대회",
+      "category": "other",
+      "region": "서울특별시",
+      "address": "서울특별시 강남구 봉은사로 531 (삼성동)",
+      "startDate": "2026-04-03",
+      "endDate": "2026-11-12",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/90/4054090_image2_1.jpg",
+      "description": "010-8441-2371",
+      "coordinates": {
+        "lat": 37.5158257049833,
+        "lng": 127.057734484281
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 국제선명상대회",
+          "contentId": "3377038"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 95,
+        "interest": 65,
+        "urgency": 55,
+        "scale": 90,
+        "reliability": 75
+      },
+      "score": 78,
+      "rationale": "공식 행사 데이터 · 대형 관심 키워드",
+      "displayGroup": "ongoing"
+    },
+    {
+      "id": "2026-국립극장-쏙쏙들이페스티벌-2026-03-14-경기도",
+      "title": "2026 국립극장 쏙쏙들이페스티벌",
+      "category": "festival",
+      "region": "경기도",
+      "address": "경기도 파주시 탄현면 헤이리로 16",
+      "startDate": "2026-03-14",
+      "endDate": "2026-12-26",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/91/4081691_image2_1.jpg",
+      "description": "031-870-9110",
+      "coordinates": {
+        "lat": 37.7832839326,
+        "lng": 126.6946859929
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 국립극장 쏙쏙들이페스티벌",
+          "contentId": "3488421"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 95,
+        "interest": 65,
+        "urgency": 55,
+        "scale": 70,
+        "reliability": 75
+      },
+      "score": 75,
+      "rationale": "공식 행사 데이터 · 대형 관심 키워드",
+      "displayGroup": "ongoing"
+    },
+    {
+      "id": "서울썸머비치-2026-07-20-서울특별시",
+      "title": "서울썸머비치",
+      "category": "other",
+      "region": "서울특별시",
+      "address": "서울특별시 종로구 세종대로 175 (세종로)",
+      "startDate": "2026-07-20",
+      "endDate": "2026-08-09",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/04/4079504_image2_1.png",
+      "description": "02-6941-0645",
+      "coordinates": {
+        "lat": 37.5718478585,
+        "lng": 126.9761682759
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "서울썸머비치",
+          "contentId": "3509884"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 55,
+        "reliability": 75
+      },
+      "score": 56,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "ongoing"
+    }
+  ]
+}

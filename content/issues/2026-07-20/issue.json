@@ -1,0 +1,817 @@
+{
+  "meta": {
+    "slug": "2026-07-20",
+    "title": "경계를 넘는 K-컬처, 기록과 확장의 한 주",
+    "dek": "글로벌 재개봉과 신기록, 그리고 산업 인프라까지 — 한국 문화가 무대와 시장의 경계를 다시 넓힌 7월 셋째 주",
+    "date": "2026-07-20",
+    "weekRange": {
+      "from": "2026-07-13",
+      "to": "2026-07-20"
+    },
+    "coverImageUrl": "https://images.pexels.com/photos/28584231/pexels-photo-28584231.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=800&h=450",
+    "backgroundImageUrl": "https://image.pollinations.ai/prompt/abstract%20postmodern%20background%20pattern%2C%20bauhaus%20geometric%20composition%2C%20circles%20squares%20triangles%2C%20deep%20navy%20blue%20and%20indigo%2C%20dark%20moody%20background%2C%20glowing%20cyan%20and%20violet%20accent%20lines%2C%20fine%20grain%20texture%2C%20luminous%20high-contrast%20pattern%20on%20very%20dark%20navy%2C%20no%20text%2C%20no%20faces%2C%20no%20logo?width=1280&height=832&nologo=true&seed=44537&model=flux",
+    "curation": {
+      "scanned": 3483,
+      "selected": 24,
+      "breakdown": [
+        {
+          "label": "K-pop·음악",
+          "count": 417
+        },
+        {
+          "label": "공연·전시·예술",
+          "count": 406
+        },
+        {
+          "label": "K-테크·로봇",
+          "count": 405
+        },
+        {
+          "label": "전통문화",
+          "count": 395
+        },
+        {
+          "label": "K-드라마·영화",
+          "count": 368
+        },
+        {
+          "label": "K-푸드·맛집",
+          "count": 359
+        },
+        {
+          "label": "K-게임·e스포츠",
+          "count": 336
+        },
+        {
+          "label": "K-뷰티",
+          "count": 296
+        },
+        {
+          "label": "라이프·트렌드",
+          "count": 258
+        },
+        {
+          "label": "웹툰·웹소설",
+          "count": 243
+        }
+      ],
+      "rationale": "이번 주는 '반짝 화제'보다 세계 시장에 남을 지표를 우선했습니다. 강남스타일 60억뷰·부산행 글로벌 재개봉처럼 K-콘텐츠의 지속력을 증명한 뉴스와, AI 데이터센터·증류주·뷰티 플랫폼처럼 산업 인프라로 넘어가는 흐름을 나란히 골랐습니다. 홍보성 신제품 나열과 단순 근황·출연 기사는 과감히 걷어냈습니다."
+    },
+    "analysis": {
+      "method": "local-heuristic-v1",
+      "note": "외부 검색량/SNS 반응이 아닌 수집 뉴스 기반 우선순위 추정치입니다.",
+      "issueCount": 240
+    }
+  },
+  "editorPick": {
+    "headline": "싸이 '강남스타일' 60억뷰 돌파... K팝 최초 기록 달성",
+    "link": "https://www.insight.co.kr/news/563760",
+    "outlet": "insight.co.kr",
+    "why": "'강남스타일' 뮤직비디오의 유튜브 60억뷰 돌파는 K팝 사상 최초 기록이자, 한 곡의 화제를 넘어 K-콘텐츠의 지속력을 수치로 증명한 사건이다. 이 곡은 K팝이 글로벌 팝 시장에서 사실상 불모지였던 2012년, 세계적 열풍의 문을 처음 연 이정표였다. 14년이 지난 지금도 조회수가 계속 쌓인다는 것은 초기 K-콘텐츠가 일시적 유행이 아니라 세대를 넘어 소비되는 자산이 됐음을 뜻한다. 이번 주 부산행 글로벌 재개봉, 세븐틴의 빌보드 진입 등 'K-콘텐츠의 장기 지속력'이라는 흐름을 가장 상징적으로 압축한 뉴스이기에 대표 이슈로 꼽았다.",
+    "imagePrompt": "iconic horse-riding dance silhouette glowing on a giant global stage, a rising counter reaching billions, festive neon crowd cheering, no real faces, no text",
+    "imageQuery": "seoul gangnam district skyline night",
+    "analysis": {
+      "rank": 11,
+      "score": 50,
+      "scores": {
+        "importance": 83,
+        "impact": 48,
+        "interest": 5,
+        "psychological": 34,
+        "realtime": 70
+      },
+      "rationale": "1개 기사 · 1개 매체 · 중요도 83 · 파급력 48 · 관심도 5 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+      "sourceCount": 1,
+      "outletCount": 1
+    },
+    "honorableMentions": [
+      {
+        "headline": "10주년 '부산행', 8월 북미·일본→유럽·남미 글로벌 재개봉 확정",
+        "link": "http://www.joynews24.com/view/1986779"
+      },
+      {
+        "headline": "세븐틴 V8, 글로벌 차트도 접수…첫 미니앨범 활동 성공적 마무리",
+        "link": "http://www.osen.co.kr/article/G1112843086"
+      },
+      {
+        "headline": "포항시, 2조원 규모 글로벌 AI 데이터센터 첫 삽… AI 산업 거점 도약",
+        "link": "https://www.segye.com/newsView/20260720522409?OutUrl=naver"
+      }
+    ],
+    "image": {
+      "url": "https://images.pexels.com/photos/28584231/pexels-photo-28584231.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=800&h=450",
+      "source": "사진: Younyoun Park / Pexels"
+    }
+  },
+  "editorial": {
+    "title": "기록은 순간이 아니라 축적이다",
+    "bodyMarkdown": "이번 주 한국 문화의 키워드를 하나 꼽으라면 '지속력'이다. 싸이 '강남스타일'의 유튜브 60억뷰는 새 노래의 반짝 화제가 아니라 14년간 조용히 쌓인 숫자다. 부산행은 10년 만에 세계 극장으로 다시 나가고, 세븐틴은 미니앨범만으로 빌보드에 오른다. 한국 콘텐츠가 한 번 세계에 각인되면 세대를 넘어 소비되는 자산이 된다는 사실을, 이번 주 여러 뉴스가 서로 다른 장르에서 동시에 증명했다.\n\n주목할 또 다른 흐름은 문화가 '작품'에서 '산업 인프라'로 무게중심을 옮기고 있다는 점이다. AI 캐릭터와 대화하며 웹툰 IP로 서사를 쌓는 플랫폼에 1550억 원이 몰리고, 포항에는 2조 원 규모 AI 데이터센터가 첫 삽을 떴다. K-뷰티는 개별 히트 상품을 넘어 국가 그린바이오 로드맵과 손잡았고, CJ의 전통 증류주와 풀무원의 해외 실적은 K-푸드가 화제성을 넘어 숫자로 증명되는 단계에 들어섰음을 보여준다.\n\n한편 부산에서 열린 유네스코 세계유산위원회는 한국이 이제 문화를 '보유'하는 데서 나아가 국제 담론을 '주도'하려 한다는 신호였다. 고창의 유네스코 다관왕, 대한민국관 개관, 기록유산 기획전은 유산이 도시 브랜드이자 외교 자산으로 확장되는 장면이다. 콘텐츠의 지속력, 산업의 인프라화, 유산의 세계화 — 서로 다른 세 흐름이 한 주 안에서 겹쳐지며, K-컬처가 이벤트의 시대를 지나 구조의 시대로 진입하고 있음을 조용히 알렸다."
+  },
+  "categories": [
+    {
+      "key": "screen",
+      "label": "K-드라마·영화",
+      "entries": [
+        {
+          "headline": "10주년 '부산행', 8월 북미·일본→유럽·남미 글로벌 재개봉 확정",
+          "link": "http://www.joynews24.com/view/1986779",
+          "outlet": "joynews24.com",
+          "pubDate": "2026-07-20T02:38:00.000Z",
+          "blurb": "연상호 감독의 '부산행'이 개봉 10주년을 맞아 4K 리마스터링으로 8월 북미·일본을 시작으로 유럽·남미까지 글로벌 와이드 재개봉을 확정했다. 2016년 북미 리미티드 개봉 이후 10년 만의 본격적인 극장 상영으로, K-좀비 장르의 세계적 생명력을 다시 확인하는 사건이다. 단발성 흥행이 아닌 한국 IP의 장기 자산화 가능성을 보여준다는 점에서 의미가 크다.",
+          "imagePrompt": "empty night train speeding through a moonlit landscape, silhouettes of passengers against flickering windows, ominous cinematic atmosphere, no faces, no text",
+          "imageQuery": "korean film premiere red carpet cinema",
+          "analysis": {
+            "rank": 2,
+            "score": 57,
+            "scores": {
+              "importance": 43,
+              "impact": 90,
+              "interest": 42,
+              "psychological": 27,
+              "realtime": 70
+            },
+            "rationale": "6개 기사 · 6개 매체 · 중요도 43 · 파급력 90 · 관심도 42 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 6,
+            "outletCount": 6
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/34818723/pexels-photo-34818723.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Khánh LP / Pexels"
+          }
+        },
+        {
+          "headline": "영화 '호프' 개봉 5일째 200만 관객 돌파...올해 최단 기록",
+          "link": "https://www.idaegu.co.kr/news/articleView.html?idxno=554294",
+          "outlet": "idaegu.co.kr",
+          "pubDate": "2026-07-20T05:38:00.000Z",
+          "blurb": "나홍진 감독의 신작 '호프'가 개봉 5일 만에 200만 관객을 돌파하며 올해 최단 흥행 기록을 세웠다. 제헌절 연휴에만 150만 명을 극장으로 불러들이며 박스오피스 1위를 지켰다. 평가가 엇갈리는 문제작임에도 관객을 대거 흡수했다는 점에서 여름 극장가의 최대 변수로 떠올랐다.",
+          "imagePrompt": "dark suspenseful movie theater with a single glowing screen, silhouetted audience filling every seat, dramatic red lighting, no text",
+          "imageQuery": "movie theater audience full seats",
+          "analysis": {
+            "rank": 10,
+            "score": 50,
+            "scores": {
+              "importance": 67,
+              "impact": 52,
+              "interest": 26,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "3개 기사 · 3개 매체 · 중요도 67 · 파급력 52 · 관심도 26 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 3,
+            "outletCount": 3
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/7991266/pexels-photo-7991266.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Tima Miroshnichenko / Pexels"
+          }
+        },
+        {
+          "headline": "원현준, ‘김부장’ 냉철한 국장→‘아파트’ 일본 야쿠자…상반된 매...",
+          "link": "https://www.newsen.com/news_view.php?uid=202607200919572410",
+          "outlet": "newsen.com",
+          "pubDate": "2026-07-20T00:22:00.000Z",
+          "blurb": "배우 원현준이 SBS 금토드라마 '김부장'의 냉철한 국장에 이어 '아파트'의 일본 야쿠자까지 상반된 캐릭터를 오가며 존재감을 각인시켰다. '김부장'은 자체 최고 시청률을 경신하며 SBS 금토극 시청률 2위에 올랐고 넷플릭스 글로벌 TOP10 비영어 부문에 진입했다. 한국 드라마의 연기 저변과 글로벌 동시 소비 흐름을 함께 보여주는 사례다.",
+          "imagePrompt": "split-face concept of a stern executive on one side and a menacing gangster on the other, dramatic chiaroscuro lighting, theatrical mood, no real faces, no text",
+          "imageQuery": "korean tv drama film set filming",
+          "analysis": {
+            "rank": 3,
+            "score": 56,
+            "scores": {
+              "importance": 71,
+              "impact": 60,
+              "interest": 31,
+              "psychological": 27,
+              "realtime": 75
+            },
+            "rationale": "4개 기사 · 4개 매체 · 중요도 71 · 파급력 60 · 관심도 31 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 4,
+            "outletCount": 4
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/8088380/pexels-photo-8088380.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Ron Lach / Pexels"
+          }
+        }
+      ],
+      "note": "이번 주 스크린 섹션은 '오래 가는 한국 영화'에 방점을 뒀습니다. 10년 만에 세계로 나가는 부산행과 여름 극장을 장악한 호프, 글로벌 스트리밍을 탄 드라마 연기까지 — 순간 화제보다 지속력과 세계 도달을 기준으로 골랐습니다."
+    },
+    {
+      "key": "kpop",
+      "label": "K-pop·음악",
+      "entries": [
+        {
+          "headline": "싸이 '강남스타일' 60억뷰 돌파... K팝 최초 기록 달성",
+          "link": "https://www.insight.co.kr/news/563760",
+          "outlet": "insight.co.kr",
+          "pubDate": "2026-07-20T10:04:00.000Z",
+          "blurb": "싸이의 '강남스타일' 뮤직비디오가 첫 공개 14년 만에 유튜브 조회수 60억 건을 돌파하며 K팝 최초 기록을 썼다. K팝이 글로벌 팝 시장에서 거의 알려지지 않았던 시기에 세계적 열풍의 시작점이 된 곡이라는 점에서 상징성이 남다르다. K-콘텐츠의 장기적 파급력과 저력을 수치로 증명한 이번 주 최대 이정표다.",
+          "imagePrompt": "glowing horse-riding dance silhouette on a massive digital billboard, endless view-counter numbers rising, festive neon crowd, no real faces, no text",
+          "imageQuery": "seoul gangnam district night skyline",
+          "analysis": {
+            "rank": 11,
+            "score": 50,
+            "scores": {
+              "importance": 83,
+              "impact": 48,
+              "interest": 5,
+              "psychological": 34,
+              "realtime": 70
+            },
+            "rationale": "1개 기사 · 1개 매체 · 중요도 83 · 파급력 48 · 관심도 5 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 1,
+            "outletCount": 1
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/28584231/pexels-photo-28584231.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Younyoun Park / Pexels"
+          }
+        },
+        {
+          "headline": "“콘서트 취소만은...” 아이유, ‘이관개방증’ 악화에 결국 컴백 연기",
+          "link": "https://www.mk.co.kr/article/12102781",
+          "outlet": "mk.co.kr",
+          "pubDate": "2026-07-20T11:51:00.000Z",
+          "blurb": "아이유가 고질병인 이관개방증 증세 악화로 9월 예정됐던 고양 콘서트와 오랜만의 전국 투어, 정규 6집 발매를 잠정 연기한다고 밝혔다. 무대 취소만은 피하려 했지만 건강을 우선한 결정으로, 팬들에게 직접 상황을 설명했다. 정상급 아티스트의 활동 공백이 하반기 공연·음원 시장 일정에 미칠 영향이 크다.",
+          "imagePrompt": "empty concert stage bathed in soft blue light, a single microphone stand, unlit crowd area, melancholic and quiet mood, no faces, no text",
+          "imageQuery": "empty concert stage lights",
+          "analysis": {
+            "rank": 15,
+            "score": 48,
+            "scores": {
+              "importance": 35,
+              "impact": 50,
+              "interest": 63,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "10개 기사 · 10개 매체 · 중요도 35 · 파급력 50 · 관심도 63 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 10,
+            "outletCount": 10
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/12267669/pexels-photo-12267669.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Vadim Koza / Pexels"
+          }
+        },
+        {
+          "headline": "세븐틴 V8, 글로벌 차트도 접수…첫 미니앨범 활동 성공적 마무리",
+          "link": "http://www.osen.co.kr/article/G1112843086",
+          "outlet": "osen.co.kr",
+          "pubDate": "2026-07-20T08:10:00.000Z",
+          "blurb": "세븐틴이 첫 미니앨범 'V8'으로 빌보드 메인 앨범 차트에 진입하며 글로벌 차트까지 접수, 첫 미니앨범 활동을 성공적으로 마무리했다. 해외 매체 더 페이더는 'K팝 프로젝트에 대한 통상적 예측을 뛰어넘는 앨범'이라 평했다. 정규가 아닌 미니앨범 포맷으로도 세계 시장에서 통한다는 점을 입증했다.",
+          "imagePrompt": "large kpop group silhouette on a glowing stage, billboard chart bars rising behind them, cheering fan lights, no real faces, no text",
+          "imageQuery": "kpop concert stage crowd lightstick",
+          "analysis": {
+            "rank": 64,
+            "score": 42,
+            "scores": {
+              "importance": 55,
+              "impact": 54,
+              "interest": 5,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "1개 기사 · 1개 매체 · 중요도 55 · 파급력 54 · 관심도 5 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 1,
+            "outletCount": 1
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/2167381/pexels-photo-2167381.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Teddy Yang / Pexels"
+          }
+        }
+      ],
+      "note": "K팝은 '기록'과 '변수'를 함께 담았습니다. 60억뷰라는 역사적 이정표, 정상급 아티스트의 활동 연기, 미니앨범의 글로벌 차트 성공 — 화보·직캠류를 배제하고 산업 지형에 실질적으로 영향을 주는 소식만 추렸습니다."
+    },
+    {
+      "key": "webtoon",
+      "label": "웹툰·웹소설",
+      "entries": [
+        {
+          "headline": "[주간투자동향] 홀리데이로보틱스, 1550억 원 규모 시리즈A 투자 유치 外",
+          "link": "https://it.donga.com/109212/",
+          "outlet": "it.donga.com",
+          "pubDate": "2026-07-20T05:46:00.000Z",
+          "blurb": "AI 캐릭터 채팅 플랫폼 '위프' 운영사 벙커키즈를 포함한 홀리데이로보틱스가 1550억 원 규모 시리즈A 투자를 유치했다. 위프는 이용자가 웹툰·웹소설 등 공식 라이선스 IP와 자체 AI 캐릭터와 대화하며 서사를 쌓는 인터랙티브 콘텐츠 구조다. 웹툰 IP가 AI 인터랙티브 서사로 확장되는 차세대 콘텐츠 실험에 대규모 자본이 유입됐다는 신호다.",
+          "imagePrompt": "glowing chat bubbles weaving into an open comic book, AI character avatars emerging from panels, futuristic storytelling concept, no text",
+          "imageQuery": "webtoon digital comic tablet reading",
+          "analysis": {
+            "rank": 1,
+            "score": 58,
+            "scores": {
+              "importance": 51,
+              "impact": 82,
+              "interest": 68,
+              "psychological": 20,
+              "realtime": 21
+            },
+            "rationale": "11개 기사 · 11개 매체 · 중요도 51 · 파급력 82 · 관심도 68 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 11,
+            "outletCount": 11
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/27177611/pexels-photo-27177611.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Helena Lopes / Pexels"
+          }
+        },
+        {
+          "headline": "한국선불카드, 네이버웹툰 전용 POSA 카드 일본 출시",
+          "link": "https://www.hankyung.com/article/202607169819O",
+          "outlet": "hankyung.com",
+          "pubDate": "2026-07-20T00:01:00.000Z",
+          "blurb": "한국선불카드(KPC)가 라인디지털프론티어와 협력해 네이버웹툰의 일본 서비스 '라인망가' 전용 POSA(매장 계산대 결제형) 카드를 일본에 출시했다. 오프라인 매장에서 웹툰 결제 수단을 확보하며 현지 접근성을 넓힌 시도다. K-웹툰 플랫폼의 일본 시장 결제 인프라 확장이라는 점에서 산업적 의미가 있다.",
+          "imagePrompt": "gift card display rack in a japanese convenience store, digital comic imagery on the cards, warm retail lighting, no logos, no text",
+          "imageQuery": "japanese convenience store gift card rack",
+          "analysis": {
+            "rank": 147,
+            "score": 40,
+            "scores": {
+              "importance": 55,
+              "impact": 46,
+              "interest": 5,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "1개 기사 · 1개 매체 · 중요도 55 · 파급력 46 · 관심도 5 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 1,
+            "outletCount": 1
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/32858927/pexels-photo-32858927.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Quí Trần / Pexels"
+          }
+        },
+        {
+          "headline": "이홍내, ‘같은 소속사’ 변우석과 ‘나혼렙’서 호흡 맞추나",
+          "link": "https://www.newsen.com/news_view.php?uid=202607201656426710",
+          "outlet": "newsen.com",
+          "pubDate": "2026-07-20T07:57:00.000Z",
+          "blurb": "글로벌 누적 조회수 143억뷰를 기록한 초대형 IP '나 혼자만 레벨업'의 넷플릭스 실사 시리즈에 배우 이홍내가 변우석과 호흡을 맞출지 관심이 쏠린다. 웹소설에서 출발해 웹툰·애니메이션으로 확장된 IP가 실사 영상화로 다시 몸집을 키우는 흐름이다. 원소스 멀티유즈의 정점을 보여주는 한국 IP의 확장력을 상징한다.",
+          "imagePrompt": "a hero silhouette surrounded by glowing level-up interface panels and rising numbers, epic fantasy dungeon backdrop, no faces, no text",
+          "imageQuery": "fantasy dungeon dark cave concept art",
+          "analysis": {
+            "rank": 65,
+            "score": 42,
+            "scores": {
+              "importance": 55,
+              "impact": 54,
+              "interest": 5,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "1개 기사 · 1개 매체 · 중요도 55 · 파급력 54 · 관심도 5 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 1,
+            "outletCount": 1
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/32990236/pexels-photo-32990236.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Pho Tomass / Pexels"
+          }
+        }
+      ],
+      "note": "웹툰·웹소설 섹션은 '작품'보다 'IP 산업의 확장 경로'에 주목했습니다. AI 인터랙티브 투자, 일본 결제 인프라, 실사화로 이어지는 초대형 IP까지 — 단순 협업 프로모션은 걷어내고 IP가 돈과 플랫폼으로 번지는 지점을 골랐습니다."
+    },
+    {
+      "key": "beauty",
+      "label": "K-뷰티",
+      "entries": [
+        {
+          "headline": "아마존 프라임데이서 존재감 키운 아누아···美·日 카테고리 1위",
+          "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2450028",
+          "outlet": "enewstoday.co.kr",
+          "pubDate": "2026-07-20T00:55:00.000Z",
+          "blurb": "글로벌 뷰티 브랜드 아누아가 미국과 일본 아마존 프라임데이 행사에서 세럼·미스트·크림 등 주요 카테고리 1위를 석권했다. 양대 시장에서 동시에 정상을 차지하며 K-뷰티 인디 브랜드의 글로벌 경쟁력을 재확인했다. 대형 유통 행사에서의 실적은 K-뷰티 수출의 지속성을 가늠하는 핵심 지표다.",
+          "imagePrompt": "minimalist skincare bottles glowing on a pedestal, number-one ribbon motif, clean bright studio backdrop, no logos, no text",
+          "imageQuery": "korean skincare cosmetics bottles display",
+          "analysis": {
+            "rank": 9,
+            "score": 51,
+            "scores": {
+              "importance": 51,
+              "impact": 76,
+              "interest": 26,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "3개 기사 · 3개 매체 · 중요도 51 · 파급력 76 · 관심도 26 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 3,
+            "outletCount": 3
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/12721805/pexels-photo-12721805.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: PinkWitch 诸葛筱暖 / Pexels"
+          }
+        },
+        {
+          "headline": "롯데홈쇼핑, LA '이설' 팝업 흥행…K-브랜드 북미 진출 교두보 마련",
+          "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=204194",
+          "outlet": "thefirstmedia.net",
+          "pubDate": "2026-07-20T12:18:00.000Z",
+          "blurb": "롯데홈쇼핑이 미국 LA 프리미엄 쇼핑몰 '더 그로브'에서 자체 K-브랜드 수출 플랫폼 '이설'의 초대형 K-뷰티·라이프스타일 팝업을 열어 현지인들의 발길을 모았다. 산업통상부·KOTRA의 유통기업 해외진출 지원사업 일환으로, 북미 진출 교두보 성격을 띤다. 개별 제품이 아닌 'K-브랜드 플랫폼'을 통째로 수출하는 새로운 모델이라는 점이 주목된다.",
+          "imagePrompt": "bustling pop-up beauty store inside a bright american shopping mall, shoppers browsing colorful cosmetics shelves, no logos, no text",
+          "imageQuery": "beauty pop up store shopping mall",
+          "analysis": {
+            "rank": 8,
+            "score": 51,
+            "scores": {
+              "importance": 51,
+              "impact": 76,
+              "interest": 26,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "3개 기사 · 3개 매체 · 중요도 51 · 파급력 76 · 관심도 26 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 3,
+            "outletCount": 3
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/13068364/pexels-photo-13068364.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Max Vakhtbovych / Pexels"
+          }
+        },
+        {
+          "headline": "그린바이오산업, 2031년 10조 규모 육성…매출 100억 기업 300개 만든다",
+          "link": "http://www.foodnews.co.kr/news/articleView.html?idxno=119437",
+          "outlet": "foodnews.co.kr",
+          "pubDate": "2026-07-20T08:00:00.000Z",
+          "blurb": "정부가 그린바이오 산업을 2031년 10조 원 규모로 키우는 첫 중장기 로드맵을 발표하며 매출 100억 기업 300개 육성을 목표로 제시했다. K-푸드·K-뷰티의 성장세를 활용해 소재 기업과 화장품·식품 기업 간 공동 R&D와 수요-공급 매칭을 활성화한다는 구상이다. 뷰티가 개별 브랜드를 넘어 국가 바이오 산업 전략과 결합되는 큰 그림을 보여준다.",
+          "imagePrompt": "green biotech laboratory with plant extracts flowing into cosmetic and food icons, futuristic industry blueprint, no text",
+          "imageQuery": "biotechnology laboratory plant research",
+          "analysis": {
+            "rank": 13,
+            "score": 49,
+            "scores": {
+              "importance": 51,
+              "impact": 68,
+              "interest": 26,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "3개 기사 · 3개 매체 · 중요도 51 · 파급력 68 · 관심도 26 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 3,
+            "outletCount": 3
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/18697894/pexels-photo-18697894.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Mehul Patel / Pexels"
+          }
+        }
+      ],
+      "note": "K-뷰티는 '개별 히트'에서 '구조와 정책'으로 시야를 넓혔습니다. 아마존 성적 같은 현장 지표와 플랫폼 수출·국가 바이오 로드맵을 함께 배치해, 유행을 넘어 산업 기반으로 자리 잡는 흐름을 보여주려 했습니다."
+    },
+    {
+      "key": "food",
+      "label": "K-푸드·맛집",
+      "entries": [
+        {
+          "headline": "CJ제일제당, 프리미엄 증류주 '자리' 출시…가을 美 진출",
+          "link": "https://view.asiae.co.kr/article/2026071916084179082",
+          "outlet": "view.asiae.co.kr",
+          "pubDate": "2026-07-19T07:08:00.000Z",
+          "blurb": "CJ제일제당이 국가무형유산 '문배술' 등 전통 제조법을 현대적으로 재해석한 프리미엄 증류주 브랜드 '자리(jari)'를 출시하고 올가을 미국 진출을 예고했다. 알코올 도수 24도로 한국 전통주를 처음 접하는 해외 소비자도 부담 없이 즐기도록 설계했다. K-푸드의 다음 주자로 전통주를 세계 프리미엄 주류 시장에 올려세우려는 시도다.",
+          "imagePrompt": "elegant traditional korean distilled liquor bottles in amber glass, ceramic aging jars, warm premium bar lighting, no logos, no text",
+          "imageQuery": "korean traditional liquor soju bottle premium",
+          "analysis": {
+            "rank": 17,
+            "score": 48,
+            "scores": {
+              "importance": 35,
+              "impact": 72,
+              "interest": 37,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "5개 기사 · 5개 매체 · 중요도 35 · 파급력 72 · 관심도 37 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 5,
+            "outletCount": 5
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/8994861/pexels-photo-8994861.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: makafood / Pexels"
+          }
+        },
+        {
+          "headline": "미국·중국 쌍끌이 성장…풀무원 '영업익 1000억원 시대' 눈앞",
+          "link": "https://www.econovill.com/news/articleView.html?idxno=745633",
+          "outlet": "econovill.com",
+          "pubDate": "2026-07-20T08:50:00.000Z",
+          "blurb": "풀무원이 미국과 중국 시장의 쌍끌이 성장에 힘입어 연간 영업이익 1000억 원 시대를 눈앞에 뒀다. K푸드 냉동 라인업 확대를 발판 삼아 해외사업의 매출과 영업이익을 동시에 끌어올린 결과다. K-푸드가 화제성을 넘어 실적으로 증명되는 산업 단계에 진입했음을 보여준다.",
+          "imagePrompt": "frozen korean food packages on a global grocery shelf, world map with rising arrows, clean commercial lighting, no logos, no text",
+          "imageQuery": "korean frozen food grocery store shelf",
+          "analysis": {
+            "rank": 127,
+            "score": 40,
+            "scores": {
+              "importance": 35,
+              "impact": 72,
+              "interest": 5,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "1개 기사 · 1개 매체 · 중요도 35 · 파급력 72 · 관심도 5 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 1,
+            "outletCount": 1
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/27175870/pexels-photo-27175870.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Helena Lopes / Pexels"
+          }
+        },
+        {
+          "headline": "통합특별시, 농수산식품 수출 지원 대상 대폭 확대",
+          "link": "http://www.jndn.com/article.php?aid=1784540222436331003",
+          "outlet": "jndn.com",
+          "pubDate": "2026-07-20T09:40:00.000Z",
+          "blurb": "전남광주 통합특별시가 K-푸드 전략 품목 육성과 글로벌 시장 다변화를 위해 올해 13개 수출지원 사업에 총 107억 원을 투입한다고 밝혔다. 국제식품박람회 참가와 해외 판로 개척을 대폭 확대하는 내용이다. 지역 농수산식품이 K-푸드 열풍에 올라타 해외로 나가는 지자체 차원의 체계적 지원이라는 점에서 의미가 있다.",
+          "imagePrompt": "colorful korean agricultural products at an international food expo booth, export crates and world map backdrop, no logos, no text",
+          "imageQuery": "international food expo trade fair booth",
+          "analysis": {
+            "rank": 33,
+            "score": 45,
+            "scores": {
+              "importance": 51,
+              "impact": 58,
+              "interest": 21,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "2개 기사 · 2개 매체 · 중요도 51 · 파급력 58 · 관심도 21 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 2,
+            "outletCount": 2
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/860227/pexels-photo-860227.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Julian V / Pexels"
+          }
+        }
+      ],
+      "note": "K-푸드는 '맛집·신상' 대신 세계 시장으로 나가는 동력을 골랐습니다. 전통주의 프리미엄 수출, 실적으로 증명된 해외 성장, 지자체의 수출 인프라까지 — 홍보성 제품 나열을 배제하고 산업의 방향성을 담았습니다."
+    },
+    {
+      "key": "game",
+      "label": "K-게임·e스포츠",
+      "entries": [
+        {
+          "headline": "붉은사막, 이제 플랫폼 제약 사라졌다",
+          "link": "https://www.gametoc.co.kr/news/articleView.html?idxno=110068",
+          "outlet": "gametoc.co.kr",
+          "pubDate": "2026-07-20T09:04:00.000Z",
+          "blurb": "펄어비스가 기대작 '붉은사막'에 크로스 세이브 기능을 도입해 플랫폼을 넘나들며 이어서 플레이할 수 있게 됐다. 신규 콘텐츠 추가와 게임플레이 개선을 담은 3분기 업데이트 로드맵의 일부로, 출시를 앞둔 완성도 다지기 행보다. 한국 대형 콘솔 게임의 글로벌 경쟁력을 가늠할 핵심 프로젝트라는 점에서 주목된다.",
+          "imagePrompt": "epic desert fantasy landscape at sunset with a lone warrior silhouette, seamless cross-platform device icons glowing, no text",
+          "imageQuery": "video game desert fantasy landscape concept art",
+          "analysis": {
+            "rank": 22,
+            "score": 46,
+            "scores": {
+              "importance": 35,
+              "impact": 54,
+              "interest": 52,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "8개 기사 · 8개 매체 · 중요도 35 · 파급력 54 · 관심도 52 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 8,
+            "outletCount": 8
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/11807071/pexels-photo-11807071.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Yusuf P / Pexels"
+          }
+        },
+        {
+          "headline": "2029 인빅터스 게임 대전 유치…아시아 첫 개최 쾌거",
+          "link": "https://www.ccdailynews.com/news/articleView.html?idxno=2428993",
+          "outlet": "ccdailynews.com",
+          "pubDate": "2026-07-20T06:56:00.000Z",
+          "blurb": "상이군인의 재활과 도전을 응원하는 세계적 스포츠 축제 '인빅터스 게임'이 2029년 대전에서 아시아 최초로 개최된다. e스포츠를 포함한 다양한 종목으로 구성되며, 국내 도시가 국제 대형 스포츠 이벤트를 유치한 쾌거다. e스포츠가 포용적 국제 스포츠의 정식 무대로 편입되는 흐름을 보여준다.",
+          "imagePrompt": "inclusive esports and adaptive sports arena with glowing screens and cheering crowd, international flags, hopeful atmosphere, no text",
+          "imageQuery": "esports arena stage crowd lights",
+          "analysis": {
+            "rank": 93,
+            "score": 41,
+            "scores": {
+              "importance": 43,
+              "impact": 50,
+              "interest": 21,
+              "psychological": 27,
+              "realtime": 70
+            },
+            "rationale": "2개 기사 · 2개 매체 · 중요도 43 · 파급력 50 · 관심도 21 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 2,
+            "outletCount": 2
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/14266493/pexels-photo-14266493.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Filip Hajdóci / Pexels"
+          }
+        },
+        {
+          "headline": "AI 동료와 ‘전략 플레이’… K게임 판 바꾸는 AX",
+          "link": "https://www.segye.com/newsView/20260719511327?OutUrl=naver",
+          "outlet": "segye.com",
+          "pubDate": "2026-07-19T21:03:00.000Z",
+          "blurb": "AI 동료와 함께 전략적으로 플레이하는 방식이 한국 게임업계의 판을 바꾸는 AX(AI 전환)의 사례로 조명됐다. 한 국산 타이틀은 출시 50일 만에 100만 장, 최근 글로벌 누적 200만 장을 돌파했다. AI가 게임 개발과 플레이 경험을 재편하는 산업 전환의 신호탄이라는 점에서 의미가 크다.",
+          "imagePrompt": "gamer silhouette playing alongside a glowing AI companion hologram, futuristic strategy interface, dynamic blue lighting, no text",
+          "imageQuery": "person playing video game controller screen",
+          "analysis": {
+            "rank": 82,
+            "score": 42,
+            "scores": {
+              "importance": 51,
+              "impact": 56,
+              "interest": 5,
+              "psychological": 27,
+              "realtime": 70
+            },
+            "rationale": "1개 기사 · 1개 매체 · 중요도 51 · 파급력 56 · 관심도 5 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 1,
+            "outletCount": 1
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/5207241/pexels-photo-5207241.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: www.kaboompics.com / Pexels"
+          }
+        }
+      ],
+      "note": "게임 섹션은 '업데이트 소식' 대신 산업의 방향 전환에 집중했습니다. 대형 콘솔 기대작의 완성도, 국제 대회 유치, AI 전환이라는 세 축으로 K-게임이 어디로 향하는지를 보여주려 했습니다."
+    },
+    {
+      "key": "tech",
+      "label": "K-테크·로봇",
+      "entries": [
+        {
+          "headline": "포항시, 2조원 규모 글로벌 AI 데이터센터 첫 삽… AI 산업 거점 도약",
+          "link": "https://www.segye.com/newsView/20260720522409?OutUrl=naver",
+          "outlet": "segye.com",
+          "pubDate": "2026-07-20T11:34:00.000Z",
+          "blurb": "포항시가 광명산단에 2조 원 규모의 글로벌 AI 데이터센터 착공에 들어가며 지역을 AI 산업 거점으로 키운다. 전력계통영향평가와 시공사 선정을 거쳐 본공사에 돌입했으며, 한국로봇융합연구원 등 지역 연구 인프라와 연계된다. AI 시대의 핵심 인프라인 데이터센터를 지방에 대규모로 유치했다는 점에서 산업적 파급력이 크다.",
+          "imagePrompt": "vast futuristic data center with rows of glowing server racks, AI circuit patterns overhead, cool blue industrial lighting, no logos, no text",
+          "imageQuery": "data center server room rows",
+          "analysis": {
+            "rank": 88,
+            "score": 41,
+            "scores": {
+              "importance": 43,
+              "impact": 44,
+              "interest": 26,
+              "psychological": 27,
+              "realtime": 70
+            },
+            "rationale": "3개 기사 · 3개 매체 · 중요도 43 · 파급력 44 · 관심도 26 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 3,
+            "outletCount": 3
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/17489151/pexels-photo-17489151.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: panumas nikhomkhai / Pexels"
+          }
+        },
+        {
+          "headline": "AI 스타트업 링크알파, 시리즈A 340억 유치 ‘Tech 집중채용’ 나서",
+          "link": "https://www.dt.co.kr/article/12073633?ref=naver",
+          "outlet": "dt.co.kr",
+          "pubDate": "2026-07-20T08:00:00.000Z",
+          "blurb": "기관 금융 AI 투자리서치 스타트업 링크알파가 시리즈A로 340억 원을 유치하고 AI·엔지니어링 중심의 대규모 집중 채용에 나섰다. 헤지펀드·자산운용사 등 기관투자자를 위한 멀티에이전트 AI 플랫폼을 개발하는 기업이다. 한국 AI 스타트업이 전문 금융 영역에서 대형 투자와 인재를 끌어모으는 흐름을 대표한다.",
+          "imagePrompt": "multi-agent AI network nodes analyzing financial charts, glowing data streams, sleek fintech concept, no text",
+          "imageQuery": "artificial intelligence finance technology abstract",
+          "analysis": {
+            "rank": 31,
+            "score": 45,
+            "scores": {
+              "importance": 43,
+              "impact": 60,
+              "interest": 26,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "3개 기사 · 3개 매체 · 중요도 43 · 파급력 60 · 관심도 26 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 3,
+            "outletCount": 3
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Tara Winstead / Pexels"
+          }
+        },
+        {
+          "headline": "삼성디스플레이, 1600니트 '탠덤 OLED' 공급…프리미엄 PC 시장 승부수",
+          "link": "http://www.metroseoul.co.kr/article/20260720500397",
+          "outlet": "metroseoul.co.kr",
+          "pubDate": "2026-07-20T06:44:00.000Z",
+          "blurb": "삼성디스플레이가 1600니트 밝기의 '탠덤 OLED'를 공급하며 프리미엄 PC 시장에 승부수를 던졌다. VESA의 새 트루블랙 인증에 대응한 노트북용 패널로, 22일 서울 코엑스 K-디스플레이 2026 전시회에서도 선보인다. 한국 디스플레이 산업이 고부가가치 프리미엄 영역에서 기술 주도권을 이어가려는 행보다.",
+          "imagePrompt": "ultra-bright thin oled laptop panel glowing with deep blacks and vivid colors, high-tech display showroom, no logos, no text",
+          "imageQuery": "oled display panel technology exhibition",
+          "analysis": {
+            "rank": 89,
+            "score": 41,
+            "scores": {
+              "importance": 51,
+              "impact": 36,
+              "interest": 26,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "3개 기사 · 3개 매체 · 중요도 51 · 파급력 36 · 관심도 26 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 3,
+            "outletCount": 3
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/5118460/pexels-photo-5118460.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Российский центр  гибкой электроники / Pexels"
+          }
+        }
+      ],
+      "note": "테크 섹션은 화제성보다 '한국이 실제로 쥔 기반 기술과 인프라'를 골랐습니다. AI 데이터센터, 전문 AI 스타트업 투자, 디스플레이 기술 주도권 — 국적 불분명한 해외 이슈는 배제하고 K-테크의 실체를 담았습니다."
+    },
+    {
+      "key": "heritage",
+      "label": "전통문화",
+      "entries": [
+        {
+          "headline": "고창군, 유네스코 세계유산위원회 참가…세계유산도시 위상 강화",
+          "link": "https://www.newspim.com/news/view/20260720000712",
+          "outlet": "newspim.com",
+          "pubDate": "2026-07-20T05:28:00.000Z",
+          "blurb": "고창군이 유네스코 세계유산위원회에 참가해 세계유산도시로서의 위상을 강화했다. 세계문화유산 고인돌, 세계자연유산 갯벌, 인류무형문화유산 판소리·농악, 세계지질공원 등 유네스코 다관왕 지위를 보유한 지역이다. 지방의 문화유산이 세계 무대에서 도시 브랜드로 확장되는 대표 사례다.",
+          "imagePrompt": "ancient stone dolmens on a green field at golden hour, misty tidal flats in the distance, serene heritage atmosphere, no text",
+          "imageQuery": "gochang dolmen unesco heritage site",
+          "analysis": {
+            "rank": 57,
+            "score": 42,
+            "scores": {
+              "importance": 43,
+              "impact": 46,
+              "interest": 31,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "4개 기사 · 4개 매체 · 중요도 43 · 파급력 46 · 관심도 31 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 4,
+            "outletCount": 4
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/33362007/pexels-photo-33362007.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Michael Hamments / Pexels"
+          }
+        },
+        {
+          "headline": "허민 국가유산청장 “세계유산 위기, 국제사회 연대가 유일한 해법”[유...",
+          "link": "https://www.etoday.co.kr/news/view/2605143",
+          "outlet": "etoday.co.kr",
+          "pubDate": "2026-07-20T02:08:00.000Z",
+          "blurb": "부산에서 열린 유네스코 세계유산위원회에 맞춰 35개 기관이 참여한 '대한민국관'이 공식 개관해 세계유산·인류무형유산·세계기록유산과 국가유산 정책, 국제협력 성과를 소개한다. 허민 국가유산청장은 '세계유산의 위기, 국제사회 연대가 유일한 해법'이라며 국제 협력을 강조했다. 한국이 문화유산 보존의 국제 담론을 주도하는 장이 됐다는 점에서 의미가 있다.",
+          "imagePrompt": "grand cultural heritage exhibition hall with panels of historic korean artifacts and manuscripts, warm museum lighting, no text",
+          "imageQuery": "korea heritage exhibition museum hall",
+          "analysis": {
+            "rank": 139,
+            "score": 40,
+            "scores": {
+              "importance": 51,
+              "impact": 48,
+              "interest": 5,
+              "psychological": 27,
+              "realtime": 70
+            },
+            "rationale": "1개 기사 · 1개 매체 · 중요도 51 · 파급력 48 · 관심도 5 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 1,
+            "outletCount": 1
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/35870231/pexels-photo-35870231.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Gül Işık / Pexels"
+          }
+        },
+        {
+          "headline": "‘한국의 세계기록유산’ 20종 한자리에…부산서 ‘한국의 기록’ 기획...",
+          "link": "https://www.busan.com/view/busan/view.php?code=2026072009311999553",
+          "outlet": "busan.com",
+          "pubDate": "2026-07-20T01:58:00.000Z",
+          "blurb": "세계유산위원회 기간에 맞춰 부산에서 '한국의 세계기록유산' 20종을 한자리에 모은 기획전이 열리고, 기록유산 국제학술대회도 개최된다. 무형유산의 기록화와 아카이빙을 주제로 국내외 전문가가 참여한다. 한국의 기록문화 자산을 세계에 알리고 학술적으로 심화하는 자리라는 점에서 주목된다.",
+          "imagePrompt": "display cases of ancient korean documents and woodblock records under soft spotlights, scholarly archive atmosphere, no text",
+          "imageQuery": "korea documentary heritage ancient manuscript exhibition",
+          "analysis": {
+            "rank": 96,
+            "score": 41,
+            "scores": {
+              "importance": 43,
+              "impact": 50,
+              "interest": 21,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "2개 기사 · 2개 매체 · 중요도 43 · 파급력 50 · 관심도 21 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 2,
+            "outletCount": 2
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/36306963/pexels-photo-36306963.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: burcubyzt_85 / Pexels"
+          }
+        }
+      ],
+      "note": "전통문화는 마침 열린 세계유산위원회를 축으로 묶었습니다. 지역 유산의 도시 브랜드화, 국제 연대 담론, 기록유산의 세계화까지 — 일회성 행사 나열이 아니라 한국 유산이 세계 무대에서 어떻게 위상을 넓히는지를 보여줍니다."
+    }
+  ],
+  "generatedAt": "2026-07-20T13:22:39.107Z"
+}
