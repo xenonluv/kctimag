@@ -1,0 +1,1001 @@
+{
+  "meta": {
+    "slug": "2026-08-06",
+    "title": "세계의 문법을 다시 쓰는 주간",
+    "dek": "BTS의 그래미 거부에서 세포라 진열대의 K뷰티까지, 이번 주 한국 문화는 '초대받는 쪽'이 아니라 '기준을 만드는 쪽'에 섰다",
+    "date": "2026-08-06",
+    "weekRange": {
+      "from": "2026-07-30",
+      "to": "2026-08-06"
+    },
+    "coverImageUrl": "https://images.pexels.com/photos/761543/pexels-photo-761543.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=800&h=450",
+    "backgroundImageUrl": "https://image.pollinations.ai/prompt/abstract%20postmodern%20background%20pattern%2C%20memphis%20design%20shapes%2C%20squiggles%2C%20dots%20and%20arcs%2C%20deep%20navy%20blue%20and%20indigo%2C%20dark%20moody%20background%2C%20glowing%20cyan%20and%20violet%20accent%20lines%2C%20fine%20grain%20texture%2C%20luminous%20high-contrast%20pattern%20on%20very%20dark%20navy%2C%20no%20text%2C%20no%20faces%2C%20no%20logo?width=1280&height=832&nologo=true&seed=74272&model=flux",
+    "curation": {
+      "scanned": 3620,
+      "selected": 30,
+      "breakdown": [
+        {
+          "label": "K-테크·로봇",
+          "count": 420
+        },
+        {
+          "label": "전통문화",
+          "count": 401
+        },
+        {
+          "label": "K-게임·e스포츠",
+          "count": 394
+        },
+        {
+          "label": "공연·전시·예술",
+          "count": 384
+        },
+        {
+          "label": "K-pop·음악",
+          "count": 376
+        },
+        {
+          "label": "K-푸드·맛집",
+          "count": 366
+        },
+        {
+          "label": "K-드라마·영화",
+          "count": 363
+        },
+        {
+          "label": "K-뷰티",
+          "count": 337
+        },
+        {
+          "label": "라이프·트렌드",
+          "count": 328
+        },
+        {
+          "label": "웹툰·웹소설",
+          "count": 251
+        }
+      ],
+      "rationale": "이번 주는 개별 흥행보다 '판을 바꾸는 신호'를 우선했습니다. 서구 시상식·유통망·플랫폼에 한국 콘텐츠와 브랜드가 어떤 조건으로 들어가는지를 보여주는 뉴스, 그리고 실적·차트·등재처럼 숫자로 증명된 성과만 남겼습니다. 홍보성 보도자료, 단순 신제품 나열, 화보·근황성 기사는 점수가 높아도 모두 걷어냈습니다."
+    },
+    "analysis": {
+      "method": "local-heuristic-v1",
+      "note": "외부 검색량/SNS 반응이 아닌 수집 뉴스 기반 우선순위 추정치입니다.",
+      "issueCount": 240
+    }
+  },
+  "editorPick": {
+    "headline": "BTS, 美 한복판서 그래미에 메시지 \"우릴 잘 몰라\"",
+    "link": "https://www.mediafine.co.kr/news/articleView.html?idxno=85597",
+    "outlet": "mediafine.co.kr",
+    "why": "BTS가 그래미 보이콧 선언 이후 처음 오른 북미 투어 무대에서 시상식을 향해 직접 메시지를 던졌다는 사실은 단순한 불만 표출이 아니다. 지난 20년간 K팝의 목표는 빌보드와 그래미라는 서구 인증 체계에 진입하는 것이었고, 이번 발언은 그 목표 자체를 공개적으로 재검토한 첫 사례다. 세계 최대 규모의 팬덤과 스트리밍 기반을 가진 팀이 '인정받는 쪽'이 아니라 '기준을 묻는 쪽'에 설 수 있다는 것을 실증했다는 점에서 산업적 무게가 크다. 같은 주에 K뷰티가 미국 유통망의 진열 방식을 바꾸고, 한국 게임사 매출의 78%가 해외에서 나오고, 한국 영화가 200개국 선판매로 손익을 맞추는 장면이 함께 나타난 것은 우연이 아니다. 한국 문화 산업 전반이 초대받는 위치에서 조건을 협상하는 위치로 이동하는 국면의 가장 선명한 상징이라 이번 주 최대 이슈로 꼽았다.",
+    "imagePrompt": "a performer's silhouette at the center of a stadium, back turned to a dim gilded trophy hall on one side, facing an endless ocean of glowing lights on the other, dramatic cinematic illustration, no faces or text",
+    "imageQuery": "stadium concert stage crowd lights night",
+    "analysis": {
+      "rank": 77,
+      "score": 44,
+      "scores": {
+        "importance": 47,
+        "impact": 70,
+        "interest": 5,
+        "psychological": 20,
+        "realtime": 70
+      },
+      "rationale": "1개 기사 · 1개 매체 · 중요도 47 · 파급력 70 · 관심도 5 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+      "sourceCount": 1,
+      "outletCount": 1
+    },
+    "honorableMentions": [
+      {
+        "headline": "CJ올리브영, 美 세포라 580여개 매장 입점…'올리브영 K뷰티에딧' 론칭",
+        "link": "http://www.kdfnews.com/news/articleView.html?idxno=186136"
+      },
+      {
+        "headline": "넷마블, 해외 성장·신작 효과로 2분기 실적 반등",
+        "link": "http://www.sportsq.co.kr/news/articleView.html?idxno=497258"
+      },
+      {
+        "headline": "영화 호프 9월 대만 북미 개봉 시작, 200여국 확정",
+        "link": "https://www.stardailynews.co.kr/news/articleView.html?idxno=544877"
+      },
+      {
+        "headline": "네이버웹툰 日 라인망가, 일본 통신사와 애니메이션 구독 서비스 선보인...",
+        "link": "https://news.mtn.co.kr/news-detail/2026080517354347517"
+      },
+      {
+        "headline": "블랙핑크, K-팝 한계 지운 10주년…차트·플랫폼·패션 신을 뒤흔든 파괴...",
+        "link": "https://www.newsis.com/view/NISX20260803_0003733318"
+      }
+    ],
+    "image": {
+      "url": "https://images.pexels.com/photos/761543/pexels-photo-761543.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=800&h=450",
+      "source": "사진: Jack Gittoes / Pexels"
+    }
+  },
+  "editorial": {
+    "title": "인정받는 문화에서 기준을 만드는 문화로",
+    "bodyMarkdown": "이번 주 한국 문화 뉴스를 관통한 질문은 하나였다. 우리는 여전히 서구의 무대에 초대받기를 기다리는가, 아니면 이제 그 무대의 규칙을 함께 정하는가. 그래미 보이콧 이후 첫 북미 무대에 오른 BTS의 발언은 이 질문을 가장 날카롭게 드러냈다. 시상식의 권위 대신 팬덤과 플랫폼이라는 자기 기반 위에서 말한 순간, K팝은 인증을 구하는 산업에서 인증 체계를 되묻는 산업으로 한 걸음 넘어갔다.\n\n같은 주에 벌어진 다른 일들도 결이 같다. 올리브영은 미국 세포라 580여 개 매장 안에 K뷰티 큐레이션 공간을 확보했다. 개별 브랜드가 각자 입점을 구걸하던 방식이 아니라, 한국 유통사가 진열의 문법을 들고 들어간 것이다. 넷마블의 해외 매출 비중은 78%에 이르렀고, 영화 '호프'는 국내 흥행과 무관하게 200여 개국 선판매만으로 제작비의 절반을 회수했다. 네이버웹툰의 라인망가는 일본 최대 통신사와 손잡고 만화 앱 안에 애니메이션 구독을 얹었다. 모두 해외 시장을 '수출 대상'이 아니라 '설계 대상'으로 다루기 시작한 사례다.\n\n물론 축포만 있는 것은 아니다. 소버린 AI의 92%가 특정 기업 칩에 묶여 있다는 지적은 문화 주권이 결국 기술 인프라 위에 서 있음을 상기시킨다. 네이버웹툰을 둘러싼 해외 증권소송 추적 보도는 성장 서사의 이면에 거버넌스 감시가 따라붙기 시작했음을 보여준다. 한편 염장 장인의 60년을 책으로 남기는 작업처럼, 바깥으로 뻗는 힘만큼 안쪽을 기록하는 손도 조용히 움직였다. 확장과 점검이 동시에 진행되는 이 균형이야말로, 지금 한국 문화가 지난 10년과 달라진 가장 믿을 만한 신호다."
+  },
+  "categories": [
+    {
+      "key": "kpop",
+      "label": "K-pop·음악",
+      "entries": [
+        {
+          "headline": "BTS, 美 한복판서 그래미에 메시지 \"우릴 잘 몰라\"",
+          "link": "https://www.mediafine.co.kr/news/articleView.html?idxno=85597",
+          "outlet": "mediafine.co.kr",
+          "pubDate": "2026-08-04T07:36:00.000Z",
+          "blurb": "그래미 어워즈 보이콧을 선언한 BTS가 이후 처음 오른 북미 투어 무대에서 \"우릴 잘 모른다\"는 취지의 메시지를 직접 던졌다. 시상식의 권위에 순응하는 대신 팬덤과 플랫폼이라는 자기 기반 위에서 발언한 장면으로, K팝이 서구 음악 산업의 인정 체계를 상대화하기 시작했음을 보여준다. 개별 아티스트의 불만이 아니라 글로벌 음악 권력 구조에 대한 공개 질의라는 점에서 올해 K팝 최대의 상징적 사건이다.",
+          "imagePrompt": "a lone microphone stand under a single beam of light on a vast stadium stage, empty trophy pedestal in shadow behind it, ocean of glowing lightsticks in the dark crowd, cinematic illustration",
+          "imageQuery": "stadium concert crowd lightsticks night",
+          "analysis": {
+            "rank": 77,
+            "score": 44,
+            "scores": {
+              "importance": 47,
+              "impact": 70,
+              "interest": 5,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "1개 기사 · 1개 매체 · 중요도 47 · 파급력 70 · 관심도 5 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 1,
+            "outletCount": 1
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/761543/pexels-photo-761543.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Jack Gittoes / Pexels"
+          }
+        },
+        {
+          "headline": "방탄소년단 정국, 'Seven' 유튜브 뮤직 13억 플레이 돌파",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=16155923",
+          "outlet": "topstarnews.net",
+          "pubDate": "2026-08-05T21:28:00+00:00",
+          "blurb": "방탄소년단 정국의 솔로곡 'Seven'이 유튜브 뮤직에서 13억 플레이를 넘어섰고, 그는 K팝 솔로 아티스트 최초로 4억 플레이 이상 트랙을 다섯 곡 보유하게 됐다. 앨범 판매 중심이던 K팝의 성과 지표가 글로벌 스트리밍 누적치로 완전히 이동했음을 보여주는 수치다. 그룹 활동 공백기에도 솔로 카탈로그가 스스로 굴러가는 구조가 만들어졌다는 점이 산업적으로 중요하다.",
+          "imagePrompt": "abstract streaming waveform rising into a glowing globe, headphone silhouette, billions of tiny light particles flowing along data lines, deep blue and gold palette",
+          "imageQuery": "music streaming headphones abstract sound waves",
+          "analysis": {
+            "rank": 62,
+            "score": 44,
+            "scores": {
+              "importance": 63,
+              "impact": 40,
+              "interest": 21,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "2개 기사 · 2개 매체 · 중요도 63 · 파급력 40 · 관심도 21 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 2,
+            "outletCount": 2
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/36481094/pexels-photo-36481094.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Beyzaa Yurtkuran / Pexels"
+          }
+        },
+        {
+          "headline": "SM 2분기 영업이익 529억원…투어 힘입어 작년 동기 대비 11%↑",
+          "link": "https://www.ddaily.co.kr/page/view/2026080518442049346",
+          "outlet": "ddaily.co.kr",
+          "pubDate": "2026-08-05T09:45:00.000Z",
+          "blurb": "SM엔터테인먼트가 2분기 영업이익 529억 원으로 전년 동기 대비 11% 성장하며 글로벌 투어 효과를 실적으로 확인했다. 신인 론칭 비용이 아니라 고연차 아티스트의 공연 규모 확대와 MD·라이선싱이 성장을 견인했다는 점이 핵심이다. K팝 기획사의 수익 모델이 음반에서 투어·IP 라이선싱 중심으로 재편되고 있음을 보여주는 지표다.",
+          "imagePrompt": "world map made of concert stage lights, tour route lines connecting continents, rising bar chart silhouette merging with an arena skyline, editorial illustration",
+          "imageQuery": "concert arena world tour stage lights",
+          "analysis": {
+            "rank": 63,
+            "score": 44,
+            "scores": {
+              "importance": 55,
+              "impact": 48,
+              "interest": 21,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "2개 기사 · 2개 매체 · 중요도 55 · 파급력 48 · 관심도 21 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 2,
+            "outletCount": 2
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/7081160/pexels-photo-7081160.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Bence Szemerey / Pexels"
+          }
+        }
+      ],
+      "note": "이번 주 K팝은 '무대 위 화제'보다 '산업의 좌표'가 움직인 주였습니다. 서구 시상식과의 관계 재설정, 스트리밍 누적 기록, 투어 중심 수익 구조라는 세 축을 골라 K팝이 어디로 가고 있는지를 보이도록 배치했습니다."
+    },
+    {
+      "key": "screen",
+      "label": "K-드라마·영화",
+      "entries": [
+        {
+          "headline": "SLL '아파트', K-드라마 흥행·IP 확장 가속",
+          "link": "http://www.metroseoul.co.kr/article/20260806500196",
+          "outlet": "metroseoul.co.kr",
+          "pubDate": "2026-08-06T02:46:00.000Z",
+          "blurb": "JTBC 토일드라마 '아파트'가 넷플릭스 글로벌 TOP10(비영어 TV)에 4주 연속 진입하며 한 달째 차트에 머물고 있다. 대형 프랜차이즈 IP나 화려한 스케일 없이 한국적 주거 공간이라는 소재만으로 장기 체류에 성공했다는 점이 이례적이다. 제작사 SLL이 이를 발판으로 IP 확장에 나서면서, 단발 흥행이 아닌 프랜차이즈화 전략의 시험대가 됐다.",
+          "imagePrompt": "night view of a dense Korean apartment complex, hundreds of lit windows each hinting at a different story, faint mystery mood, muted teal and amber illustration",
+          "imageQuery": "Korean apartment complex night lights Seoul",
+          "analysis": {
+            "rank": 28,
+            "score": 47,
+            "scores": {
+              "importance": 63,
+              "impact": 48,
+              "interest": 21,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "2개 기사 · 2개 매체 · 중요도 63 · 파급력 48 · 관심도 21 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 2,
+            "outletCount": 2
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/36178449/pexels-photo-36178449.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: wal_ 172619 / Pexels"
+          }
+        },
+        {
+          "headline": "'킬러들의 쇼핑몰2' 이동욱, 화제성 1위⋯글로벌 흥행 질주",
+          "link": "https://www.etoday.co.kr/news/view/2611293",
+          "outlet": "etoday.co.kr",
+          "pubDate": "2026-08-05T05:14:00.000Z",
+          "blurb": "디즈니+ '킬러들의 쇼핑몰 시즌2'가 공개 직후 TV·OTT 통합 드라마 화제성 1위에 올랐고 이동욱도 출연자 화제성 1위를 차지했다. 시즌제가 좀처럼 안착하지 못했던 한국 드라마 시장에서 후속 시즌이 첫 시즌 이상의 반응을 끌어냈다는 점이 주목된다. 글로벌 OTT가 한국산 시즌제 액션물을 장기 프랜차이즈로 운용할 수 있다는 신호다.",
+          "imagePrompt": "neon-lit convenience store at night doubling as a secret armory, silhouetted figure in a trench coat at the counter, rain on glass, noir illustration",
+          "imageQuery": "neon convenience store night rain city",
+          "analysis": {
+            "rank": 11,
+            "score": 50,
+            "scores": {
+              "importance": 59,
+              "impact": 54,
+              "interest": 31,
+              "psychological": 27,
+              "realtime": 70
+            },
+            "rationale": "4개 기사 · 4개 매체 · 중요도 59 · 파급력 54 · 관심도 31 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 4,
+            "outletCount": 4
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/37957645/pexels-photo-37957645.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Julien / Pexels"
+          }
+        },
+        {
+          "headline": "영화 호프 9월 대만 북미 개봉 시작, 200여국 확정",
+          "link": "https://www.stardailynews.co.kr/news/articleView.html?idxno=544877",
+          "outlet": "stardailynews.co.kr",
+          "pubDate": "2026-08-05T09:08:00.000Z",
+          "blurb": "영화 '호프'가 전 세계 200여 개 국가·권역에 선판매되며 한국 영화 해외 선판매 최고액 기록을 경신하고 9월 대만·북미부터 순차 개봉에 들어간다. 북미 네온, 소니 픽처스 등 주요 배급사가 붙어 선판매만으로 순제작비의 절반가량을 회수한 구조다. 국내 극장 성적은 기대에 못 미쳤지만, 한국 대작의 손익 계산이 국내 관객수에서 글로벌 사전 판매로 옮겨가고 있음을 보여준다.",
+          "imagePrompt": "film reel unspooling into a world map, projector beam crossing continents, cinema seats fading into horizon, warm cinematic illustration",
+          "imageQuery": "film projector cinema screen movie theater",
+          "analysis": {
+            "rank": 22,
+            "score": 48,
+            "scores": {
+              "importance": 59,
+              "impact": 72,
+              "interest": 5,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "1개 기사 · 1개 매체 · 중요도 59 · 파급력 72 · 관심도 5 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 1,
+            "outletCount": 1
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/5826828/pexels-photo-5826828.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Nicolette  Villavicencio / Pexels"
+          }
+        }
+      ],
+      "note": "국내 박스오피스 순위표보다 '한국 콘텐츠가 해외에서 어떻게 팔리고 머무는가'를 기준으로 골랐습니다. 차트 장기 체류, 시즌제 안착, 선판매 회수라는 세 가지 서로 다른 생존 전략이 한 주에 나란히 드러났습니다."
+    },
+    {
+      "key": "webtoon",
+      "label": "웹툰·웹소설",
+      "entries": [
+        {
+          "headline": "네이버웹툰 日 라인망가, 일본 통신사와 애니메이션 구독 서비스 선보인...",
+          "link": "https://news.mtn.co.kr/news-detail/2026080517354347517",
+          "outlet": "news.mtn.co.kr",
+          "pubDate": "2026-08-05T08:38:00.000Z",
+          "blurb": "네이버웹툰의 일본어 서비스 라인망가가 NTT도코모와 손잡고 앱 안에서 애니메이션 4000여 편을 보는 정액제 구독 서비스를 시작한다. 만화 플랫폼이 영상 스트리밍을 직접 품는 구조로, 일본 최대 만화 시장에서 체류 시간과 객단가를 동시에 노린 승부수다. 웹툰 기업이 IP 공급자를 넘어 종합 콘텐츠 플랫폼으로 확장하는 흐름의 분기점이다.",
+          "imagePrompt": "smartphone screen where comic panels dissolve into moving animation frames, glowing subscription ribbon, Tokyo skyline blurred in background, flat illustration",
+          "imageQuery": "smartphone manga app reading Tokyo",
+          "analysis": {
+            "rank": 4,
+            "score": 52,
+            "scores": {
+              "importance": 47,
+              "impact": 60,
+              "interest": 52,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "8개 기사 · 8개 매체 · 중요도 47 · 파급력 60 · 관심도 52 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 8,
+            "outletCount": 8
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/27573818/pexels-photo-27573818.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Zonghao Feng / Pexels"
+          }
+        },
+        {
+          "headline": "리디 '던전을 그리는 화가' 웹툰 버전 공개 후 원작 소설 매출 80배 급증",
+          "link": "https://gamefocus.co.kr/detail.php?number=177987",
+          "outlet": "gamefocus.co.kr",
+          "pubDate": "2026-08-05T02:20:00.000Z",
+          "blurb": "리디의 웹툰 '던전을 그리는 화가'가 판타지 웹툰 역대 최고 매출을 기록하자 원작 웹소설 판매량이 약 80배 급증했다. 웹소설-웹툰 노블코믹스 구조가 단순 각색이 아니라 원작 매출을 되살리는 역류 효과를 만든다는 점을 수치로 증명한 사례다. 국내 IP 사업 모델의 실효성을 보여주는 드문 정량 데이터라는 점에서 의미가 크다.",
+          "imagePrompt": "an open fantasy novel whose pages transform into glowing illustrated comic panels, painter's brush drawing a dungeon gate, magical particles, warm ink illustration",
+          "imageQuery": "fantasy book illustration drawing tablet artist",
+          "analysis": {
+            "rank": 25,
+            "score": 47,
+            "scores": {
+              "importance": 51,
+              "impact": 54,
+              "interest": 31,
+              "psychological": 20,
+              "realtime": 75
+            },
+            "rationale": "4개 기사 · 4개 매체 · 중요도 51 · 파급력 54 · 관심도 31 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 4,
+            "outletCount": 4
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/33495060/pexels-photo-33495060.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Gabriel Farias / Pexels"
+          }
+        },
+        {
+          "headline": "인터넷신문협회, 6월 보도분 '이달의 기자상' 시상",
+          "link": "https://news.tf.co.kr/read/life/2351214.htm",
+          "outlet": "news.tf.co.kr",
+          "pubDate": "2026-08-06T02:12:00.000Z",
+          "blurb": "인터넷신문협회 '이달의 기자상'에서 네이버웹툰의 나스닥 상장 이후 제기된 미국 현지 증권소송을 추적한 연속 보도가 수상했다. K콘텐츠 기업의 해외 상장이 늘면서 공시 책임과 사법 리스크가 새로운 감시 영역으로 떠올랐음을 보여준다. 산업 성장 서사 이면의 거버넌스를 짚었다는 점에서 웹툰 업계가 함께 읽어야 할 뉴스다.",
+          "imagePrompt": "a comic speech bubble morphing into a stock ticker board, gavel silhouette and rising candlestick chart behind, cool grey and red editorial illustration",
+          "imageQuery": "Nasdaq stock exchange trading board",
+          "analysis": {
+            "rank": 1,
+            "score": 62,
+            "scores": {
+              "importance": 63,
+              "impact": 70,
+              "interest": 58,
+              "psychological": 20,
+              "realtime": 75
+            },
+            "rationale": "9개 기사 · 9개 매체 · 중요도 63 · 파급력 70 · 관심도 58 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 9,
+            "outletCount": 9
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/210607/pexels-photo-210607.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Pixabay / Pexels"
+          }
+        }
+      ],
+      "note": "작품 흥행 소식 대신 웹툰 산업의 구조 변화를 좇았습니다. 플랫폼 확장, IP 역류 효과, 해외 상장 리스크라는 세 각도로 이 산업이 이제 콘텐츠가 아니라 기업으로 평가받고 있음을 보여주려 했습니다."
+    },
+    {
+      "key": "beauty",
+      "label": "K-뷰티",
+      "entries": [
+        {
+          "headline": "CJ올리브영, 美 세포라 580여개 매장 입점…'올리브영 K뷰티에딧' 론칭",
+          "link": "http://www.kdfnews.com/news/articleView.html?idxno=186136",
+          "outlet": "kdfnews.com",
+          "pubDate": "2026-08-05T09:28:00.000Z",
+          "blurb": "CJ올리브영이 미국 세포라 580여 개 매장에 K뷰티 편집 공간 '올리브영 K뷰티에딧'을 론칭하며 북미 최대 뷰티 유통망 안으로 들어갔다. 개별 브랜드가 각자 입점하던 방식에서 벗어나 한국 유통사가 큐레이션 단위로 진열대를 확보했다는 점이 결정적 차이다. 상반기 화장품 수출이 27% 넘게 늘어난 흐름 속에서 K뷰티의 미국 유통 구조 자체를 바꿀 수 있는 사건이다.",
+          "imagePrompt": "a curated cosmetics display shelf inside a large western beauty store, serums and sunscreens arranged like a gallery, spotlight glow, clean retail illustration",
+          "imageQuery": "cosmetics store shelf skincare display",
+          "analysis": {
+            "rank": 35,
+            "score": 46,
+            "scores": {
+              "importance": 55,
+              "impact": 56,
+              "interest": 21,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "2개 기사 · 2개 매체 · 중요도 55 · 파급력 56 · 관심도 21 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 2,
+            "outletCount": 2
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/3735650/pexels-photo-3735650.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Polina Tankilevitch / Pexels"
+          }
+        },
+        {
+          "headline": "에이피알, 2분기 매출 7675억원 '사상 최대'···글로벌·뷰티테크 투자...",
+          "link": "https://www.smartbizn.com/news/articleView.html?idxno=150373",
+          "outlet": "smartbizn.com",
+          "pubDate": "2026-08-05T00:50:00.000Z",
+          "blurb": "에이피알이 2분기 매출 7675억 원, 화장품·뷰티 부문 매출 185.5% 성장이라는 창사 이래 최대 실적을 냈다. 해외 비중이 90%를 넘어서며 내수 브랜드가 아니라 글로벌 뷰티테크 기업으로 분류될 만한 체급에 도달했다. 마케팅 화제성이 아니라 분기 실적으로 K뷰티의 실체를 증명한 사례라 무게가 다르다.",
+          "imagePrompt": "beauty device and serum bottle rising on an abstract growth chart made of light, globe outline in background, minimal pastel gradient illustration",
+          "imageQuery": "beauty tech device skincare product studio",
+          "analysis": {
+            "rank": 8,
+            "score": 51,
+            "scores": {
+              "importance": 67,
+              "impact": 58,
+              "interest": 21,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "2개 기사 · 2개 매체 · 중요도 67 · 파급력 58 · 관심도 21 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 2,
+            "outletCount": 2
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/9973861/pexels-photo-9973861.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Bella Gitnik / Pexels"
+          }
+        },
+        {
+          "headline": "\"글로벌 성장 가속\"...LF 아떼, 상반기 해외 매출 2.3배 '증가'",
+          "link": "https://www.youthdaily.co.kr/news/article.html?no=224630",
+          "outlet": "youthdaily.co.kr",
+          "pubDate": "2026-08-06T00:36:00.000Z",
+          "blurb": "LF의 비건 뷰티 브랜드 아떼가 국가별 유통 환경에 맞춘 현지화 전략으로 상반기 해외 매출을 2.3배 늘렸다. 대형 브랜드의 물량전이 아니라 중견 브랜드도 타깃 시장을 세분화하면 성장할 수 있음을 보여준 사례다. K뷰티 수출이 소수 대기업 편중에서 벗어나 저변을 넓히고 있다는 신호로 읽힌다.",
+          "imagePrompt": "vegan skincare bottles surrounded by botanical leaves, world map subtly formed by leaf veins, soft green natural light, editorial still-life illustration",
+          "imageQuery": "vegan skincare bottle botanical natural cosmetics",
+          "analysis": {
+            "rank": 20,
+            "score": 48,
+            "scores": {
+              "importance": 51,
+              "impact": 66,
+              "interest": 21,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "2개 기사 · 2개 매체 · 중요도 51 · 파급력 66 · 관심도 21 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 2,
+            "outletCount": 2
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/19437856/pexels-photo-19437856.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Ruslan Alekso / Pexels"
+          }
+        }
+      ],
+      "note": "K뷰티는 '잘 팔린다'는 인상론이 아니라 유통망·실적·수출 저변이라는 증거로만 골랐습니다. 미국 진열대 확보, 분기 최대 실적, 중견 브랜드의 성장이 한 주에 겹치며 산업 전체의 체급 변화가 드러났습니다."
+    },
+    {
+      "key": "food",
+      "label": "K-푸드·맛집",
+      "entries": [
+        {
+          "headline": "AI로 트렌드 분석부터 상품 기획까지…CJ제일제당, '푸드 AI 360' 글로벌 ...",
+          "link": "https://www.etnews.com/20260806000109",
+          "outlet": "etnews.com",
+          "pubDate": "2026-08-06T01:36:00.000Z",
+          "blurb": "CJ제일제당이 트렌드 분석부터 상품 기획까지 잇는 AI 플랫폼 '푸드 AI 360'을 미국으로 확대 적용했다. 현지 소비자 반응을 실시간으로 읽어 제품 기획과 마케팅에 반영하는 구조로, K푸드가 '한국 것을 수출한다'에서 '현지에서 설계한다'로 넘어가는 전환점이다. 식품 산업의 경쟁력이 레시피가 아니라 데이터 파이프라인에서 갈릴 수 있음을 보여준다.",
+          "imagePrompt": "kitchen ingredients arranged as data nodes connected by glowing lines, holographic taste graph above a cutting board, clean tech-food illustration",
+          "imageQuery": "food technology data kitchen ingredients",
+          "analysis": {
+            "rank": 47,
+            "score": 45,
+            "scores": {
+              "importance": 51,
+              "impact": 58,
+              "interest": 21,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "2개 기사 · 2개 매체 · 중요도 51 · 파급력 58 · 관심도 21 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 2,
+            "outletCount": 2
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/12673631/pexels-photo-12673631.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Anna Shvets / Pexels"
+          }
+        },
+        {
+          "headline": "신세계백화점 강남점 식품관, 리뉴얼 1년 만에 누적 1000만 고객 돌파",
+          "link": "https://www.newsquest.co.kr/news/articleView.html?idxno=271170",
+          "outlet": "newsquest.co.kr",
+          "pubDate": "2026-08-05T21:00:00.000Z",
+          "blurb": "신세계백화점 강남점 식품관이 리뉴얼 1년 만에 누적 방문객 1000만 명을 돌파하고 셰프·맛집 릴레이 팝업에 나선다. 백화점의 집객 축이 패션에서 식품관으로 완전히 옮겨갔음을 보여주는 상징적 숫자다. 미식이 소비 목적 그 자체가 된 도시형 식문화의 현주소를 읽을 수 있다.",
+          "imagePrompt": "bustling upscale department store food hall, glass counters of deli dishes, warm overhead lighting, crowd silhouettes, lively illustration",
+          "imageQuery": "department store food hall deli counter",
+          "analysis": {
+            "rank": 16,
+            "score": 48,
+            "scores": {
+              "importance": 43,
+              "impact": 52,
+              "interest": 47,
+              "psychological": 20,
+              "realtime": 75
+            },
+            "rationale": "7개 기사 · 7개 매체 · 중요도 43 · 파급력 52 · 관심도 47 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 7,
+            "outletCount": 7
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/35023463/pexels-photo-35023463.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Tony Zohari / Pexels"
+          }
+        },
+        {
+          "headline": "11월 코엑스서 '2026 푸드위크 코리아' 개최…식품산업 혁신 한자리에",
+          "link": "http://www.efnews.co.kr/news/articleView.html?idxno=131419",
+          "outlet": "efnews.co.kr",
+          "pubDate": "2026-08-06T01:22:00.000Z",
+          "blurb": "오는 11월 코엑스에서 열리는 '2026 푸드위크 코리아'가 차세대 K푸드와 스마트 외식·AI 식품 자동화 솔루션을 한자리에 모은다. 완제품 전시를 넘어 조리·급식 자동화 기술까지 묶었다는 점에서 식품 산업의 관심사가 어디로 이동했는지 드러난다. 인력난과 원가 압박 속 외식업의 다음 국면을 미리 보는 자리가 될 전망이다.",
+          "imagePrompt": "large food expo hall with booths, robotic arm plating a dish beside traditional Korean side dishes, visitors browsing, wide-angle illustration",
+          "imageQuery": "food expo exhibition hall booths",
+          "analysis": {
+            "rank": 83,
+            "score": 43,
+            "scores": {
+              "importance": 51,
+              "impact": 50,
+              "interest": 21,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "2개 기사 · 2개 매체 · 중요도 51 · 파급력 50 · 관심도 21 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 2,
+            "outletCount": 2
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/35138560/pexels-photo-35138560.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Tahir Xəlfəquliyev / Pexels"
+          }
+        }
+      ],
+      "note": "맛집 소개가 아니라 식품 산업의 방법론이 바뀌는 지점을 봤습니다. AI 기반 기획, 식품관 중심의 소비 재편, 자동화 기술 전시가 함께 놓이면서 K푸드의 다음 경쟁축이 선명해졌습니다."
+    },
+    {
+      "key": "game",
+      "label": "K-게임·e스포츠",
+      "entries": [
+        {
+          "headline": "넷마블, 해외 성장·신작 효과로 2분기 실적 반등",
+          "link": "http://www.sportsq.co.kr/news/articleView.html?idxno=497258",
+          "outlet": "sportsq.co.kr",
+          "pubDate": "2026-08-06T02:28:00.000Z",
+          "blurb": "넷마블이 신작 출시와 기존 게임 업데이트 효과로 2분기 매출 7492억 원을 기록하며 실적 반등에 성공했다. 북미 39%, 유럽 13% 등 해외 비중이 78%까지 올라 국내 매출 의존도가 크게 낮아진 점이 핵심이다. 한국 게임사의 매출 구조가 사실상 글로벌 퍼블리셔의 그것으로 바뀌고 있음을 보여준다.",
+          "imagePrompt": "game controller at the center of a glowing world map, revenue streams flowing in from North America and Europe as light trails, dark blue illustration",
+          "imageQuery": "video game controller world map neon",
+          "analysis": {
+            "rank": 17,
+            "score": 48,
+            "scores": {
+              "importance": 35,
+              "impact": 78,
+              "interest": 31,
+              "psychological": 20,
+              "realtime": 75
+            },
+            "rationale": "4개 기사 · 4개 매체 · 중요도 35 · 파급력 78 · 관심도 31 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 4,
+            "outletCount": 4
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/7773745/pexels-photo-7773745.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Artem Podrez / Pexels"
+          }
+        },
+        {
+          "headline": "네오위즈, 'P의 거짓' 닌텐도 스위치2 출시… DLC에 신규 난이도까지 적...",
+          "link": "http://game.dailyesports.com/view.php?ud=20260806113714411543da15d9d2_26",
+          "outlet": "game.dailyesports.com",
+          "pubDate": "2026-08-06T03:06:00.000Z",
+          "blurb": "네오위즈의 'P의 거짓: 컴플리트 에디션'이 닌텐도 스위치2로 정식 출시되며 신규 난이도와 DLC까지 최적화해 올렸다. 뉴욕 게임 어워드 등 해외 평단의 인정을 받은 한국산 소울라이크가 콘솔 플랫폼 전 영역으로 확장되는 흐름이다. 모바일 중심이던 한국 게임의 체질 전환을 상징하는 타이틀이라는 점에서 의미가 있다.",
+          "imagePrompt": "ornate mechanical puppet figure holding a rapier in a gaslit belle-epoque street, handheld console glow in foreground, dark gothic illustration",
+          "imageQuery": "handheld game console gothic puppet marionette",
+          "analysis": {
+            "rank": 12,
+            "score": 49,
+            "scores": {
+              "importance": 43,
+              "impact": 54,
+              "interest": 52,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "8개 기사 · 8개 매체 · 중요도 43 · 파급력 54 · 관심도 52 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 8,
+            "outletCount": 8
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/34187615/pexels-photo-34187615.png?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Peter Zulauf / Pexels"
+          }
+        },
+        {
+          "headline": "엔씨, 게임스컴 2026 출격…'아이온2'·'신더시티'·신작 3종 공개",
+          "link": "https://www.sportschosun.com/entertainment/2026-08-06/202608060100036000002246",
+          "outlet": "sportschosun.com",
+          "pubDate": "2026-08-06T03:44:00.000Z",
+          "blurb": "엔씨가 독일 쾰른 게임스컴 2026에서 '아이온2', '신더시티' 등 글로벌 신작 3종을 공개하며 해외 시장 공략에 나선다. 국내 MMORPG 강자가 유럽 최대 전시회를 신작 데뷔 무대로 삼았다는 점에서 타깃 시장의 무게중심 이동이 읽힌다. 하반기 한국 게임 산업의 해외 성적표를 가늠할 첫 시험대다.",
+          "imagePrompt": "massive game convention hall with towering fantasy game banners, crowds in silhouette waiting at demo booths, spotlight beams, epic illustration",
+          "imageQuery": "Gamescom convention hall gaming expo crowd",
+          "analysis": {
+            "rank": 13,
+            "score": 49,
+            "scores": {
+              "importance": 51,
+              "impact": 68,
+              "interest": 26,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "3개 기사 · 3개 매체 · 중요도 51 · 파급력 68 · 관심도 26 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 3,
+            "outletCount": 3
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/22669860/pexels-photo-22669860.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Loveleen Cherub / Pexels"
+          }
+        }
+      ],
+      "note": "신작 발표 보도자료가 아니라 '어디서 돈을 벌고 어디서 검증받는가'를 기준으로 추렸습니다. 해외 매출 비중, 콘솔 확장, 유럽 전시회 데뷔가 한국 게임의 좌표를 나란히 보여줍니다."
+    },
+    {
+      "key": "tech",
+      "label": "K-테크·로봇",
+      "entries": [
+        {
+          "headline": "\"전세계 독자적 AI의 92%가 엔비디아 칩에 종속\"",
+          "link": "https://view.asiae.co.kr/article/2026080608575637919",
+          "outlet": "view.asiae.co.kr",
+          "pubDate": "2026-08-06T01:17:00.000Z",
+          "blurb": "전 세계 소버린 AI 프로젝트의 92%가 엔비디아 칩에 종속돼 있다는 분석 속에, 한국 스타트업 모레는 AMD 반도체 기반으로 대형 언어모델을 개발하며 다변화를 시도하고 있다. 자국어·자국 문화를 담는 AI를 만들겠다는 목표가 특정 기업의 하드웨어에 묶이는 역설을 짚은 보도다. 문화 주권과 기술 종속이 맞물리는 지점을 드러낸다는 점에서 중요하다.",
+          "imagePrompt": "a single dominant microchip casting long shadows over many small national flags rendered as abstract color blocks, one chip breaking away in different color, conceptual illustration",
+          "imageQuery": "AI semiconductor chip data center servers",
+          "analysis": {
+            "rank": 95,
+            "score": 42,
+            "scores": {
+              "importance": 35,
+              "impact": 54,
+              "interest": 31,
+              "psychological": 20,
+              "realtime": 75
+            },
+            "rationale": "4개 기사 · 4개 매체 · 중요도 35 · 파급력 54 · 관심도 31 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 4,
+            "outletCount": 4
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/6636474/pexels-photo-6636474.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Sergei Starostin / Pexels"
+          }
+        },
+        {
+          "headline": "오픈이노베이션 성과 계약으로 잇는다...중기부, 스타트업 80곳 지원",
+          "link": "https://www.newspim.com/news/view/20260805000233",
+          "outlet": "newspim.com",
+          "pubDate": "2026-08-05T03:00:00.000Z",
+          "blurb": "중소벤처기업부가 오픈이노베이션을 마친 스타트업 80곳에 최대 2억 원의 사업화 자금을 지원한다. 대기업과의 협업이 시연과 MOU에서 끝나는 관행을 실제 계약과 매출로 잇겠다는 취지다. 딥테크·콘텐츠테크 스타트업의 생존율을 좌우할 수 있는 정책이라 업계 파급이 작지 않다.",
+          "imagePrompt": "a small sapling of circuits growing out of a corporate building blueprint, handshake formed by glowing lines, optimistic tech illustration",
+          "imageQuery": "startup office team technology workspace",
+          "analysis": {
+            "rank": 30,
+            "score": 46,
+            "scores": {
+              "importance": 51,
+              "impact": 48,
+              "interest": 37,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "5개 기사 · 5개 매체 · 중요도 51 · 파급력 48 · 관심도 37 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 5,
+            "outletCount": 5
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/6804068/pexels-photo-6804068.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: cottonbro studio / Pexels"
+          }
+        },
+        {
+          "headline": "딥큐어, 美 FDA에 '하이퍼큐어' PMA 절차 확증임상 IDE 제출",
+          "link": "https://www.edaily.co.kr/news/newspath.asp?newsid=04224646645544368",
+          "outlet": "edaily.co.kr",
+          "pubDate": "2026-08-05T02:13:00.000Z",
+          "blurb": "메드테크 기업 딥큐어가 미국 FDA에 시판 전 승인(PMA) 트랙의 글로벌 확증 임상시험계획(IDE)을 제출했다. PMA는 단순 동등성 입증이 아닌 독자적 안전성·유효성 증명을 요구하는 최고 난도 경로다. 한국 의료기기가 모방이 아닌 원천 기술로 미국 시장에 도전한다는 점에서 상징성이 크다.",
+          "imagePrompt": "precision medical device silhouette under clinical light, abstract regulatory checkpoint gates forming a path, clean white and blue illustration",
+          "imageQuery": "medical device laboratory clinical equipment",
+          "analysis": {
+            "rank": 86,
+            "score": 43,
+            "scores": {
+              "importance": 43,
+              "impact": 58,
+              "interest": 21,
+              "psychological": 27,
+              "realtime": 70
+            },
+            "rationale": "2개 기사 · 2개 매체 · 중요도 43 · 파급력 58 · 관심도 21 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 2,
+            "outletCount": 2
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/7788502/pexels-photo-7788502.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Ivan Babydov / Pexels"
+          }
+        }
+      ],
+      "note": "기술 뉴스는 문화·산업 주권과 닿는 것만 남겼습니다. AI 인프라 종속, 스타트업 사업화, 최고 난도 규제 도전이라는 세 갈래로 '한국이 무엇을 스스로 만들 수 있는가'를 물었습니다."
+    },
+    {
+      "key": "stage",
+      "label": "공연·전시·예술",
+      "entries": [
+        {
+          "headline": "부산시립미술관, 중국 금일미술관서 부산 청년 작가 8인 해외전 개최",
+          "link": "https://www.newspim.com/news/view/20260806000073",
+          "outlet": "newspim.com",
+          "pubDate": "2026-08-05T23:26:00.000Z",
+          "blurb": "부산시립미술관이 베이징 금일미술관에서 부산 청년 작가 8인의 해외전을 연다. 1999년부터 이어온 '젊은 시각 새로운 시선'이 국내 신진 발굴 사업을 넘어 해외 미술관과 직접 교류하는 단계로 올라섰다. 지역 공립미술관이 자체 브랜드 전시를 수출하는 드문 사례라는 점에서 주목할 만하다.",
+          "imagePrompt": "young artists' canvases hanging in a bright foreign museum gallery, two city skylines faintly overlapping on the wall, minimal art-space illustration",
+          "imageQuery": "contemporary art museum gallery exhibition",
+          "analysis": {
+            "rank": 51,
+            "score": 44,
+            "scores": {
+              "importance": 35,
+              "impact": 56,
+              "interest": 37,
+              "psychological": 20,
+              "realtime": 75
+            },
+            "rationale": "5개 기사 · 5개 매체 · 중요도 35 · 파급력 56 · 관심도 37 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 5,
+            "outletCount": 5
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/13432768/pexels-photo-13432768.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Minh Ngọc / Pexels"
+          }
+        },
+        {
+          "headline": "경기도자비엔날레 국제공모전 대상에 獨 라우어 ‘펀치카드 하우스’",
+          "link": "https://www.sedaily.com/article/20076401?ref=naver",
+          "outlet": "sedaily.com",
+          "pubDate": "2026-08-06T01:56:00.000Z",
+          "blurb": "2026 경기도자비엔날레 국제공모전 대상에 독일 작가 데이비드 라우어의 '펀치카드 하우스'가 선정됐다. 흙이라는 가장 오래된 매체를 초기 컴퓨팅의 기억 장치와 겹쳐 놓은 작품으로, 도자가 전통 공예의 범주를 넘어 동시대 개념 미술의 언어로 다뤄지고 있음을 보여준다. 한국 도자 비엔날레가 국제 담론의 장으로 기능하고 있다는 증거다.",
+          "imagePrompt": "ceramic wall sculpture perforated like a punch card, warm clay texture against cool gallery light, geometric shadows, conceptual art illustration",
+          "imageQuery": "ceramic art biennale sculpture exhibition",
+          "analysis": {
+            "rank": 167,
+            "score": 40,
+            "scores": {
+              "importance": 43,
+              "impact": 44,
+              "interest": 26,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "3개 기사 · 3개 매체 · 중요도 43 · 파급력 44 · 관심도 26 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 3,
+            "outletCount": 3
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/8356905/pexels-photo-8356905.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Marina M / Pexels"
+          }
+        },
+        {
+          "headline": "미래엔 아이세움, 'AI 세계에서 살아남기' 뮤지컬 개막",
+          "link": "http://www.ftoday.co.kr/news/articleView.html?idxno=363156",
+          "outlet": "ftoday.co.kr",
+          "pubDate": "2026-08-06T01:20:00.000Z",
+          "blurb": "학습만화 베스트셀러 '살아남기' 시리즈 가운데 'AI 세계에서 살아남기'가 시리즈 최초로 뮤지컬 무대에 올랐다. 출판 IP가 극장판·TV 애니메이션을 거쳐 공연으로까지 확장된 전형적인 원소스 멀티유즈 경로다. 어린이 관객을 겨냥한 공연 시장에서 검증된 IP의 역할이 커지고 있음을 보여준다.",
+          "imagePrompt": "children's theater stage with glowing circuit-patterned set pieces, young performers in silhouette facing a giant abstract AI figure, playful stage lighting",
+          "imageQuery": "children musical theater stage performance",
+          "analysis": {
+            "rank": 135,
+            "score": 41,
+            "scores": {
+              "importance": 43,
+              "impact": 50,
+              "interest": 21,
+              "psychological": 27,
+              "realtime": 70
+            },
+            "rationale": "2개 기사 · 2개 매체 · 중요도 43 · 파급력 50 · 관심도 21 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 2,
+            "outletCount": 2
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/5801571/pexels-photo-5801571.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: cottonbro studio / Pexels"
+          }
+        }
+      ],
+      "note": "대형 내한 공연 대신 한국 예술이 바깥으로 나가거나 담론을 만드는 장면을 골랐습니다. 지역 미술관의 해외전, 국제 공모전 결과, 출판 IP의 무대화가 각기 다른 방식으로 예술의 확장 경로를 보여줍니다."
+    },
+    {
+      "key": "heritage",
+      "label": "전통문화",
+      "entries": [
+        {
+          "headline": "유산청 \"전세계 문화유산, 'K'가 선도…단원고·한지 등재도 추진\"",
+          "link": "https://www.mt.co.kr/culture/2026/08/05/2026080509505659851",
+          "outlet": "mt.co.kr",
+          "pubDate": "2026-08-05T07:13:00.000Z",
+          "blurb": "국가유산청이 '단원고 4·16 아카이브'와 '수운잡방·음식디미방'의 세계기록유산 아태지역목록 등재, 한지 제작 전통지식의 인류무형유산 등재를 순차 추진한다고 밝혔다. 궁·능 관람료 현실화와 함께 유산 활용 정책 전반을 손보는 흐름이다. 왕조 유물 중심이던 유산 개념이 음식·기록·현대사의 기억으로 넓어지고 있다는 점이 핵심이다.",
+          "imagePrompt": "layers of handmade paper, an old recipe manuscript, and a memorial archive box arranged like sedimentary strata, soft museum lighting, respectful illustration",
+          "imageQuery": "hanji Korean traditional paper making",
+          "analysis": {
+            "rank": 56,
+            "score": 44,
+            "scores": {
+              "importance": 43,
+              "impact": 54,
+              "interest": 31,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "4개 기사 · 4개 매체 · 중요도 43 · 파급력 54 · 관심도 31 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 4,
+            "outletCount": 4
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/8280873/pexels-photo-8280873.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Quang Nguyen Vinh / Pexels"
+          }
+        },
+        {
+          "headline": "태권도를 세계인의 문화유산으로! 태권도진흥재단, '글로벌 태권도 홍보...",
+          "link": "https://www.mydaily.co.kr/page/view/2026080509131393433",
+          "outlet": "mydaily.co.kr",
+          "pubDate": "2026-08-05T00:50:00.000Z",
+          "blurb": "태권도진흥재단이 세계 134개국에 태권도 홍보 영상을 송출하며 유네스코 인류무형유산 등재를 향한 여론 조성에 나섰다. 스포츠로 먼저 세계화된 태권도를 '문화유산'의 언어로 다시 정의하려는 시도다. 등재 여부와 별개로 한국이 무형유산을 국제 무대에서 어떻게 서사화하는지 보여주는 사례다.",
+          "imagePrompt": "taekwondo practitioners in white uniforms forming a circle, motion trails of a high kick, world map halo of light behind, dynamic illustration",
+          "imageQuery": "taekwondo martial arts demonstration",
+          "analysis": {
+            "rank": 228,
+            "score": 39,
+            "scores": {
+              "importance": 35,
+              "impact": 50,
+              "interest": 21,
+              "psychological": 20,
+              "realtime": 75
+            },
+            "rationale": "2개 기사 · 2개 매체 · 중요도 35 · 파급력 50 · 관심도 21 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 2,
+            "outletCount": 2
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/36563836/pexels-photo-36563836.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Kulani Shibambu / Pexels"
+          }
+        },
+        {
+          "headline": "4대째 잇는 '발' 장인의 60년…염장 조대용 삶과 예술, 책으로",
+          "link": "https://www.news1.kr/life-culture/cultural-policy/6249543",
+          "outlet": "news1.kr",
+          "pubDate": "2026-08-05T01:01:00.000Z",
+          "blurb": "국가무형유산 염장 보유자 조대용의 60년 세월과 예술세계를 담은 책이 국가유산진흥원을 통해 출간됐다. 4대째 이어온 대나무 발 제작 기술을 기록으로 남기는 작업으로, 전승자가 줄어드는 무형유산에서 아카이빙이 사실상 마지막 보존 수단이 되고 있다. 장인의 삶을 문헌화하는 일의 시급함을 환기한다.",
+          "imagePrompt": "weathered hands weaving thin bamboo strips into a hanging screen, sunlight filtering through the woven pattern, quiet workshop, warm documentary illustration",
+          "imageQuery": "bamboo blind weaving craftsman workshop",
+          "analysis": {
+            "rank": 142,
+            "score": 41,
+            "scores": {
+              "importance": 43,
+              "impact": 50,
+              "interest": 21,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "2개 기사 · 2개 매체 · 중요도 43 · 파급력 50 · 관심도 21 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 2,
+            "outletCount": 2
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/5760149/pexels-photo-5760149.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: mc / Pexels"
+          }
+        }
+      ],
+      "note": "등재 추진 소식과 기록화 작업을 함께 놓아, 유산 정책이 '지정'에서 '기록과 서사'로 옮겨가는 흐름을 보이도록 했습니다. 무엇을 유산으로 부를지에 대한 기준 자체가 넓어지는 중입니다."
+    },
+    {
+      "key": "life",
+      "label": "라이프·트렌드",
+      "entries": [
+        {
+          "headline": "블랙핑크, K-팝 한계 지운 10주년…차트·플랫폼·패션 신을 뒤흔든 파괴...",
+          "link": "https://www.newsis.com/view/NISX20260803_0003733318",
+          "outlet": "newsis.com",
+          "pubDate": "2026-08-04T23:45:00.000Z",
+          "blurb": "블랙핑크가 데뷔 10주년을 맞아 차트·플랫폼·패션 신에 남긴 파급력이 종합적으로 조명됐다. 걸그룹 유행을 이끈 것을 넘어 아시아 팝 시장이 K팝 공식을 차용할 때의 기준점이 됐고, 영향력이 음악을 벗어나 패션과 라이프스타일 산업으로 확장됐다. 한 팀의 기념일이 아니라 지난 10년 한국 대중문화의 세계화 방식을 요약하는 사건이다.",
+          "imagePrompt": "four abstract silhouettes on a runway that doubles as a stage, pink and black graphic waves radiating outward into fashion sketches and chart lines, bold editorial illustration",
+          "imageQuery": "fashion runway show stage lights",
+          "analysis": {
+            "rank": 75,
+            "score": 44,
+            "scores": {
+              "importance": 63,
+              "impact": 54,
+              "interest": 5,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "1개 기사 · 1개 매체 · 중요도 63 · 파급력 54 · 관심도 5 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 1,
+            "outletCount": 1
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/28587831/pexels-photo-28587831.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Thể Phạm / Pexels"
+          }
+        },
+        {
+          "headline": "‘표를 파는 자’와 ‘판을 바꾸는 자’...BTS의 그래미 거부가 던진 문...",
+          "link": "http://www.joseilbo.com/news/news_read.php?uid=573336&class=75&grp=",
+          "outlet": "joseilbo.com",
+          "pubDate": "2026-08-05T23:01:00.000Z",
+          "blurb": "BTS의 그래미 거부를 두고 서구 중심의 전통적 문화 권력과 디지털 미디어 기반의 새로운 글로벌 대중이 충돌하는 지점이라는 분석이 제기됐다. K팝 산업이 서구의 인증을 받는 위치에서 스스로 판을 정의하는 위치로 옮겨갈 수 있는지를 묻는 논의다. 팬덤 경제가 기존 권위 체계를 실제로 대체할 수 있는가라는 질문이 처음으로 정면에 놓였다.",
+          "imagePrompt": "two overlapping circles of light, one an old gilded award hall, one a vast network of glowing screens and hands, tension line between them, conceptual editorial illustration",
+          "imageQuery": "awards ceremony hall empty seats",
+          "analysis": {
+            "rank": 187,
+            "score": 40,
+            "scores": {
+              "importance": 55,
+              "impact": 46,
+              "interest": 5,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "1개 기사 · 1개 매체 · 중요도 55 · 파급력 46 · 관심도 5 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 1,
+            "outletCount": 1
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/27263739/pexels-photo-27263739.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Adrien Olichon / Pexels"
+          }
+        },
+        {
+          "headline": "쿠팡이츠, '속초관광수산시장' 기획전 개최…휴가철 전통시장 활성화 지...",
+          "link": "https://www.thepublic.kr/news/articleView.html?idxno=313663",
+          "outlet": "thepublic.kr",
+          "pubDate": "2026-08-03T22:44:00.000Z",
+          "blurb": "쿠팡이츠가 휴가철을 맞아 속초관광수산시장을 대상으로 2주간 기획전을 열고 전통시장 상권 활성화에 나섰다. 플랫폼이 지역 시장을 배달망에 편입시키며 여행 소비와 지역 상권을 잇는 방식이다. 관광지 소비가 온라인 플랫폼을 경유하는 구조가 자리 잡고 있음을 보여준다.",
+          "imagePrompt": "seaside traditional market stalls with seafood and steam rising, delivery route lines glowing from stalls to a phone screen, summer coastal light, illustration",
+          "imageQuery": "Sokcho traditional seafood market Korea",
+          "analysis": {
+            "rank": 92,
+            "score": 42,
+            "scores": {
+              "importance": 43,
+              "impact": 48,
+              "interest": 58,
+              "psychological": 20,
+              "realtime": 5
+            },
+            "rationale": "9개 기사 · 9개 매체 · 중요도 43 · 파급력 48 · 관심도 58 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 9,
+            "outletCount": 9
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/19673923/pexels-photo-19673923.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: William Warby / Pexels"
+          }
+        }
+      ],
+      "note": "라이프 섹션은 소비 트렌드보다 '문화가 일상의 규칙을 어떻게 바꾸는가'에 초점을 뒀습니다. 10년 단위의 회고, 권위 체계에 대한 질문, 플랫폼이 재편하는 지역 소비를 나란히 놓았습니다."
+    }
+  ],
+  "generatedAt": "2026-08-06T04:05:17.307Z"
+}

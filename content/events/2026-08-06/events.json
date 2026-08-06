@@ -1,0 +1,440 @@
+{
+  "slug": "2026-08-06",
+  "generatedAt": "2026-08-06T04:00:53.955Z",
+  "range": {
+    "from": "2026-08-06",
+    "to": "2026-08-13"
+  },
+  "meta": {
+    "title": "이번 주 문화 이벤트",
+    "dek": "뉴스 관심도와 공식 행사 정보를 함께 본 향후 7일 큐레이션",
+    "totalCandidates": 718,
+    "selected": 13,
+    "sourceBreakdown": {
+      "tourApi": 398,
+      "news": 320
+    },
+    "note": "일정은 주최 측 사정에 따라 변경될 수 있으니 방문 전 공식 링크를 확인하세요."
+  },
+  "events": [
+    {
+      "id": "스트레이-키즈-서울-5회-매진-공연-성료-월드투어-런-잇-포문-2026-08-07",
+      "title": "스트레이 키즈, 서울 5회 매진 공연 성료...월드투어 '런 잇' 포문",
+      "category": "concert",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-07",
+      "description": "이어 \"스트레이 키즈로서 걸어온 길을 담고 있는 콘서트라 더욱 특별한데, 'RUN IT'을 통해 스트레이... 한편, 스트레이 키즈는 8월 7일 오후 1시 새 미니 앨범과 타이틀곡 'This & That'을 발매할 예정이다.",
+      "sources": [
+        {
+          "type": "news",
+          "title": "스트레이 키즈, 서울 5회 매진 공연 성료...월드투어 '런 잇' 포문",
+          "url": "https://www.hg-times.com/news/articleView.html?idxno=304103",
+          "outlet": "hg-times.com",
+          "pubDate": "2026-08-03T06:28:00.000Z"
+        }
+      ],
+      "dateConfidence": "medium",
+      "scores": {
+        "importance": 80,
+        "interest": 77,
+        "urgency": 95,
+        "scale": 90,
+        "reliability": 43
+      },
+      "score": 77,
+      "rationale": "뉴스 기반 후보 · 뉴스 1건 · 대형 관심 키워드",
+      "displayGroup": "featured"
+    },
+    {
+      "id": "아이들-미연-첫-日-신곡-발표-10일-run-away-공개-2026-08-10",
+      "title": "아이들 미연, 첫 日 신곡 발표…10일 'RUN AWAY' 공개",
+      "category": "concert",
+      "startDate": "2026-08-10",
+      "endDate": "2026-08-10",
+      "description": "그룹 아이들 미연이 6일 오후 서울 광진구 광장동 예스24라이브홀에서 진행된 아이들(i-dle) 아홉 번째... 차트와 월드투어를 아우르며 독보적인 입지를 다지고 있다. 미연의 첫 일본 디지털 싱글 'RUN AWAY'는 8월 10일...",
+      "sources": [
+        {
+          "type": "news",
+          "title": "아이들 미연, 첫 日 신곡 발표…10일 'RUN AWAY' 공개",
+          "url": "http://www.joynews24.com/view/1992507",
+          "outlet": "joynews24.com",
+          "pubDate": "2026-08-06T02:34:00.000Z"
+        }
+      ],
+      "dateConfidence": "medium",
+      "scores": {
+        "importance": 80,
+        "interest": 77,
+        "urgency": 60,
+        "scale": 90,
+        "reliability": 43
+      },
+      "score": 72,
+      "rationale": "뉴스 기반 후보 · 뉴스 1건 · 대형 관심 키워드",
+      "displayGroup": "featured"
+    },
+    {
+      "id": "2026-부산국제불교박람회-2026-08-06-부산광역시",
+      "title": "2026 부산국제불교박람회",
+      "category": "other",
+      "region": "부산광역시",
+      "address": "부산광역시 해운대구 APEC로 55 (우동)",
+      "startDate": "2026-08-06",
+      "endDate": "2026-08-09",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/92/4077792_image2_1.jpg",
+      "description": "02-2231-2011",
+      "coordinates": {
+        "lat": 35.1687048508,
+        "lng": 129.1354937071
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 부산국제불교박람회",
+          "contentId": "2644679"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 95,
+        "interest": 65,
+        "urgency": 95,
+        "scale": 90,
+        "reliability": 75
+      },
+      "score": 84,
+      "rationale": "공식 행사 데이터 · 대형 관심 키워드",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "부산바다축제-2026-08-07-부산광역시",
+      "title": "부산바다축제",
+      "category": "festival",
+      "region": "부산광역시",
+      "address": "부산광역시 사하구 다대동 다대포 해수욕장",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/40/4085840_image2_1.jpg",
+      "description": "051-713-5000",
+      "coordinates": {
+        "lat": 35.046996,
+        "lng": 128.966195
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "부산바다축제",
+          "contentId": "142080"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 55,
+        "reliability": 75
+      },
+      "score": 56,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "밀양-수퍼-페스티벌-2026-08-07-경상남도",
+      "title": "밀양 수퍼 페스티벌",
+      "category": "festival",
+      "region": "경상남도",
+      "address": "경상남도 밀양시 삼문동 1-1번지 일원",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-09",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/67/4070867_image2_1.JPG",
+      "description": "055-359-5790",
+      "coordinates": {
+        "lat": 35.489859,
+        "lng": 128.757295
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "밀양 수퍼 페스티벌",
+          "contentId": "4070865"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "백년나이트-야시장-2026-08-07-서울특별시",
+      "title": "백년나이트 야시장 (메기의 귀환)",
+      "category": "other",
+      "region": "서울특별시",
+      "address": "서울특별시 강북구 한천로144길 16 (수유동)",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-08",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/13/4096313_image2_1.jpg",
+      "description": "02-903-9110",
+      "coordinates": {
+        "lat": 37.641720888,
+        "lng": 127.0259140093
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "백년나이트 야시장 (메기의 귀환)",
+          "contentId": "3537267"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "전주-가맥축제-2026-08-06-전북특별자치도",
+      "title": "전주 가맥축제",
+      "category": "festival",
+      "region": "전북특별자치도",
+      "address": "전북특별자치도 전주시 덕진구 권삼득로 308 (덕진동1가)",
+      "startDate": "2026-08-06",
+      "endDate": "2026-08-08",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/43/4086143_image2_1.jpg",
+      "description": "070-8870-6870",
+      "coordinates": {
+        "lat": 35.8442101179,
+        "lng": 127.1292609884
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "전주 가맥축제",
+          "contentId": "2557842"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "2026-부산바다도서관-2026-08-11-부산광역시",
+      "title": "2026 부산바다도서관",
+      "category": "other",
+      "region": "부산광역시",
+      "address": "부산광역시 수영구 민락동 110-19",
+      "startDate": "2026-08-11",
+      "endDate": "2026-08-13",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/32/4092532_image2_1.jpg",
+      "description": "051-745-7288",
+      "coordinates": {
+        "lat": 35.154689,
+        "lng": 129.132986
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 부산바다도서관",
+          "contentId": "3497353"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 60,
+        "scale": 55,
+        "reliability": 75
+      },
+      "score": 51,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "통영한산대첩축제-2026-08-12-경상남도",
+      "title": "통영한산대첩축제",
+      "category": "festival",
+      "region": "경상남도",
+      "address": "경상남도 통영시 통영해안로 267 (항남동) 통영한산대첩광장",
+      "startDate": "2026-08-12",
+      "endDate": "2026-08-16",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/08/4041308_image2_1.jpg",
+      "description": "055-640-5631",
+      "coordinates": {
+        "lat": 34.84040499,
+        "lng": 128.4246286625
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "통영한산대첩축제",
+          "contentId": "507454"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 60,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 48,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "제24회-동강국제사진제-2026-07-17-강원특별자치도",
+      "title": "제24회 동강국제사진제",
+      "category": "other",
+      "region": "강원특별자치도",
+      "address": "강원특별자치도 영월군 영월읍 영월로 1909-10",
+      "startDate": "2026-07-17",
+      "endDate": "2026-10-11",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/56/4075256_image2_1.jpg",
+      "description": "033-375-6372",
+      "coordinates": {
+        "lat": 37.1819133415,
+        "lng": 128.4614563757
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "제24회 동강국제사진제",
+          "contentId": "606549"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 95,
+        "interest": 65,
+        "urgency": 55,
+        "scale": 90,
+        "reliability": 75
+      },
+      "score": 78,
+      "rationale": "공식 행사 데이터 · 대형 관심 키워드",
+      "displayGroup": "ongoing"
+    },
+    {
+      "id": "2026-국제선명상대회-2026-04-03-서울특별시",
+      "title": "2026 국제선명상대회",
+      "category": "other",
+      "region": "서울특별시",
+      "address": "서울특별시 강남구 봉은사로 531 (삼성동)",
+      "startDate": "2026-04-03",
+      "endDate": "2026-11-12",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/90/4054090_image2_1.jpg",
+      "description": "010-8441-2371",
+      "coordinates": {
+        "lat": 37.5158257049833,
+        "lng": 127.057734484281
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 국제선명상대회",
+          "contentId": "3377038"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 95,
+        "interest": 65,
+        "urgency": 55,
+        "scale": 90,
+        "reliability": 75
+      },
+      "score": 78,
+      "rationale": "공식 행사 데이터 · 대형 관심 키워드",
+      "displayGroup": "ongoing"
+    },
+    {
+      "id": "2026-국립극장-쏙쏙들이페스티벌-2026-03-14-경기도",
+      "title": "2026 국립극장 쏙쏙들이페스티벌",
+      "category": "festival",
+      "region": "경기도",
+      "address": "경기도 파주시 탄현면 헤이리로 16",
+      "startDate": "2026-03-14",
+      "endDate": "2026-12-26",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/15/4093315_image2_1.jpg",
+      "description": "031-870-9110",
+      "coordinates": {
+        "lat": 37.7832839326,
+        "lng": 126.6946859929
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 국립극장 쏙쏙들이페스티벌",
+          "contentId": "3488421"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 95,
+        "interest": 65,
+        "urgency": 55,
+        "scale": 70,
+        "reliability": 75
+      },
+      "score": 75,
+      "rationale": "공식 행사 데이터 · 대형 관심 키워드",
+      "displayGroup": "ongoing"
+    },
+    {
+      "id": "서울프린지페스티벌2026-2026-08-06-서울특별시",
+      "title": "서울프린지페스티벌2026",
+      "category": "festival",
+      "region": "서울특별시",
+      "address": "서울특별시 마포구 월드컵북로 94 (성산동)",
+      "startDate": "2026-08-06",
+      "endDate": "2026-08-23",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/22/4087022_image2_1.jpg",
+      "description": "070-7092-8172",
+      "coordinates": {
+        "lat": 37.5620373293,
+        "lng": 126.9150631652
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "서울프린지페스티벌2026",
+          "contentId": "142193"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 55,
+        "reliability": 75
+      },
+      "score": 56,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "ongoing"
+    }
+  ]
+}
