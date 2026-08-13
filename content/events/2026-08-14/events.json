@@ -1,0 +1,549 @@
+{
+  "slug": "2026-08-14",
+  "generatedAt": "2026-08-13T23:24:17.402Z",
+  "range": {
+    "from": "2026-08-14",
+    "to": "2026-08-21"
+  },
+  "meta": {
+    "title": "이번 주 문화 이벤트",
+    "dek": "뉴스 관심도와 공식 행사 정보를 함께 본 향후 7일 큐레이션",
+    "totalCandidates": 723,
+    "selected": 16,
+    "sourceBreakdown": {
+      "tourApi": 398,
+      "news": 325
+    },
+    "note": "일정은 주최 측 사정에 따라 변경될 수 있으니 방문 전 공식 링크를 확인하세요."
+  },
+  "events": [
+    {
+      "id": "감탄로드-여행가챠-팝업스토어-2026-08-14-서울특별시",
+      "title": "감탄로드 여행가챠 팝업스토어",
+      "category": "popup",
+      "region": "서울특별시",
+      "address": "서울특별시 성동구 연무장5가길 22 (성수동2가)",
+      "startDate": "2026-08-14",
+      "endDate": "2026-08-16",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/16/4097216_image2_1.jpg",
+      "description": "02-6925-5553",
+      "coordinates": {
+        "lat": 37.5433030397,
+        "lng": 127.0550233132
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "감탄로드 여행가챠 팝업스토어",
+          "contentId": "4097098"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "featured"
+    },
+    {
+      "id": "2026-경주-e스포츠-페스티벌-2026-08-15-경상북도",
+      "title": "2026 경주 e스포츠 페스티벌",
+      "category": "esports",
+      "region": "경상북도",
+      "address": "경상북도 경주시 황성공원로 29 (황성동)",
+      "startDate": "2026-08-15",
+      "endDate": "2026-08-23",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/91/4087291_image2_1.jpg",
+      "description": "054-776-5956",
+      "coordinates": {
+        "lat": 35.8606451724,
+        "lng": 129.2090805222
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 경주 e스포츠 페스티벌",
+          "contentId": "4087207"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "featured"
+    },
+    {
+      "id": "부산인디커넥트페스티벌-2026-2026-08-14-부산광역시",
+      "title": "부산인디커넥트페스티벌 2026",
+      "category": "festival",
+      "region": "부산광역시",
+      "address": "부산광역시 해운대구 APEC로 55 (우동)",
+      "startDate": "2026-08-14",
+      "endDate": "2026-08-16",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/55/4087155_image2_1.jpg",
+      "description": "070-8855-5058",
+      "coordinates": {
+        "lat": 35.1687048508,
+        "lng": 129.1354937071
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "부산인디커넥트페스티벌 2026",
+          "contentId": "2736033"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 55,
+        "reliability": 75
+      },
+      "score": 56,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "가야테마파크-빛-축제-빛을-향한-항해-2026-08-14-경상남도",
+      "title": "가야테마파크 빛 축제 빛을 향한 항해",
+      "category": "festival",
+      "region": "경상남도",
+      "address": "경상남도 김해시 가야테마길 161 (어방동)",
+      "startDate": "2026-08-14",
+      "endDate": "2026-08-23",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/77/4098577_image2_1.png",
+      "description": "055-340-7900~1",
+      "coordinates": {
+        "lat": 35.2516381404,
+        "lng": 128.8937552774
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "가야테마파크 빛 축제 빛을 향한 항해",
+          "contentId": "4098571"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "강릉-국가유산-야행-2026-08-14-강원특별자치도",
+      "title": "강릉 국가유산 야행",
+      "category": "heritage",
+      "region": "강원특별자치도",
+      "address": "강원특별자치도 강릉시 임영로131번길 6 임영관",
+      "startDate": "2026-08-14",
+      "endDate": "2026-08-16",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/77/3317777_image2_1.jpg",
+      "description": "033-823-3206",
+      "coordinates": {
+        "lat": 37.7532215016,
+        "lng": 128.8920940489
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "강릉 국가유산 야행",
+          "contentId": "2541883"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "둔내고랭지토마토축제-2026-08-14-강원특별자치도",
+      "title": "둔내고랭지토마토축제",
+      "category": "festival",
+      "region": "강원특별자치도",
+      "address": "강원특별자치도 횡성군 둔내면 경강로 4708",
+      "startDate": "2026-08-14",
+      "endDate": "2026-08-16",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/17/4094217_image2_1.jpg",
+      "description": "033-340-2774",
+      "coordinates": {
+        "lat": 37.5175220176,
+        "lng": 128.2138916396
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "둔내고랭지토마토축제",
+          "contentId": "1684261"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "수원-국가유산-야행-2026-08-14-경기도",
+      "title": "수원 국가유산 야행",
+      "category": "heritage",
+      "region": "경기도",
+      "address": "경기도 수원시 수원천로392번길",
+      "startDate": "2026-08-14",
+      "endDate": "2026-08-16",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/14/4095814_image2_1.jpg",
+      "description": "031-290-3562~5",
+      "coordinates": {
+        "lat": 37.286645,
+        "lng": 127.0197179
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "수원 국가유산 야행",
+          "contentId": "1916616"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "제4회-다대포-선셋-영화-축제-2026-08-14-부산광역시",
+      "title": "제4회 다대포 선셋 영화 축제",
+      "category": "festival",
+      "region": "부산광역시",
+      "address": "부산광역시 사하구 몰운대1길 14 (다대동)",
+      "startDate": "2026-08-14",
+      "endDate": "2026-08-16",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/21/4089821_image2_1.jpg",
+      "description": "051-461-4297",
+      "coordinates": {
+        "lat": 35.0463798103,
+        "lng": 128.9680077464
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "제4회 다대포 선셋 영화 축제",
+          "contentId": "3383748"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "홍성-국가유산-야행-2026-08-14-충청남도",
+      "title": "홍성 국가유산 야행",
+      "category": "heritage",
+      "region": "충청남도",
+      "address": "충청남도 홍성군 홍성읍 아문길 27",
+      "startDate": "2026-08-14",
+      "endDate": "2026-08-15",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/02/4093802_image2_1.JPG",
+      "description": "041-634-8707",
+      "coordinates": {
+        "lat": 36.6017210412,
+        "lng": 126.6613891711
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "홍성 국가유산 야행",
+          "contentId": "4093783"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "2026-이럴때이런음악-해설이-있는-청소년음악회-2026-08-14-서울특별시",
+      "title": "2026 이럴때이런음악 해설이 있는 청소년음악회",
+      "category": "other",
+      "region": "서울특별시",
+      "address": "서울특별시 종로구 세종대로 175 (세종로)",
+      "startDate": "2026-08-14",
+      "endDate": "2026-08-14",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/87/4090187_image2_1.jpg",
+      "description": "02-332-5545",
+      "coordinates": {
+        "lat": 37.5718478585,
+        "lng": 126.9761682759
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 이럴때이런음악 해설이 있는 청소년음악회",
+          "contentId": "1539730"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "사천시-삼천포항-자연산-전어축제-2026-08-20-경상남도",
+      "title": "사천시 삼천포항 자연산 전어축제",
+      "category": "festival",
+      "region": "경상남도",
+      "address": "경상남도 사천시 팔포3길 56-35 (동금동)",
+      "startDate": "2026-08-20",
+      "endDate": "2026-08-23",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/28/3513728_image2_1.jpg",
+      "description": "055-832-8565",
+      "coordinates": {
+        "lat": 34.9273831672,
+        "lng": 128.078886292
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "사천시 삼천포항 자연산 전어축제",
+          "contentId": "1068150"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 60,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 48,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "영덕-국가유산-야행-2026-08-21-경상북도",
+      "title": "영덕 국가유산 야행",
+      "category": "heritage",
+      "region": "경상북도",
+      "address": "경상북도 영덕군 영해면 예주2길 10",
+      "startDate": "2026-08-21",
+      "endDate": "2026-08-23",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/68/4089268_image2_1.jpg",
+      "description": "054-730-5852",
+      "coordinates": {
+        "lat": 36.5363350972,
+        "lng": 129.4083003171
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "영덕 국가유산 야행",
+          "contentId": "2846353"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 60,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 48,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "festival"
+    },
+    {
+      "id": "제24회-동강국제사진제-2026-07-17-강원특별자치도",
+      "title": "제24회 동강국제사진제",
+      "category": "other",
+      "region": "강원특별자치도",
+      "address": "강원특별자치도 영월군 영월읍 영월로 1909-10",
+      "startDate": "2026-07-17",
+      "endDate": "2026-10-11",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/56/4075256_image2_1.jpg",
+      "description": "033-375-6372",
+      "coordinates": {
+        "lat": 37.1819133415,
+        "lng": 128.4614563757
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "제24회 동강국제사진제",
+          "contentId": "606549"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 95,
+        "interest": 65,
+        "urgency": 55,
+        "scale": 90,
+        "reliability": 75
+      },
+      "score": 78,
+      "rationale": "공식 행사 데이터 · 대형 관심 키워드",
+      "displayGroup": "ongoing"
+    },
+    {
+      "id": "2026-국제선명상대회-2026-04-03-서울특별시",
+      "title": "2026 국제선명상대회",
+      "category": "other",
+      "region": "서울특별시",
+      "address": "서울특별시 강남구 봉은사로 531 (삼성동)",
+      "startDate": "2026-04-03",
+      "endDate": "2026-11-12",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/90/4054090_image2_1.jpg",
+      "description": "010-8441-2371",
+      "coordinates": {
+        "lat": 37.5158257049833,
+        "lng": 127.057734484281
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 국제선명상대회",
+          "contentId": "3377038"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 95,
+        "interest": 65,
+        "urgency": 55,
+        "scale": 90,
+        "reliability": 75
+      },
+      "score": 78,
+      "rationale": "공식 행사 데이터 · 대형 관심 키워드",
+      "displayGroup": "ongoing"
+    },
+    {
+      "id": "2026-국립극장-쏙쏙들이페스티벌-2026-03-14-경기도",
+      "title": "2026 국립극장 쏙쏙들이페스티벌",
+      "category": "festival",
+      "region": "경기도",
+      "address": "경기도 파주시 탄현면 헤이리로 16",
+      "startDate": "2026-03-14",
+      "endDate": "2026-12-26",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/15/4093315_image2_1.jpg",
+      "description": "031-870-9110",
+      "coordinates": {
+        "lat": 37.7832839326,
+        "lng": 126.6946859929
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "2026 국립극장 쏙쏙들이페스티벌",
+          "contentId": "3488421"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 95,
+        "interest": 65,
+        "urgency": 55,
+        "scale": 70,
+        "reliability": 75
+      },
+      "score": 75,
+      "rationale": "공식 행사 데이터 · 대형 관심 키워드",
+      "displayGroup": "ongoing"
+    },
+    {
+      "id": "유성온날-2026-08-14-대전광역시",
+      "title": "유성온날",
+      "category": "other",
+      "region": "대전광역시",
+      "address": "대전광역시 유성구 온천로 89 (봉명동)",
+      "startDate": "2026-08-14",
+      "endDate": "2026-12-11",
+      "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/30/4098430_image2_1.jpg",
+      "description": "042-383-6855042-672-6857",
+      "coordinates": {
+        "lat": 36.3548338694,
+        "lng": 127.3478052748
+      },
+      "sources": [
+        {
+          "type": "tour-api",
+          "title": "유성온날",
+          "contentId": "4098134"
+        }
+      ],
+      "dateConfidence": "high",
+      "scores": {
+        "importance": 45,
+        "interest": 35,
+        "urgency": 95,
+        "scale": 35,
+        "reliability": 75
+      },
+      "score": 53,
+      "rationale": "공식 행사 데이터",
+      "displayGroup": "ongoing"
+    }
+  ]
+}
