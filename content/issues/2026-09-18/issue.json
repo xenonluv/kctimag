@@ -1,0 +1,628 @@
+{
+  "meta": {
+    "slug": "2026-09-18",
+    "title": "K-Culture 큐레이션 데스크: 글로벌 무대를 뒤흔든 문화·산업 리포트",
+    "dek": "한 주간 쏟아진 연예·문화 뉴스 중 글로벌 영향력과 산업적 파급력을 지닌 핵심 이슈를 엄선했습니다.",
+    "date": "2026-09-18",
+    "weekRange": {
+      "from": "2026-09-10",
+      "to": "2026-09-17"
+    },
+    "coverImageUrl": "https://images.pexels.com/photos/7991486/pexels-photo-7991486.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=800&h=450",
+    "backgroundImageUrl": "https://image.pollinations.ai/prompt/abstract%20postmodern%20background%20pattern%2C%20terrazzo%20scatter%20pattern%20of%20small%20fragments%2C%20deep%20navy%20blue%20and%20indigo%2C%20dark%20moody%20background%2C%20glowing%20cyan%20and%20violet%20accent%20lines%2C%20fine%20grain%20texture%2C%20luminous%20high-contrast%20pattern%20on%20very%20dark%20navy%2C%20no%20text%2C%20no%20faces%2C%20no%20logo?width=1280&height=832&nologo=true&seed=4096&model=flux",
+    "curation": {
+      "scanned": 3894,
+      "selected": 18,
+      "breakdown": [
+        {
+          "label": "공연·전시·예술",
+          "count": 452
+        },
+        {
+          "label": "K-pop·음악",
+          "count": 434
+        },
+        {
+          "label": "K-테크·로봇",
+          "count": 431
+        },
+        {
+          "label": "전통문화",
+          "count": 422
+        },
+        {
+          "label": "K-드라마·영화",
+          "count": 418
+        },
+        {
+          "label": "라이프·트렌드",
+          "count": 376
+        },
+        {
+          "label": "K-뷰티",
+          "count": 371
+        },
+        {
+          "label": "K-푸드·맛집",
+          "count": 356
+        },
+        {
+          "label": "K-게임·e스포츠",
+          "count": 350
+        },
+        {
+          "label": "웹툰·웹소설",
+          "count": 284
+        }
+      ],
+      "rationale": "이번 주 큐레이션은 단순한 근황이나 홍보성 소식을 철저히 배제하고, 글로벌 박스오피스 신기록과 메이저 IP의 해외 진출, 그리고 K-컬처 산업의 구조적 지형도를 바꿀 실질적 성과에 초점을 맞췄습니다. 전 세계 시장에서 한국 콘텐츠와 브랜드가 거둔 압도적인 성취를 입체적으로 조명합니다."
+    },
+    "analysis": {
+      "method": "local-heuristic-v1",
+      "note": "외부 검색량/SNS 반응이 아닌 수집 뉴스 기반 우선순위 추정치입니다.",
+      "issueCount": 240
+    }
+  },
+  "editorPick": {
+    "headline": "‘스파이더맨: 브랜드 뉴 데이’, 북미 역대 1위…글로벌 흥행 수익 3조...",
+    "link": "https://www.sportsseoul.com/news/read/1636063?ref=naver",
+    "outlet": "sportsseoul.com",
+    "why": "마블의 글로벌 메가 히트작 '스파이더맨: 브랜드 뉴 데이'가 전설적인 프랜차이즈 '스타워즈'의 11년 아성을 무너뜨리고 북미 역대 박스오피스 1위에 등극한 사건은 글로벌 엔터테인먼트 시장의 지각변동을 명확히 보여준다. 글로벌 누적 수익 3조 원 돌파라는 기록은 단순한 흥행 성적을 넘어 현대 대중문화 소비 패턴의 변화와 IP 파워의 정점을 상징한다. 전 세계 콘텐츠 산업이 주목해야 할 가장 압도적이고 결정적인 문화적 성취다.",
+    "imagePrompt": "Massive glowing spider-man web symbol projected against a massive futuristic cinema screen in a packed dark auditorium, cinematic, no text",
+    "imageQuery": "cinema auditorium movie screen dark",
+    "analysis": {
+      "rank": 2,
+      "score": 55,
+      "scores": {
+        "importance": 67,
+        "impact": 58,
+        "interest": 42,
+        "psychological": 20,
+        "realtime": 70
+      },
+      "rationale": "6개 기사 · 6개 매체 · 중요도 67 · 파급력 58 · 관심도 42 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+      "sourceCount": 6,
+      "outletCount": 6
+    },
+    "honorableMentions": [],
+    "image": {
+      "url": "https://images.pexels.com/photos/7991486/pexels-photo-7991486.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=800&h=450",
+      "source": "사진: Tima Miroshnichenko / Pexels"
+    }
+  },
+  "editorial": {
+    "title": "글로벌 무대를 겨냥한 IP의 진화와 K-컬처의 입체적 확장",
+    "bodyMarkdown": "이번 주는 전 세계 문화·콘텐츠 산업에서 거대한 지각변동과 유의미한 성취가 동시에 목격된 한 주였다. 영화계에서는 블록버스터 프랜차이즈가 오랜 흥행 기록을 갈치우며 새로운 이파리를 써 내려갔고, 국내 문화계는 웹툰과 웹소설이라는 원천 IP를 게임과 다양한 장르로 확장하며 글로벌 시장의 중심을 두드렸다. 특히 수십억 뷰를 기록한 웹툰 IP들이 글로벌 대작 게임으로 재탄생하는 흐름은 한국 콘텐츠 산업의 확장성이 어디까지 이르렀는지를 명확히 증명한다.\n\n동시에 K-뷰티는 단순한 소비재 유통을 넘어 뷰티 테크 디바이스와 제조 인프라의 고도화를 통해 세계적인 표준으로 자리 잡았다. CJ올리브영의 대규모 글로벌 인재 채용과 에이피알의 뷰티 디바이스 누적 판매 800만 대 돌파는 한국 브랜드가 기술력과 인프라를 바탕으로 글로벌 시장의 질서를 주도하고 있음을 보여준다. 한편으로 전통 문화예술 축제와 e스포츠가 대형 랜드마크 및 금융권과 결합하며 문화적 향유의 스펙트럼을 넓히는 모습 또한 매우 고무적이다.\n\n결국 이번 주의 문화 흐름은 단순한 개별 히트작의 등장을 넘어, 문화 콘텐츠와 산업 인프라가 유기적으로 맞물려 글로벌 생태계를 구축해 나가는 거대한 궤적을 그리고 있다. 암표 문제와 같은 내부의 구조적 과제를 슬기롭게 해결하면서, 한국의 문화적 자산들이 전 세계 소비자들에게 어떤 새로운 놀라움과 가치를 선사할지 앞으로의 행보가 더욱 기대되는 시점이다."
+  },
+  "categories": [
+    {
+      "key": "screen",
+      "label": "K-드라마·영화",
+      "entries": [
+        {
+          "headline": "‘스파이더맨: 브랜드 뉴 데이’, 북미 역대 1위…글로벌 흥행 수익 3조...",
+          "link": "https://www.sportsseoul.com/news/read/1636063?ref=naver",
+          "outlet": "sportsseoul.com",
+          "pubDate": "2026-09-17T08:11:00.000Z",
+          "blurb": "마블의 '스파이더맨: 브랜드 뉴 데이'가 '스타워즈: 깨어난 포스'를 제치고 북미 역대 박스오피스 1위에 오르며 전 세계 극장가를 강타했다. 글로벌 누적 수익 3조 원을 돌파한 이번 기록은 전통적인 메이저 프랜차이즈의 흥행 판도를 바꾼 기념비적인 사건으로 평가받는다. 전 세계 영화 산업의 수익 구조와 관객 반응의 변화를 보여주는 상징적인 이벤이다.",
+          "imagePrompt": "Futuristic cinematic movie poster with glowing red and blue spider web patterns in a dark skyscraper city, dynamic action style, no text",
+          "imageQuery": "blockbuster movie poster cinematic lighting",
+          "analysis": {
+            "rank": 2,
+            "score": 55,
+            "scores": {
+              "importance": 67,
+              "impact": 58,
+              "interest": 42,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "6개 기사 · 6개 매체 · 중요도 67 · 파급력 58 · 관심도 42 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 6,
+            "outletCount": 6
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/3137890/pexels-photo-3137890.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: 𝗛&𝗖𝗢 　 / Pexels"
+          }
+        },
+        {
+          "headline": "최민식·한소희 '인턴', 개봉 첫날 박스오피스 1위…'오디세이' 제쳤다",
+          "link": "https://www.mhns.co.kr/news/articleView.html?idxno=760716",
+          "outlet": "mhns.co.kr",
+          "pubDate": "2026-09-17T05:46:00.000Z",
+          "blurb": "최민식과 한소희 주연의 화제작 영화 '인턴'이 개봉 첫날 크리스토퍼 놀런 감독의 대작 '오디세이'를 꺾고 박스오피스 정상에 올랐다. 베테랑 배우의 깊이 있는 연기와 신선한 연출의 조화가 관객들의 폭발적인 반응을 이끌어냈다. 국내 극장가에 새로운 흥행 바람을 일으키며 한국 영화의 저력을 다시 한번 입증했다.",
+          "imagePrompt": "A dramatic indoor corporate office scene with cinematic moody lighting, two colleagues talking by a large window overlooking a cityscape, no faces, no text",
+          "imageQuery": "modern office building interior cinematic",
+          "analysis": {
+            "rank": 7,
+            "score": 47,
+            "scores": {
+              "importance": 51,
+              "impact": 54,
+              "interest": 31,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "4개 기사 · 4개 매체 · 중요도 51 · 파급력 54 · 관심도 31 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 4,
+            "outletCount": 4
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/35188667/pexels-photo-35188667.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Memory Lane / Pexels"
+          }
+        },
+        {
+          "headline": "'신병4' 흥행 이끈 제작진, 차기작 '써닝야구단' 제작 돌입",
+          "link": "http://www.interview365.com/news/articleView.html?idxno=112117",
+          "outlet": "interview365.com",
+          "pubDate": "2026-09-17T10:14:00.000Z",
+          "blurb": "티빙에서 연일 흥행 1위를 기록하며 화제를 모은 '신병4'의 민진기 팀 제작진이 차기작 '써닝야구단' 제작에 돌입했다. 전작의 성공을 이끈 핵심 제작진이 다시 뭉친 만큼, 스포츠를 소재로 한 차별화된 서사와 대중적 재미를 선사할 것으로 기대를 모으고 있다. OTT 콘텐츠 시장에서 독보적인 기획력을 증명해 온 이들의 행보에 업계의 이목이 집중된다.",
+          "imagePrompt": "A vibrant green baseball stadium under bright stadium lights at night, wide angle view of an empty field, cinematic atmosphere, no text",
+          "imageQuery": "empty baseball stadium night lights",
+          "analysis": {
+            "rank": 30,
+            "score": 44,
+            "scores": {
+              "importance": 59,
+              "impact": 42,
+              "interest": 21,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "2개 기사 · 2개 매체 · 중요도 59 · 파급력 42 · 관심도 21 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 2,
+            "outletCount": 2
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/16547083/pexels-photo-16547083.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Ayyeee Ayyeee / Pexels"
+          }
+        }
+      ],
+      "note": "글로벌 대작의 흥행 신기록부터 국내 극장가와 OTT를 사로잡은 화제작까지, 대중문화의 흐름을 주도하는 핵심 작품들의 성과를 엄선했습니다."
+    },
+    {
+      "key": "webtoon",
+      "label": "웹툰·웹소설",
+      "entries": [
+        {
+          "headline": "넥슨, 신작 경쟁형 MMORPG '템빨: 오버기어드' 10월 1일 사전등록 돌입",
+          "link": "https://zdnet.co.kr/view/?no=20260917152055",
+          "outlet": "zdnet.co.kr",
+          "pubDate": "2026-09-17T06:45:00.000Z",
+          "blurb": "넥슨이 글로벌 누적 조회수 13억 뷰를 기록한 웹소설 및 웹툰 원작의 신작 MMORPG '템빨: 오버기어드'의 사전등록에 돌입했다. 원작 IP는 카카오페이지 합산 뷰뿐만 아니라 아시아와 북미, 일본 플랫폼에서 이미 검증된 글로벌 파급력을 자랑한다. 원작의 강력한 팬덤을 기반으로 게임 시장에서도 흥행 홈런을 기록할지 주목된다.",
+          "imagePrompt": "Epic fantasy MMORPG character in glowing heavy armor holding a legendary sword, dark magical background, high detail digital art, no text",
+          "imageQuery": "fantasy mmorpg warrior digital art",
+          "analysis": {
+            "rank": 1,
+            "score": 56,
+            "scores": {
+              "importance": 51,
+              "impact": 70,
+              "interest": 52,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "8개 기사 · 8개 매체 · 중요도 51 · 파급력 70 · 관심도 52 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 8,
+            "outletCount": 8
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/14032331/pexels-photo-14032331.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Franco Monsalvo / Pexels"
+          }
+        },
+        {
+          "headline": "넷마블, TGS에서 '샹그릴라 프론티어: 일곱 최강종' 오리지널 PV 최초 공...",
+          "link": "https://www.gameshot.net/common/con_view.php?code=GA6aab8dbe284eb",
+          "outlet": "gameshot.net",
+          "pubDate": "2026-09-17T06:52:00.000Z",
+          "blurb": "넷마블이 도쿄게임쇼(TGS)에서 글로벌 누적 조회수 10억 회의 인기 원작을 둔 '샹그릴라 프론티어: 일곱 최강종'의 오리지널 PV를 최초 공개했다. 원작 만화와 웹소설의 방대한 세계관을 고스란히 담아낸 이번 영상은 글로벌 게이머들의 뜨거운 찬사를 받았다. 한국 게임사의 탁월한 IP 활용 능력과 일본 시장 공략의 청신호를 보여준다.",
+          "imagePrompt": "Futuristic VR gaming headset glowing in a neon-lit cyberpunk room, immersive virtual reality concept, vibrant colors, no text",
+          "imageQuery": "cyberpunk gaming setup neon lights",
+          "analysis": {
+            "rank": 3,
+            "score": 52,
+            "scores": {
+              "importance": 59,
+              "impact": 46,
+              "interest": 52,
+              "psychological": 27,
+              "realtime": 70
+            },
+            "rationale": "8개 기사 · 8개 매체 · 중요도 59 · 파급력 46 · 관심도 52 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 8,
+            "outletCount": 8
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/9794458/pexels-photo-9794458.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Lynde / Pexels"
+          }
+        },
+        {
+          "headline": "넷마블 '신의 탑: 새로운 세계' 얼음의 힘 다루는 '44층의 지배자 쿤 로...",
+          "link": "https://gamefocus.co.kr/detail.php?number=179152",
+          "outlet": "gamefocus.co.kr",
+          "pubDate": "2026-09-16T08:36:00.000Z",
+          "blurb": "글로벌 조회수 53억 회를 돌파한 네이버웹툰 최고 히트작 '신의 탑' 기반의 RPG '신의 탑: 새로운 세계'가 신규 PvE 콘텐츠와 캐릭터를 선보였다. 원작의 탄탄한 세계관을 확장하는 지속적인 업데이트는 글로벌 팬덤의 충성도를 더욱 공고히 하고 있다. 웹툰 IP의 게임화가 이뤄낸 가장 모범적인 글로벌 성공 사례 중 하나다.",
+          "imagePrompt": "Mystical floating tower rising above mystic clouds under a purple fantasy sky, magical ancient structure, digital illustration, no text",
+          "imageQuery": "fantasy floating tower magic landscape",
+          "analysis": {
+            "rank": 5,
+            "score": 52,
+            "scores": {
+              "importance": 63,
+              "impact": 60,
+              "interest": 31,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "4개 기사 · 4개 매체 · 중요도 63 · 파급력 60 · 관심도 31 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 4,
+            "outletCount": 4
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/17892700/pexels-photo-17892700.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Suki Lee / Pexels"
+          }
+        }
+      ],
+      "note": "수십억 뷰를 기록한 슈퍼 IP들이 게임이라는 새로운 옷을 입고 글로벌 시장을 공략하는 산업적 확장성에 주목했습니다."
+    },
+    {
+      "key": "beauty",
+      "label": "K-뷰티",
+      "entries": [
+        {
+          "headline": "글로벌 K-뷰티 인재 모여라…CJ올리브영, 하반기 신입사원 31개 직무 선...",
+          "link": "https://economist.co.kr/article/view/ecn202609170068",
+          "outlet": "economist.co.kr",
+          "pubDate": "2026-09-17T08:20:00.000Z",
+          "blurb": "CJ올리브영이 글로벌 K-뷰티 트렌드를 선도할 하반기 신입사원 대규모 채용을 시작하며 미래 성장 동력 확보에 나섰다. 일반 전형과 글로벌 전형을 아우르는 31개 직무 채용은 K-뷰티 생태계의 확장과 테크 역량 강화를 동시에 겨냥한다. 국내를 넘어 세계 시장을 무대로 뛰는 K-뷰티 플랫폼의 위상을 보여준다.",
+          "imagePrompt": "Modern minimalist cosmetic retail store interior with glowing warm lights and neatly arranged skincare products, clean aesthetic, no text",
+          "imageQuery": "modern cosmetic store interior minimal",
+          "analysis": {
+            "rank": 4,
+            "score": 52,
+            "scores": {
+              "importance": 47,
+              "impact": 66,
+              "interest": 47,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "7개 기사 · 7개 매체 · 중요도 47 · 파급력 66 · 관심도 47 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 7,
+            "outletCount": 7
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/3735631/pexels-photo-3735631.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Polina Tankilevitch / Pexels"
+          }
+        },
+        {
+          "headline": "에이피알, '메디큐브 에이지알' 뷰티 디바이스 누적 판매 800만 기록",
+          "link": "http://www.apparelnews.co.kr/news/news_view/?idx=227739",
+          "outlet": "apparelnews.co.kr",
+          "pubDate": "2026-09-17T07:50:00.000Z",
+          "blurb": "에이피알의 뷰티 디바이스 브랜드 '메디큐브 에이지알'이 글로벌 누적 판매량 800만대를 돌파하는 대기록을 세웠다. 홈 뷰티 트렌드를 주도하며 독자적인 기술력으로 해외 시장에서 폭발적인 성과를 거두고 있다. K-뷰티가 화장품을 넘어 뷰티 테크 디바이스 영역까지 글로벌 표준을 주도하고 있음을 증명한다.",
+          "imagePrompt": "Sleek and modern futuristic beauty device on a reflective white podium, luxury cosmetic tech aesthetic, soft studio lighting, no text",
+          "imageQuery": "modern skincare device luxury aesthetic",
+          "analysis": {
+            "rank": 20,
+            "score": 45,
+            "scores": {
+              "importance": 51,
+              "impact": 58,
+              "interest": 21,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "2개 기사 · 2개 매체 · 중요도 51 · 파급력 58 · 관심도 21 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 2,
+            "outletCount": 2
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/3736280/pexels-photo-3736280.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Polina Tankilevitch / Pexels"
+          }
+        },
+        {
+          "headline": "K뷰티 질주 이끄는 '제조의 힘'…한국콜마 최대 실적",
+          "link": "https://www.imaeil.com/page/view/2026090609280582798",
+          "outlet": "imaeil.com",
+          "pubDate": "2026-09-17T06:33:00.000Z",
+          "blurb": "한국콜마가 최대 실적을 기록하며 K-뷰티 질주의 숨은 주역인 '제조의 힘'을 다시 한번 입증했다. 외신과 글로벌 시장에서는 한국의 ODM 기업을 반도체 위탁생산의 TSMC에 비유하며 그 제조 경쟁력을 높이 평가하고 있다. K-뷰티 글로벌 열풍의 근간이 되는 탄탄한 인프라와 기술력을 보여주는 핵심 지표다.",
+          "imagePrompt": "High-tech cleanroom laboratory with stainless steel machinery and glowing blue lights, advanced manufacturing process, no text",
+          "imageQuery": "high tech laboratory manufacturing cleanroom",
+          "analysis": {
+            "rank": 23,
+            "score": 45,
+            "scores": {
+              "importance": 71,
+              "impact": 46,
+              "interest": 5,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "1개 기사 · 1개 매체 · 중요도 71 · 파급력 46 · 관심도 5 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 1,
+            "outletCount": 1
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/5118462/pexels-photo-5118462.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Российский центр  гибкой электроники / Pexels"
+          }
+        }
+      ],
+      "note": "K-뷰티가 단순한 소비재를 넘어 글로벌 테크 디바이스와 제조 인프라, 전문 인재 채용을 통해 산업 고도화를 이루는 장면에 주목했습니다."
+    },
+    {
+      "key": "kpop",
+      "label": "K-pop·음악",
+      "entries": [
+        {
+          "headline": "플레이브 컴백, 10월 12일 미니 5집 ‘하이퍼드라이브’ 발매..기대감 ‘...",
+          "link": "http://www.breaknews.com/1237417",
+          "outlet": "breaknews.com",
+          "pubDate": "2026-09-17T05:08:00.000Z",
+          "blurb": "버추얼 아이돌 그룹 플레이브가 오는 10월 12일 미니 5집 ‘하이퍼드라이브’ 발매를 확정하며 가을 가요계 컴백 대전에 합류했다. 독창적인 세계관과 뛰어난 음악적 역량으로 팬덤과 대중성을 동시에 사로잡은 이들의 행보는 K-pop의 지평을 넓히고 있다. 가상과 현실을 잇는 새로운 음악적 성취가 어떤 기록을 쓸지 귀추가 주목된다.",
+          "imagePrompt": "Futuristic holographic concert stage with glowing neon sound waves and digital avatars performing in a stadium, sci-fi concert, no text",
+          "imageQuery": "virtual concert holograms neon lights",
+          "analysis": {
+            "rank": 25,
+            "score": 44,
+            "scores": {
+              "importance": 35,
+              "impact": 44,
+              "interest": 47,
+              "psychological": 27,
+              "realtime": 75
+            },
+            "rationale": "7개 기사 · 7개 매체 · 중요도 35 · 파급력 44 · 관심도 47 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 7,
+            "outletCount": 7
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/30547612/pexels-photo-30547612.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Pachon in Motion / Pexels"
+          }
+        },
+        {
+          "headline": "‘카라 日 진출 주역’ 윤흥관, 웨이베러 대표이사 취임",
+          "link": "https://sports.khan.co.kr/article/202609172312003?pt=nv",
+          "outlet": "sports.khan.co.kr",
+          "pubDate": "2026-09-17T14:13:00.000Z",
+          "blurb": "그룹 카라의 일본 진출과 역사적인 도쿄돔 단독 콘서트를 진두지휘했던 윤흥관 전 이사가 웨이베러의 신임 대표이사로 취임했다. K-pop 1세대 해외 진출의 산증인이자 글로벌 공연 전문가의 수장 영입은 향후 엔터테인먼트 산업의 해외 전략에 새로운 변화를 예고한다. 글로벌 시장에서 K-콘텐츠의 영향력을 한 단계 높일 적임자로 평가받는다.",
+          "imagePrompt": "Professional business executive walking into a sleek modern glass boardroom in Seoul, confident leadership atmosphere, no text",
+          "imageQuery": "modern corporate boardroom executive",
+          "analysis": {
+            "rank": 38,
+            "score": 43,
+            "scores": {
+              "importance": 51,
+              "impact": 44,
+              "interest": 26,
+              "psychological": 27,
+              "realtime": 70
+            },
+            "rationale": "3개 기사 · 3개 매체 · 중요도 51 · 파급력 44 · 관심도 26 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 3,
+            "outletCount": 3
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/5869295/pexels-photo-5869295.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: FROET / Pexels"
+          }
+        },
+        {
+          "headline": "올해 암표 거래 약 13만건…해외 거래·MD 끼워팔기 등 고도화",
+          "link": "https://www.yna.co.kr/view/AKR20260917141400005?input=1195m",
+          "outlet": "yna.co.kr",
+          "pubDate": "2026-09-17T06:27:00.000Z",
+          "blurb": "음악콘텐츠협회 토론회를 통해 올해 암표 거래 건수가 13만 건에 달하며 해외 거래 및 MD 끼워팔기 등으로 더욱 고도화되고 있음이 지적됐다. K-pop 콘서트 시장의 폭발적 성장 이면에 도사린 암표 문제 해결을 위해 건전한 양도 문화 정착과 제도적 개선 목소리가 커지고 있다. 지속 가능한 공연 산업 생태계를 위한 필수적인 과제다.",
+          "imagePrompt": "Abstract conceptual image of digital security locks protecting concert ticket barcodes on a glowing smartphone screen, cyber safety, no text",
+          "imageQuery": "digital ticket security barcode online",
+          "analysis": {
+            "rank": 70,
+            "score": 42,
+            "scores": {
+              "importance": 63,
+              "impact": 46,
+              "interest": 5,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "1개 기사 · 1개 매체 · 중요도 63 · 파급력 46 · 관심도 5 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 1,
+            "outletCount": 1
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/8372629/pexels-photo-8372629.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Leeloo The First / Pexels"
+          }
+        }
+      ],
+      "note": "버추얼 아이돌의 혁신적인 컴백부터 K-pop 산업의 지속 가능성을 위협하는 구조적 문제 해결을 위한 목소리까지 다각도로 살폈습니다."
+    },
+    {
+      "key": "food",
+      "label": "K-푸드·맛집",
+      "entries": [
+        {
+          "headline": "안동국제탈춤페스티벌 24일 개막…23개국 탈춤 한자리에",
+          "link": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4084620",
+          "outlet": "kyongbuk.co.kr",
+          "pubDate": "2026-09-17T07:52:00.000Z",
+          "blurb": "세계 23개국이 참여하는 대한민국 대표 전통 문화예술 축제인 '안동국제탈춤페스티벌'이 24일 화려한 막을 올린다. 세계창작탈공모전 수상작 전시부터 동아시아 문화도시 탈 전시, 안동 전통주 박람회까지 다채로운 프로그램이 글로벌 관광객을 맞이한다. 한국 전통 문화의 가치를 현대적으로 재해석하여 세계와 소통하는 모범적인 축제로 자리 잡았다.",
+          "imagePrompt": "Traditional Korean woodental masks arranged artfully under warm festival lantern lights, cultural heritage exhibition, no text",
+          "imageQuery": "traditional korean masks festival lanterns",
+          "analysis": {
+            "rank": 11,
+            "score": 46,
+            "scores": {
+              "importance": 51,
+              "impact": 48,
+              "interest": 37,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "5개 기사 · 5개 매체 · 중요도 51 · 파급력 48 · 관심도 37 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 5,
+            "outletCount": 5
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/37785256/pexels-photo-37785256.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: CK Seng / Pexels"
+          }
+        },
+        {
+          "headline": "한국농수산식품유통공사-롯데마트, '우리술담다' 행사 개최",
+          "link": "http://www.sisunnews.co.kr/news/articleView.html?idxno=246265",
+          "outlet": "sisunnews.co.kr",
+          "pubDate": "2026-09-17T05:40:00.000Z",
+          "blurb": "농림축산식품부와 한국농수산식품유통공사(aT)가 대형마트와 손잡고 소규모 양조장의 판로 확대를 위한 '우리술담다' 전통주 행사를 개최했다. 우수한 품질의 우리 술을 대중에게 알리고 전통주 산업의 저변을 넓히기 위한 민관 협력의 모범 사례다. K-푸드 세계화의 기초가 되는 지역 전통 식문화의 경쟁력을 한층 높이고 있다.",
+          "imagePrompt": "Artisan traditional Korean rice wine bottles displayed on a rustic wooden shelf with soft warm lighting, craft beverage, no text",
+          "imageQuery": "traditional korean liquor bottles wooden shelf",
+          "analysis": {
+            "rank": 27,
+            "score": 44,
+            "scores": {
+              "importance": 51,
+              "impact": 40,
+              "interest": 37,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "5개 기사 · 5개 매체 · 중요도 51 · 파급력 40 · 관심도 37 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 5,
+            "outletCount": 5
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/37095069/pexels-photo-37095069.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Valentin Ilas / Pexels"
+          }
+        },
+        {
+          "headline": "청운대 호텔조리베이커리경영학과, K-푸드 글로벌 마케팅 대상 수상",
+          "link": "https://www.newstnt.com/news/articleView.html?idxno=718808",
+          "outlet": "newstnt.com",
+          "pubDate": "2026-09-16T09:44:00.000Z",
+          "blurb": "청운대 학생들이 푸드테크와 한식의 문화적 가치를 결합한 독창적인 마케팅 아이디어로 K-푸드 글로벌 마케팅 대상의 영예를 안았다. 맛을 구현하는 로봇 기술과 셰프의 이야기를 접목해 한식 세계화의 참신한 방향성을 제시했다는 평이다. 차세대 인재들이 주도하는 푸드테크 융합이 K-푸드의 미래 성장을 이끌고 있다.",
+          "imagePrompt": "Innovative modern kitchen with automated robotic cooking arms and fresh organic Korean ingredients on a marble counter, food tech, no text",
+          "imageQuery": "food technology automated kitchen cooking",
+          "analysis": {
+            "rank": 43,
+            "score": 43,
+            "scores": {
+              "importance": 51,
+              "impact": 50,
+              "interest": 21,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "2개 기사 · 2개 매체 · 중요도 51 · 파급력 50 · 관심도 21 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 2,
+            "outletCount": 2
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/5953589/pexels-photo-5953589.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Anna Shvets / Pexels"
+          }
+        }
+      ],
+      "note": "전통 문화의 세계적 축제부터 로봇 기술과 결합한 푸드테크, 우리 술 판로 지원까지 K-푸드의 깊이와 지평 확장을 조명했습니다."
+    },
+    {
+      "key": "game",
+      "label": "K-게임·e스포츠",
+      "entries": [
+        {
+          "headline": "한화생명, '아시안게임 e스포츠 국가대표' 응원 캠페인 돌입…영상 공개...",
+          "link": "https://www.sportschosun.com/life/2026-09-17/202609170100121840007848",
+          "outlet": "sportschosun.com",
+          "pubDate": "2026-09-17T08:11:00.000Z",
+          "blurb": "한화생명이 2026 아이치·나고야 아시안게임 e스포츠 국가대표 선수단을 위한 금융권 독점 응원 캠페인에 전격 돌입했다. e스포츠가 정식 스포츠 종목으로 자리 잡은 가운데, 대형 금융사의 체계적인 지원과 소통이 팬들의 기대를 모으고 있다. 국가대표 선수단의 사기를 북돋우고 e스포츠 저변을 넓히는 의미 있는 행보로 꼽힌다.",
+          "imagePrompt": "Glowing esports stadium arena with professional gaming setups and passionate cheering fans in the dark, vibrant blue and purple neon, no text",
+          "imageQuery": "esports arena tournament stage neon",
+          "analysis": {
+            "rank": 26,
+            "score": 44,
+            "scores": {
+              "importance": 43,
+              "impact": 48,
+              "interest": 37,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "5개 기사 · 5개 매체 · 중요도 43 · 파급력 48 · 관심도 37 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 5,
+            "outletCount": 5
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/14266493/pexels-photo-14266493.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Filip Hajdóci / Pexels"
+          }
+        },
+        {
+          "headline": "롯데월드타워·몰, 추석 맞아 미디어파사드·전시 콘텐츠 선보여",
+          "link": "http://www.lawissue.co.kr/view.php?ud=202609172008497877204ead0791_12",
+          "outlet": "lawissue.co.kr",
+          "pubDate": "2026-09-17T11:10:00.000Z",
+          "blurb": "롯데월드타워 서울스카이가 글로벌 e스포츠 명문 기업 T1과 손잡고 대규모 체험형 테마 공간 'T1 IN THE SKY'를 오픈했다. 추석 연휴를 맞아 도심을 찾는 관광객들에게 K-컬처의 핵심인 e스포츠를 색다르게 즐길 수 있는 문화적 공간을 제공한다. 게임과 랜드마크의 결합을 통해 도심 관광의 새로운 패러다임을 제시했다.",
+          "imagePrompt": "High-altitude glass observation deck overlooking a sprawling night city skyline with futuristic glowing neon esports gaming installations, no text",
+          "imageQuery": "skyscraper observation deck night view city",
+          "analysis": {
+            "rank": 39,
+            "score": 43,
+            "scores": {
+              "importance": 47,
+              "impact": 50,
+              "interest": 26,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "3개 기사 · 3개 매체 · 중요도 47 · 파급력 50 · 관심도 26 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 3,
+            "outletCount": 3
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/16117376/pexels-photo-16117376.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: ΘSWΛLD / Pexels"
+          }
+        },
+        {
+          "headline": "인디게임 축제 비버롹스, 엔터테크·GES 서울 2026 참가",
+          "link": "https://www.gamemeca.com/mv.php?inflow=naver&gid=1780661",
+          "outlet": "gamemeca.com",
+          "pubDate": "2026-09-17T08:55:00.000Z",
+          "blurb": "인디게임 축제인 비버롹스와 스마일게이트 퓨처랩 등이 엔터테인먼트와 기술의 융합을 다루는 '엔터테크' 및 'GES 서울 2026'에 대거 출전한다. 창의적인 인디게임의 가치를 알리고 게임 산업의 다양성과 저변을 넓히는 중요한 장이 마련되었다. 한국 게임 산업의 뿌리를 튼튼하게 다지는 인디씬의 활약이 기대를 모은다.",
+          "imagePrompt": "Cozy indie game convention exhibition booth with colorful pixel art displays and young developers demonstrating games, creative space, no text",
+          "imageQuery": "indie game developer convention booth",
+          "analysis": {
+            "rank": 50,
+            "score": 42,
+            "scores": {
+              "importance": 43,
+              "impact": 40,
+              "interest": 37,
+              "psychological": 20,
+              "realtime": 70
+            },
+            "rationale": "5개 기사 · 5개 매체 · 중요도 43 · 파급력 40 · 관심도 37 기준으로 산정한 수집 뉴스 기반 우선순위 추정치입니다.",
+            "sourceCount": 5,
+            "outletCount": 5
+          },
+          "image": {
+            "url": "https://images.pexels.com/photos/19228377/pexels-photo-19228377.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=600&h=400",
+            "source": "사진: Vladimir Srajber / Pexels"
+          }
+        }
+      ],
+      "note": "국가대표 응원부터 랜드마크와의 이색 협업, 인디게임 생태계 지원까지 e스포츠와 게임이 문화 예술로 확장되는 다채로운 현장을 담았습니다."
+    }
+  ],
+  "generatedAt": "2026-09-17T16:10:45.379Z"
+}
